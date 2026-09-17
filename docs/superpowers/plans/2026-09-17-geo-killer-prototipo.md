@@ -15,6 +15,7 @@
 - Cada asesinato lleva un campo extra `sourceLang` (`"es"` o `"en"`) para saber en qué texto buscar la cita literal.
 - `wikipedia.es` y `wikipedia.en` pueden ser `null` individualmente (debe existir al menos uno).
 - `killers.json` tendrá 50 entradas en el prototipo (150-200 en el lanzamiento).
+- El aviso discreto al usuario cuando el progreso guardado está corrupto (spec §4) se pospone al plan de lanzamiento; en el prototipo el progreso corrupto se descarta en silencio.
 
 **Modelos por tarea.** Cada tarea indica el modelo de Claude que debe ejecutarla al despachar el subagente (`model` del Agent tool):
 - `haiku`: scaffolding, configuración, ficheros mecánicos, generación de contenido barato.
