@@ -2,12 +2,15 @@
 # Uso: pipeline/geocode.sh "<ciudad>, <país>"  -> imprime "lat lng nombre"
 set -euo pipefail
 sleep 1  # política de uso de Nominatim: máximo 1 petición por segundo
-curl -sS -G "https://nominatim.openstreetmap.org/search" \
+
+body=$(curl -s -f -G "https://nominatim.openstreetmap.org/search" \
   --data-urlencode "q=$1" \
   --data-urlencode "format=json" \
   --data-urlencode "limit=1" \
-  -H "User-Agent: geo-killer-pipeline/0.1 (desarrollo local)" \
-| node -e '
+  -H "User-Agent: geo-killer-pipeline/0.1 (desarrollo local)") \
+  || { echo "ERROR: fallo de red o HTTP al consultar Nominatim" >&2; exit 3; }
+
+printf '%s' "$body" | node -e '
   let s = "";
   process.stdin.on("data", (d) => (s += d)).on("end", () => {
     const r = JSON.parse(s)[0];

@@ -5,8 +5,7 @@ lang="$1"; title="$2"; slug="$3"
 out="pipeline/sources/${slug}.${lang}.txt"
 mkdir -p pipeline/sources
 
-set +e
-curl -sS -G "https://${lang}.wikipedia.org/w/api.php" \
+body=$(curl -s -f -G "https://${lang}.wikipedia.org/w/api.php" \
   --data-urlencode "action=query" \
   --data-urlencode "prop=extracts" \
   --data-urlencode "explaintext=1" \
@@ -14,8 +13,11 @@ curl -sS -G "https://${lang}.wikipedia.org/w/api.php" \
   --data-urlencode "format=json" \
   --data-urlencode "formatversion=2" \
   --data-urlencode "titles=${title}" \
-  -H "User-Agent: geo-killer-pipeline/0.1 (desarrollo local)" \
-| node -e '
+  -H "User-Agent: geo-killer-pipeline/0.1 (desarrollo local)") \
+  || { echo "ERROR: fallo de red o HTTP al consultar Wikipedia" >&2; exit 3; }
+
+set +e
+printf '%s' "$body" | node -e '
   let s = "";
   process.stdin.on("data", (d) => (s += d)).on("end", () => {
     const page = JSON.parse(s).query.pages[0];
@@ -30,9 +32,9 @@ if [ "$status" -ne 0 ]; then
   exit 2
 fi
 
-echo "$out ($(wc -c < "$out") bytes)"
-
 size=$(wc -c < "$out")
+echo "$out ($size bytes)"
+
 if [ "$size" -lt 2000 ]; then
   echo "WARNING: extracto corto" >&2
 fi
