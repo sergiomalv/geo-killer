@@ -7,7 +7,7 @@ const progressSchema = z.object({
   caseId: z.string(),
   guesses: z.array(z.string()),
   status: z.enum(['playing', 'won', 'lost']),
-})
+}) satisfies z.ZodType<GameState>
 
 function key(day: number): string {
   return `${PREFIX}${day}`

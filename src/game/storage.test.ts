@@ -28,6 +28,11 @@ describe('storage', () => {
     expect(loadProgress(3)).toBeNull()
   })
 
+  it('descarta un valor con guesses de tipo incorrecto', () => {
+    localStorage.setItem('geokiller.progress.3', JSON.stringify({ caseId: 'x', guesses: 'x', status: 'playing' }))
+    expect(loadProgress(3)).toBeNull()
+  })
+
   it('no lanza si localStorage falla', () => {
     const broken = {
       getItem: () => { throw new Error('denied') },
