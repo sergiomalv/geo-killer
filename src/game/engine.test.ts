@@ -66,4 +66,11 @@ describe('clueLevel', () => {
     s = submitGuess(s, 'd')
     expect(clueLevel(s)).toBe(3)
   })
+
+  it('no cuenta el acierto como fallo', () => {
+    expect(clueLevel(submitGuess(createGame(ANSWER), ANSWER))).toBe(0)
+    let s = createGame(ANSWER)
+    for (const g of ['a', 'b', 'c']) s = submitGuess(s, g)
+    expect(clueLevel(submitGuess(s, ANSWER))).toBe(3)
+  })
 })
