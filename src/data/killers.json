@@ -1,1 +1,282 @@
-[]
+[
+  {
+    "id": "david-berkowitz",
+    "name": "David Berkowitz",
+    "aliases": [
+      "Son of Sam"
+    ]
+  },
+  {
+    "id": "ted-bundy",
+    "name": "Ted Bundy",
+    "aliases": []
+  },
+  {
+    "id": "jeffrey-dahmer",
+    "name": "Jeffrey Dahmer",
+    "aliases": []
+  },
+  {
+    "id": "andrei-chikatilo",
+    "name": "Andréi Chikatilo",
+    "aliases": []
+  },
+  {
+    "id": "gary-ridgway",
+    "name": "Gary Ridgway",
+    "aliases": [
+      "Green River Killer"
+    ]
+  },
+  {
+    "id": "manuel-delgado-villegas",
+    "name": "Manuel Delgado Villegas",
+    "aliases": []
+  },
+  {
+    "id": "pedro-alonso-lopez",
+    "name": "Pedro Alonso López",
+    "aliases": []
+  },
+  {
+    "id": "harold-shipman",
+    "name": "Harold Shipman",
+    "aliases": []
+  },
+  {
+    "id": "john-wayne-gacy",
+    "name": "John Wayne Gacy",
+    "aliases": []
+  },
+  {
+    "id": "dennis-rader",
+    "name": "Dennis Rader",
+    "aliases": []
+  },
+  {
+    "id": "edmund-kemper",
+    "name": "Edmund Kemper",
+    "aliases": []
+  },
+  {
+    "id": "richard-ramirez",
+    "name": "Richard Ramirez",
+    "aliases": []
+  },
+  {
+    "id": "samuel-little",
+    "name": "Samuel Little",
+    "aliases": []
+  },
+  {
+    "id": "aileen-wuornos",
+    "name": "Aileen Wuornos",
+    "aliases": []
+  },
+  {
+    "id": "luis-garavito",
+    "name": "Luis Alfredo Garavito",
+    "aliases": [
+      "La Bestia"
+    ]
+  },
+  {
+    "id": "belle-gunness",
+    "name": "Belle Gunness",
+    "aliases": []
+  },
+  {
+    "id": "joel-rifkin",
+    "name": "Joel Rifkin",
+    "aliases": []
+  },
+  {
+    "id": "peter-kurten",
+    "name": "Peter Kürten",
+    "aliases": []
+  },
+  {
+    "id": "alfredo-galan",
+    "name": "Alfredo Galán",
+    "aliases": [
+      "El Asesino de la Baraja"
+    ]
+  },
+  {
+    "id": "jose-antonio-rodriguez-vega",
+    "name": "José Antonio Rodríguez Vega",
+    "aliases": [
+      "El Mataviejas"
+    ]
+  },
+  {
+    "id": "joaquin-ferrandiz",
+    "name": "Joaquín Ferrándiz",
+    "aliases": []
+  },
+  {
+    "id": "juana-barraza",
+    "name": "Juana Barraza",
+    "aliases": [
+      "La Mataviejitas"
+    ]
+  },
+  {
+    "id": "gregorio-cardenas",
+    "name": "Gregorio Cárdenas",
+    "aliases": [
+      "Goyo Cárdenas",
+      "El Estrangulador de Tacuba"
+    ]
+  },
+  {
+    "id": "cayetano-santos-godino",
+    "name": "Cayetano Santos Godino",
+    "aliases": [
+      "El Petiso Orejudo"
+    ]
+  },
+  {
+    "id": "carlos-robledo-puch",
+    "name": "Carlos Robledo Puch",
+    "aliases": [
+      "El Ángel Negro",
+      "El Ángel de la Muerte"
+    ]
+  },
+  {
+    "id": "daniel-camargo-barbosa",
+    "name": "Daniel Camargo Barbosa",
+    "aliases": []
+  },
+  {
+    "id": "francisco-garcia-escalero",
+    "name": "Francisco García Escalero",
+    "aliases": [
+      "El Matamendigos"
+    ]
+  },
+  {
+    "id": "dorangel-vargas",
+    "name": "Dorángel Vargas",
+    "aliases": [
+      "El Comegente"
+    ]
+  },
+  {
+    "id": "adolfo-constanzo",
+    "name": "Adolfo de Jesús Constanzo",
+    "aliases": [
+      "El Padrino de Matamoros"
+    ]
+  },
+  {
+    "id": "fritz-haarmann",
+    "name": "Fritz Haarmann",
+    "aliases": []
+  },
+  {
+    "id": "robert-hansen",
+    "name": "Robert Hansen",
+    "aliases": []
+  },
+  {
+    "id": "john-george-haigh",
+    "name": "John George Haigh",
+    "aliases": []
+  },
+  {
+    "id": "john-christie",
+    "name": "John Christie",
+    "aliases": []
+  },
+  {
+    "id": "peter-manuel",
+    "name": "Peter Manuel",
+    "aliases": []
+  },
+  {
+    "id": "albert-fish",
+    "name": "Albert Fish",
+    "aliases": []
+  },
+  {
+    "id": "carl-panzram",
+    "name": "Carl Panzram",
+    "aliases": []
+  },
+  {
+    "id": "richard-speck",
+    "name": "Richard Speck",
+    "aliases": []
+  },
+  {
+    "id": "peter-sutcliffe",
+    "name": "Peter Sutcliffe",
+    "aliases": []
+  },
+  {
+    "id": "donald-harvey",
+    "name": "Donald Harvey",
+    "aliases": []
+  },
+  {
+    "id": "arthur-shawcross",
+    "name": "Arthur Shawcross",
+    "aliases": []
+  },
+  {
+    "id": "rodney-alcala",
+    "name": "Rodney Alcala",
+    "aliases": []
+  },
+  {
+    "id": "leonard-lake",
+    "name": "Leonard Lake",
+    "aliases": []
+  },
+  {
+    "id": "dennis-nilsen",
+    "name": "Dennis Nilsen",
+    "aliases": []
+  },
+  {
+    "id": "jerry-brudos",
+    "name": "Jerry Brudos",
+    "aliases": []
+  },
+  {
+    "id": "juan-corona",
+    "name": "Juan Corona",
+    "aliases": []
+  },
+  {
+    "id": "richard-kuklinski",
+    "name": "Richard Kuklinski",
+    "aliases": []
+  },
+  {
+    "id": "mikhail-popkov",
+    "name": "Mikhail Popkov",
+    "aliases": []
+  },
+  {
+    "id": "marcelo-costa-de-andrade",
+    "name": "Marcelo Costa de Andrade",
+    "aliases": []
+  },
+  {
+    "id": "francisco-de-assis-pereira",
+    "name": "Francisco de Assis Pereira",
+    "aliases": [
+      "O Maníaco do Parque"
+    ]
+  },
+  {
+    "id": "pedro-rodrigues-filho",
+    "name": "Pedro Rodrigues Filho",
+    "aliases": [
+      "Pedrinho Matador"
+    ]
+  }
+]
