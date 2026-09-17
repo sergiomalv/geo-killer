@@ -42,6 +42,31 @@ describe('caseSchema', () => {
     const c = { ...sampleCase, validation: { ...sampleCase.validation, status: 'pending' } }
     expect(caseSchema.safeParse(c).success).toBe(false)
   })
+
+  it('rechaza una URL de Wikipedia mal formada', () => {
+    const c = { ...sampleCase, wikipedia: { es: 'no es una url', en: null } }
+    expect(caseSchema.safeParse(c).success).toBe(false)
+  })
+
+  it('rechaza latitud o longitud fuera de rango', () => {
+    const m = { ...sampleCase.murders[0], lat: 91 }
+    const c = { ...sampleCase, murders: [m, ...sampleCase.murders.slice(1)] }
+    expect(caseSchema.safeParse(c).success).toBe(false)
+  })
+
+  it('rechaza una fecha con formato no ISO', () => {
+    const m = { ...sampleCase.murders[0], date: '1980/05/01', datePrecision: 'day' as const }
+    const c = { ...sampleCase, murders: [m, ...sampleCase.murders.slice(1)] }
+    expect(caseSchema.safeParse(c).success).toBe(false)
+  })
+
+  it('devuelve mensajes de error en español', () => {
+    const result = caseSchema.safeParse({ ...sampleCase, name: '' })
+    expect(result.success).toBe(false)
+    const message = result.error!.issues[0].message
+    expect(message).not.toMatch(/Too small|Invalid/)
+    expect(message.length).toBeGreaterThan(0)
+  })
 })
 
 describe('killersSchema', () => {

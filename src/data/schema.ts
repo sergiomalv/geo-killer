@@ -1,4 +1,7 @@
 import { z } from 'zod'
+import { es } from 'zod/locales'
+
+z.config(es())
 
 export const DATE_PATTERN = /^\d{4}(-\d{2}(-\d{2})?)?$/
 export const SLUG_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/
