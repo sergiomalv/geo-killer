@@ -2317,6 +2317,8 @@ git commit -m "feat(ui): página del reto diario con resultado y persistencia"
 
 - [ ] **Step 1: Validar datos, tests y build**
 
+Añadir en `package.json`, dentro de `"scripts"`, `"prebuild": "npm run validate:data"` para que ningún build salga con datos inválidos (spec §4). Después:
+
 ```bash
 npm run validate:data && npm test && npm run build
 ```
