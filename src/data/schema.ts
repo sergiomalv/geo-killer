@@ -61,10 +61,12 @@ export const killersSchema = z
   .array(killerEntrySchema)
   .refine((list) => new Set(list.map((k) => k.id)).size === list.length, { message: 'ids duplicados' })
 
-export const scheduleSchema = z.object({
-  launchDate: z.iso.date(),
-  order: z.array(z.string().regex(SLUG_PATTERN)).min(1),
-})
+export const scheduleSchema = z
+  .object({
+    launchDate: z.iso.date(),
+    order: z.array(z.string().regex(SLUG_PATTERN)).min(1),
+  })
+  .refine((s) => new Set(s.order).size === s.order.length, { message: 'ids duplicados en order' })
 
 export type Murder = z.infer<typeof murderSchema>
 export type Case = z.infer<typeof caseSchema>

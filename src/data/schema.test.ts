@@ -90,4 +90,7 @@ describe('scheduleSchema', () => {
   it('rechaza orden vacío', () => {
     expect(scheduleSchema.safeParse({ launchDate: '2026-10-01', order: [] }).success).toBe(false)
   })
+  it('rechaza ids duplicados en order', () => {
+    expect(scheduleSchema.safeParse({ launchDate: '2026-10-01', order: ['x', 'x'] }).success).toBe(false)
+  })
 })
