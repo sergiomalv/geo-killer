@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0b0d;
+  --panel: #15151a;
+  --line: #2a2a33;
+  --text: #e8e4d9;
+  --muted: #8d8878;
+  --accent: #d9a441;
+  --danger: #b3382c;
+  --ok: #4f9d69;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
