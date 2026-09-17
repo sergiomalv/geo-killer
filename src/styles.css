@@ -15,3 +15,16 @@ body {
   background: var(--bg);
   color: var(--text);
 }
+
+.attempts { display: flex; gap: 8px; }
+.attempt { width: 28px; height: 28px; border: 1px solid var(--line); background: var(--panel); }
+.attempt-miss { background: var(--danger); }
+.attempt-hit { background: var(--ok); }
+
+.clue-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.clue-item { display: flex; gap: 12px; padding: 10px; background: var(--panel); border: 1px solid var(--line); }
+.clue-index { width: 24px; height: 24px; display: grid; place-items: center; background: var(--accent); color: #000; font-weight: bold; flex: none; }
+.clue-body { display: grid; gap: 2px; font-size: 0.9rem; }
+.clue-date { color: var(--accent); }
+.clue-victim { font-weight: bold; }
+.clue-method, .clue-muted { color: var(--muted); }
