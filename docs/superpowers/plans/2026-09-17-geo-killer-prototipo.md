@@ -1465,6 +1465,7 @@ Comprueba, para cada entrada, que el artículo de Wikipedia existe (en español 
 ```ts
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
+import { normalize } from '../src/game/matching.ts'
 
 interface Entry { id: string; name: string; aliases: string[]; wiki: { es: string | null; en: string | null } }
 
@@ -1494,6 +1495,9 @@ for (const e of entries) {
   }
   if (!texts.some((t) => t.includes(e.name.toLowerCase()))) {
     failures.push(`${e.id}: el nombre "${e.name}" no aparece en el artículo`)
+  }
+  if ([e.name, ...e.aliases].every((n) => normalize(n) === '')) {
+    failures.push(`${e.id}: ningún nombre sobrevive a normalize() (usar transliteración latina)`)
   }
   for (const alias of e.aliases) {
     if (!texts.some((t) => t.includes(alias.toLowerCase()))) {
