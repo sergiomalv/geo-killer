@@ -1,0 +1,101 @@
+{
+  "id": "peter-sutcliffe",
+  "name": "Peter Sutcliffe",
+  "aliases": [
+    "El destripador de Yorkshire",
+    "Yorkshire Ripper"
+  ],
+  "country": "Reino Unido",
+  "activeYears": "1975-1979",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Peter_Sutcliffe",
+    "en": "https://en.wikipedia.org/wiki/Peter_Sutcliffe"
+  },
+  "summary": "Asesino en serie británico que operó en Yorkshire entre 1975 y 1980, condenado por trece asesinatos. Su modus operandi incluía golpes con martillo y mutilaciones con armas blancas. Fue capturado en 1981 tras ser identificado por placas de matrícula falsas.",
+  "murders": [
+    {
+      "city": "Leeds",
+      "region": "Chapeltown",
+      "country": "Reino Unido",
+      "lat": 53.7974,
+      "lng": -1.5438,
+      "date": "1975-10-30",
+      "datePrecision": "day",
+      "victim": "Wilma Mary McCann",
+      "method": "Golpeada con un martillo.",
+      "sourceQuote": "Sutcliffe's first confirmed murder victim was 28-year-old Wilma Mary McCann, a mother of four from Scott Hall, on 30 October.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Leeds",
+      "region": null,
+      "country": "Reino Unido",
+      "lat": 53.7974,
+      "lng": -1.5438,
+      "date": "1976-01-20",
+      "datePrecision": "day",
+      "victim": "Emily Monica Jackson",
+      "method": "Golpeada con un martillo y apuñalada con un destornillador.",
+      "sourceQuote": "Sutcliffe committed his next murder in Leeds on 20 January 1976, when he stabbed 42-year-old Emily Monica Jackson fifty-six times.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Bradford",
+      "region": "Manningham",
+      "country": "Reino Unido",
+      "lat": 53.7944,
+      "lng": -1.7519,
+      "date": "1977-04-23",
+      "datePrecision": "day",
+      "victim": "Patricia Atkinson",
+      "method": "Golpeada con un martillo y apuñalada.",
+      "sourceQuote": "According to Sutcliffe, he picked Atkinson up in Manningham before driving to her residence. There he hit her on the back of the head four times to incapacitate her",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Leeds",
+      "region": "Chapeltown",
+      "country": "Reino Unido",
+      "lat": 53.7974,
+      "lng": -1.5438,
+      "date": "1977-06-25",
+      "datePrecision": "day",
+      "victim": "Jayne Michelle MacDonald",
+      "method": "Golpeada con un martillo y apuñalada.",
+      "sourceQuote": "On 25 June, 16-year-old Jayne Michelle MacDonald went to meet friends at the Hofbrauhaus",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Bradford",
+      "region": null,
+      "country": "Reino Unido",
+      "lat": 53.7944,
+      "lng": -1.7519,
+      "date": "1978-01-21",
+      "datePrecision": "day",
+      "victim": "Yvonne Ann Pearson",
+      "method": "Golpeada con un martillo.",
+      "sourceQuote": "That month, Sutcliffe killed Yvonne Ann Pearson, a 21-year-old prostitute from Bradford, on 21 January.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Bradford",
+      "region": null,
+      "country": "Reino Unido",
+      "lat": 53.7944,
+      "lng": -1.7519,
+      "date": "1979-09-01",
+      "datePrecision": "day",
+      "victim": "Barbara Janine Leach",
+      "method": "Golpeada con un martillo y apuñalada con un destornillador.",
+      "sourceQuote": "At approximately 1:00 a.m. on 1 September, Sutcliffe murdered 20-year-old Barbara Janine Leach, a Bradford University",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-sonnet-5",
+    "notes": "caso: caseClosed L85 (en) confirma 'Sutcliffe was found guilty of murder on all counts'; sin anulación/exoneración en es/en; name 'Peter Sutcliffe' en L1 en/es; alias 'Yorkshire Ripper' en L1 en, alias 'El destripador de Yorkshire' en L1 es; summary respaldado (trece asesinatos L1 en, capturado 1981 por matrícula falsa L2 en); sin víctimas repetidas ni hechos partidos (8 víctimas distintas, fechas/ciudades no coinciden). 0 (McCann): cita L28 literal, sección '=== 1975 ===', victima 'McCann' L28, fecha día+año L28 (30 October, cabecera 1975), ciudad 'Leeds'+region 'Chapeltown' ambos en L28, geocode 'Leeds, Chapeltown, Reino Unido' 53.8213 -1.5552 vs candidato 53.7974 -1.5438 = 2.8 km, metodo L28 'struck the back of her skull twice with a hammer'. 1 (Jackson): cita L32 literal, sección 1976, victima 'Jackson' L32, fecha día+año 20 enero 1976 en L32, ciudad 'Leeds' L32, geocode 'Leeds, Reino Unido' 53.7974 -1.5438 = 0.0 km, metodo L32 'hit Jackson...with a hammer...sharpened screwdriver to stab her'. 2 (Richardson): cita del candidato une dos fragmentos no consecutivos de L37 (omite la frase 'Richardson was last seen...'); grep -F de la cita completa no encuentra nada en L37 real; ok:false cita no literal, resto de comprobaciones no aplicadas. 3 (Atkinson): cita L38 literal, sección 1977, victima 'Atkinson' en la propia cita L38, fecha día 23 abril en L38 + año por cabecera 1977, ciudad 'Bradford'+region 'Manningham' en L38, geocode 'Bradford, Manningham, Reino Unido' 53.8043 -1.7594 vs candidato 53.7944 -1.7519 = 1.2 km, metodo: apuñalamiento en estómago respaldado literalmente en L38 ('stabbed her six times in the stomach with a knife'); el golpe de martillo no se nombra explícitamente en L38 (solo 'hit her on the back of the head'), se acepta por frase general del modus operandi en L25-26 ('the same modus operandi'... 'hammer blows to her skull'... 'slashing... with a knife'). 4 (MacDonald): cita L39 literal, sección 1977, victima 'MacDonald' L39, fecha día 25 junio en L39 + año cabecera 1977, ciudad 'Leeds'+region 'Chapeltown' en L39, geocode igual que índice 0 = 2.8 km, metodo L39 coincide exactamente ('struck on the head three times with a hammer and had been stabbed in the chest and back'). 5 (Jordan): cita L41 literal, sección 1977, victima 'Jordan' L41, fecha día 1 octubre en L41 + año cabecera 1977, ciudad 'Manchester' en L41, geocode 'Manchester, Reino Unido' 53.4425 -2.2325 = 0.0 km; metodo: 'golpea con martillo' y 'mutila con cuchillo' sí respaldados por L41, pero 'apuñala' no está respaldado: L41 solo describe golpes de martillo para matarla y uso posterior de cuchillo/cristal para mutilar el cadáver ya muerto, no una puñalada; ok:false método no respaldado. 6 (Pearson): cita L47 literal, sección 1978, victima 'Pearson' L47, fecha día 21 enero en L47 + año cabecera 1978, ciudad 'Bradford' en L47, geocode 'Bradford, Reino Unido' 53.7944 -1.7519 = 0.0 km, metodo L47 'bludgeoned Pearson about the head with a ball-peen hammer'. 7 (Leach): cita L55 literal, sección 1979, victima 'Leach' L55, fecha día 1 septiembre en L55 + año cabecera 1979, ciudad 'Bradford' en L55 (vía 'Bradford University'), geocode igual que índice 6 = 0.0 km, metodo L55 'attacked with a hammer...stabbed her with the same screwdriver'; la frase 'he was not strongly suspected' en L55 se refiere a que la policía no lo señaló como sospechoso prioritario en 1979, no a que el asesinato de Leach esté sin confirmar (la propia L55 afirma 'Sutcliffe murdered...Leach' y el veredicto de culpabilidad en L85 cubre 'all counts'). Revisión humana: redacción de method normalizada a participio sin detalle anatómico."
+  }
+}

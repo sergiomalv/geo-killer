@@ -1,0 +1,57 @@
+{
+  "id": "gary-ridgway",
+  "name": "Gary Ridgway",
+  "aliases": [
+    "El asesino de Green River",
+    "Green River Killer",
+    "Green River Strangler"
+  ],
+  "country": "Estados Unidos",
+  "activeYears": "1982-1983",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Gary_Ridgway",
+    "en": "https://en.wikipedia.org/wiki/Gary_Ridgway"
+  },
+  "summary": "Gary Ridgway, conocido como «El asesino de Green River», fue condenado en 2003 por asesinar a 49 mujeres en Washington entre 1982 y 1998. Estrangulaba a sus víctimas, generalmente prostitutas o jóvenes desprotegidas, en su casa, camión o áreas aisladas, y luego arrojaba sus cuerpos en bosques y zonas cercanas a South King County.",
+  "murders": [
+    {
+      "city": "Auburn",
+      "region": "Washington",
+      "country": "Estados Unidos",
+      "lat": 47.3075,
+      "lng": -122.2302,
+      "date": "1982-12-03",
+      "datePrecision": "day",
+      "victim": "Rebecca Marrero",
+      "method": "Estrangulamiento.",
+      "sourceQuote": "last seen leaving the Western Six Motel at South 168th Street and Pacific Highway South on December 3, 1982",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "Estados Unidos",
+      "lat": 47.6038,
+      "lng": -122.3301,
+      "date": "1983-09-12",
+      "datePrecision": "day",
+      "victim": "Tracy Winston",
+      "method": "Estrangulamiento.",
+      "sourceQuote": "Tracy Winston, who was 19 when she disappeared from Northgate Mall on September 12, 1983",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "Estados Unidos",
+      "lat": 47.6038,
+      "lng": -122.3301,
+      "date": "1983",
+      "datePrecision": "year",
+      "victim": "Marie Malvar",
+      "method": "Estrangulamiento.",
+      "sourceQuote": "He became a suspect in the Green River killings in 1983, when 18-year-old Marie Malvar disappeared",
+      "sourceLang": "en"
+    }
+  ]
+}

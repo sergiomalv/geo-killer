@@ -1,0 +1,118 @@
+{
+  "id": "jeffrey-dahmer",
+  "name": "Jeffrey Dahmer",
+  "aliases": ["Milwaukee Cannibal"],
+  "country": "Estados Unidos",
+  "activeYears": "1978-1991",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Jeffrey_Dahmer",
+    "en": "https://en.wikipedia.org/wiki/Jeffrey_Dahmer"
+  },
+  "summary": "Asesino en serie estadounidense que cometió diecisiete homicidios entre 1978 y 1991, principalmente en Milwaukee, Wisconsin. Fue condenado a dieciséis cadenas perpetuas. Murió en prisión en 1994.",
+  "murders": [
+    {
+      "city": "Bath",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 41.1687,
+      "lng": -81.6365,
+      "date": "1978-06-18",
+      "datePrecision": "day",
+      "victim": "Steven Mark Hicks",
+      "method": "Golpeado con una mancuerna y estrangulado.",
+      "sourceQuote": "June 18: Steven Mark Hicks, 18. Last seen hitchhiking to a rock concert in Chippewa Lake Park in Bath, Ohio.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0386,
+      "lng": -87.9091,
+      "date": "1987-11-20",
+      "datePrecision": "day",
+      "victim": "Steven Walter Tuomi",
+      "method": "Golpeado hasta la muerte en estado de embriaguez.",
+      "sourceQuote": "November 20: Steven Walter Tuomi, 25. Killed in a rented room at the Ambassador Hotel in Milwaukee.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0167,
+      "lng": -88.0070,
+      "date": "1988-01-16",
+      "datePrecision": "day",
+      "victim": "James Edward Doxtator",
+      "method": "Estrangulado tras ser drogado.",
+      "sourceQuote": "January 16: James Edward Doxtator, 14. Dahmer encountered Doxtator at a bus stop outside a gay bar in Wisconsin",
+      "sourceLang": "en"
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0167,
+      "lng": -88.0070,
+      "date": "1988-03-24",
+      "datePrecision": "day",
+      "victim": "Richard Guerrero",
+      "method": "Drogado y estrangulado en el dormitorio.",
+      "sourceQuote": "He bleached and retained the skull for several months before disposing of it. No remains were ever found.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0167,
+      "lng": -88.0070,
+      "date": "1989-03-25",
+      "datePrecision": "day",
+      "victim": "Anthony Lee Sears",
+      "method": "Drogado y estrangulado.",
+      "sourceQuote": "His preserved skull and genitals were found in a filing cabinet at 924 North 25th Street",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0386,
+      "lng": -87.9091,
+      "date": "1990-05-20",
+      "datePrecision": "day",
+      "victim": "Raymond Lamont Smith",
+      "method": "Drogado en bebida y estrangulado.",
+      "sourceQuote": "Smith was a male sex worker whom Dahmer encountered at a tavern. Dahmer gave Smith a drink laced with sleeping pills, then strangled him on his kitchen floor.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0386,
+      "lng": -87.9091,
+      "date": "1990-09-02",
+      "datePrecision": "day",
+      "victim": "Ernest Marquez Miller",
+      "method": "Muerto por cortadura de la arteria carótida.",
+      "sourceQuote": "September 2: Ernest Marquez Miller, 22. Miller was a dance student whom Dahmer encountered outside a bookstore.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 43.0386,
+      "lng": -87.9091,
+      "date": "1991-07-15",
+      "datePrecision": "day",
+      "victim": "Oliver Joseph Lacy",
+      "method": "Drogado y estrangulado con una correa de cuero.",
+      "sourceQuote": "July 15: Oliver Joseph Lacy, 24. A bodybuilding enthusiast whom Dahmer enticed to his apartment with the promise of money",
+      "sourceLang": "en"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "jeffrey-dahmer",
+  "caseClosed": {
+    "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+    "line": 3
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 206,
+      "victimLine": 206,
+      "yearLine": 206,
+      "cityLine": 206,
+      "methodLine": 206,
+      "geocode": "41.1687 -81.6365 Bath Township, Summit County, Ohio, 44210, United States"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 211,
+      "victimLine": 211,
+      "yearLine": 211,
+      "cityLine": 211,
+      "methodLine": 211,
+      "geocode": "43.0386 -87.9091 Milwaukee, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 215,
+      "victimLine": 215,
+      "yearLine": 215,
+      "cityLine": 215,
+      "methodLine": 215,
+      "geocode": "43.0167 -88.0070 West Allis, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 216,
+      "victimLine": 216,
+      "yearLine": 216,
+      "cityLine": 216,
+      "methodLine": 216,
+      "geocode": "43.0167 -88.0070 West Allis, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 220,
+      "victimLine": 220,
+      "yearLine": 220,
+      "cityLine": 220,
+      "methodLine": 220,
+      "geocode": "43.0167 -88.0070 West Allis, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 224,
+      "victimLine": 224,
+      "yearLine": 224,
+      "cityLine": 224,
+      "methodLine": 224,
+      "geocode": "43.0386 -87.9091 Milwaukee, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 6,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 226,
+      "victimLine": 226,
+      "yearLine": 226,
+      "cityLine": 226,
+      "methodLine": 226,
+      "geocode": "43.0386 -87.9091 Milwaukee, Milwaukee County, Wisconsin, United States"
+    },
+    {
+      "index": 7,
+      "file": "pipeline/sources/jeffrey-dahmer.en.txt",
+      "quoteLine": 238,
+      "victimLine": 238,
+      "yearLine": 238,
+      "cityLine": 238,
+      "methodLine": 238,
+      "geocode": "43.0386 -87.9091 Milwaukee, Milwaukee County, Wisconsin, United States"
+    }
+  ]
+}

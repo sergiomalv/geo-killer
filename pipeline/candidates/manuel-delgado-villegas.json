@@ -1,0 +1,105 @@
+{
+  "id": "manuel-delgado-villegas",
+  "name": "Manuel Delgado Villegas",
+  "aliases": ["El Arropiero"],
+  "country": "España",
+  "activeYears": "1964-1971",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Manuel_Delgado_Villegas",
+    "en": "https://en.wikipedia.org/wiki/Manuel_Delgado_Villegas"
+  },
+  "summary": "Asesino en serie español conocido como El Arropiero, confesó 48 asesinatos de los que se probaron siete entre 1964 y 1971. Nunca fue juzgado al ser diagnosticado con enfermedad mental grave, siendo internado en un hospital psiquiátrico en 1978 hasta su muerte en 1998.",
+  "murders": [
+    {
+      "city": "Garraf",
+      "region": null,
+      "country": "España",
+      "lat": 41.2610,
+      "lng": 1.8045,
+      "date": "1964-01-21",
+      "datePrecision": "day",
+      "victim": "Adolfo Folch Muntaner",
+      "method": "Golpeado en la cabeza con una roca mientras dormía.",
+      "sourceQuote": "A chef. He was killed while sleeping on the beach of Llorac in Garraf, near Barcelona",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Ibiza",
+      "region": null,
+      "country": "España",
+      "lat": 38.9744,
+      "lng": 1.4197,
+      "date": "1967-06-20",
+      "datePrecision": "day",
+      "victim": "Margaret Hélène Thérese Boudrie",
+      "method": "Asfixiada con una almohada.",
+      "sourceQuote": "A French student from Lyon. She was staying in a small house in Can Planas, a holiday resort",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Chinchón",
+      "region": null,
+      "country": "España",
+      "lat": 40.1408,
+      "lng": -3.4231,
+      "date": "1968-07-20",
+      "datePrecision": "day",
+      "victim": "Venancio Hernández Carrasco",
+      "method": "Asesinado junto al río Tajuña.",
+      "sourceQuote": "Hernández was tending his vineyards by the banks of the Tajuña River in the town of Chinchón when Delgado approached him",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Barcelona",
+      "region": null,
+      "country": "España",
+      "lat": 41.3826,
+      "lng": 2.1771,
+      "date": "1969-04-05",
+      "datePrecision": "day",
+      "victim": "Ramón Estrada Saldrich",
+      "method": "Golpeado con parte de un mueble y estrangulado.",
+      "sourceQuote": "A homosexual furniture dealer from Barcelona and regular client of Delgado, whose services he hired for 300 pesetas",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Mataró",
+      "region": null,
+      "country": "España",
+      "lat": 41.5398,
+      "lng": 2.4449,
+      "date": "1969-11-23",
+      "datePrecision": "day",
+      "victim": "Anastasia Borrella Moreno",
+      "method": "Golpeada con un ladrillo, empujada desde un puente y estrangulada.",
+      "sourceQuote": "Killed in Mataró. Delgado hit her on the head with a brick and pushed her off a bridge",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "España",
+      "lat": 36.6004,
+      "lng": -6.2253,
+      "date": "1970-12-03",
+      "datePrecision": "day",
+      "victim": "Francisco Marín Ramírez",
+      "method": "Golpeado en la cabeza.",
+      "sourceQuote": "His body was found by a fisherman on December 12, floating in the Guadalete river, underneath the San Alejandro bridge",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "España",
+      "lat": 36.6004,
+      "lng": -6.2253,
+      "date": "1971-01-18",
+      "datePrecision": "day",
+      "victim": "Antonia Rodríguez Relinque",
+      "method": "Estrangulada con sus propios leotardos.",
+      "sourceQuote": "Considered his girlfriend by Delgado, who introduced her as such to his father, and also killed in El Puerto de Santa María",
+      "sourceLang": "en"
+    }
+  ]
+}

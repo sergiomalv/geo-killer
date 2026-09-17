@@ -1,0 +1,126 @@
+{
+  "id": "ted-bundy",
+  "name": "Ted Bundy",
+  "aliases": [
+    "Theodore Robert Bundy"
+  ],
+  "country": "Estados Unidos",
+  "activeYears": "1974-1978",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Ted_Bundy",
+    "en": "https://en.wikipedia.org/wiki/Ted_Bundy"
+  },
+  "summary": "Asesino en serie estadounidense activo entre 1974 y 1978 que mató a varias docenas de mujeres jóvenes en la costa Pacífica y otros estados. Condenado a muerte por sus crímenes en Florida, fue ejecutado en la silla eléctrica en 1989.",
+  "murders": [
+    {
+      "city": "Seattle",
+      "region": "Distrito Universitario",
+      "country": "Estados Unidos",
+      "lat": 47.6038,
+      "lng": -122.3301,
+      "date": "1974-02-01",
+      "datePrecision": "day",
+      "victim": "Lynda Ann Healy",
+      "method": "Golpeada mientras dormía y posteriormente asesinada",
+      "sourceQuote": "In the early morning hours of February 1, Bundy broke into the basement room of 21-year-old Lynda Ann Healy",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Issaquah",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 47.5349,
+      "lng": -122.0433,
+      "date": "1974-07-14",
+      "datePrecision": "day",
+      "victim": "Janice Ann Ott",
+      "method": "Secuestrada a plena luz del día; posteriormente asesinada",
+      "sourceQuote": "Janice Ann Ott, a probation caseworker at the King County Juvenile Court, and watched her leave the beach in his company",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Issaquah",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 47.5349,
+      "lng": -122.0433,
+      "date": "1974-07-14",
+      "datePrecision": "day",
+      "victim": "Denise Marie Naslund",
+      "method": "Secuestrada en parque estatal; posteriormente asesinada",
+      "sourceQuote": "About four hours later, Denise Marie Naslund, a 19-year-old woman who was studying to become a computer programmer, left a picnic",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Midvale",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 40.6149,
+      "lng": -111.9107,
+      "date": "1974-10-18",
+      "datePrecision": "day",
+      "victim": "Melissa Anne Smith",
+      "method": "Secuestrada mientras se dirigía a su casa; golpeada, violada y estrangulada",
+      "sourceQuote": "On October 18, Melissa Anne Smith—the 17-year-old daughter of the police chief of Midvale, another Salt Lake City suburb—disappeared",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Snowmass Village",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 39.213,
+      "lng": -106.9378,
+      "date": "1975-01-12",
+      "datePrecision": "day",
+      "victim": "Caryn Eileen Campbell",
+      "method": "Desaparecida en pasillo de hotel; golpeada en la cabeza y cortada con arma blanca",
+      "sourceQuote": "On January 12, a 23-year-old registered nurse named Caryn Eileen Campbell disappeared while walking down a well-lit hallway",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Tallahassee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 30.4381,
+      "lng": -84.2809,
+      "date": "1978-01-15",
+      "datePrecision": "day",
+      "victim": "Margaret Elizabeth Bowman",
+      "method": "Golpeada mientras dormía en hermandad femenina; estrangulada",
+      "sourceQuote": "Beginning at about 2:45 a.m. he bludgeoned Margaret Elizabeth Bowman, aged 21, with a piece of oak firewood",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Tallahassee",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 30.4381,
+      "lng": -84.2809,
+      "date": "1978-01-15",
+      "datePrecision": "day",
+      "victim": "Lisa Janet Levy",
+      "method": "Golpeada mientras dormía; estrangulada y agredida sexualmente",
+      "sourceQuote": "He then entered the bedroom of 20-year-old Lisa Janet Levy and beat her unconscious, strangled her, tore one",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lake City",
+      "region": null,
+      "country": "Estados Unidos",
+      "lat": 30.1894,
+      "lng": -82.6395,
+      "date": "1978-02-09",
+      "datePrecision": "day",
+      "victim": "Kimberly Dianne Leach",
+      "method": "Secuestrada en escuela; agredida sexualmente y asesinada por degüello",
+      "sourceQuote": "At Lake City Junior High School the following morning, 12-year-old Kimberly Dianne Leach was summoned to her homeroom",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-sonnet-5",
+    "notes": "Retry 1: el generador retiró el alias inventado 'The Green River Killer' (apodo de Gary Ridgway, no de Bundy) que causó el rechazo anterior. Candidato y evidencias re-leídos desde cero; el resto de murders/meta es idéntico al intento previo, y se repitieron todas las comprobaciones sobre las fuentes cacheadas. caseClosed: L117 confirma tercera sentencia de muerte (condenado). No se encontró 'anulad|revocad|exonerad|absuelt|overturned|exonerated|acquitted|vacated' referido a estas condenas (único hit, en L232, es un banco volcado del caso Burr, no aplica). name 'Ted Bundy' presente en L128/L150/L151 (en) y L61/L68 (es). Único alias restante 'Theodore Robert Bundy' respaldado (en L1 y L314, es L1 y L63). Sin víctimas repetidas (Healy, Ott, Naslund, Smith, Campbell, Bowman, Levy, Leach, todas distintas). Sin 'hecho partido en dos': índices 1/2 (Issaquah, 1974-07-14) y 5/6 (Tallahassee, 1978-01-15) comparten línea de origen pero nombran víctimas distintas con citas propias dentro del mismo párrafo. Todas las víctimas del candidato están en la sección '=== Confirmed ===' (en L162-228), ninguna en '=== Unconfirmed ===' (en L229+). Secciones de las citas: hdr42/hdr50 '=== Washington, Oregon ===', hdr59/hdr64 '=== Idaho, Utah, Colorado ===', hdr99 '=== Chi Omega murders ===', hdr105 '=== Murder of Kimberly Leach ===' - todas documentales. Summary no contradice la fuente (dozens of young women 1974-1978, tres sentencias de muerte en Florida, silla eléctrica 1989, en L1/L3/L133). Geocode re-verificado para las 6 ciudades distintas (Seattle, Issaquah, Midvale, Snowmass Village, Tallahassee, Lake City): 0.0 km de distancia respecto a lat/lng del candidato y país 'United States' en display_name en todos los casos. 0: cita literal en L42, víctima Healy en L42, año 1974 en L42 (y lista de víctimas en L181 bajo hdr === 1974 === L176), día/mes 'February 1' en L42, ciudad Seattle en L42, coords 0.0 km, método respaldado en lista de víctimas L181 ('Bludgeoned while asleep... decapitated'). 1: cita en L50, víctima Ott en L50, año 1974 vía lista L188, día/mes 'July 14' en L50, ciudad Issaquah en L50, coords 0.0 km, método en L50 ('abductions in broad daylight') + lista L188. 2: cita en L50, víctima Naslund en L50, año/día vía lista L189, ciudad Issaquah en L50, coords 0.0 km, método en L50 (picnic/restroom, Lake Sammamish State Park) + lista L189. 3: cita en L59, víctima Smith en L59, año 1974 vía lista L194 (hdr Utah L192 bajo === 1974 === L176), día/mes 'October 18' en L59, ciudad Midvale en L59, coords 0.0 km, método en L59 ('beaten, raped, sodomized and strangled') + lista L194 ('leaving a pizza parlor to walk back to her home'). 4: cita en L64, víctima Campbell en L64, año 1975 y día/mes 'January 12' en L64, ciudad Snowmass Village en L64, coords 0.0 km, método en L64 (golpes en la cabeza, cortes con arma blanca). 5: cita en L99, víctima Bowman en L99, año 1978 y día/mes 'January 15' en L99, ciudad Tallahassee en L99, coords 0.0 km, método en L99 ('bludgeoned... with a piece of oak firewood as she slept, then garroted'). 6: cita en L99, víctima Levy en L99, año/día en L99, ciudad Tallahassee en L99, coords 0.0 km, método en L99 ('beat her unconscious, strangled her... sexually assaulted') + lista L219 ('as she slept'). 7: cita en L105, víctima Leach en L105, año 1978 y día 9 vía lista en L226 (hdr Florida L214 bajo === 1978 === L211, sub-hdr Elsewhere L225; L105 solo da 'February 8'+'the following morning'), ciudad Lake City en L105, coords 0.0 km, método en L105 ('sexually assaulted before having her throat cut') + lista L226 ('Abducted from Lake City Junior High School'). 8/8 asesinatos ok, sin errores de caso: veredicto approved."
+  }
+}

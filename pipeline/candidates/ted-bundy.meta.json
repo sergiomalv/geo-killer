@@ -1,0 +1,89 @@
+{
+  "id": "ted-bundy",
+  "caseClosed": {
+    "file": "pipeline/sources/ted-bundy.en.txt",
+    "line": 117
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 42,
+      "victimLine": 42,
+      "yearLine": 42,
+      "cityLine": 42,
+      "methodLine": 42,
+      "geocode": "47.6038 -122.3301 Seattle, King County, Washington, United States"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 50,
+      "victimLine": 50,
+      "yearLine": 50,
+      "cityLine": 50,
+      "methodLine": 50,
+      "geocode": "47.5349 -122.0433 Issaquah, King County, Washington, United States"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 50,
+      "victimLine": 50,
+      "yearLine": 50,
+      "cityLine": 50,
+      "methodLine": 50,
+      "geocode": "47.5349 -122.0433 Issaquah, King County, Washington, United States"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 59,
+      "victimLine": 59,
+      "yearLine": 59,
+      "cityLine": 59,
+      "methodLine": 59,
+      "geocode": "40.6149 -111.9107 Midvale, Salt Lake County, Utah, 84047, United States"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 64,
+      "victimLine": 64,
+      "yearLine": 64,
+      "cityLine": 64,
+      "methodLine": 64,
+      "geocode": "39.2130 -106.9378 Snowmass Village, Pitkin County, Colorado, 81615, United States"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 99,
+      "victimLine": 99,
+      "yearLine": 99,
+      "cityLine": 99,
+      "methodLine": 99,
+      "geocode": "30.4381 -84.2809 Tallahassee, Leon County, Florida, United States"
+    },
+    {
+      "index": 6,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 99,
+      "victimLine": 99,
+      "yearLine": 99,
+      "cityLine": 99,
+      "methodLine": 99,
+      "geocode": "30.4381 -84.2809 Tallahassee, Leon County, Florida, United States"
+    },
+    {
+      "index": 7,
+      "file": "pipeline/sources/ted-bundy.en.txt",
+      "quoteLine": 105,
+      "victimLine": 105,
+      "yearLine": 105,
+      "cityLine": 105,
+      "methodLine": 105,
+      "geocode": "30.1894 -82.6395 Lake City, Columbia County, Florida, 32056, United States"
+    }
+  ]
+}

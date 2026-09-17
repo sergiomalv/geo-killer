@@ -1,0 +1,79 @@
+{
+  "id": "andrei-chikatilo",
+  "caseClosed": {
+    "file": "pipeline/sources/andrei-chikatilo.es.txt",
+    "line": 3
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 55,
+      "victimLine": 55,
+      "yearLine": 55,
+      "cityLine": 55,
+      "methodLine": 55,
+      "geocode": "47.7095 40.2155 городской округ Шахты, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 63,
+      "victimLine": 63,
+      "yearLine": 63,
+      "cityLine": 63,
+      "methodLine": 63,
+      "geocode": "47.2610 39.7249 городской округ Ростов-на-Дону, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 64,
+      "victimLine": 64,
+      "yearLine": 64,
+      "cityLine": 64,
+      "methodLine": 64,
+      "geocode": "47.2721 40.3776 Багаевский район, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 68,
+      "victimLine": 68,
+      "yearLine": 68,
+      "cityLine": 68,
+      "methodLine": 68,
+      "geocode": "47.7963 39.8936 городской округ Новошахтинск, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 81,
+      "victimLine": 81,
+      "yearLine": 81,
+      "cityLine": 81,
+      "methodLine": 65,
+      "geocode": "47.7963 39.8936 городской округ Новошахтинск, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 83,
+      "victimLine": 83,
+      "yearLine": 83,
+      "cityLine": 83,
+      "methodLine": 83,
+      "geocode": "47.2610 39.7249 городской округ Ростов-на-Дону, Ростовская область, Южный федеральный округ, Россия"
+    },
+    {
+      "index": 6,
+      "file": "pipeline/sources/andrei-chikatilo.en.txt",
+      "quoteLine": 132,
+      "victimLine": 132,
+      "yearLine": 132,
+      "cityLine": 132,
+      "methodLine": 132,
+      "geocode": "47.7095 40.2155 городской округ Шахты, Ростовская область, Южный федеральный округ, Россия"
+    }
+  ]
+}

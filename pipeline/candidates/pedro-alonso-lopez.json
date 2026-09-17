@@ -1,0 +1,92 @@
+{
+  "id": "pedro-alonso-lopez",
+  "name": "Pedro Alonso López",
+  "aliases": ["Monstruo de los Andes", "Monster of the Andes"],
+  "country": "Colombia",
+  "activeYears": "1978-1980",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Pedro_Alonso_López",
+    "en": "https://en.wikipedia.org/wiki/Pedro_Alonso_López"
+  },
+  "summary": "Asesino en serie colombiano que confesó haber asesinado a más de 300 personas en Colombia, Ecuador y Perú entre 1978 y 1980. Fue condenado a 16 años de cárcel en Ecuador en 1981 por tres asesinatos confirmados. Desapareció en 1999 después de su liberación en libertad condicional.",
+  "murders": [
+    {
+      "city": "Ambato",
+      "region": null,
+      "country": "Ecuador",
+      "lat": -1.2422,
+      "lng": -78.6288,
+      "date": "1979-05-05",
+      "datePrecision": "day",
+      "victim": "Hortensia Garcés Lozada",
+      "method": "Estrangulada bajo un puente.",
+      "sourceQuote": "On 5 May 1979, López met Hortensia Garcés Lozada in Ambato as she was selling newspapers. He gave the girl 100 sucres to follow him and raped and killed her under a nearby bridge.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": "1979-12-14",
+      "datePrecision": "day",
+      "victim": "Flor Alba Sánchez",
+      "method": "Estrangulada.",
+      "sourceQuote": "On 14 December 1979, while in his hometown of El Espinal, López raped and murdered Flor Alba Sánchez.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": "1979-12-21",
+      "datePrecision": "day",
+      "victim": "Víctima no identificada",
+      "method": "Estrangulada con las manos desnudas.",
+      "sourceQuote": "Also in El Espinal, there were two other murders of young girls on 21 December 1979 and 3 January 1980.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": "1980-01-03",
+      "datePrecision": "day",
+      "victim": "Víctima no identificada",
+      "method": "Estrangulada con las manos desnudas.",
+      "sourceQuote": "Also in El Espinal, there were two other murders of young girls on 21 December 1979 and 3 January 1980.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": null,
+      "datePrecision": null,
+      "victim": "Blanca Bautista",
+      "method": "Estrangulada con las manos desnudas.",
+      "sourceQuote": "Sánchez was found 20 days later buried on municipal property alongside another girl, Blanca Bautista, both bearing signs of torture.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Totoras",
+      "region": null,
+      "country": "Ecuador",
+      "lat": -1.3158,
+      "lng": -78.5958,
+      "date": "1980-01-10",
+      "datePrecision": "day",
+      "victim": "Ivanova Jácome",
+      "method": "Estrangulada en una choza.",
+      "sourceQuote": "On 10 January 1980, he abducted Ivanova Jácome at a parking lot in Totoras, a suburb of Ambato, as she was heading for school.",
+      "sourceLang": "en"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "manuel-delgado-villegas",
+  "name": "Manuel Delgado Villegas",
+  "aliases": [
+    "El Arropiero"
+  ],
+  "country": "España",
+  "activeYears": "1964-1971",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Manuel_Delgado_Villegas",
+    "en": "https://en.wikipedia.org/wiki/Manuel_Delgado_Villegas"
+  },
+  "summary": "Asesino en serie español conocido como El Arropiero, confesó 48 asesinatos de los que se probaron siete entre 1964 y 1971. Nunca fue juzgado al ser diagnosticado con enfermedad mental grave, siendo internado en un hospital psiquiátrico en 1978 hasta su muerte en 1998.",
+  "murders": [
+    {
+      "city": "Garraf",
+      "region": null,
+      "country": "España",
+      "lat": 41.261,
+      "lng": 1.8045,
+      "date": "1964-01-21",
+      "datePrecision": "day",
+      "victim": "Adolfo Folch Muntaner",
+      "method": "Golpeado en la cabeza con una roca mientras dormía.",
+      "sourceQuote": "A chef. He was killed while sleeping on the beach of Llorac in Garraf, near Barcelona",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Ibiza",
+      "region": null,
+      "country": "España",
+      "lat": 38.9744,
+      "lng": 1.4197,
+      "date": "1967-06-20",
+      "datePrecision": "day",
+      "victim": "Margaret Hélène Thérese Boudrie",
+      "method": "Asfixiada con una almohada.",
+      "sourceQuote": "A French student from Lyon. She was staying in a small house in Can Planas, a holiday resort",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Barcelona",
+      "region": null,
+      "country": "España",
+      "lat": 41.3826,
+      "lng": 2.1771,
+      "date": "1969-04-05",
+      "datePrecision": "day",
+      "victim": "Ramón Estrada Saldrich",
+      "method": "Golpeado con parte de un mueble y estrangulado.",
+      "sourceQuote": "A homosexual furniture dealer from Barcelona and regular client of Delgado, whose services he hired for 300 pesetas",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Mataró",
+      "region": null,
+      "country": "España",
+      "lat": 41.5398,
+      "lng": 2.4449,
+      "date": "1969-11-23",
+      "datePrecision": "day",
+      "victim": "Anastasia Borrella Moreno",
+      "method": "Golpeada con un ladrillo, empujada desde un puente y estrangulada.",
+      "sourceQuote": "Killed in Mataró. Delgado hit her on the head with a brick and pushed her off a bridge",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "España",
+      "lat": 36.6004,
+      "lng": -6.2253,
+      "date": "1970-12-03",
+      "datePrecision": "day",
+      "victim": "Francisco Marín Ramírez",
+      "method": "Golpeado en la cabeza.",
+      "sourceQuote": "His body was found by a fisherman on December 12, floating in the Guadalete river, underneath the San Alejandro bridge",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "España",
+      "lat": 36.6004,
+      "lng": -6.2253,
+      "date": "1971-01-18",
+      "datePrecision": "day",
+      "victim": "Antonia Rodríguez Relinque",
+      "method": "Estrangulada con sus propios leotardos.",
+      "sourceQuote": "Considered his girlfriend by Delgado, who introduced her as such to his father, and also killed in El Puerto de Santa María",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-sonnet-5",
+    "notes": "Caso: caseClosed en L38 (en.txt) - confesó el asesinato de Antonia Rodríguez Relinque y admitió los otros cuatro, 'considered the definite perpetrator of seven murders'; sin condena por enfermedad mental (internamiento 1978). No hay términos de anulación/exoneración en es.txt ni en.txt. Nombre y alias 'El Arropiero' verificados en ambas fuentes (en.txt L1,8; es.txt L1,5). Sin víctimas repetidas ni hechos duplicados (índices 5 y 6 comparten ciudad pero fechas y víctimas distintas, cada uno con su propia cita en L28 y L29). Todas las citas son literales y están bajo el encabezado documental '==== Confirmed by the investigation ====' en en.txt (L22-29), no en secciones de ficción. 0: cita L22, víctima L22, año/día L22 ('21 January 1964'), ciudad 'Garraf' L22, geocode Garraf/Barcelona/Catalunya = candidato exacto, coords 0.0 km; método respaldado por frase general de modus operandi L14 ('kill them with great violence using a blunt object') y por la cita directa L23 (roca, golpe en la cabeza) - el methodLine=22 del fichero de evidencias NO respalda el método por sí solo, la evidencia apunta a la línea equivocada. 1: cita L24, víctima L24, año/día L24 ('20 June 1967'), ciudad 'Ibiza' (substring de 'Ibiza Town') L24, geocode Eivissa = candidato exacto, coords 0.0 km, método L24 ('suffocated her with a pillow'). 2: cita L25, víctima L25, año/día L25 ('20 July 1968'), ciudad 'Chinchón' L25, geocode Chinchón/Comunidad de Madrid = candidato exacto, coords 0.0 km; MÉTODO NO RESPALDADO: L25 solo dice que el cuerpo fue hallado flotando en el río y que se reportó inicialmente como ahogamiento accidental, sin indicar cómo lo mató Delgado; la frase general de modus operandi (L14) no permite inferir cuál de los métodos usó en este caso concreto; el candidato escribe 'Asesinado junto al río Tajuña' (solo ubicación, no un método) en vez de 'El método no consta en la fuente.' El methodLine=25 del fichero de evidencias apunta a una línea que no respalda el dato. 3: cita L26, víctima L26, año/día L26 ('5 April 1969'), ciudad 'Barcelona' L26, geocode Barcelona/Barcelonès = candidato exacto, coords 0.0 km, método L26 ('tore a leg off an armchair and bludgeoned Estrada with it, before finally strangling him'). 4: cita L27, víctima L27, año/día L27 ('23 November 1969'), ciudad 'Mataró' L27 ('Killed in Mataró'), geocode Mataró/Maresme = candidato exacto, coords 0.0 km, método L27 ('hit her on the head with a brick and pushed her off a bridge'). 5: cita L28, víctima L28, año/día L28 ('3 December 1970', fecha del asesinato, no la del hallazgo del cuerpo el 12 de diciembre), ciudad 'El Puerto de Santa María' L28, geocode = candidato exacto, coords 0.0 km, método L28 ('punching him twice in the head'). 6: cita L29, víctima L29, año/día L29 ('18 January 1971'), ciudad 'El Puerto de Santa María' L29 ('also killed in El Puerto de Santa María'), geocode = candidato exacto, coords 0.0 km, método L29 ('strangled her with her own leggings')."
+  }
+}

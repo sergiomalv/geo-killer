@@ -1,0 +1,89 @@
+{
+  "id": "peter-sutcliffe",
+  "caseClosed": {
+    "file": "pipeline/sources/peter-sutcliffe.en.txt",
+    "line": 85
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 28,
+      "victimLine": 28,
+      "yearLine": 28,
+      "cityLine": 28,
+      "methodLine": 28,
+      "geocode": "53.7974 -1.5438 Leeds, West Yorkshire, England, LS1 6AL, United Kingdom"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 32,
+      "victimLine": 32,
+      "yearLine": 32,
+      "cityLine": 32,
+      "methodLine": 32,
+      "geocode": "53.7974 -1.5438 Leeds, West Yorkshire, England, LS1 6AL, United Kingdom"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 37,
+      "victimLine": 37,
+      "yearLine": 37,
+      "cityLine": 37,
+      "methodLine": 37,
+      "geocode": "53.7974 -1.5438 Leeds, West Yorkshire, England, LS1 6AL, United Kingdom"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 38,
+      "victimLine": 38,
+      "yearLine": 38,
+      "cityLine": 38,
+      "methodLine": 38,
+      "geocode": "53.7944 -1.7519 Bradford, West Yorkshire, England, BD1 1PH, United Kingdom"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 39,
+      "victimLine": 39,
+      "yearLine": 39,
+      "cityLine": 39,
+      "methodLine": 39,
+      "geocode": "53.7974 -1.5438 Leeds, West Yorkshire, England, LS1 6AL, United Kingdom"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 41,
+      "victimLine": 41,
+      "yearLine": 41,
+      "cityLine": 41,
+      "methodLine": 41,
+      "geocode": "53.4425 -2.2325 Manchester, Greater Manchester, England, United Kingdom"
+    },
+    {
+      "index": 6,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 47,
+      "victimLine": 47,
+      "yearLine": 47,
+      "cityLine": 47,
+      "methodLine": 47,
+      "geocode": "53.7944 -1.7519 Bradford, West Yorkshire, England, BD1 1PH, United Kingdom"
+    },
+    {
+      "index": 7,
+      "file": "pipeline/sources/peter-sutcliffe.en.txt",
+      "quoteLine": 55,
+      "victimLine": 55,
+      "yearLine": 55,
+      "cityLine": 55,
+      "methodLine": 55,
+      "geocode": "53.7944 -1.7519 Bradford, West Yorkshire, England, BD1 1PH, United Kingdom"
+    }
+  ]
+}

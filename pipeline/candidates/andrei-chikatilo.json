@@ -1,0 +1,112 @@
+{
+  "id": "andrei-chikatilo",
+  "name": "Andréi Chikatilo",
+  "aliases": [
+    "el Carnicero de Rostov",
+    "el Destripador Rojo",
+    "el Destripador de Rostov",
+    "the Butcher of Rostov",
+    "the Rostov Ripper",
+    "the Red Ripper"
+  ],
+  "country": "Rusia",
+  "activeYears": "1978-1990",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Andréi_Chikatilo",
+    "en": "https://en.wikipedia.org/wiki/Andrei_Chikatilo"
+  },
+  "summary": "Andréi Chikatilo fue un asesino en serie y caníbal soviético que cometió al menos 52 asesinatos confirmados entre 1978 y 1990 en la Unión Soviética. Fue condenado en octubre de 1992 y ejecutado en febrero de 1994.",
+  "murders": [
+    {
+      "city": "Shakhty",
+      "region": null,
+      "country": "Rusia",
+      "lat": 47.7095,
+      "lng": 40.2155,
+      "date": "1978-12-22",
+      "datePrecision": "day",
+      "victim": "Yelena Zakotnova",
+      "method": "Apuñalada y estrangulada.",
+      "sourceQuote": "On the evening of 22 December, he lured a 9-year-old girl named Yelena Zakotnova to an old, dilapidated hut",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Rostov del Don",
+      "region": null,
+      "country": "Rusia",
+      "lat": 47.2610,
+      "lng": 39.7249,
+      "date": "1981-09-03",
+      "datePrecision": "day",
+      "victim": "Larisa Tkachenko",
+      "method": "Estrangulada y mutilada.",
+      "sourceQuote": "On 3 September 1981, Chikatilo encountered a 17-year-old boarding school student, Larisa Tkachenko, standing at a bus stop as he exited",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Bagayevsky",
+      "region": "Bagayevsky District",
+      "country": "Rusia",
+      "lat": 47.2721,
+      "lng": 40.3776,
+      "date": "1982-06-12",
+      "datePrecision": "day",
+      "victim": "Lyubov Biryuk",
+      "method": "Apuñalada y destrozada.",
+      "sourceQuote": "on 12 June 1982, Chikatilo travelled by bus to the Bagayevsky District of Rostov to purchase vegetables",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Novoshakhtinsk",
+      "region": null,
+      "country": "Rusia",
+      "lat": 47.7963,
+      "lng": 39.8936,
+      "date": "1982-12-11",
+      "datePrecision": "day",
+      "victim": "Olga Stalmachenok",
+      "method": "Apuñalada múltiples veces en la cabeza y el cuerpo.",
+      "sourceQuote": "On 11 December 1982, Chikatilo encountered a 10-year-old girl named Olga Stalmachenok riding a bus",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Novoshakhtinsk",
+      "region": null,
+      "country": "Rusia",
+      "lat": 47.7963,
+      "lng": 39.8936,
+      "date": "1984-03-24",
+      "datePrecision": "day",
+      "victim": "Dmitry Ptashnikov",
+      "method": "El método no consta en la fuente.",
+      "sourceQuote": "On 24 March, he lured a 10-year-old boy, Dmitry Ptashnikov, away from a stamp kiosk in Novoshakhtinsk",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Rostov del Don",
+      "region": "Park of Aviators",
+      "country": "Rusia",
+      "lat": 47.2610,
+      "lng": 39.7249,
+      "date": "1984-08-02",
+      "datePrecision": "day",
+      "victim": "Natalya Golosovskaya",
+      "method": "Asesinada.",
+      "sourceQuote": "On 2 August, Chikatilo killed a 16-year-old girl, Natalya Golosovskaya, in the Park of Aviators",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Shakhty",
+      "region": null,
+      "country": "Rusia",
+      "lat": 47.7095,
+      "lng": 40.2155,
+      "date": "1990-11-06",
+      "datePrecision": "day",
+      "victim": "Svetlana Korostik",
+      "method": "Asesinada y mutilada.",
+      "sourceQuote": "On 6 November 1990, Chikatilo killed and mutilated a 22-year-old woman, Svetlana Korostik, in woodland near Donleskhoz station",
+      "sourceLang": "en"
+    }
+  ]
+}

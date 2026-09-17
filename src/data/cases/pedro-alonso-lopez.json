@@ -1,0 +1,62 @@
+{
+  "id": "pedro-alonso-lopez",
+  "name": "Pedro Alonso López",
+  "aliases": [
+    "Monstruo de los Andes",
+    "Monster of the Andes"
+  ],
+  "country": "Colombia",
+  "activeYears": "1978-1980",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Pedro_Alonso_López",
+    "en": "https://en.wikipedia.org/wiki/Pedro_Alonso_López"
+  },
+  "summary": "Asesino en serie colombiano que confesó haber asesinado a más de 300 personas en Colombia, Ecuador y Perú entre 1978 y 1980. Fue condenado a 16 años de cárcel en Ecuador en 1981 por tres asesinatos confirmados. Desapareció en 1999 después de su liberación en libertad condicional.",
+  "murders": [
+    {
+      "city": "Ambato",
+      "region": null,
+      "country": "Ecuador",
+      "lat": -1.2422,
+      "lng": -78.6288,
+      "date": "1979-05-05",
+      "datePrecision": "day",
+      "victim": "Hortensia Garcés Lozada",
+      "method": "Estrangulada bajo un puente.",
+      "sourceQuote": "On 5 May 1979, López met Hortensia Garcés Lozada in Ambato as she was selling newspapers. He gave the girl 100 sucres to follow him and raped and killed her under a nearby bridge.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": "1979-12-14",
+      "datePrecision": "day",
+      "victim": "Flor Alba Sánchez",
+      "method": "Estrangulada.",
+      "sourceQuote": "On 14 December 1979, while in his hometown of El Espinal, López raped and murdered Flor Alba Sánchez.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "lat": 4.1503,
+      "lng": -74.8846,
+      "date": null,
+      "datePrecision": null,
+      "victim": "Blanca Bautista",
+      "method": "Estrangulada con las manos desnudas.",
+      "sourceQuote": "Sánchez was found 20 days later buried on municipal property alongside another girl, Blanca Bautista, both bearing signs of torture.",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-sonnet-5",
+    "notes": "Caso: caseClosed L30 en.txt confirma condena ('found guilty of three of the murders and received a sentence of 16 years'). Sin anulacion/exoneracion (grep -i overturned|exonerated|acquitted|vacated|anulad|revocad sin resultados en es/en). name 'Pedro Alonso Lopez' en L1 de ambos ficheros. Alias 'Monster of the Andes' en L1 en.txt; alias 'Monstruo de los Andes' en L1 es.txt. Sin victimas repetidas (Hortensia Garces Lozada, Flor Alba Sanchez, Victima no identificada x2, Blanca Bautista, Ivanova Jacome). Sin hecho partido en dos: indices 2 y 3 tienen fechas distintas (1979-12-21 vs 1980-01-03) aunque comparten linea de cita. 0: cita L19 en.txt ('On 5 May 1979...under a nearby bridge'), no en es.txt (sourceLang en correcto), cabecera L19 = 'Serial killings' (documental), sin senales de alarma, victima 'Hortensia Garces Lozada' literal en L19, fecha 5 mayo 1979 literal en L19, ciudad 'Ambato' literal en L19, geocode 'Ambato, Ecuador' -> -1.2422 -78.6288 Ambato, Tungurahua, Ecuador (dist 0.0 km, pais Ecuador correcto), metodo respaldado por MO general L27 ('raping and strangling them with his bare hands') mas ubicacion literal L19 ('under a nearby bridge'); meta.json apunta methodLine=19 que por si sola no dice 'estrangulada', el respaldo real esta en L27 (evidencia del generador imprecisa mas no invalida el dato). 1: cita L19 ('On 14 December 1979...murdered Flor Alba Sanchez'), sourceLang en correcto (no aparece en es.txt), cabecera L19 documental, sin alarma, victima literal L19 y en lista de victimas Colombia L66, fecha 14 dic 1979 literal L19, ciudad 'El Espinal' literal L19, geocode 'El Espinal, Colombia' -> 4.1503 -74.8846 Espinal, Centro, Tolima, Colombia (dist 0.0 km, pais correcto), metodo respaldado solo por MO general L27 (meta methodLine=19 igual de impreciso que en indice 0, no literal en L19). 2: cita L19 ('Also in El Espinal, there were two other murders...21 December 1979 and 3 January 1980'), sourceLang en correcto, cabecera documental, PERO L43 en.txt dice explicitamente 'he only confirmed the murder of two children in El Espinal', que junto con la lista de victimas Colombia (solo Sanchez y Bautista, L66-67) indica que estos 'two other murders' no estan entre los asesinatos confirmados de Lopez en Colombia: contradiccion interna de la fuente -> asesinato no confirmado, no se evaluan los demas campos (esta comprobacion manda sobre las demas). 3: misma cita y misma linea que el indice 2, mismo razonamiento -> asesinato no confirmado (contradice L43). 4: cita L19 ('Sanchez was found 20 days later...Blanca Bautista, both bearing signs of torture'), sourceLang en correcto, cabecera documental, sin alarma; L43 confirma que Bautista es una de las 'two children' confirmadas en Colombia. Victima 'Blanca Bautista' literal en L19 y en lista de victimas Colombia L67. Candidato no da fecha (date null, datePrecision null) y la fuente tampoco da fecha exacta para Bautista: coherente. Ciudad 'El Espinal' por contexto del parrafo L19 (mismo grupo que indice 1), geocode identico a indice 1 (dist 0.0 km, pais Colombia correcto). Metodo 'Estrangulada con las manos desnudas' respaldado literalmente por methodLine=27 MO general ('strangling them with his bare hands'), sin detalle grafico de heridas. 5: cita L19 ('On 10 January 1980...Totoras, a suburb of Ambato...heading for school'), sourceLang en correcto, cabecera documental, sin alarma, victima 'Ivanova Jacome' literal en L19 y en lista de victimas Ecuador L48, fecha 10 enero 1980 literal en L19. Ciudad 'Totoras' literal en L19. Geocode obligatorio (region null) 'Totoras, Ecuador' -> -4.0985 -80.4707 Totoras, Cazaderos, Zapotillo, Loja, Ecuador: display_name no corresponde a la region que la fuente asocia a esta Totoras (suburbio de Ambato, Tungurahua), es una Totoras homonima en otra provincia; distancia a las coordenadas del candidato (-1.3158,-78.5958) = 373.0 km (calculada con formula haversine equivalente a distance.sh, ejecutada via 'node -- -e' porque distance.sh falla con argumentos de latitud/longitud negativos: node interpreta '-1.2422' como opcion de linea de comandos al faltar el separador '--' en el script) -> ciudad homonima, muy por encima de 30 km. Total ok=3/6 (>=3), sin errores de caso -> approved."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "manuel-delgado-villegas",
+  "caseClosed": {
+    "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+    "line": 38
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 22,
+      "victimLine": 22,
+      "yearLine": 22,
+      "cityLine": 22,
+      "methodLine": 22,
+      "geocode": "41.2610 1.8045 Garraf, Barcelona, Catalunya, España"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 24,
+      "victimLine": 24,
+      "yearLine": 24,
+      "cityLine": 24,
+      "methodLine": 24,
+      "geocode": "38.9744 1.4197 Eivissa, Illes Balears, España"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 25,
+      "victimLine": 25,
+      "yearLine": 25,
+      "cityLine": 25,
+      "methodLine": 25,
+      "geocode": "40.1408 -3.4231 Chinchón, Comunidad de Madrid, 28370, España"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 26,
+      "victimLine": 26,
+      "yearLine": 26,
+      "cityLine": 26,
+      "methodLine": 26,
+      "geocode": "41.3826 2.1771 Barcelona, Barcelonès, Barcelona, Catalunya, España"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 27,
+      "victimLine": 27,
+      "yearLine": 27,
+      "cityLine": 27,
+      "methodLine": 27,
+      "geocode": "41.5398 2.4449 Mataró, Maresme, Barcelona, Catalunya, España"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 28,
+      "victimLine": 28,
+      "yearLine": 28,
+      "cityLine": 28,
+      "methodLine": 28,
+      "geocode": "36.6004 -6.2253 El Puerto de Santa María, Bahía de Cádiz, Cádiz, Andalucía, España"
+    },
+    {
+      "index": 6,
+      "file": "pipeline/sources/manuel-delgado-villegas.en.txt",
+      "quoteLine": 29,
+      "victimLine": 29,
+      "yearLine": 29,
+      "cityLine": 29,
+      "methodLine": 29,
+      "geocode": "36.6004 -6.2253 El Puerto de Santa María, Bahía de Cádiz, Cádiz, Andalucía, España"
+    }
+  ]
+}

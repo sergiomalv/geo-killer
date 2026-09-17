@@ -1,0 +1,39 @@
+{
+  "id": "gary-ridgway",
+  "caseClosed": {
+    "file": "pipeline/sources/gary-ridgway.en.txt",
+    "line": 38
+  },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/gary-ridgway.en.txt",
+      "quoteLine": 63,
+      "victimLine": 63,
+      "yearLine": 63,
+      "cityLine": 63,
+      "methodLine": 2,
+      "geocode": "47.3075 -122.2302 Auburn, King County, Washington, United States"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/gary-ridgway.en.txt",
+      "quoteLine": 43,
+      "victimLine": 43,
+      "yearLine": 43,
+      "cityLine": 43,
+      "methodLine": 2,
+      "geocode": "47.6038 -122.3301 Seattle, King County, Washington, United States"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/gary-ridgway.en.txt",
+      "quoteLine": 27,
+      "victimLine": 27,
+      "yearLine": 27,
+      "cityLine": 20,
+      "methodLine": 2,
+      "geocode": "47.6038 -122.3301 Seattle, King County, Washington, United States"
+    }
+  ]
+}

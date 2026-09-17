@@ -1,0 +1,66 @@
+{
+  "id": "pedro-alonso-lopez",
+  "caseClosed": { "file": "pipeline/sources/pedro-alonso-lopez.en.txt", "line": 30 },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 19,
+      "geocode": "-1.2422 -78.6288 Ambato, Tungurahua, Ecuador"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 19,
+      "geocode": "4.1503 -74.8846 Espinal, Centro, Tolima, RAP (Especial) Central, 733520, Colombia"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 27,
+      "geocode": "4.1503 -74.8846 Espinal, Centro, Tolima, RAP (Especial) Central, 733520, Colombia"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 27,
+      "geocode": "4.1503 -74.8846 Espinal, Centro, Tolima, RAP (Especial) Central, 733520, Colombia"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 27,
+      "geocode": "4.1503 -74.8846 Espinal, Centro, Tolima, RAP (Especial) Central, 733520, Colombia"
+    },
+    {
+      "index": 5,
+      "file": "pipeline/sources/pedro-alonso-lopez.en.txt",
+      "quoteLine": 19,
+      "victimLine": 19,
+      "yearLine": 19,
+      "cityLine": 19,
+      "methodLine": 19,
+      "geocode": "-1.3158 -78.5958 Totoras, Ambato, Tungurahua, Ecuador"
+    }
+  ]
+}

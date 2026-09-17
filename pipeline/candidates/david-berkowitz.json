@@ -1,0 +1,79 @@
+{
+  "id": "david-berkowitz",
+  "name": "David Berkowitz",
+  "aliases": ["El hijo de Sam", "El asesino del calibre 44", "Son of Sam", "The .44 Caliber Killer"],
+  "country": "Estados Unidos",
+  "activeYears": "1976-1977",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/David_Berkowitz",
+    "en": "https://en.wikipedia.org/wiki/David_Berkowitz"
+  },
+  "summary": "David Berkowitz, conocido como «El hijo de Sam», es un asesino en serie estadounidense que perpetró cinco asesinatos entre 1976 y 1977 en Nueva York. Fue detenido en agosto de 1977, confesó sus crímenes y fue condenado a seis cadenas perpetuas.",
+  "murders": [
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1976-07-29",
+      "datePrecision": "day",
+      "victim": "Donna Lauria",
+      "method": "Disparada con revólver calibre .44.",
+      "sourceQuote": "The next shooting attributed to Berkowitz occurred in the Pelham Bay neighborhood of the Bronx. At about 1:10 a.m. on July 29, 1976, Donna Lauria (18)",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "Queens",
+      "country": "Estados Unidos",
+      "lat": 40.7135,
+      "lng": -73.8283,
+      "date": "1977-01-30",
+      "datePrecision": "day",
+      "victim": "Christine Freund",
+      "method": "Disparada con revólver calibre .44.",
+      "sourceQuote": "Three gunshots penetrated the car. In a panic, Diel drove away for help. He sustained minor superficial injuries, but Freund was shot twice and died several hours later at the hospital.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1977-04-17",
+      "datePrecision": "day",
+      "victim": "Alexander Esau",
+      "method": "Disparado en la cabeza con revólver calibre .44.",
+      "sourceQuote": "At about 3:00 a.m. on April 17, 1977, Alexander Esau (20), a tow truck operator, and Valentina Suriani (18), a Lehman College student",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1977-04-17",
+      "datePrecision": "day",
+      "victim": "Valentina Suriani",
+      "method": "Disparada en la cabeza con revólver calibre .44.",
+      "sourceQuote": "At about 3:00 a.m. on April 17, 1977, Alexander Esau (20), a tow truck operator, and Valentina Suriani (18), a Lehman College student and an aspiring actress and model",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "Brooklyn",
+      "country": "Estados Unidos",
+      "lat": 40.6526,
+      "lng": -73.9497,
+      "date": "1977-07-31",
+      "datePrecision": "day",
+      "victim": "Stacy Moskowitz",
+      "method": "Disparada en la cabeza con revólver calibre .44.",
+      "sourceQuote": "Early on July 31, 1977, secretary Stacy Moskowitz and clothing salesman Robert Violante (both 20) were sitting",
+      "sourceLang": "en"
+    }
+  ]
+}

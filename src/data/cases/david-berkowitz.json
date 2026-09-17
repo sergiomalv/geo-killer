@@ -1,0 +1,90 @@
+{
+  "id": "david-berkowitz",
+  "name": "David Berkowitz",
+  "aliases": [
+    "El hijo de Sam",
+    "El asesino del calibre 44",
+    "Son of Sam",
+    "The .44 Caliber Killer"
+  ],
+  "country": "Estados Unidos",
+  "activeYears": "1976-1977",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/David_Berkowitz",
+    "en": "https://en.wikipedia.org/wiki/David_Berkowitz"
+  },
+  "summary": "David Berkowitz, conocido como «El hijo de Sam», es un asesino en serie estadounidense que perpetró cinco asesinatos entre 1976 y 1977 en Nueva York. Fue detenido en agosto de 1977, confesó sus crímenes y fue condenado a seis cadenas perpetuas.",
+  "murders": [
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1976-07-29",
+      "datePrecision": "day",
+      "victim": "Donna Lauria",
+      "method": "Disparada con revólver calibre .44.",
+      "sourceQuote": "The next shooting attributed to Berkowitz occurred in the Pelham Bay neighborhood of the Bronx. At about 1:10 a.m. on July 29, 1976, Donna Lauria (18)",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "Queens",
+      "country": "Estados Unidos",
+      "lat": 40.7135,
+      "lng": -73.8283,
+      "date": "1977-01-30",
+      "datePrecision": "day",
+      "victim": "Christine Freund",
+      "method": "Disparada con revólver calibre .44.",
+      "sourceQuote": "Three gunshots penetrated the car. In a panic, Diel drove away for help. He sustained minor superficial injuries, but Freund was shot twice and died several hours later at the hospital.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1977-04-17",
+      "datePrecision": "day",
+      "victim": "Alexander Esau",
+      "method": "Disparado en la cabeza con revólver calibre .44.",
+      "sourceQuote": "At about 3:00 a.m. on April 17, 1977, Alexander Esau (20), a tow truck operator, and Valentina Suriani (18), a Lehman College student",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "El Bronx",
+      "country": "Estados Unidos",
+      "lat": 40.8467,
+      "lng": -73.8786,
+      "date": "1977-04-17",
+      "datePrecision": "day",
+      "victim": "Valentina Suriani",
+      "method": "Disparada en la cabeza con revólver calibre .44.",
+      "sourceQuote": "At about 3:00 a.m. on April 17, 1977, Alexander Esau (20), a tow truck operator, and Valentina Suriani (18), a Lehman College student and an aspiring actress and model",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Nueva York",
+      "region": "Brooklyn",
+      "country": "Estados Unidos",
+      "lat": 40.6526,
+      "lng": -73.9497,
+      "date": "1977-07-31",
+      "datePrecision": "day",
+      "victim": "Stacy Moskowitz",
+      "method": "Disparada en la cabeza con revólver calibre .44.",
+      "sourceQuote": "Early on July 31, 1977, secretary Stacy Moskowitz and clothing salesman Robert Violante (both 20) were sitting",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-sonnet-5",
+    "notes": "Reintento 2, sourceLang=en, 5 asesinatos, citas sin comillas/apóstrofos/backtick/$/\\ (comprobado con un script que busca esos 5 caracteres en cada sourceQuote: ninguno los contiene). General: caseClosed en.txt L2 confirma declaración de culpabilidad y seis cadenas perpetuas concurrentes. Sin señales de 'anulad/revocad/exonerad/absuelt/overturned/exonerated/acquitted/vacated' en es.txt ni en.txt. Nombre 'David Berkowitz' y los 4 alias respaldados (los 2 en español en es.txt L1, los 2 en inglés en en.txt L1). Summary ('cinco asesinatos entre 1976 y 1977 en Nueva York', 'condenado a seis cadenas perpetuas') no contradice la fuente. Sin víctimas repetidas (Lauria, Freund, Esau, Suriani, Moskowitz). Índices 2 y 3 comparten fecha (17/04/1977), ciudad ('Nueva York') y región ('El Bronx'), y su cita cae en la misma línea (en.txt L63), pero nombran víctimas reales distintas (Esau y Suriani) dentro de un mismo tiroteo doble descrito en esa línea: no es 'asesinato duplicado' porque no es un hecho con una única víctima repetida. Campos city/region/country/method/summary/activeYears en español en las 5 entradas (Queens y Brooklyn se dejan igual por no tener forma española distinta) -> sin 'texto no en español'.\n0 (Donna Lauria, El Bronx): cita localizada solo en en.txt L30 (no en es.txt) -> sourceLang correcto. L30 bajo '=== Lauria and Valenti shooting (July 1976) ===', sección documental. Sin señales de asesinato no confirmado (ninguna palabra de la lista de alarma aparece en L30). Víctima 'Donna Lauria' en L30. Fecha 29/07/1976 en L30 (día incluido). Ciudad 'Nueva York' respaldada por frase general en.txt L1 ('a series of shootings in New York City between 1975 and 1977'). Región 'El Bronx' respaldada en la propia L30 ('Pelham Bay neighborhood of the Bronx'). Coordenadas: `geocode.sh \"Nueva York, El Bronx, Estados Unidos\"` -> NOT FOUND; fallback `geocode.sh \"El Bronx, Nueva York, Estados Unidos\"` -> funcionó, 40.8207 -73.9093 (El Batey Borincano Garden, South Bronx, The Bronx, Bronx County, New York, United States); distance.sh vs 40.8467/-73.8786 = 3.9 km (<30 km); país/región del display_name coinciden con 'Estados Unidos'/'El Bronx', sin homonimia. Método 'Disparada con revólver calibre .44.' respaldado por frase general en.txt L1 ('.44 caliber Bulldog revolver'); L30 no menciona cabeza y el candidato tampoco la afirma, consistente; sin detalle gráfico.\n1 (Christine Freund, Queens): cita localizada solo en en.txt L46. Sección '=== Freund and Diel shooting (January 1977) ===', documental. Sin señales de no confirmado. Víctima: apellido 'Freund' en L46 (dentro de la propia cita: 'Freund was shot twice'). Fecha 30/01/1977 en L46. Ciudad 'Nueva York' por frase general en.txt L1. Región 'Queens' respaldada en la propia L46 ('Forest Hills LIRR station in Queens'). Coordenadas: `geocode.sh \"Nueva York, Queens, Estados Unidos\"` -> funcionó a la primera, 40.7508 -73.8590 (La Nueva Ambateñita, Corona, Queens, Queens County, New York, United States); distance.sh vs 40.7135/-73.8283 = 4.9 km (<30 km); país/región coinciden, sin homonimia. Método 'Disparada con revólver calibre .44.' por frase general en.txt L1; L46 no menciona cabeza y el candidato tampoco la afirma.\n2 (Alexander Esau, El Bronx): cita localizada solo en en.txt L63. Sección '=== Esau and Suriani shooting (April) ===', documental. L63 contiene la palabra 'suspected' ('the weapon...was the same as the one which they had suspected in the earlier shootings') pero se refiere a que la policía sospechaba que el arma era la misma en los tiroteos anteriores (vinculación balística), no a que este asesinato esté sin probar; la propia línea añade 'Berkowitz confirmed in 1993 that he was the shooter' -> no aplica 'asesinato no confirmado'. Víctima 'Alexander Esau' en L63. Fecha 17/04/1977 en L63. Ciudad 'Nueva York' por en.txt L1. Región 'El Bronx' en la propia L63 ('Hutchinson River Parkway service road in the Bronx'). Coordenadas: mismo resultado que el índice 0 (fallback 'El Bronx, Nueva York, Estados Unidos' -> 40.8207 -73.9093), distance 3.9 km. Método 'Disparado en la cabeza con revólver calibre .44.': L63 dice explícitamente 'Esau twice, both in the head', y el calibre .44 por en.txt L1; detalle de ubicación del disparo, no de sufrimiento -> no es 'método gráfico'.\n3 (Valentina Suriani, El Bronx): cita (con final distinto: '...and an aspiring actress and model') localizada solo en en.txt L63, misma línea que el índice 2. Mismo análisis de sección/no-confirmado que el índice 2. Víctima 'Valentina Suriani' en L63. Fecha 17/04/1977 en L63. Ciudad y región iguales al índice 2, mismo resultado de geocode (3.9 km). Método 'Disparada en la cabeza...': L63 dice 'both in the head' (incluye a Suriani, que fue disparada una vez en la cabeza) y calibre .44 por en.txt L1.\n4 (Stacy Moskowitz, Brooklyn): cita localizada solo en en.txt L93. Sección '=== Moskowitz and Violante shooting (July) ===', documental. Sin señales de no confirmado. Víctima 'Stacy Moskowitz' en L93 (dentro de la cita). Fecha 31/07/1977 en L93 (dentro de la cita). Ciudad 'Nueva York' por en.txt L1. Región 'Brooklyn': no aparece literalmente en L93 (solo dice 'Bath Beach'), pero sí en la línea asociada a este asesinato, en.txt L92 ('the next and final .44 shooting occurred in Brooklyn'), que se refiere explícitamente a este mismo tiroteo (Moskowitz-Violante, el último de la serie) -> respaldo válido 'en la fuente asociada a ese asesinato'. Coordenadas: `geocode.sh \"Nueva York, Brooklyn, Estados Unidos\"` -> funcionó a la primera, 40.6745 -74.0076 (La Nueva Candy Store, Red Hook, Brooklyn, Kings County, New York, United States); distance.sh vs 40.6526/-73.9497 = 5.5 km (<30 km); país/región coinciden, sin homonimia. Método 'Disparada en la cabeza con revólver calibre .44.': L93 dice explícitamente 'striking both victims in the head', y calibre .44 por en.txt L1; sin detalle gráfico de sufrimiento."
+  }
+}

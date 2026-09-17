@@ -1,0 +1,56 @@
+{
+  "id": "david-berkowitz",
+  "caseClosed": { "file": "pipeline/sources/david-berkowitz.en.txt", "line": 2 },
+  "murders": [
+    {
+      "index": 0,
+      "file": "pipeline/sources/david-berkowitz.en.txt",
+      "quoteLine": 30,
+      "victimLine": 30,
+      "yearLine": 30,
+      "cityLine": 30,
+      "methodLine": 30,
+      "geocode": "40.8467 -73.8786 The Bronx, Bronx County, New York, United States"
+    },
+    {
+      "index": 1,
+      "file": "pipeline/sources/david-berkowitz.en.txt",
+      "quoteLine": 46,
+      "victimLine": 46,
+      "yearLine": 46,
+      "cityLine": 46,
+      "methodLine": 46,
+      "geocode": "40.7135 -73.8283 Queens, Queens County, New York, United States"
+    },
+    {
+      "index": 2,
+      "file": "pipeline/sources/david-berkowitz.en.txt",
+      "quoteLine": 63,
+      "victimLine": 63,
+      "yearLine": 63,
+      "cityLine": 63,
+      "methodLine": 63,
+      "geocode": "40.8467 -73.8786 The Bronx, Bronx County, New York, United States"
+    },
+    {
+      "index": 3,
+      "file": "pipeline/sources/david-berkowitz.en.txt",
+      "quoteLine": 63,
+      "victimLine": 63,
+      "yearLine": 63,
+      "cityLine": 63,
+      "methodLine": 63,
+      "geocode": "40.8467 -73.8786 The Bronx, Bronx County, New York, United States"
+    },
+    {
+      "index": 4,
+      "file": "pipeline/sources/david-berkowitz.en.txt",
+      "quoteLine": 93,
+      "victimLine": 93,
+      "yearLine": 93,
+      "cityLine": 92,
+      "methodLine": 93,
+      "geocode": "40.6526 -73.9497 Brooklyn, Kings County, New York, United States"
+    }
+  ]
+}
