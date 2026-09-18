@@ -86,4 +86,38 @@ describe('applyTranslation', () => {
     const c = applyTranslation(sampleCase, conNull as CaseTranslation)
     expect(c.murders[1].region).toBe('Barrio Dos')
   })
+
+  it('funde alias traducidos que coinciden en una sola cadena', () => {
+    const c = applyTranslation(sampleCase, { ...traduccion, aliases: ['The Ghost', 'The Ghost'] })
+    expect(c.aliases).toEqual(['The Ghost'])
+  })
+
+  it('funde alias que solo difieren en mayúsculas o espacios y conserva la grafía del primero', () => {
+    const c = applyTranslation(sampleCase, { ...traduccion, aliases: ['The Ghost', '  the ghost  '] })
+    expect(c.aliases).toEqual(['The Ghost'])
+  })
+
+  it('conserva alias distintos de verdad, en su orden', () => {
+    const c = applyTranslation(sampleCase, { ...traduccion, aliases: ['The Ghost', 'The Phantom'] })
+    expect(c.aliases).toEqual(['The Ghost', 'The Phantom'])
+  })
+
+  it('caso Berkowitz: cuatro alias que traducen a dos pares repetidos dejan dos alias en orden de aparición', () => {
+    const base = {
+      ...sampleCase,
+      aliases: ['El hijo de Sam', 'El asesino del calibre 44', 'Son of Sam', 'The .44 Caliber Killer'],
+    }
+    const tr = {
+      ...traduccion,
+      aliases: ['Son of Sam', 'The .44 Caliber Killer', 'Son of Sam', 'The .44 Caliber Killer'],
+    }
+    const c = applyTranslation(base, tr as CaseTranslation)
+    expect(c.aliases).toEqual(['Son of Sam', 'The .44 Caliber Killer'])
+  })
+
+  it('si los alias de la traducción se ignoran por longitud distinta, se conservan los del original sin deduplicar', () => {
+    const base = { ...sampleCase, aliases: ['El Fantasma', 'El Fantasma', 'The Ghost'] }
+    const c = applyTranslation(base, { ...traduccion, aliases: ['The Ghost'] })
+    expect(c.aliases).toEqual(['El Fantasma', 'El Fantasma', 'The Ghost'])
+  })
 })
