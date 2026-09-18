@@ -54,6 +54,21 @@ for (const m of verdict.murderVerdicts) {
   seenIndexes.add(m.index)
 }
 
+const expectedCount = Array.isArray(candidate.murders) ? candidate.murders.length : 0
+const missing: number[] = []
+for (let i = 0; i < expectedCount; i++) {
+  if (!seenIndexes.has(i)) missing.push(i)
+}
+const outOfRange = [...seenIndexes].filter((i) => i < 0 || i >= expectedCount)
+if (missing.length > 0 || outOfRange.length > 0) {
+  const detalles = [
+    ...missing.map((i) => `falta ${i}`),
+    ...outOfRange.map((i) => `${i} fuera de rango`),
+  ]
+  console.error(`El veredicto de ${id} no cubre todos los asesinatos (faltan: ${detalles.join(', ')})`)
+  process.exit(1)
+}
+
 if (verdict.verdict !== 'approved') {
   console.error(`El veredicto de ${id} es "${verdict.verdict}", no se promueve`)
   process.exit(1)
