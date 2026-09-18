@@ -7,8 +7,8 @@ import { boundsFor } from './mapBounds'
 import { groupByCoordinates } from './markerGroups'
 import { formatDate } from './ClueList'
 
-const TILES = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+const TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 
 function FitBounds({ murders }: { murders: Murder[] }) {
   const map = useMap()
