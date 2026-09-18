@@ -49,6 +49,7 @@ Fichero nuevo `src/data/tolls.json`: un array con una entrada por asesino.
   "countries": ["US"],
   "activeYears": "1982-1998",
   "nickname": { "es": "el asesino de Green River", "en": "the Green River Killer" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Gary_Ridgway", "en": "https://en.wikipedia.org/wiki/Gary_Ridgway" },
   "confirmedQuote": "Ridgway was convicted of 49 murders...",
   "attributedQuote": "he confessed to 71 killings",
   "sourceLang": "en",
@@ -67,6 +68,8 @@ Fichero nuevo `src/data/tolls.json`: un array con una entrada por asesino.
 - `activeYears`: cadena no vacía, mismo formato que en los casos ("1982-1998").
 - `nickname`: `null`, o un objeto con `es` y `en` **independientemente nullables** (un asesino
   puede tener apodo en inglés y no en español).
+- `wikipedia`: objeto con `es` y `en`, cada uno una URL o `null`. Al menos uno de los dos no es
+  `null`. Es el enlace que muestra la carta al revelar.
 - `confirmedQuote`: cita literal de la fuente, mínimo 10 caracteres. `attributedQuote` es
   obligatoria si y solo si `attributed` no es `null`.
 - `sourceLang`: `'es'` o `'en'`.
