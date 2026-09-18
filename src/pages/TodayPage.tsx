@@ -4,6 +4,8 @@ import { createGame, submitGuess, type GameState } from '../game/engine'
 import { loadProgress, saveProgress } from '../game/storage'
 import { GameBoard } from '../components/GameBoard'
 import { LanguageToggle } from '../components/LanguageToggle'
+import { ModeTabs } from '../components/ModeTabs'
+import { tolls } from '../data/tolls'
 import { useT } from '../i18n'
 
 interface Props {
@@ -38,9 +40,9 @@ export function TodayPage({ day, caseData, killers }: Props) {
     <main className="page">
       <header className="page-header">
         <h1>Geo Killer</h1>
+        <ModeTabs active="daily" duelEnabled={tolls.ids.length >= 2} />
         <nav className="page-nav">
           <span className="page-day">{t('daily.caseNumber', { n: day + 1 })}</span>
-          <a href="#infinito">{t('daily.infiniteLink')}</a>
           <LanguageToggle />
         </nav>
       </header>

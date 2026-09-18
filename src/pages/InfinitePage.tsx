@@ -5,6 +5,8 @@ import { infiniteGuess, nextInfiniteCase, startInfinite, type InfiniteState } fr
 import { loadInfinite, saveInfinite } from '../game/storage'
 import { GameBoard } from '../components/GameBoard'
 import { LanguageToggle } from '../components/LanguageToggle'
+import { ModeTabs } from '../components/ModeTabs'
+import { tolls } from '../data/tolls'
 import { useLang, useT } from '../i18n'
 
 interface Props {
@@ -60,9 +62,9 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
     <main className="page">
       <header className="page-header">
         <h1>Geo Killer</h1>
+        <ModeTabs active="infinite" duelEnabled={tolls.ids.length >= 2} />
         <nav className="page-nav">
           <span className="page-day">{t('infinite.streak', { n: state.streak })}</span>
-          <a href="#">{t('infinite.dailyLink')}</a>
           <LanguageToggle />
         </nav>
       </header>

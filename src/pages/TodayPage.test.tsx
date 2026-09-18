@@ -76,7 +76,7 @@ describe('TodayPage', () => {
 
   it('enlaza al modo infinito', () => {
     renderPage()
-    expect(screen.getByRole('link', { name: 'Modo infinito' })).toHaveAttribute('href', '#infinito')
+    expect(screen.getByRole('link', { name: 'Infinito' })).toHaveAttribute('href', '#infinito')
   })
 
   it('cambiar de día reinicia la partida aunque el componente no se desmonte', () => {
