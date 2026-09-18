@@ -71,7 +71,7 @@ src/test/setup.ts                   jest-dom para Vitest
 - Create: `package.json`, `vite.config.ts`, `tsconfig*.json`, `index.html`, `src/main.tsx`, `src/App.tsx` (generados por create-vite)
 - Modify: `.gitignore`, `tsconfig.app.json`
 
-- [ ] **Step 1: Generar la plantilla en un directorio temporal y moverla a la raíz**
+- [x] **Step 1: Generar la plantilla en un directorio temporal y moverla a la raíz**
 
 ```bash
 cd /Users/sergio/Desktop/projects/geo-killer
@@ -82,7 +82,7 @@ rm -rf .vite-tmp
 
 Expected: existen `package.json`, `vite.config.ts`, `src/main.tsx`, `index.html`, `.gitignore`.
 
-- [ ] **Step 2: Instalar dependencias**
+- [x] **Step 2: Instalar dependencias**
 
 ```bash
 npm install
@@ -92,7 +92,7 @@ npm install -D vitest jsdom @testing-library/react @testing-library/jest-dom @ty
 
 Expected: `package.json` lista `leaflet`, `react-leaflet`, `zod` en dependencies y `vitest`, `jsdom`, `@testing-library/react`, `@testing-library/jest-dom`, `@types/leaflet` en devDependencies.
 
-- [ ] **Step 3: Activar JSON modules en TypeScript**
+- [x] **Step 3: Activar JSON modules en TypeScript**
 
 En `tsconfig.app.json`, dentro de `compilerOptions`, añadir tras la línea `"moduleResolution": "bundler",`:
 
@@ -100,13 +100,13 @@ En `tsconfig.app.json`, dentro de `compilerOptions`, añadir tras la línea `"mo
     "resolveJsonModule": true,
 ```
 
-- [ ] **Step 4: Añadir a `.gitignore`**
+- [x] **Step 4: Añadir a `.gitignore`**
 
 ```
 pipeline/sources/
 ```
 
-- [ ] **Step 5: Limpiar la plantilla**
+- [x] **Step 5: Limpiar la plantilla**
 
 Borrar `src/App.css`, `src/index.css`, `src/assets/react.svg`, `public/vite.svg`. Reemplazar `src/App.tsx`:
 
@@ -155,7 +155,7 @@ body {
 
 En `index.html` cambiar el `<title>` a `Geo Killer` y `lang="en"` a `lang="es"`.
 
-- [ ] **Step 6: Comprobar que arranca y compila**
+- [x] **Step 6: Comprobar que arranca y compila**
 
 ```bash
 npm run build
@@ -163,7 +163,7 @@ npm run build
 
 Expected: termina con `✓ built in ...` y crea `dist/`.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add -A
@@ -180,7 +180,7 @@ git commit -m "chore: scaffold Vite + React + TypeScript"
 - Modify: `vite.config.ts`, `package.json`
 - Create: `src/test/setup.ts`, `src/test/smoke.test.ts`
 
-- [ ] **Step 1: Configurar Vitest en `vite.config.ts`**
+- [x] **Step 1: Configurar Vitest en `vite.config.ts`**
 
 ```ts
 /// <reference types="vitest/config" />
@@ -199,13 +199,13 @@ export default defineConfig({
 })
 ```
 
-- [ ] **Step 2: Crear `src/test/setup.ts`**
+- [x] **Step 2: Crear `src/test/setup.ts`**
 
 ```ts
 import '@testing-library/jest-dom/vitest'
 ```
 
-- [ ] **Step 3: Añadir scripts a `package.json`**
+- [x] **Step 3: Añadir scripts a `package.json`**
 
 Dentro de `"scripts"`:
 
@@ -215,7 +215,7 @@ Dentro de `"scripts"`:
     "validate:data": "node scripts/validate-data.ts"
 ```
 
-- [ ] **Step 4: Escribir un test de humo `src/test/smoke.test.ts`**
+- [x] **Step 4: Escribir un test de humo `src/test/smoke.test.ts`**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -229,7 +229,7 @@ describe('vitest', () => {
 })
 ```
 
-- [ ] **Step 5: Ejecutar**
+- [x] **Step 5: Ejecutar**
 
 ```bash
 npm test
@@ -237,7 +237,7 @@ npm test
 
 Expected: `1 passed`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add vite.config.ts package.json src/test
@@ -253,7 +253,7 @@ git commit -m "chore: configurar Vitest con jsdom y Testing Library"
 **Files:**
 - Create: `src/data/schema.ts`, `src/data/schema.test.ts`, `src/game/__fixtures__/sample-case.ts`
 
-- [ ] **Step 1: Crear el fixture `src/game/__fixtures__/sample-case.ts`**
+- [x] **Step 1: Crear el fixture `src/game/__fixtures__/sample-case.ts`**
 
 Es un caso de prueba para tests. No se juega ni se promueve; las coordenadas y fechas son plausibles pero no se usan como contenido real.
 
@@ -292,7 +292,7 @@ export const sampleCase: Case = {
 }
 ```
 
-- [ ] **Step 2: Escribir los tests `src/data/schema.test.ts`**
+- [x] **Step 2: Escribir los tests `src/data/schema.test.ts`**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -365,7 +365,7 @@ describe('scheduleSchema', () => {
 })
 ```
 
-- [ ] **Step 3: Ejecutar y ver fallar**
+- [x] **Step 3: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/data/schema.test.ts
@@ -373,7 +373,7 @@ npm test -- src/data/schema.test.ts
 
 Expected: FAIL, `Cannot find module './schema'`.
 
-- [ ] **Step 4: Implementar `src/data/schema.ts`**
+- [x] **Step 4: Implementar `src/data/schema.ts`**
 
 ```ts
 import { z } from 'zod'
@@ -447,7 +447,7 @@ export type KillerEntry = z.infer<typeof killerEntrySchema>
 export type Schedule = z.infer<typeof scheduleSchema>
 ```
 
-- [ ] **Step 5: Ejecutar y ver pasar**
+- [x] **Step 5: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/data/schema.test.ts
@@ -455,7 +455,7 @@ npm test -- src/data/schema.test.ts
 
 Expected: `12 passed`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/data/schema.ts src/data/schema.test.ts src/game/__fixtures__
@@ -471,7 +471,7 @@ git commit -m "feat(data): esquema Zod de casos, killers y schedule"
 **Files:**
 - Create: `scripts/validate-data.ts`, `src/data/killers.json`, `src/data/schedule.json`, `src/data/cases/.gitkeep`
 
-- [ ] **Step 1: Crear datos mínimos para que el script tenga algo que validar**
+- [x] **Step 1: Crear datos mínimos para que el script tenga algo que validar**
 
 `src/data/killers.json`:
 
@@ -490,7 +490,7 @@ git commit -m "feat(data): esquema Zod de casos, killers y schedule"
 
 Nota: `order` vacío viola el esquema a propósito; el script debe fallar hasta que la Task 15 lo rellene. Crear también `src/data/cases/.gitkeep` vacío.
 
-- [ ] **Step 2: Escribir `scripts/validate-data.ts`**
+- [x] **Step 2: Escribir `scripts/validate-data.ts`**
 
 ```ts
 import { readdirSync, readFileSync } from 'node:fs'
@@ -544,7 +544,7 @@ if (errors.length > 0) {
 console.log(`OK: ${caseIds.size} casos, ${killerIds.size} killers, ${scheduleResult.success ? scheduleResult.data.order.length : 0} días programados`)
 ```
 
-- [ ] **Step 3: Ejecutar y comprobar que detecta el schedule vacío**
+- [x] **Step 3: Ejecutar y comprobar que detecta el schedule vacío**
 
 ```bash
 npm run validate:data
@@ -552,11 +552,11 @@ npm run validate:data
 
 Expected: exit 1 con un mensaje que menciona `schedule.json` y `order`.
 
-- [ ] **Step 4: Comprobar que pasa con datos válidos temporales**
+- [x] **Step 4: Comprobar que pasa con datos válidos temporales**
 
 Poner `"order": ["caso-prueba"]` en `schedule.json`, añadir `{ "id": "caso-prueba", "name": "Asesino de Prueba", "aliases": [] }` a `killers.json` y copiar el fixture como JSON en `src/data/cases/caso-prueba.json` (el objeto `sampleCase` serializado). Ejecutar `npm run validate:data`. Expected: `OK: 1 casos, 1 killers, 1 días programados`. Después revertir los tres ficheros al estado del Step 1 y borrar `caso-prueba.json`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/validate-data.ts src/data/killers.json src/data/schedule.json src/data/cases/.gitkeep
@@ -572,7 +572,7 @@ git commit -m "feat(data): script validate:data con esquema y coherencia entre f
 **Files:**
 - Create: `src/game/matching.ts`, `src/game/matching.test.ts`
 
-- [ ] **Step 1: Escribir los tests**
+- [x] **Step 1: Escribir los tests**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -622,7 +622,7 @@ describe('searchKillers', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/game/matching.test.ts
@@ -630,7 +630,7 @@ npm test -- src/game/matching.test.ts
 
 Expected: FAIL, `Cannot find module './matching'`.
 
-- [ ] **Step 3: Implementar `src/game/matching.ts`**
+- [x] **Step 3: Implementar `src/game/matching.ts`**
 
 ```ts
 import type { KillerEntry } from '../data/schema'
@@ -667,7 +667,7 @@ export function searchKillers(query: string, killers: KillerEntry[], limit = 8):
 }
 ```
 
-- [ ] **Step 4: Ejecutar y ver pasar**
+- [x] **Step 4: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/game/matching.test.ts
@@ -675,7 +675,7 @@ npm test -- src/game/matching.test.ts
 
 Expected: `9 passed`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/game/matching.ts src/game/matching.test.ts
@@ -691,7 +691,7 @@ git commit -m "feat(game): normalización y búsqueda de nombres y alias"
 **Files:**
 - Create: `src/game/engine.ts`, `src/game/engine.test.ts`
 
-- [ ] **Step 1: Escribir los tests**
+- [x] **Step 1: Escribir los tests**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -765,7 +765,7 @@ describe('clueLevel', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/game/engine.test.ts
@@ -773,7 +773,7 @@ npm test -- src/game/engine.test.ts
 
 Expected: FAIL, `Cannot find module './engine'`.
 
-- [ ] **Step 3: Implementar `src/game/engine.ts`**
+- [x] **Step 3: Implementar `src/game/engine.ts`**
 
 ```ts
 export const MAX_ATTEMPTS = 4
@@ -807,7 +807,7 @@ export function clueLevel(state: GameState): ClueLevel {
 }
 ```
 
-- [ ] **Step 4: Ejecutar y ver pasar**
+- [x] **Step 4: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/game/engine.test.ts
@@ -815,7 +815,7 @@ npm test -- src/game/engine.test.ts
 
 Expected: `8 passed`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/game/engine.ts src/game/engine.test.ts
@@ -831,7 +831,7 @@ git commit -m "feat(game): motor de partida con intentos y nivel de pista"
 **Files:**
 - Create: `src/game/schedule.ts`, `src/game/schedule.test.ts`
 
-- [ ] **Step 1: Escribir los tests**
+- [x] **Step 1: Escribir los tests**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -866,7 +866,7 @@ describe('caseIdForDay', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/game/schedule.test.ts
@@ -874,7 +874,7 @@ npm test -- src/game/schedule.test.ts
 
 Expected: FAIL, `Cannot find module './schedule'`.
 
-- [ ] **Step 3: Implementar `src/game/schedule.ts`**
+- [x] **Step 3: Implementar `src/game/schedule.ts`**
 
 ```ts
 const MS_PER_DAY = 86_400_000
@@ -892,7 +892,7 @@ export function caseIdForDay(day: number, order: string[]): string {
 }
 ```
 
-- [ ] **Step 4: Ejecutar y ver pasar**
+- [x] **Step 4: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/game/schedule.test.ts
@@ -900,7 +900,7 @@ npm test -- src/game/schedule.test.ts
 
 Expected: `6 passed`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/game/schedule.ts src/game/schedule.test.ts
@@ -916,7 +916,7 @@ git commit -m "feat(game): número de día y caso del día"
 **Files:**
 - Create: `src/game/storage.ts`, `src/game/storage.test.ts`
 
-- [ ] **Step 1: Escribir los tests**
+- [x] **Step 1: Escribir los tests**
 
 ```ts
 import { beforeEach, describe, expect, it } from 'vitest'
@@ -961,7 +961,7 @@ describe('storage', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/game/storage.test.ts
@@ -969,7 +969,7 @@ npm test -- src/game/storage.test.ts
 
 Expected: FAIL, `Cannot find module './storage'`.
 
-- [ ] **Step 3: Implementar `src/game/storage.ts`**
+- [x] **Step 3: Implementar `src/game/storage.ts`**
 
 ```ts
 import { z } from 'zod'
@@ -1010,7 +1010,7 @@ export function saveProgress(day: number, state: GameState, storage: Storage = l
 }
 ```
 
-- [ ] **Step 4: Ejecutar y ver pasar**
+- [x] **Step 4: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/game/storage.test.ts
@@ -1018,7 +1018,7 @@ npm test -- src/game/storage.test.ts
 
 Expected: `5 passed`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/game/storage.ts src/game/storage.test.ts
@@ -1034,7 +1034,7 @@ git commit -m "feat(game): progreso de la partida en localStorage"
 **Files:**
 - Create: `src/data/cases.ts`
 
-- [ ] **Step 1: Implementar `src/data/cases.ts`**
+- [x] **Step 1: Implementar `src/data/cases.ts`**
 
 Usa `import.meta.glob` sin `eager` para que cada caso sea un chunk separado y solo se descargue el del día.
 
@@ -1056,7 +1056,7 @@ export function availableCaseIds(): string[] {
 }
 ```
 
-- [ ] **Step 2: Comprobar que compila**
+- [x] **Step 2: Comprobar que compila**
 
 ```bash
 npx tsc -p tsconfig.app.json --noEmit
@@ -1064,7 +1064,7 @@ npx tsc -p tsconfig.app.json --noEmit
 
 Expected: sin errores.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/data/cases.ts
@@ -1080,7 +1080,7 @@ git commit -m "feat(data): carga perezosa de casos por id"
 **Files:**
 - Create: `pipeline/fetch-wiki.sh`, `pipeline/geocode.sh`, `pipeline/distance.sh`, `pipeline/promote.ts`, `pipeline/candidates/.gitkeep`, `pipeline/verdicts/.gitkeep`, `pipeline/rejected/.gitkeep`
 
-- [ ] **Step 1: Crear `pipeline/fetch-wiki.sh`**
+- [x] **Step 1: Crear `pipeline/fetch-wiki.sh`**
 
 Descarga el texto plano de un artículo mediante la API de MediaWiki y lo guarda en `pipeline/sources/<slug>.<lang>.txt`. Falla con código 2 si la página no existe.
 
@@ -1110,7 +1110,7 @@ curl -sS -G "https://${lang}.wikipedia.org/w/api.php" \
 echo "$out ($(wc -c < "$out") bytes)"
 ```
 
-- [ ] **Step 2: Crear `pipeline/geocode.sh`**
+- [x] **Step 2: Crear `pipeline/geocode.sh`**
 
 ```bash
 #!/usr/bin/env bash
@@ -1131,7 +1131,7 @@ curl -sS -G "https://nominatim.openstreetmap.org/search" \
   });'
 ```
 
-- [ ] **Step 3: Crear `pipeline/distance.sh`**
+- [x] **Step 3: Crear `pipeline/distance.sh`**
 
 ```bash
 #!/usr/bin/env bash
@@ -1144,7 +1144,7 @@ node -e '
   console.log((2 * 6371 * Math.asin(Math.sqrt(h))).toFixed(1));' "$@"
 ```
 
-- [ ] **Step 4: Crear `pipeline/promote.ts`**
+- [x] **Step 4: Crear `pipeline/promote.ts`**
 
 Toma el candidato y su veredicto, elimina los asesinatos marcados `ok: false`, añade el bloque `validation` y escribe en `src/data/cases/`. Falla si el veredicto no es `approved` o si quedan menos de 3 asesinatos.
 
@@ -1192,7 +1192,7 @@ writeFileSync(`src/data/cases/${id}.json`, JSON.stringify(parsed.data, null, 2) 
 console.log(`Promovido src/data/cases/${id}.json con ${murders.length} asesinatos`)
 ```
 
-- [ ] **Step 5: Dar permisos y probar los scripts de red con un artículo conocido**
+- [x] **Step 5: Dar permisos y probar los scripts de red con un artículo conocido**
 
 ```bash
 chmod +x pipeline/*.sh
@@ -1206,7 +1206,7 @@ pipeline/distance.sh 51.5170 -0.0620 51.5074 -0.1278
 
 Expected: el fetch imprime la ruta y un tamaño mayor de 20000 bytes; el grep imprime un número mayor que 0; geocode imprime coordenadas cercanas a `51.51 -0.06`; distance imprime aproximadamente `4.7`.
 
-- [ ] **Step 6: Comprobar que un título inexistente falla**
+- [x] **Step 6: Comprobar que un título inexistente falla**
 
 ```bash
 pipeline/fetch-wiki.sh es Pagina_Que_No_Existe_XYZ prueba; echo "exit=$?"
@@ -1215,7 +1215,7 @@ rm -f pipeline/sources/prueba.es.txt
 
 Expected: `MISSING: ...` y `exit=2`.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add pipeline
@@ -1231,7 +1231,7 @@ git commit -m "feat(pipeline): scripts de descarga de Wikipedia, geocodificació
 **Files:**
 - Create: `.claude/agents/case-generator.md`
 
-- [ ] **Step 1: Crear `.claude/agents/case-generator.md`**
+- [x] **Step 1: Crear `.claude/agents/case-generator.md`**
 
 ````markdown
 ---
@@ -1312,7 +1312,7 @@ Si recibes un informe de errores, corrige exactamente los puntos señalados y el
 No expliques tu trabajo. No escribas nada fuera de `pipeline/candidates/`. No modifiques ningún otro fichero.
 ````
 
-- [ ] **Step 2: Comprobar que Claude Code lo reconoce**
+- [x] **Step 2: Comprobar que Claude Code lo reconoce**
 
 Ejecutar en la sesión principal: `/agents` y comprobar que aparece `case-generator` con modelo haiku. Alternativa sin UI: comprobar que el frontmatter parsea con
 
@@ -1322,7 +1322,7 @@ head -8 .claude/agents/case-generator.md
 
 Expected: las líneas `name: case-generator`, `model: haiku`.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add .claude/agents/case-generator.md
@@ -1338,7 +1338,7 @@ git commit -m "feat(pipeline): subagente case-generator (Haiku)"
 **Files:**
 - Create: `.claude/agents/case-validator.md`
 
-- [ ] **Step 1: Crear `.claude/agents/case-validator.md`**
+- [x] **Step 1: Crear `.claude/agents/case-validator.md`**
 
 ````markdown
 ---
@@ -1397,7 +1397,7 @@ El mensaje contiene el `id` del candidato. El candidato está en `pipeline/candi
 - Los textos en español e inglés pueden discrepar; si discrepan en un dato, marca `ok: false` y explícalo en `errors`.
 ````
 
-- [ ] **Step 2: Commit**
+- [x] **Step 2: Commit**
 
 ```bash
 git add .claude/agents/case-validator.md
@@ -1413,9 +1413,9 @@ git commit -m "feat(pipeline): subagente case-validator (Sonnet)"
 **Files:**
 - Modify: `.claude/agents/case-generator.md`, `.claude/agents/case-validator.md`
 
-- [ ] **Step 1: Leer ambos agentes, el spec (sección 5) y los scripts de `pipeline/`**
+- [x] **Step 1: Leer ambos agentes, el spec (sección 5) y los scripts de `pipeline/`**
 
-- [ ] **Step 2: Buscar huecos por los que un dato inventado pasaría la validación**
+- [x] **Step 2: Buscar huecos por los que un dato inventado pasaría la validación**
 
 Preguntas mínimas a responder por escrito antes de tocar nada:
 - ¿Puede una `sourceQuote` literal respaldar un asesinato cuyo `victim`, `date` o `city` no aparecen en el mismo contexto? ¿Exige el validador proximidad entre cita y datos?
@@ -1425,11 +1425,11 @@ Preguntas mínimas a responder por escrito antes de tocar nada:
 - ¿Detecta el validador un `method` inventado pero verosímil?
 - ¿Detecta el validador coordenadas de una ciudad homónima en otro país?
 
-- [ ] **Step 3: Endurecer los prompts**
+- [x] **Step 3: Endurecer los prompts**
 
 Añadir a cada agente las reglas o comprobaciones que cierren los huecos encontrados. Como mínimo, el validador debe comprobar que no hay dos asesinatos con la misma víctima nombrada y que `sourceLang` coincide con el fichero donde la cita existe. Mantener el formato de veredicto sin cambios para no romper `promote.ts`.
 
-- [ ] **Step 4: Ejecutar una prueba real con un caso**
+- [x] **Step 4: Ejecutar una prueba real con un caso**
 
 Desde la sesión principal, despachar `case-generator` (Agent tool, `subagent_type: "case-generator"`) con:
 
@@ -1442,7 +1442,7 @@ wiki.en: Jack_the_Ripper
 
 Expected: `REJECTED jack-el-destripador caso abierto` (el autor nunca fue identificado). Es la prueba de que la regla de caso cerrado funciona. Borrar `pipeline/sources/jack-el-destripador.*` si quedaron.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add .claude/agents
@@ -1459,7 +1459,7 @@ git commit -m "feat(pipeline): endurecer reglas antialucinación tras revisión 
 - Create: `pipeline/check-killers.ts`
 - Modify: `src/data/killers.json`
 
-- [ ] **Step 1: Escribir `pipeline/check-killers.ts`**
+- [x] **Step 1: Escribir `pipeline/check-killers.ts`**
 
 Comprueba, para cada entrada, que el artículo de Wikipedia existe (en español o inglés según `wiki`) y que cada alias aparece en alguno de los textos. Es una comprobación determinista, sin modelo.
 
@@ -1515,7 +1515,7 @@ if (failures.length > 0) {
 console.log(`OK: ${entries.length} entradas verificadas`)
 ```
 
-- [ ] **Step 2: Generar `pipeline/killers-source.json`**
+- [x] **Step 2: Generar `pipeline/killers-source.json`**
 
 Escribir a mano (el modelo ejecutor lo redacta) una lista de 50 asesinos seriales muy conocidos, ya condenados, fallecidos o identificados oficialmente, de varios países (incluir al menos 10 de España o Latinoamérica). Cada entrada:
 
@@ -1525,7 +1525,7 @@ Escribir a mano (el modelo ejecutor lo redacta) una lista de 50 asesinos seriale
 
 Reglas: `id` es el nombre en minúsculas con guiones y sin acentos; `aliases` solo si el apodo es conocido, puede ser lista vacía; los títulos de `wiki` son los de la URL del artículo, con guiones bajos. Incluir obligatoriamente los ocho ids de la lista semilla de la Task 15.
 
-- [ ] **Step 3: Ejecutar la comprobación y corregir hasta que pase**
+- [x] **Step 3: Ejecutar la comprobación y corregir hasta que pase**
 
 ```bash
 node pipeline/check-killers.ts
@@ -1533,7 +1533,7 @@ node pipeline/check-killers.ts
 
 Expected al final: `OK: 50 entradas verificadas`. Cada fallo se resuelve corrigiendo el título, quitando el alias no respaldado o quitando la entrada.
 
-- [ ] **Step 4: Generar `src/data/killers.json` sin el campo `wiki`**
+- [x] **Step 4: Generar `src/data/killers.json` sin el campo `wiki`**
 
 ```bash
 node -e '
@@ -1542,7 +1542,7 @@ node -e '
   require("fs").writeFileSync("src/data/killers.json", JSON.stringify(out, null, 2) + "\n");'
 ```
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add pipeline/check-killers.ts pipeline/killers-source.json src/data/killers.json
@@ -1559,7 +1559,7 @@ git commit -m "feat(data): lista de autocompletado con 50 asesinos verificados"
 - Create: `pipeline/seed-cases.json`, `src/data/cases/*.json`, `pipeline/candidates/*.json`, `pipeline/verdicts/*.json`
 - Modify: `src/data/schedule.json`
 
-- [ ] **Step 1: Crear `pipeline/seed-cases.json`**
+- [x] **Step 1: Crear `pipeline/seed-cases.json`**
 
 ```json
 [
@@ -1576,7 +1576,7 @@ git commit -m "feat(data): lista de autocompletado con 50 asesinos verificados"
 
 Si algún título no existe (el fetch devuelve `MISSING`), buscar el título correcto en Wikipedia y corregirlo antes de continuar.
 
-- [ ] **Step 2: Ejecutar el ciclo por cada entrada, en orden**
+- [x] **Step 2: Ejecutar el ciclo por cada entrada, en orden**
 
 Para cada entrada de la semilla, desde la sesión principal:
 
@@ -1592,15 +1592,15 @@ Para cada entrada de la semilla, desde la sesión principal:
 4. Si `VERDICT ... rejected`: volver a despachar `case-generator` con el mismo prompt más `## Errores del intento anterior` y el contenido de `pipeline/verdicts/<id>.json`. Máximo 2 reintentos. Si sigue rechazado, copiar el último veredicto a `pipeline/rejected/<id>.json` y pasar al siguiente.
 5. Si `approved`: `node pipeline/promote.ts <id>`.
 
-- [ ] **Step 3: Revisión humana rápida**
+- [x] **Step 3: Revisión humana rápida**
 
 Imprimir una tabla con id, veredicto, número de asesinatos promovidos y `notes` de cada veredicto. Abrir dos casos promovidos al azar y leer sus `murders` contrastando dos citas con el texto fuente.
 
-- [ ] **Step 4: Rellenar `schedule.json`**
+- [x] **Step 4: Rellenar `schedule.json`**
 
 `order` con los ids promovidos, en el orden de la semilla. `launchDate` se mantiene en `2026-10-01`.
 
-- [ ] **Step 5: Validar**
+- [x] **Step 5: Validar**
 
 ```bash
 npm run validate:data
@@ -1608,7 +1608,7 @@ npm run validate:data
 
 Expected: `OK: N casos, 50 killers, N días programados` con N ≥ 5. Si N < 5, añadir entradas a la semilla (también a `killers-source.json` y `killers.json`) y repetir el ciclo hasta llegar a 5-10.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add pipeline src/data
@@ -1625,7 +1625,7 @@ git commit -m "feat(data): primeros casos verificados y calendario del prototipo
 - Create: `src/components/AttemptsBar.tsx`, `src/components/ClueList.tsx`, `src/components/ClueList.test.tsx`
 - Modify: `src/styles.css`
 
-- [ ] **Step 1: Escribir el test de ClueList**
+- [x] **Step 1: Escribir el test de ClueList**
 
 ```tsx
 import { render, screen } from '@testing-library/react'
@@ -1667,7 +1667,7 @@ describe('ClueList', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/components/ClueList.test.tsx
@@ -1675,7 +1675,7 @@ npm test -- src/components/ClueList.test.tsx
 
 Expected: FAIL, `Cannot find module './ClueList'`.
 
-- [ ] **Step 3: Implementar `src/components/ClueList.tsx`**
+- [x] **Step 3: Implementar `src/components/ClueList.tsx`**
 
 ```tsx
 import type { Murder } from '../data/schema'
@@ -1713,7 +1713,7 @@ export function ClueList({ murders, level }: Props) {
 }
 ```
 
-- [ ] **Step 4: Implementar `src/components/AttemptsBar.tsx`**
+- [x] **Step 4: Implementar `src/components/AttemptsBar.tsx`**
 
 ```tsx
 import { MAX_ATTEMPTS } from '../game/engine'
@@ -1739,7 +1739,7 @@ export function AttemptsBar({ guesses, status }: Props) {
 }
 ```
 
-- [ ] **Step 5: Añadir estilos a `src/styles.css`**
+- [x] **Step 5: Añadir estilos a `src/styles.css`**
 
 ```css
 .attempts { display: flex; gap: 8px; }
@@ -1756,7 +1756,7 @@ export function AttemptsBar({ guesses, status }: Props) {
 .clue-method, .clue-muted { color: var(--muted); }
 ```
 
-- [ ] **Step 6: Ejecutar y ver pasar**
+- [x] **Step 6: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/components/ClueList.test.tsx
@@ -1764,7 +1764,7 @@ npm test -- src/components/ClueList.test.tsx
 
 Expected: `5 passed`.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add src/components/AttemptsBar.tsx src/components/ClueList.tsx src/components/ClueList.test.tsx src/styles.css
@@ -1781,7 +1781,7 @@ git commit -m "feat(ui): barra de intentos y lista de pistas"
 - Create: `src/components/GuessInput.tsx`, `src/components/GuessInput.test.tsx`
 - Modify: `src/styles.css`
 
-- [ ] **Step 1: Escribir los tests**
+- [x] **Step 1: Escribir los tests**
 
 ```tsx
 import { fireEvent, render, screen } from '@testing-library/react'
@@ -1845,7 +1845,7 @@ describe('GuessInput', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/components/GuessInput.test.tsx
@@ -1853,7 +1853,7 @@ npm test -- src/components/GuessInput.test.tsx
 
 Expected: FAIL, `Cannot find module './GuessInput'`.
 
-- [ ] **Step 3: Implementar `src/components/GuessInput.tsx`**
+- [x] **Step 3: Implementar `src/components/GuessInput.tsx`**
 
 ```tsx
 import { useState, type FormEvent } from 'react'
@@ -1910,7 +1910,7 @@ export function GuessInput({ killers, disabled, onGuess }: Props) {
 }
 ```
 
-- [ ] **Step 4: Añadir estilos a `src/styles.css`**
+- [x] **Step 4: Añadir estilos a `src/styles.css`**
 
 ```css
 .guess { position: relative; }
@@ -1922,7 +1922,7 @@ export function GuessInput({ killers, disabled, onGuess }: Props) {
 .guess-alias { color: var(--muted); font-size: 0.85rem; }
 ```
 
-- [ ] **Step 5: Ejecutar y ver pasar**
+- [x] **Step 5: Ejecutar y ver pasar**
 
 ```bash
 npm test -- src/components/GuessInput.test.tsx
@@ -1930,7 +1930,7 @@ npm test -- src/components/GuessInput.test.tsx
 
 Expected: `6 passed`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/components/GuessInput.tsx src/components/GuessInput.test.tsx src/styles.css
@@ -1947,7 +1947,7 @@ git commit -m "feat(ui): buscador con autocompletado por nombre y alias"
 - Create: `src/components/CaseMap.tsx`, `src/components/mapBounds.ts`, `src/components/mapBounds.test.ts`
 - Modify: `src/styles.css`
 
-- [ ] **Step 1: Escribir el test del cálculo de encuadre**
+- [x] **Step 1: Escribir el test del cálculo de encuadre**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -1969,7 +1969,7 @@ describe('boundsFor', () => {
 })
 ```
 
-- [ ] **Step 2: Ejecutar y ver fallar**
+- [x] **Step 2: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/components/mapBounds.test.ts
@@ -1977,7 +1977,7 @@ npm test -- src/components/mapBounds.test.ts
 
 Expected: FAIL, `Cannot find module './mapBounds'`.
 
-- [ ] **Step 3: Implementar `src/components/mapBounds.ts`**
+- [x] **Step 3: Implementar `src/components/mapBounds.ts`**
 
 ```ts
 export type LatLng = { lat: number; lng: number }
@@ -1995,7 +1995,7 @@ export function boundsFor(points: LatLng[]): Bounds {
 }
 ```
 
-- [ ] **Step 4: Implementar `src/components/CaseMap.tsx`**
+- [x] **Step 4: Implementar `src/components/CaseMap.tsx`**
 
 ```tsx
 import { useEffect } from 'react'
@@ -2046,7 +2046,7 @@ export function CaseMap({ murders, level }: Props) {
 }
 ```
 
-- [ ] **Step 5: Añadir estilos a `src/styles.css`**
+- [x] **Step 5: Añadir estilos a `src/styles.css`**
 
 ```css
 .case-map { width: 100%; height: 420px; border: 1px solid var(--line); background: #000; }
@@ -2054,7 +2054,7 @@ export function CaseMap({ murders, level }: Props) {
 .marker-tip::before { display: none; }
 ```
 
-- [ ] **Step 6: Ejecutar tests y comprobar tipos**
+- [x] **Step 6: Ejecutar tests y comprobar tipos**
 
 ```bash
 npm test -- src/components/mapBounds.test.ts
@@ -2063,7 +2063,7 @@ npx tsc -p tsconfig.app.json --noEmit
 
 Expected: `2 passed` y sin errores de tipos.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add src/components/CaseMap.tsx src/components/mapBounds.ts src/components/mapBounds.test.ts src/styles.css
@@ -2080,7 +2080,7 @@ git commit -m "feat(ui): mapa Leaflet con marcadores y encuadre automático"
 - Create: `src/components/ResultCard.tsx`, `src/pages/TodayPage.tsx`, `src/pages/TodayPage.test.tsx`
 - Modify: `src/App.tsx`, `src/styles.css`
 
-- [ ] **Step 1: Implementar `src/components/ResultCard.tsx`**
+- [x] **Step 1: Implementar `src/components/ResultCard.tsx`**
 
 ```tsx
 import type { Case } from '../data/schema'
@@ -2108,7 +2108,7 @@ export function ResultCard({ caseData, status, attempts }: Props) {
 }
 ```
 
-- [ ] **Step 2: Escribir el test de `TodayPage`**
+- [x] **Step 2: Escribir el test de `TodayPage`**
 
 Se inyectan las dependencias de datos y fecha por props para no depender de `schedule.json` ni de `localStorage` real.
 
@@ -2170,7 +2170,7 @@ describe('TodayPage', () => {
 })
 ```
 
-- [ ] **Step 3: Ejecutar y ver fallar**
+- [x] **Step 3: Ejecutar y ver fallar**
 
 ```bash
 npm test -- src/pages/TodayPage.test.tsx
@@ -2178,7 +2178,7 @@ npm test -- src/pages/TodayPage.test.tsx
 
 Expected: FAIL, `Cannot find module './TodayPage'`.
 
-- [ ] **Step 4: Implementar `src/pages/TodayPage.tsx`**
+- [x] **Step 4: Implementar `src/pages/TodayPage.tsx`**
 
 ```tsx
 import { useState } from 'react'
@@ -2235,7 +2235,7 @@ export function TodayPage({ day, caseData, killers }: Props) {
 }
 ```
 
-- [ ] **Step 5: Implementar `src/App.tsx`**
+- [x] **Step 5: Implementar `src/App.tsx`**
 
 Resuelve el día y carga el caso; muestra los estados de carga y de error.
 
@@ -2274,7 +2274,7 @@ export default function App() {
 }
 ```
 
-- [ ] **Step 6: Añadir estilos a `src/styles.css`**
+- [x] **Step 6: Añadir estilos a `src/styles.css`**
 
 ```css
 .page { max-width: 760px; margin: 0 auto; padding: 16px; display: grid; gap: 16px; }
@@ -2290,7 +2290,7 @@ export default function App() {
 .result a { color: var(--accent); }
 ```
 
-- [ ] **Step 7: Ejecutar toda la suite y comprobar tipos**
+- [x] **Step 7: Ejecutar toda la suite y comprobar tipos**
 
 ```bash
 npm test
@@ -2299,7 +2299,7 @@ npx tsc -p tsconfig.app.json --noEmit
 
 Expected: todos los tests pasan (58) y sin errores de tipos. Si `killers.json` o `schedule.json` dan error de tipos por `resolveJsonModule`, revisar el Step 3 de la Task 1.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/components/ResultCard.tsx src/pages src/App.tsx src/styles.css
@@ -2315,7 +2315,7 @@ git commit -m "feat(ui): página del reto diario con resultado y persistencia"
 **Files:**
 - Modify: `README.md`
 
-- [ ] **Step 1: Validar datos, tests y build**
+- [x] **Step 1: Validar datos, tests y build**
 
 Añadir en `package.json`, dentro de `"scripts"`, `"prebuild": "npm run validate:data"` para que ningún build salga con datos inválidos (spec §4). Después:
 
@@ -2325,7 +2325,7 @@ npm run validate:data && npm test && npm run build
 
 Expected: `OK: ...`, todos los tests en verde, `✓ built`.
 
-- [ ] **Step 2: Arrancar y probar en el navegador**
+- [x] **Step 2: Arrancar y probar en el navegador**
 
 ```bash
 npm run dev
@@ -2340,7 +2340,7 @@ Con la skill `run` o el plugin de Playwright, abrir la URL local y comprobar:
 
 Hacer una captura de pantalla del estado inicial y otra del resultado y guardarlas en `docs/superpowers/screenshots/prototipo-inicio.png` y `prototipo-resultado.png`.
 
-- [ ] **Step 3: Escribir `README.md`**
+- [x] **Step 3: Escribir `README.md`**
 
 ```markdown
 # Geo Killer
@@ -2362,7 +2362,7 @@ npm run build
 Los casos se generan con el pipeline de `pipeline/` y los subagentes de `.claude/agents/` desde Claude Code. Ver `docs/superpowers/specs/2026-09-17-geo-killer-design.md`, sección 5.
 ```
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add README.md docs/superpowers/screenshots
