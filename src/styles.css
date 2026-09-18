@@ -53,3 +53,5 @@ body {
 .result-alias { color: var(--accent); font-weight: normal; }
 .result-meta { color: var(--muted); margin: 4px 0 12px; }
 .result a { color: var(--accent); }
+.page-nav { display: flex; gap: 16px; align-items: baseline; }
+.page-nav a { color: var(--accent); }

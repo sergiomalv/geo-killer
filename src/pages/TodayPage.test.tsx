@@ -72,6 +72,11 @@ describe('TodayPage', () => {
     expect(input).toBeDisabled()
   })
 
+  it('enlaza al modo infinito', () => {
+    renderPage()
+    expect(screen.getByRole('link', { name: 'Modo infinito' })).toHaveAttribute('href', '#infinito')
+  })
+
   it('cambiar de día reinicia la partida aunque el componente no se desmonte', () => {
     const killersWithOtroCaso = [
       ...killers,
