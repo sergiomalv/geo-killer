@@ -14,7 +14,9 @@ export function buildIndex(list: Toll[]): TollIndex {
   const counts: Record<string, number> = {}
   for (const t of list) counts[t.id] = t.confirmed
   return {
-    ids: list.map((t) => t.id).sort(),
+    // Sale de `map`, no de `list`, para que quede coherente con `byId` y `counts` si hay
+    // ids repetidos: las tres propiedades deduplican igual, "la última gana".
+    ids: [...map.keys()].sort(),
     byId: (id: string) => map.get(id),
     counts,
   }

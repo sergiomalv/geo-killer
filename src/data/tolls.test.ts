@@ -20,4 +20,18 @@ describe('buildIndex', () => {
   it('expone las cifras confirmadas como diccionario', () => {
     expect(index.counts).toEqual({ a: 3, b: 10, c: 10, d: 52 })
   })
+
+  // `tollsSchema` ya rechaza ids duplicados en los datos reales (`tolls.json`), pero
+  // `buildIndex` es pública y los tests la llaman directamente con fixtures sin pasar por
+  // esa validación. Fija aquí la regla "la última gana" para que `ids`, `byId` y `counts`
+  // no puedan volver a contradecirse entre sí ante una entrada sin deduplicar.
+  it('deduplica ids repetidos: la última entrada gana', () => {
+    const dup = buildIndex([
+      { ...sampleTolls[0], id: 'a', confirmed: 3 },
+      { ...sampleTolls[0], id: 'a', confirmed: 99 },
+    ])
+    expect(dup.ids).toEqual(['a'])
+    expect(dup.byId('a')?.confirmed).toBe(99)
+    expect(dup.counts).toEqual({ a: 99 })
+  })
 })
