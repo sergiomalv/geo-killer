@@ -37,6 +37,27 @@ export const validationSchema = z.object({
   notes: z.string(),
 })
 
+export const murderTranslationSchema = z.strictObject({
+  city: z.string().min(1),
+  region: z.string().min(1).nullable(),
+  country: z.string().min(1),
+  method: z.string().min(1),
+})
+
+/**
+ * Traducción de un caso. Solo los campos traducibles: los nombres de las víctimas, las
+ * coordenadas y las fechas no aparecen aquí, así que el traductor no puede tocarlos.
+ * `strictObject` rechaza cualquier campo de más.
+ */
+export const caseTranslationSchema = z.strictObject({
+  id: z.string().regex(SLUG_PATTERN),
+  lang: z.literal('en'),
+  country: z.string().min(1),
+  summary: z.string().min(1),
+  aliases: z.array(z.string().min(1)).optional(),
+  murders: z.array(murderTranslationSchema).min(3).max(8),
+})
+
 export const caseSchema = z.object({
   id: z.string().regex(SLUG_PATTERN),
   name: z.string().min(1),
@@ -78,3 +99,5 @@ export type Murder = z.infer<typeof murderSchema>
 export type Case = z.infer<typeof caseSchema>
 export type KillerEntry = z.infer<typeof killerEntrySchema>
 export type Schedule = z.infer<typeof scheduleSchema>
+export type MurderTranslation = z.infer<typeof murderTranslationSchema>
+export type CaseTranslation = z.infer<typeof caseTranslationSchema>

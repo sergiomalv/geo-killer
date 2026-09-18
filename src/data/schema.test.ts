@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { caseSchema, killersSchema, scheduleSchema } from './schema'
+import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema } from './schema'
 import { sampleCase } from '../game/__fixtures__/sample-case'
 
 describe('caseSchema', () => {
@@ -123,5 +123,59 @@ describe('scheduleSchema', () => {
   })
   it('rechaza ids duplicados en order', () => {
     expect(scheduleSchema.safeParse({ launchDate: '2026-10-01', order: ['x', 'x'] }).success).toBe(false)
+  })
+})
+
+describe('caseTranslationSchema', () => {
+  const traduccion = {
+    id: 'caso-prueba',
+    lang: 'en',
+    country: 'Testland',
+    summary: 'Fictional case used only in tests.',
+    aliases: ['The Ghost', 'The Ghost'],
+    murders: [
+      { city: 'City One', region: null, country: 'Testland', method: 'Method one.' },
+      { city: 'City Two', region: 'District Two', country: 'Testland', method: 'Method two.' },
+      { city: 'City Three', region: null, country: 'Testland', method: 'Method three.' },
+    ],
+  }
+
+  it('acepta una traducción bien formada', () => {
+    expect(caseTranslationSchema.safeParse(traduccion).success).toBe(true)
+  })
+
+  it('acepta una traducción sin aliases', () => {
+    const { aliases: _aliases, ...sinAlias } = traduccion
+    expect(caseTranslationSchema.safeParse(sinAlias).success).toBe(true)
+  })
+
+  it('rechaza un idioma que no es en', () => {
+    expect(caseTranslationSchema.safeParse({ ...traduccion, lang: 'fr' }).success).toBe(false)
+  })
+
+  it('rechaza menos de 3 asesinatos', () => {
+    const t = { ...traduccion, murders: traduccion.murders.slice(0, 2) }
+    expect(caseTranslationSchema.safeParse(t).success).toBe(false)
+  })
+
+  it('rechaza una region vacía', () => {
+    const m = { ...traduccion.murders[0], region: '' }
+    expect(caseTranslationSchema.safeParse({ ...traduccion, murders: [m, ...traduccion.murders.slice(1)] }).success).toBe(false)
+  })
+
+  it('acepta region null', () => {
+    expect(caseTranslationSchema.safeParse(traduccion).success).toBe(true)
+  })
+
+  it('rechaza campos que no se traducen', () => {
+    const conVictima = {
+      ...traduccion,
+      murders: [{ ...traduccion.murders[0], victim: 'Otro Nombre' }, ...traduccion.murders.slice(1)],
+    }
+    expect(caseTranslationSchema.safeParse(conVictima).success).toBe(false)
+  })
+
+  it('rechaza un id con mayúsculas', () => {
+    expect(caseTranslationSchema.safeParse({ ...traduccion, id: 'Caso Prueba' }).success).toBe(false)
   })
 })
