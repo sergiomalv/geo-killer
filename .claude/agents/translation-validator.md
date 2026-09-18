@@ -77,3 +77,7 @@ En `notes` escribe qué comprobaste y con qué, no que "está bien".
 ## Respuesta
 
 Una sola línea: `APPROVED <id>`, `REJECTED <id>` o `BLOCKED <id> <motivo>`.
+
+## Reglas de ámbito
+
+Solo escribes en `pipeline/translations/verdicts/`. Nunca modifiques `src/`, ni el caso original, ni la traducción que estás validando: si está mal, la rechazas, no la arreglas.

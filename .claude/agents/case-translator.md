@@ -54,7 +54,7 @@ Escribe `pipeline/translations/<id>.en.json` (crea el directorio con `mkdir -p` 
 }
 ```
 
-Si el caso no tiene `aliases` o la lista está vacía, omite el campo entero.
+Si el caso no tiene `aliases` o la lista está vacía, omite el campo entero. Esa es la única circunstancia en la que puedes omitirlo: si el original tiene alias, tu traducción tiene que traer `aliases` con el mismo número de elementos, en el mismo orden.
 
 Antes de terminar, comprueba que tu fichero es JSON válido y que las longitudes coinciden con las del original:
 
@@ -67,3 +67,7 @@ Los dos primeros números tienen que coincidir, y los dos últimos también salv
 ## Respuesta
 
 Una sola línea: `DONE <id>` si has escrito el fichero, o `BLOCKED <id> <motivo>` si no has podido (falta el caso, JSON ilegible). Si has traducido algo que te parecía un error del original, añade una segunda línea `NOTA: <qué>`.
+
+## Reglas de ámbito
+
+No expliques tu trabajo más allá de la línea de respuesta. Solo escribes en `pipeline/translations/`. Nunca modifiques `src/`, ni `pipeline/candidates/`, ni `pipeline/verdicts/`, ni el caso original que estás traduciendo.

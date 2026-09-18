@@ -76,8 +76,9 @@ if (existsSync(enDir)) {
       errors.push(`${label}: ${tr.murders.length} asesinatos frente a ${murders} del original`)
     }
     const aliases = caseAliasCounts.get(tr.id)
-    if (tr.aliases !== undefined && aliases !== undefined && tr.aliases.length !== aliases) {
-      errors.push(`${label}: ${tr.aliases.length} alias frente a ${aliases} del original`)
+    const trAliases = tr.aliases?.length ?? 0
+    if (aliases !== undefined && trAliases !== aliases) {
+      errors.push(`${label}: ${trAliases} alias frente a ${aliases} del original`)
     }
     translationIds.add(tr.id)
   }

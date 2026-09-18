@@ -65,9 +65,11 @@ if (translation.murders.length !== base.murders.length) {
   process.exit(1)
 }
 
-if (translation.aliases !== undefined && translation.aliases.length !== base.aliases.length) {
+const baseAliases = base.aliases.length
+const trAliases = translation.aliases?.length ?? 0
+if (trAliases !== baseAliases) {
   console.error(
-    `La traducción de ${id} tiene ${translation.aliases.length} alias y el original ${base.aliases.length}`,
+    `La traducción de ${id} tiene ${trAliases} alias y el original ${baseAliases}`,
   )
   process.exit(1)
 }
