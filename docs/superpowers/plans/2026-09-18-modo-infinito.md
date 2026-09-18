@@ -21,7 +21,7 @@
 **Files:**
 - Create: `src/game/infinite.ts`, `src/game/infinite.test.ts`
 
-- [ ] **Step 1: Tests**
+- [x] **Step 1: Tests**
 
 ```ts
 import { describe, expect, it } from 'vitest'
@@ -99,9 +99,9 @@ describe('nextInfiniteCase', () => {
 })
 ```
 
-- [ ] **Step 2: Run → FAIL** (`npm test -- src/game/infinite.test.ts`)
+- [x] **Step 2: Run → FAIL** (`npm test -- src/game/infinite.test.ts`)
 
-- [ ] **Step 3: Implementar `src/game/infinite.ts`**
+- [x] **Step 3: Implementar `src/game/infinite.ts`**
 
 ```ts
 import { createGame, submitGuess, type GameState, type GameStatus } from './engine'
@@ -160,8 +160,8 @@ export function nextInfiniteCase(state: InfiniteState, available: string[], rand
 }
 ```
 
-- [ ] **Step 4: Run → PASS** (`9 passed`), `npx tsc -p tsconfig.app.json --noEmit`.
-- [ ] **Step 5: Commit** `feat(game): lógica del modo infinito`
+- [x] **Step 4: Run → PASS** (`9 passed`), `npx tsc -p tsconfig.app.json --noEmit`.
+- [x] **Step 5: Commit** `feat(game): lógica del modo infinito`
 
 ---
 
@@ -172,7 +172,7 @@ export function nextInfiniteCase(state: InfiniteState, available: string[], rand
 **Files:**
 - Modify: `src/game/storage.ts`, `src/game/storage.test.ts`
 
-- [ ] **Step 1: Tests** (añadir a `storage.test.ts`)
+- [x] **Step 1: Tests** (añadir a `storage.test.ts`)
 
 ```ts
 import { loadInfinite, saveInfinite } from './storage'
@@ -210,9 +210,9 @@ describe('storage infinito', () => {
 })
 ```
 
-- [ ] **Step 2: Run → FAIL**
+- [x] **Step 2: Run → FAIL**
 
-- [ ] **Step 3: Reescribir `src/game/storage.ts`**
+- [x] **Step 3: Reescribir `src/game/storage.ts`**
 
 ```ts
 import { z } from 'zod'
@@ -278,8 +278,8 @@ export function saveInfinite(state: InfiniteState, storage: Storage = localStora
 
 Si `z.ZodType<T>` da problemas de tipos con Zod 4 en `loadJson`, usar `z.ZodType<T, unknown>` o el tipo `z.core.$ZodType`; comprobar en `node_modules/zod`.
 
-- [ ] **Step 4: Run** `npm test -- src/game/storage.test.ts` → `11 passed`; tsc limpio.
-- [ ] **Step 5: Commit** `feat(game): persistencia del modo infinito y refactor de storage`
+- [x] **Step 4: Run** `npm test -- src/game/storage.test.ts` → `11 passed`; tsc limpio.
+- [x] **Step 5: Commit** `feat(game): persistencia del modo infinito y refactor de storage`
 
 ---
 
@@ -291,7 +291,7 @@ Si `z.ZodType<T>` da problemas de tipos con Zod 4 en `loadJson`, usar `z.ZodType
 - Create: `src/components/GameBoard.tsx`
 - Modify: `src/pages/TodayPage.tsx`, `src/pages/TodayPage.test.tsx`
 
-- [ ] **Step 1: `src/components/GameBoard.tsx`**
+- [x] **Step 1: `src/components/GameBoard.tsx`**
 
 ```tsx
 import type { ReactNode } from 'react'
@@ -334,7 +334,7 @@ export function GameBoard({ caseData, killers, state, onGuess, afterResult }: Pr
 }
 ```
 
-- [ ] **Step 2: `src/pages/TodayPage.tsx`** — misma lógica de estado; el JSX pasa a:
+- [x] **Step 2: `src/pages/TodayPage.tsx`** — misma lógica de estado; el JSX pasa a:
 
 ```tsx
   return (
@@ -353,10 +353,10 @@ export function GameBoard({ caseData, killers, state, onGuess, afterResult }: Pr
 
 Eliminar los imports de componentes que ya no se usan y `clueLevel`. Añadir a `styles.css`: `.page-nav { display: flex; gap: 16px; align-items: baseline; } .page-nav a { color: var(--accent); }`.
 
-- [ ] **Step 3: Test nuevo en `TodayPage.test.tsx`**: `it('enlaza al modo infinito', ...)` → `screen.getByRole('link', { name: 'Modo infinito' })` con `href` `#infinito`. El `vi.mock('../components/CaseMap', ...)` existente sigue funcionando porque `GameBoard` importa `./CaseMap` (misma ruta resuelta).
+- [x] **Step 3: Test nuevo en `TodayPage.test.tsx`**: `it('enlaza al modo infinito', ...)` → `screen.getByRole('link', { name: 'Modo infinito' })` con `href` `#infinito`. El `vi.mock('../components/CaseMap', ...)` existente sigue funcionando porque `GameBoard` importa `./CaseMap` (misma ruta resuelta).
 
-- [ ] **Step 4: `npm test`** → todos pasan (75); tsc; lint.
-- [ ] **Step 5: Commit** `refactor(ui): GameBoard común y enlace al modo infinito`
+- [x] **Step 4: `npm test`** → todos pasan (75); tsc; lint.
+- [x] **Step 5: Commit** `refactor(ui): GameBoard común y enlace al modo infinito`
 
 ---
 
@@ -368,7 +368,7 @@ Eliminar los imports de componentes que ya no se usan y `clueLevel`. Añadir a `
 - Create: `src/pages/InfinitePage.tsx`, `src/pages/InfinitePage.test.tsx`
 - Modify: `src/styles.css`
 
-- [ ] **Step 1: Tests**
+- [x] **Step 1: Tests**
 
 ```tsx
 import { fireEvent, render, screen } from '@testing-library/react'
@@ -457,9 +457,9 @@ describe('InfinitePage', () => {
 
 Nota sobre el test "perder": con `random = () => 0` tras ganar `caso-prueba`, el siguiente es `segundo` (único no jugado). Los cuatro fallos deben ser ids válidos distintos de `segundo`: "otro" y "fantasma" alternan porque el motor ignora intentos repetidos; usar cuatro nombres distintos si hace falta añadiendo killers `k3`, `k4` a la lista.
 
-- [ ] **Step 2: Run → FAIL**
+- [x] **Step 2: Run → FAIL**
 
-- [ ] **Step 3: `src/pages/InfinitePage.tsx`**
+- [x] **Step 3: `src/pages/InfinitePage.tsx`**
 
 ```tsx
 import { useEffect, useState } from 'react'
@@ -549,8 +549,8 @@ Nota: en `handleNext` desde el estado de error (caso que no carga) la partida si
 
 CSS a añadir: `.next-case { padding: 12px 16px; font: inherit; background: var(--accent); color: #000; border: 0; cursor: pointer; justify-self: start; } .page-notice { margin: 0; color: var(--accent); }`.
 
-- [ ] **Step 4: Run** → `5 passed`; `npm test` completo; tsc; lint.
-- [ ] **Step 5: Commit** `feat(ui): página del modo infinito`
+- [x] **Step 4: Run** → `5 passed`; `npm test` completo; tsc; lint.
+- [x] **Step 5: Commit** `feat(ui): página del modo infinito`
 
 ---
 
@@ -562,7 +562,7 @@ CSS a añadir: `.next-case { padding: 12px 16px; font: inherit; background: var(
 - Modify: `src/App.tsx`
 - Create: `src/App.test.tsx`
 
-- [ ] **Step 1: Test `src/App.test.tsx`**
+- [x] **Step 1: Test `src/App.test.tsx`**
 
 ```tsx
 import { act, render, screen } from '@testing-library/react'
@@ -600,9 +600,9 @@ describe('App', () => {
 })
 ```
 
-- [ ] **Step 2: Run → FAIL** (no hay modo infinito en `App`).
+- [x] **Step 2: Run → FAIL** (no hay modo infinito en `App`).
 
-- [ ] **Step 3: `src/App.tsx`**
+- [x] **Step 3: `src/App.tsx`**
 
 Añadir:
 
@@ -637,11 +637,11 @@ export default function App() {
 }
 ```
 
-- [ ] **Step 4: Run** → `npm test` completo en verde; tsc; build; lint.
+- [x] **Step 4: Run** → `npm test` completo en verde; tsc; build; lint.
 
-- [ ] **Step 5: Verificación en navegador** con Playwright (script en el scratchpad, como en la Task 20 del plan anterior): abrir `http://localhost:5173/#infinito`, comprobar "Racha: 0" y un mapa con marcadores; adivinar el caso con un alias del catálogo (leer el nombre en la tarjeta tras fallar cuatro veces si hace falta, o bien perder a propósito y comprobar "Racha: 0" y "Siguiente caso"); pulsar "Siguiente caso" y comprobar que cambia el número de marcadores o el nombre revelado; recargar y comprobar que la racha se mantiene; pulsar "Reto diario" y comprobar "Caso #1". Capturas en `docs/superpowers/screenshots/infinito-*.png`. Sin errores de consola.
+- [x] **Step 5: Verificación en navegador** con Playwright (script en el scratchpad, como en la Task 20 del plan anterior): abrir `http://localhost:5173/#infinito`, comprobar "Racha: 0" y un mapa con marcadores; adivinar el caso con un alias del catálogo (leer el nombre en la tarjeta tras fallar cuatro veces si hace falta, o bien perder a propósito y comprobar "Racha: 0" y "Siguiente caso"); pulsar "Siguiente caso" y comprobar que cambia el número de marcadores o el nombre revelado; recargar y comprobar que la racha se mantiene; pulsar "Reto diario" y comprobar "Caso #1". Capturas en `docs/superpowers/screenshots/infinito-*.png`. Sin errores de consola.
 
-- [ ] **Step 6: Commit** `feat(ui): selección de modo por hash y verificación del modo infinito`
+- [x] **Step 6: Commit** `feat(ui): selección de modo por hash y verificación del modo infinito`
 
 ---
 

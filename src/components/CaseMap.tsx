@@ -13,7 +13,7 @@ const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">Op
 function FitBounds({ murders }: { murders: Murder[] }) {
   const map = useMap()
   useEffect(() => {
-    map.fitBounds(boundsFor(murders), { padding: [40, 40], maxZoom: 11 })
+    map.fitBounds(boundsFor(murders), { paddingTopLeft: [40, 90], paddingBottomRight: [40, 40], maxZoom: 11 })
   }, [map, murders])
   return null
 }
