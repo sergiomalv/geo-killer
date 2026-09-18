@@ -1,0 +1,9 @@
+{
+  "id": "luis-garavito",
+  "confirmedLine": 2,
+  "attributedLine": 2,
+  "countryLines": { "CO": 37, "EC": 4, "VE": 3 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=138 toma la cifra de condenas firmes ('138 tienen fallo condenatorio' de 172 cargos, es.txt:2; coincide con 'found guilty of 138 of the 172 accounts' en en.txt:96) en vez de las cifras mayores 193/221/300 que son estimaciones o atribuciones por confesión. attributed=200 toma la cifra menor entre las dos versiones ('la cifra de crímenes sería de 200 personas' en es.txt:2, frente a 221 en en.txt:3) tras sumar la confesión de 2003 (28 más) a los 172 cargos iniciales. countries: CO principal (172 crímenes en 11 departamentos de Colombia, es.txt:37); EC por condena de 22 años en Ecuador por violar y asesinar a dos menores en 1998 (es.txt:4); VE incluido porque admitió haber matado también allí (es.txt:3 y en.txt:54), aunque es una admisión sin condena. activeYears 1992-1999 toma 'from 1992 to 1999' de en.txt:1 (el rango de los asesinatos, no de los abusos previos desde 1980)."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "arthur-shawcross",
+  "confirmed": 11,
+  "attributed": { "min": 12, "max": 12 },
+  "countries": ["US"],
+  "activeYears": "1972-1989",
+  "nickname": { "es": null, "en": "the Genesee River Killer" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Arthur_Shawcross" },
+  "confirmedQuote": "He was convicted of eleven murders, with a twelfth not officially ascribed to him.",
+  "attributedQuote": "He was convicted of eleven murders, with a twelfth not officially ascribed to him.",
+  "sourceLang": "en"
+}

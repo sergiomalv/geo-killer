@@ -1,0 +1,7 @@
+{
+  "id": "peter-kurten",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 9: cita literal en L2 en ('was found guilty of nine counts of murder...'); la cita trae 'nine'; L2 dice 'was found guilty' (condena firme); sección: cabecera de introducción (sin '=', documental, no ficción); ES corrobora en L23 'nueve asesinatos' (misma cifra, sin discrepancia); attributed es null y no hay attributedQuote en el candidato (coherente); DE respaldado en L1 en ('German serial killer') y L1 es ('asesino en serie alemán'); DE no es código histórico ni inexistente; activeYears 1913 en L1/L38 en y 1929 en L1/L50 en ('== 1929 =='); apodo es 'El vampiro de Düsseldorf' en L1 es; apodo en 'The Vampire of Düsseldorf' en L1 en; wikipedia.es apunta a es.wikipedia.org y wikipedia.en a en.wikipedia.org, ambas no nulas."
+}

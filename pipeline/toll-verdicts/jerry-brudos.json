@@ -1,0 +1,7 @@
+{
+  "id": "jerry-brudos",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 3: cita literal en L141 ('entered a plea of guilty to three counts of first-degree murder'), sección == Conviction ==, L141 dice declaración de culpabilidad; attributed 4-4: cita literal en L1 ('murder of four young women between 1968 and 1969'), L1 sin encabezado de sección de ficción (introducción); coherencia: attributed.min 4 >= confirmed 3, min=max=4 no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado por 'American' en L1, no es código histórico ni inexistente; activeYears 1968 y 1969 en L1 y L64; apodo en 'Lust Killer' en L1 y L4, apodo es es null (sin comprobación); wikipedia.en apunta a en.wikipedia.org, wikipedia.es null pero hay al menos una URL no nula."
+}

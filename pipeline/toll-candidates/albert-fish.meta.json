@@ -1,0 +1,9 @@
+{
+  "id": "albert-fish",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 84,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "EN dice 'a suspect in at least ten murders' (linea 1, en) mientras ES dice 'solo fue sospechoso en 9 casos' (linea 1, es); se toma la menor (9) para attributed. Confirmado=3 coincide en ambos idiomas ('at least three' / 'tres homicidios'). activeYears 1924-1928 tomado de EN linea 84 'Between 1924 and 1928, Fish killed at least three children', corroborado por fechas individuales en ES (McDonnell julio 1924 linea 63, Budd mayo 1928 linea 22). El apodo 'Boogey Man'/'coco' tambien aparece pero se eligio 'Gray Man'/'Hombre gris' por ser el mas citado en ambas fuentes."
+}

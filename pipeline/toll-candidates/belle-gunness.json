@@ -1,0 +1,15 @@
+{
+  "id": "belle-gunness",
+  "confirmed": 14,
+  "attributed": { "min": 40, "max": 40 },
+  "countries": ["US"],
+  "activeYears": "1884-1908",
+  "nickname": { "es": null, "en": "Hell's Belle" },
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Belle_Gunness",
+    "en": "https://en.wikipedia.org/wiki/Belle_Gunness"
+  },
+  "confirmedQuote": "Gunness is thought to have killed at least fourteen people",
+  "attributedQuote": "some sources speculate her involvement in as many as forty murders",
+  "sourceLang": "en"
+}

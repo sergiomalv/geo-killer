@@ -1,0 +1,12 @@
+{
+  "id": "leonard-lake",
+  "confirmed": 11,
+  "attributed": { "min": 11, "max": 25 },
+  "countries": ["US"],
+  "activeYears": "1983-1985",
+  "nickname": { "es": null, "en": "The Sex Slave Killer" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Leonard_Lake" },
+  "confirmedQuote": "burned and crushed human bone fragments from at least 11 bodies",
+  "attributedQuote": "murdered at least eleven and perhaps up to twenty-five victims",
+  "sourceLang": "en"
+}

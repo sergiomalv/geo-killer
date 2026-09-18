@@ -1,0 +1,12 @@
+{
+  "id": "pedro-alonso-lopez",
+  "confirmed": 3,
+  "attributed": { "min": 350, "max": 350 },
+  "countries": ["EC", "CO", "PE"],
+  "activeYears": "1978-1980",
+  "nickname": { "es": "el Monstruo de los Andes", "en": "the Monster of the Andes" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Pedro_Alonso_López", "en": "https://en.wikipedia.org/wiki/Pedro_Alonso_López" },
+  "confirmedQuote": "he was found guilty of three of the murders",
+  "attributedQuote": "the total of 350 confessed murders",
+  "sourceLang": "en"
+}

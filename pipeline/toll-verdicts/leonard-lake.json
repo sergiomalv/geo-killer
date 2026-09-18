@@ -1,0 +1,7 @@
+{
+  "id": "leonard-lake",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 11: cita literal L39 ('...bone fragments from at least 11 bodies'), contiene '11', línea afirma como hecho forense (no atribuido/sospechado) el hallazgo de restos de al menos 11 cuerpos, bajo sección '== Lake's fall and aftermath ==' (documental); attributed 11-25: cita literal L1 ('murdered at least eleven and perhaps up to twenty-five victims'), contiene 'eleven' y 'twenty-five', L1 es texto introductorio (no ficción/aparato); coherencia: min(11)=confirmed(11), min<=max ok; US respaldado en L1 ('American survivalist and serial killer'), no es código histórico; activeYears 1983 y 1985 en L1 ('between 1983 and 1985'); apodo en 'The Sex Slave Killer' en L1 ('also known as The Sex Slave Killer'), es es null sin apodo que comprobar; wikipedia en apunta a en.wikipedia.org, es es null. Nota: Leonard Lake nunca fue condenado (murió antes del juicio, L1 'Lake was never convicted of murder'); quien fue condenado fue su cómplice Charles Ng (L43); la cifra confirmada se basa en evidencia forense (restos óseos hallados), no en condena de Lake, pero la línea no usa lenguaje de sospecha/atribución sino de hecho constatado, por lo que se acepta como confirmación."
+}

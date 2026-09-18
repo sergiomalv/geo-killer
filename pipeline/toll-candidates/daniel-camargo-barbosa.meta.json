@@ -1,0 +1,9 @@
+{
+  "id": "daniel-camargo-barbosa",
+  "confirmedLine": 14,
+  "attributedLine": 14,
+  "countryLines": { "EC": 14 },
+  "yearsLine": 14,
+  "nicknameLines": {},
+  "notes": "Solo existe fuente en español (wiki.en es null). Confesó 71 víctimas (línea 15) pero esa cifra es menor que las 72 de la condena, así que no se usa como atribuida; se usa en su lugar la estimación 'más de 150...más de 200' (línea 14), que sí supera lo confirmado. Los asesinatos en serie ocurrieron en Ecuador tras su fuga en 1984 y su detención en 1986 (línea 14); las condenas previas en Colombia fueron por violación, no por asesinato, así que no se incluye CO en countries. No se encontró un apodo explícito en el texto (la referencia bibliográfica 'el monstruo de las mareas' en línea 34 es el título de un artículo, no una atribución de apodo en el cuerpo del artículo), por lo que nickname queda en null."
+}

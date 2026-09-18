@@ -1,0 +1,7 @@
+{
+  "id": "robert-hansen",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 4: cita literal en EN L56 ('He pleaded guilty to the four homicides police had evidence for...'), contiene 'four', sección '== Imprisonment and death =='; attributed 21-37: cita literal en EN L57 ('The remains of twelve of a probable twenty-one to thirty-seven victims were exhumed...'), contiene 'twenty-one' y 'thirty-seven', misma sección documental, min(21) >= confirmed(4), min<=max; US respaldado en EN L1 ('an American serial killer'); activeYears 1970 y 1983: EN L1 dice 'between 1971 and 1983' pero ES L1 dice 'Entre los años 1970 y 1983' (discrepancia entre fuentes resuelta tomando la cifra menor, 1970, correcto); apodo es 'El panadero carnicero' en ES L1, apodo en 'the Butcher Baker' en EN L1, sin cruces de idioma; wikipedia es y en presentes y con dominio correcto."
+}

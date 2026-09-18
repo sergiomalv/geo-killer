@@ -1,0 +1,12 @@
+{
+  "id": "joel-rifkin",
+  "confirmed": 9,
+  "attributed": { "min": 17, "max": 17 },
+  "countries": ["US"],
+  "activeYears": "1989-1993",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Joel_Rifkin", "en": "https://en.wikipedia.org/wiki/Joel_Rifkin" },
+  "confirmedQuote": "convicted for killing nine women between 1989 and 1993",
+  "attributedQuote": "In total he confessed to murdering 17 women.",
+  "sourceLang": "en"
+}

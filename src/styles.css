@@ -54,7 +54,6 @@ body {
 .result-meta { color: var(--muted); margin: 4px 0 12px; }
 .result a { color: var(--accent); }
 .page-nav { display: flex; gap: 16px; align-items: baseline; }
-.page-nav a { color: var(--accent); }
 .next-case { padding: 12px 16px; font: inherit; background: var(--accent); color: #000; border: 0; cursor: pointer; justify-self: start; }
 .page-notice { margin: 0; color: var(--accent); }
 .lang-toggle { font: inherit; font-size: 0.85rem; letter-spacing: 0.08em; background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 2px 8px; cursor: pointer; }
@@ -62,6 +61,54 @@ body {
 /* El tablero apila en móvil; a partir de 900px pasa a mapa + panel. */
 .board { display: grid; gap: 16px; }
 .board-panel, .board-scroll { display: grid; gap: 16px; align-content: start; }
+
+/* La cabecera lleva tres cosas (título, pestañas, controles): en móvil se envuelven. */
+.page-header { flex-wrap: wrap; gap: 8px 16px; }
+
+.mode-tabs { display: flex; gap: 12px; align-items: baseline; }
+.mode-tab { color: var(--muted); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid transparent; padding-bottom: 2px; }
+.mode-tab:hover { color: var(--text); }
+.mode-tab-active { color: var(--accent); border-bottom-color: var(--accent); }
+.mode-tab-disabled { opacity: 0.4; cursor: not-allowed; }
+
+.duel { display: grid; gap: 16px; align-content: start; }
+.duel-question { margin: 0; color: var(--muted); }
+.duel-cards { display: grid; gap: 12px; }
+/* Altura mínima medida en navegador con datos temporales: la carta más alta posible (apodo +
+   rango atribuido + enlace a Wikipedia) mide justo bajo 209px de alto, igual a 390px que a
+   1280px. Con 210px de min-height la carta tapada ocupa lo mismo que la revelada y
+   `.duel-buttons` no salta entre rondas. `box-sizing: border-box` para que el min-height sea
+   la altura total de la caja, no solo del contenido, y no haya que restarle a mano el padding
+   y el borde. */
+.killer-card { background: var(--panel); border: 1px solid var(--line); padding: 16px; box-sizing: border-box; min-height: 210px; display: grid; gap: 4px; align-content: start; }
+.killer-name { margin: 0; font-size: 1.2rem; }
+.killer-nickname { margin: 0; color: var(--accent); font-size: 0.9rem; }
+.killer-meta { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; }
+.killer-count { display: grid; gap: 2px; }
+/* Sobria a propósito: el número es un dato, no una puntuación. Sin animación ni color de premio. */
+.killer-number { font-size: 2.4rem; line-height: 1; font-weight: bold; }
+.killer-confirmed { color: var(--muted); font-size: 0.9rem; }
+.killer-attributed { color: var(--muted); font-size: 0.85rem; }
+.killer-count a { color: var(--accent); font-size: 0.85rem; margin-top: 8px; }
+.killer-hidden { margin: 0; color: var(--muted); font-size: 0.9rem; min-height: 2.4rem; display: flex; align-items: center; }
+
+.duel-buttons { display: flex; gap: 12px; }
+.duel-choice { flex: 1; padding: 16px; font: inherit; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; background: transparent; color: var(--accent); border: 1px solid var(--accent); cursor: pointer; }
+.duel-choice:hover { background: var(--accent); color: #000; }
+/* No se usa el atributo `disabled`: en la mayoría de navegadores también quita el foco del
+   elemento, que es justo lo que la fila de botones necesita conservar entre rondas. */
+.duel-choice[aria-disabled="true"] { opacity: 0.5; cursor: default; }
+.duel-choice[aria-disabled="true"]:hover { background: transparent; color: var(--accent); }
+.duel-status { margin: 0; min-height: 1.2em; color: var(--accent); }
+.duel-status-lost { font-size: 1.2rem; color: var(--danger); }
+.duel-over { display: grid; gap: 12px; justify-items: start; }
+
+@media (min-width: 700px) {
+  .duel-cards { grid-template-columns: 1fr 1fr; }
+  /* Centrados y estrechos: alineados con las columnas parecería que cada botón habla de
+     la carta que tiene encima, y los dos se refieren a la de la derecha. */
+  .duel-buttons { max-width: 480px; margin-inline: auto; width: 100%; }
+}
 
 @media (min-width: 900px) {
   .page { max-width: 1200px; height: 100dvh; box-sizing: border-box; grid-template-rows: auto 1fr; }

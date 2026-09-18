@@ -1,0 +1,7 @@
+{
+  "id": "joaquin-ferrandiz",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 5: cita literal en L24 ('fue declarado culpable de cinco cargos de asesinato'), contiene 'cinco' y confirma condena, no sospecha; sección vigente en L24 es 'Juicio y sentencia' (documental); attributed null y sin attributedQuote en el candidato, coherente; ES respaldado en L6 ('provincia española de Valencia'); activeYears 1995 en L16 y 1998 en L18; sin apodos (es/en null); wikipedia.es apunta a es.wikipedia.org, wikipedia.en null (no hay fuente .en.txt), cumple con al menos una URL no nula."
+}

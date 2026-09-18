@@ -1,0 +1,7 @@
+{
+  "id": "dennis-nilsen",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 6: cita literal en L126 ('...guilty upon six counts of murder...'), sección '== Trial and sentence ==', L126 confirma condena; attributed 12-15: cita literal en L151 ('Nilsen is known to have killed twelve... suspected... may be fifteen'), sección '== Victims ==', min(12)>=confirmed(6) y min<=max; GB respaldado en L1 ('Scottish serial killer'), L2 ('North London addresses'), L160 ('tour of the UK'); activeYears 1978 y 1983 en L1; apodo en 'the Muswell Hill Murderer' en L3, apodo es 'el Muswell Hill Murderer' en L4 de dennis-nilsen.es.txt; discrepancia es/en en cifra atribuida (es L2: 'al menos 15 jóvenes' vs en 12-15) pero candidato usa la cifra menor (12), conforme a la regla; wikipedia es y en presentes y con dominio correcto."
+}

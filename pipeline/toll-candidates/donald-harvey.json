@@ -1,0 +1,12 @@
+{
+  "id": "donald-harvey",
+  "confirmed": 37,
+  "attributed": { "min": 50, "max": 50 },
+  "countries": ["US"],
+  "activeYears": "1970-1987",
+  "nickname": { "es": "el ángel de la muerte", "en": "the angel of death" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Donald_Harvey", "en": "https://en.wikipedia.org/wiki/Donald_Harvey" },
+  "confirmedQuote": "Ultimately, Harvey pleaded guilty to 37 murders.",
+  "attributedQuote": "he confessed to killing as many as 50 people",
+  "sourceLang": "en"
+}

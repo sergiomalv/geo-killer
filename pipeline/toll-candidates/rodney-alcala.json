@@ -1,0 +1,12 @@
+{
+  "id": "rodney-alcala",
+  "confirmed": 9,
+  "attributed": { "min": 130, "max": 130 },
+  "countries": ["US"],
+  "activeYears": "1971-1979",
+  "nickname": { "es": null, "en": "the Dating Game Killer" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Rodney_Alcala" },
+  "confirmedQuote": "While Alcala has been conclusively linked to nine murders",
+  "attributedQuote": "the true number of victims remains unknown and could be as high as 130",
+  "sourceLang": "en"
+}

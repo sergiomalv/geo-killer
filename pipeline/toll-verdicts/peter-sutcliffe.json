@@ -1,0 +1,7 @@
+{
+  "id": "peter-sutcliffe",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 13: cita literal en en.txt L1 ('...was convicted of murdering thirteen women and girls...'); la línea dice explícitamente 'was convicted'; sin encabezado de sección antes de L1 (lead, no ficción). ES L2 coincide ('Asesinó a trece mujeres'), sin discrepancia entre fuentes. attributed es null y no hay attributedQuote en el candidato, coherente (sin error). País GB respaldado en en.txt L1 ('an English serial killer' y víctimas en Manchester y West Yorkshire, territorio del Reino Unido); no es código histórico ni inexistente. activeYears 1975 y 1980 respaldados en en.txt L1 ('between 1975 and 1980'). Apodo en ('the Yorkshire Ripper') en en.txt L1 ('Press reports dubbed him the \"Yorkshire Ripper\"'); apodo es ('El destripador de Yorkshire') en es.txt L1 ('lo que le valió el apodo de El destripador de Yorkshire'); comprobado que ninguno aparece en el idioma contrario (sin traducción cruzada). Wikipedia es y en no nulas y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
+}

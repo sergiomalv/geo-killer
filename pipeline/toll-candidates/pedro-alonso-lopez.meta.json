@@ -1,0 +1,9 @@
+{
+  "id": "pedro-alonso-lopez",
+  "confirmedLine": 30,
+  "attributedLine": 29,
+  "countryLines": { "EC": 43, "CO": 19, "PE": 27 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=3 corresponde a la condena firme del juicio de Ambato (27-ene-1981), la más específica citable (charged with 57 counts, found guilty of three). López fue condenado también por el asesinato de Flor Alba Sánchez en Colombia (linea 36), pero esa condena no aporta un número distinto citable, por lo que no se suma. attributed=350 usa la cifra explicita 'the total of 350 confessed murders' (linea 29 EN), mas precisa que el 'over 300' del resumen (linea 1 EN) y el 'mas de 300' del ES (linea 1). El total mas citado de 110 (linea 1 EN, linea 1 ES) es la cifra 'aceptada como legitima' por las autoridades para Ecuador, no una condena; se deja fuera de confirmed porque la condena judicial explicita es de tres asesinatos. Paises: EC principal (linea 43, autoridades solo persiguieron los asesinatos en Ecuador), CO donde nacio y fue condenado por el asesinato de Flor Alba Sanchez (linea 19, El Espinal), PE por confesion de 'many more' asesinatos (linea 27), aunque sin registros confirmados (linea 43)."
+}

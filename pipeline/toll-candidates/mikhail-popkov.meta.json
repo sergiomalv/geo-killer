@@ -1,0 +1,9 @@
+{
+  "id": "mikhail-popkov",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "RU": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "El título en.wiki/es.wiki dado en killers-source.json era 'Mikhail_Popkov', pero esa página no existe en es.wikipedia (confirmado vía API: 'MISSING: Mikhail Popkov', sin redirección). El título real en español es 'Mijaíl Popkov'; se descargó con ese título y se usa esa URL correcta en wikipedia.es. El resumen inicial (línea 1, en.txt) distingue explícitamente entre el número establecido como hecho ('committed the sexual assault and murder of eighty-seven girls and women', 87, sin cobertura) y el número mayor que incluye confesiones y sospechas ('confessed to and is suspected of at least ninety in total', 90); se usó esta distinción para confirmed=87 y attributed=90. El cuerpo del artículo en inglés detalla condenas por tramos (22 en 2015, 56 el 10-dic-2018, 2 el 4-jun-2021, 3 en nov-2023; línea 2 y línea 21), cuya suma (83) no coincide con el 87 de la introducción ni con el 83 mencionado en la línea 20 como 'total number of admitted victims' (confesiones, no condenas); se prefirió el número de la introducción por ser una única cita literal sin necesidad de sumar cifras de líneas distintas. El artículo en español (línea 1) da una cifra distinta y sin matizar: 'asesinó a 90 mujeres y un hombre entre 1992 y 2011' (91 en total, presentado como hecho, no como sospecha), y en el cuerpo (líneas 2 y 19) solo confirma 22+56=78 condenas, sin mencionar las condenas adicionales de 2021 y 2023 que sí aparecen en inglés. Al no ofrecer el español una cita única y limpia que separe 'confirmado' de 'atribuido', y dado que su cifra total (91) es mayor que la cifra confirmada del inglés (87), se usó sourceLang=en, que además da la cifra menor entre ambos idiomas."
+}

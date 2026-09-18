@@ -31,4 +31,11 @@ describe('App', () => {
     })
     expect(await screen.findByText(/Caso #/)).toBeInTheDocument()
   })
+
+  it('muestra el modo más o menos con #mas-o-menos', async () => {
+    window.location.hash = '#mas-o-menos'
+    renderWithLang(<App />)
+    // Con tolls.json vacío el modo avisa en vez de romper; con datos, reparte la primera pareja.
+    expect(await screen.findByText(/Este modo todavía no tiene datos suficientes\.|Racha: 0/)).toBeInTheDocument()
+  })
 })

@@ -78,6 +78,72 @@ export const caseSchema = z.object({
     path: ['wikipedia'],
   })
 
+/**
+ * Códigos que `Intl.DisplayNames` resuelve a un país actual sin dar error, pero que no
+ * deben aceptarse. Entra un código cuyo territorio se repartió entre varios países
+ * actuales, porque `Intl.DisplayNames` lo resuelve a uno solo y arbitrario: `SU` da
+ * "Rusia" ignorando Ucrania, Kazajistán y los demás; `YU`/`CS` dan "Serbia". No entra un
+ * código obsoleto cuyo territorio pasó a ser exactamente un país actual con las mismas
+ * fronteras (`ZR`, Zaire, resuelve a "Congo - Kinshasa", que es el país correcto de ese
+ * territorio, así que no está en la lista). `ZZ` está por otro motivo: es el código CLDR
+ * reservado para "región desconocida", no un país.
+ *
+ * Aceptar cualquiera de estos convertiría un dato histórico en un dato falso presentado
+ * con confianza, así que se prohíben y se exige el país actual del territorio donde
+ * ocurrieron los crímenes.
+ */
+export const FORBIDDEN_COUNTRY_CODES = ['SU', 'YU', 'CS', 'ZZ']
+
+function isRealCountryCode(code: string): boolean {
+  if (FORBIDDEN_COUNTRY_CODES.includes(code)) return false
+  try {
+    return new Intl.DisplayNames(['en'], { type: 'region', fallback: 'none' }).of(code) !== undefined
+  } catch {
+    return false
+  }
+}
+
+export const countryCodeSchema = z
+  .string()
+  .regex(/^[A-Z]{2}$/, 'código ISO-3166 alpha-2 en mayúsculas')
+  .refine(isRealCountryCode, 'código de país inexistente o histórico (SU, YU y CS no valen)')
+
+export const tollSchema = z
+  .object({
+    id: z.string().regex(SLUG_PATTERN),
+    confirmed: z.number().int().positive(),
+    attributed: z.object({ min: z.number().int().positive(), max: z.number().int().positive() }).nullable(),
+    countries: z.array(countryCodeSchema).min(1).max(3),
+    activeYears: z.string().min(1),
+    nickname: z.object({ es: z.string().min(1).nullable(), en: z.string().min(1).nullable() }).nullable(),
+    wikipedia: z.object({ es: z.url().nullable(), en: z.url().nullable() }),
+    confirmedQuote: z.string().min(10),
+    attributedQuote: z.string().min(10).optional(),
+    sourceLang: z.enum(['es', 'en']),
+    validation: validationSchema,
+  })
+  .refine((t) => t.attributed === null || t.attributed.min <= t.attributed.max, {
+    message: 'el rango atribuido tiene min mayor que max',
+    path: ['attributed'],
+  })
+  // Lo atribuido nunca puede ser menor que lo probado: si lo es, las dos cifras están cambiadas.
+  .refine((t) => t.attributed === null || t.attributed.min >= t.confirmed, {
+    message: 'el rango atribuido es menor que las víctimas confirmadas',
+    path: ['attributed'],
+  })
+  .refine((t) => (t.attributed === null) === (t.attributedQuote === undefined), {
+    message: 'attributedQuote hace falta si y solo si hay attributed',
+    path: ['attributedQuote'],
+  })
+  .refine((t) => t.wikipedia.es !== null || t.wikipedia.en !== null, {
+    message: 'hace falta al menos una URL de Wikipedia',
+    path: ['wikipedia'],
+  })
+
+export const tollsSchema = z
+  .array(tollSchema)
+  .refine((list) => new Set(list.map((t) => t.id)).size === list.length, { message: 'ids duplicados' })
+
 export const killerEntrySchema = z.object({
   id: z.string().regex(SLUG_PATTERN),
   name: z.string().min(1),
@@ -101,3 +167,4 @@ export type KillerEntry = z.infer<typeof killerEntrySchema>
 export type Schedule = z.infer<typeof scheduleSchema>
 export type MurderTranslation = z.infer<typeof murderTranslationSchema>
 export type CaseTranslation = z.infer<typeof caseTranslationSchema>
+export type Toll = z.infer<typeof tollSchema>

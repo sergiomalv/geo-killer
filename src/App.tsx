@@ -4,8 +4,11 @@ import scheduleJson from './data/schedule.json'
 import { availableCaseIds, loadCase } from './data/cases'
 import { killersSchema, scheduleSchema, type Case } from './data/schema'
 import { caseIdForDay, dayNumber } from './game/schedule'
+import { DuelPage } from './pages/DuelPage'
 import { InfinitePage } from './pages/InfinitePage'
 import { TodayPage } from './pages/TodayPage'
+import { tolls } from './data/tolls'
+import type { Mode } from './components/ModeTabs'
 import { useLang, useT } from './i18n'
 
 const killers = killersSchema.parse(killersJson)
@@ -13,10 +16,10 @@ const schedule = scheduleSchema.parse(scheduleJson)
 
 type Loaded = { kind: 'loading' } | { kind: 'missing' } | { kind: 'error' } | { kind: 'ready'; caseData: Case }
 
-type Mode = 'daily' | 'infinite'
-
 function readMode(): Mode {
-  return window.location.hash === '#infinito' ? 'infinite' : 'daily'
+  if (window.location.hash === '#infinito') return 'infinite'
+  if (window.location.hash === '#mas-o-menos') return 'duel'
+  return 'daily'
 }
 
 function useHashMode(): Mode {
@@ -59,6 +62,7 @@ function DailyApp() {
 
 export default function App() {
   const mode = useHashMode()
+  if (mode === 'duel') return <DuelPage tolls={tolls} killers={killers} />
   if (mode === 'infinite') return <InfinitePage killers={killers} availableIds={availableCaseIds()} />
   return <DailyApp />
 }

@@ -1,0 +1,12 @@
+{
+  "id": "jeffrey-dahmer",
+  "confirmed": 16,
+  "attributed": { "min": 17, "max": 17 },
+  "countries": ["US"],
+  "activeYears": "1978-1991",
+  "nickname": { "es": null, "en": "the Milwaukee Cannibal" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Jeffrey_Dahmer", "en": "https://en.wikipedia.org/wiki/Jeffrey_Dahmer" },
+  "confirmedQuote": "He was convicted of 16 counts of murder",
+  "attributedQuote": "killed and dismembered seventeen men and boys",
+  "sourceLang": "en"
+}

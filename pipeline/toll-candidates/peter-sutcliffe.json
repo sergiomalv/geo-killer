@@ -1,0 +1,11 @@
+{
+  "id": "peter-sutcliffe",
+  "confirmed": 13,
+  "attributed": null,
+  "countries": ["GB"],
+  "activeYears": "1975-1980",
+  "nickname": { "es": "El destripador de Yorkshire", "en": "the Yorkshire Ripper" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Peter_Sutcliffe", "en": "https://en.wikipedia.org/wiki/Peter_Sutcliffe" },
+  "confirmedQuote": "convicted of murdering thirteen women and girls",
+  "sourceLang": "en"
+}

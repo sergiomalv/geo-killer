@@ -1,0 +1,9 @@
+{
+  "id": "edmund-kemper",
+  "confirmedLine": 2,
+  "attributedLine": null,
+  "countryLines": { "US": 1 },
+  "yearsLine": 20,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=8 coincide en ambos idiomas: EN dice 'eight concurrent life sentences' (linea 2) y 'indicted on eight counts of first-degree murder' (linea 81); ES dice 'hallado culpable de ocho cargos por asesinato' (linea 17). Esta cifra corresponde a las siete mujeres (incluida su madre) y una chica asesinadas entre mayo de 1972 y abril de 1973; no incluye a sus abuelos paternos (asesinados en 1964), a quienes la fuente menciona por separado ('years earlier... had murdered his paternal grandparents', linea 1) sin que conste una condena de adulto por esos hechos (fue tratado como menor y su expediente juvenil fue sellado). No se encontro lenguaje de atribucion/sospecha/estimacion con una cifra mayor a 8, por lo que attributed=null. activeYears usa 1964 (asesinato de los abuelos, linea 20) como inicio y 1973 (asesinato de la madre y Hallett, linea 75) como fin, ya que la fuente confirma ambos anos como asesinatos cometidos por Kemper aunque no formen parte de la cifra 'confirmed' de la condena."
+}

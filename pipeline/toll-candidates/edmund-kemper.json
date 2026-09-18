@@ -1,0 +1,11 @@
+{
+  "id": "edmund-kemper",
+  "confirmed": 8,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1964-1973",
+  "nickname": { "es": "El asesino de las colegialas", "en": "the Co-ed Killer" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Edmund_Kemper", "en": "https://en.wikipedia.org/wiki/Edmund_Kemper" },
+  "confirmedQuote": "Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.",
+  "sourceLang": "en"
+}

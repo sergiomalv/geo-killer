@@ -1,0 +1,9 @@
+{
+  "id": "richard-kuklinski",
+  "confirmedLine": 2,
+  "attributedLine": 3,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "EN (línea 2) da 'convicted of four murders' en 1988, más una condena adicional en 2003 por el asesinato de Calabro que no usa la palabra 'convicted' en inglés (aunque ES línea 64 dice que se declaró culpable). ES da cifras contradictorias entre sí: la introducción (línea 1) dice 'condenado por 6 asesinatos' y el cuerpo (línea 54) dice 'declarado culpable de cinco asesinatos'. Se elige la cifra menor y mejor citada: 4 (EN, 1988). La cifra atribuida usa el rango de EN línea 3 (100-200), menor que el máximo de 250 que aparece en ES línea 3."
+}

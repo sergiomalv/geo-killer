@@ -1,0 +1,12 @@
+{
+  "id": "gary-ridgway",
+  "confirmed": 49,
+  "attributed": { "min": 71, "max": 71 },
+  "countries": ["US"],
+  "activeYears": "1982-1998",
+  "nickname": { "es": "el asesino de Green River", "en": "the Green River Killer" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Gary_Ridgway", "en": "https://en.wikipedia.org/wiki/Gary_Ridgway" },
+  "confirmedQuote": "convicted of murdering forty-nine women between 1982 and 1998",
+  "attributedQuote": "Ridgway confessed to murdering at least 71 victims.",
+  "sourceLang": "en"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "luis-garavito",
+  "confirmed": 138,
+  "attributed": { "min": 200, "max": 200 },
+  "countries": ["CO", "EC", "VE"],
+  "activeYears": "1992-1999",
+  "nickname": { "es": "La Bestia", "en": "La Bestia" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Luis_Garavito", "en": "https://en.wikipedia.org/wiki/Luis_Garavito" },
+  "confirmedQuote": "138 tienen fallo condenatorio",
+  "attributedQuote": "la cifra de crímenes sería de 200 personas",
+  "sourceLang": "es"
+}

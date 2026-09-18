@@ -1,0 +1,9 @@
+{
+  "id": "jose-antonio-rodriguez-vega",
+  "confirmedLine": 31,
+  "attributedLine": null,
+  "countryLines": { "ES": 5 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": null },
+  "notes": "No existe fuente en inglés (wiki.en es null en la entrada). El texto español da consistentemente 16 asesinatos: 'al menos 16' (línea 1, cifra abierta descartada como confirmed), 'autor de los 16 asesinatos' en el arresto (línea 6) y 'Condenado a un total de 440 años por los 16 asesinatos' (línea 31, usada como confirmedQuote por ser la cifra ligada a la condena). No se encontró ninguna cifra de confesión o sospecha superior a 16, por lo que attributed queda en null."
+}

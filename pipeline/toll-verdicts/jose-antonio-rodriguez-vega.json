@@ -1,0 +1,7 @@
+{
+  "id": "jose-antonio-rodriguez-vega",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 16: cita literal en L31 ('Condenado a un total de 440 años por los 16 asesinatos'), la línea dice 'Condenado' (condena); sección vigente en L31 es '== Muerte ==' (documental, no ficción); attributed null y no hay attributedQuote, coherente; país ES respaldado en L5 ('España'); activeYears 1987 y 1988 en L1 ('entre agosto de 1987 y abril de 1988'); apodo es 'el Mataviejas' en L1, apodo en null coherente con ausencia de fuente en inglés; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+}

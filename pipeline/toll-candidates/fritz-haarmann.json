@@ -1,0 +1,12 @@
+{
+  "id": "fritz-haarmann",
+  "confirmed": 24,
+  "attributed": { "min": 50, "max": 70 },
+  "countries": ["DE"],
+  "activeYears": "1918-1924",
+  "nickname": { "es": "el Carnicero de Hannover", "en": "the Butcher of Hanover" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Fritz_Haarmann", "en": "https://en.wikipedia.org/wiki/Fritz_Haarmann" },
+  "confirmedQuote": "Found guilty of twenty-four of the twenty-seven murders for which he was tried, Haarmann was sentenced to death by beheading in December 1924.",
+  "attributedQuote": "later, he would claim the true number of victims he had killed was between fifty and seventy.",
+  "sourceLang": "en"
+}

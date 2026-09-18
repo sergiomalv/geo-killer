@@ -1,0 +1,9 @@
+{
+  "id": "pedro-rodrigues-filho",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "BR": 1 },
+  "yearsLine": 22,
+  "nicknameLines": { "en": 1 },
+  "notes": "No hay fuente en español (wiki.es null). Cifra confirmada (71) y atribuida ('over 100') vienen de la misma frase en la línea 1; se toma 100 como número literal aunque el texto diga 'over 100'. activeYears: el único año que la fuente asocia literalmente a sus crímenes es 1973 (línea 22: 'On 24 May 1973... Rodrigues was arrested for the first time, and lived in prison most of his adult years'); no hay un año de inicio explícito para los asesinatos cometidos entre los 14 y 19 años (solo edades, sin años), así que no se calcula ningún año por resta. El apodo en inglés se toma de 'Pedrinho Matador' (línea 1), presente tal cual en el texto en inglés aunque sea en portugués; no se usa 'Brazilian Dexter' porque es un apodo posterior atribuido por los medios internacionales, no su apodo original."
+}

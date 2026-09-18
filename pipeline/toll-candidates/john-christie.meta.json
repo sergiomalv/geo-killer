@@ -1,0 +1,14 @@
+{
+  "id": "john-christie",
+  "confirmedLine": 2,
+  "attributedLine": null,
+  "countryLines": {
+    "GB": 2
+  },
+  "yearsLine": 6,
+  "nicknameLines": {
+    "es": null,
+    "en": null
+  },
+  "notes": "Segundo intento tras el rechazo por discrepancia entre fuentes. El ingles (L1) dice 'at least eight people' y el espanol (L2) 'por lo menos seis mujeres'; la regla manda la cifra menor, asi que confirmed=6 con cita espanola y sourceLang 'es'. Christie solo fue condenado por el asesinato de su mujer, pero ambas fuentes afirman en voz propia el total de victimas. Sin cifra atribuida mayor en ninguna de las dos fuentes. Anos 1943 y 1953 en L6 del espanol. Candidato escrito a mano por el coordinador tras tres intentos del generador que se colgaron leyendo la fuente entera."
+}

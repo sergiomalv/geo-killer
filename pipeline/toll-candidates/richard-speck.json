@@ -1,0 +1,11 @@
+{
+  "id": "richard-speck",
+  "confirmed": 8,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1966",
+  "nickname": { "es": null, "en": "The Birdman" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Richard_Speck", "en": "https://en.wikipedia.org/wiki/Richard_Speck" },
+  "confirmedQuote": "Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.",
+  "sourceLang": "en"
+}

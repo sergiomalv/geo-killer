@@ -1,0 +1,7 @@
+{
+  "id": "alfredo-galan",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 6: cita literal en L25 ('El tribunal lo encontró culpable de seis asesinatos con resultado de muerte'), contiene 'seis'; L25 dice condena ('encontró culpable... y lo sentenció a cumplir condena de 142 años'); sección vigente en L25 es 'Juicio y sentencia' (documental); attributed es null y no hay attributedQuote, coherente; país ES respaldado en L1 ('asesino en serie español... en Madrid') y L5/L11 (España); activeYears 2003 respaldado en L1 ('entre enero y marzo del año 2003'); apodo es 'el asesino de la baraja' respaldado en L1, L13 y L20; apodo en es null y no hay fuente en; Wikipedia es apunta a es.wikipedia.org, en es null."
+}

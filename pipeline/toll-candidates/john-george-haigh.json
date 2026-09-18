@@ -1,0 +1,12 @@
+{
+  "id": "john-george-haigh",
+  "confirmed": 6,
+  "attributed": { "min": 9, "max": 9 },
+  "countries": ["GB"],
+  "activeYears": "1944-1949",
+  "nickname": { "es": "el «Asesino del baño de ácido»", "en": "the Acid Bath Murderer" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/John_George_Haigh", "en": "https://en.wikipedia.org/wiki/John_George_Haigh" },
+  "confirmedQuote": "convicted for the murders of six people",
+  "attributedQuote": "he claimed to have killed nine",
+  "sourceLang": "en"
+}

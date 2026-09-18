@@ -1,0 +1,7 @@
+{
+  "id": "arthur-shawcross",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 11: cita literal en L23 ('He was convicted of eleven murders, with a twelfth not officially ascribed to him.'), 'eleven' presente, L23 dice 'convicted of eleven murders'; sección vigente en L23 es '== Second series of murders ==' (documental); attributed 12/12: misma cita L23, 'twelfth' representa el numeral 12 en letra (duodécimo asesinato no adscrito oficialmente), misma sección documental; coherencia: attributed.min(12) >= confirmed(11), min=max=12 no invertido; attributedQuote presente y attributed no nulo, coherente; país US respaldado en L1 ('an American serial killer'), no es código histórico; activeYears 1972 y 1989 en L1 ('between 1972 and 1989'); apodo en 'the Genesee River Killer' en L1, apodo es es null (sin apodo que validar); wikipedia.en apunta a en.wikipedia.org, wikipedia.es es null y hay al menos una URL no nula."
+}

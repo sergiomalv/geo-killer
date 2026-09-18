@@ -1,0 +1,7 @@
+{
+  "id": "harold-shipman",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 15: cita literal en EN L1 ('Shipman was convicted of murdering 15 patients under his care'), misma línea dice 'was convicted of murdering', sección de cabecera/lead (sin encabezado de ficción); attributed 250: cita literal en EN L1 ('with an estimated 250 victims over roughly 30 years'), min=max=250 >= confirmed=15; ES corrobora ambas cifras (L2 'condenado... por los asesinatos de 15 de sus pacientes' y L38 'el número probable de las víctimas de Shipman entre 1971 y 1998 era de 250'), sin discrepancia entre fuentes (las cifras intermedias 218/215/500 no se usan); país GB respaldado en EN L13 (Todmorden, Hyde, Greater Manchester) y L1 ('English doctor'), sin códigos históricos ni inexistentes; activeYears 1975 y 1998 en EN L42 ('between 1975 and 1998'); apodo en 'Dr. Death' en EN L3 ('nicknamed \"Dr. Death\"'), nickname.es correctamente null (en ES solo aparece dentro del título de un enlace externo, L67, no como apodo afirmado); wikipedia.es y wikipedia.en presentes y con dominio correcto."
+}

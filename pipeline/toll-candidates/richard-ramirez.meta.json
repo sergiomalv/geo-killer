@@ -1,0 +1,9 @@
+{
+  "id": "richard-ramirez",
+  "confirmedLine": 4,
+  "attributedLine": null,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "El inglés da la condena firme en la línea 4: 'convicted of thirteen counts of murder'; se usa como confirmed=13 con sourceLang=en. Se descartó la cifra atribuida ('at least fifteen', línea 1 en) por discrepancia entre fuentes: el español (línea 1) dice que mató a 14 personas, un número distinto y sin cita literal en español que respalde ni los 13 confirmados ni los 15 atribuidos. La línea 22 del español ('se le declaró culpable') se refiere a un caso aparte de 2009, no a la condena de 1989, así que no sirve como cita para confirmed en español. Sin una cita española utilizable para ninguna de las dos cifras, se deja attributed=null y todo el candidato citado del inglés, según la regla de quedarse con la menor/más conservadora ante discrepancia."
+}

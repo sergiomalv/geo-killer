@@ -1,0 +1,12 @@
+{
+  "id": "manuel-delgado-villegas",
+  "confirmed": 7,
+  "attributed": { "min": 48, "max": 48 },
+  "countries": ["ES", "IT", "FR"],
+  "activeYears": "1964-1971",
+  "nickname": { "es": "el Arropiero", "en": "El Arropiero" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Manuel_Delgado_Villegas", "en": null },
+  "confirmedQuote": "Se le consiguieron probar siete",
+  "attributedQuote": "que había matado a 48 personas más",
+  "sourceLang": "es"
+}

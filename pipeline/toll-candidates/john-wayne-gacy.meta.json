@@ -1,0 +1,9 @@
+{
+  "id": "john-wayne-gacy",
+  "confirmedLine": 221,
+  "attributedLine": 296,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 2, "en": 1 },
+  "notes": "Confirmado 33 en ambos idiomas (en linea 221 EN 'found guilty of 33 charges of murder'; ES lineas 2 y 31 tambien dan 33, sin discrepancia). Atribuido: Gacy declaro a los investigadores que el total podria llegar a 45 (linea 296 EN), cifra unica usada como min=max."
+}

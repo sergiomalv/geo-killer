@@ -1,0 +1,12 @@
+{
+  "id": "richard-kuklinski",
+  "confirmed": 4,
+  "attributed": { "min": 100, "max": 200 },
+  "countries": ["US"],
+  "activeYears": "1980-1984",
+  "nickname": { "es": "Iceman", "en": "the Iceman" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Richard_Kuklinski", "en": "https://en.wikipedia.org/wiki/Richard_Kuklinski" },
+  "confirmedQuote": "In 1988, he was convicted of four murders and sentenced to life imprisonment.",
+  "attributedQuote": "He claimed to have murdered anywhere from 100 to 200 men, often in gruesome fashion.",
+  "sourceLang": "en"
+}

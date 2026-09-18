@@ -1,0 +1,11 @@
+{
+  "id": "richard-ramirez",
+  "confirmed": 13,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1984-1985",
+  "nickname": { "es": "El Acosador Nocturno", "en": "the Night Stalker" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Richard_Ramirez", "en": "https://en.wikipedia.org/wiki/Richard_Ramirez" },
+  "confirmedQuote": "Ramirez was convicted of thirteen counts of murder",
+  "sourceLang": "en"
+}

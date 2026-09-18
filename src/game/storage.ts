@@ -1,9 +1,11 @@
 import { z } from 'zod'
 import type { GameState } from './engine'
 import type { InfiniteState } from './infinite'
+import type { DuelState } from './duel'
 
 const PROGRESS_PREFIX = 'geokiller.progress.'
 const INFINITE_KEY = 'geokiller.infinite'
+const DUEL_KEY = 'geokiller.duel'
 
 const progressSchema = z.object({
   caseId: z.string(),
@@ -19,6 +21,16 @@ const infiniteSchema = z.object({
   streak: z.number().int().min(0),
   wrapped: z.boolean(),
 }) satisfies z.ZodType<InfiniteState>
+
+const duelSchema = z.object({
+  left: z.string(),
+  right: z.string(),
+  seen: z.array(z.string()),
+  streak: z.number().int().min(0),
+  best: z.number().int().min(0),
+  status: z.enum(['playing', 'revealed', 'lost']),
+  tie: z.boolean(),
+}) satisfies z.ZodType<DuelState>
 
 function loadJson<T>(key: string, schema: z.ZodType<T>, storage: Storage): T | null {
   try {
@@ -56,4 +68,12 @@ export function loadInfinite(storage: Storage = localStorage): InfiniteState | n
 
 export function saveInfinite(state: InfiniteState, storage: Storage = localStorage): void {
   saveJson(INFINITE_KEY, state, storage)
+}
+
+export function loadDuel(storage: Storage = localStorage): DuelState | null {
+  return loadJson(DUEL_KEY, duelSchema, storage)
+}
+
+export function saveDuel(state: DuelState, storage: Storage = localStorage): void {
+  saveJson(DUEL_KEY, state, storage)
 }

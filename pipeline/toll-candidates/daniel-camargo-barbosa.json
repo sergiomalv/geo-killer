@@ -1,0 +1,12 @@
+{
+  "id": "daniel-camargo-barbosa",
+  "confirmed": 72,
+  "attributed": { "min": 150, "max": 200 },
+  "countries": ["EC"],
+  "activeYears": "1984-1986",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Daniel_Camargo", "en": null },
+  "confirmedQuote": "Fue condenado por 72 asesinatos",
+  "attributedQuote": "mató a más de 150 mujeres o incluso a más de 200",
+  "sourceLang": "es"
+}

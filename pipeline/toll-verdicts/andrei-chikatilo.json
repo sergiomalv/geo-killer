@@ -1,0 +1,7 @@
+{
+  "id": "andrei-chikatilo",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 52: cita literal en L179 (en), la línea dice 'guilty of fifty-two of the fifty-three murders... sentenced to death for each offence' (condena), sección '=== Closing arguments and conviction ===' (documental); es L3 corrobora sin discrepancia ('Fue condenado y sentenciado por 52 muertes'); attributed 56: cita literal en L2 (en, lead, sin encabezado de ficción), es L3 corrobora ('Confesó un total de 56 asesinatos'); coherencia: 56 >= 52, min=max=56 sin rango invertido; países RU en L3 (Rostov Oblast/Russian SFSR), UA en L111 (asesinato de Ivan Bilovetsky en Zaporizhia), UZ en L84 (viaje de negocios a Tashkent), ninguno es código histórico SU/YU/CS; años 1978 y 1990 en L1; apodo es 'el Destripador de Rostov' en es L2, apodo en 'the Rostov Ripper' en en L1/L3, cada uno nativo en su idioma sin traducción cruzada; wikipedia es y en presentes y con dominio correcto."
+}

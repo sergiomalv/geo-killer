@@ -1,0 +1,9 @@
+{
+  "id": "samuel-little",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": null, "en": null },
+  "notes": "El resumen inicial en inglés afirma que fue condenado por 8 asesinatos y confesó 93; coincide con la sección Confirmed (8 víctimas nombradas) y con la cifra de confesiones citada repetidamente (93). El español no da un total de condenas ni de confesiones de forma explícita en el resumen (habla de condenas parciales de 2012 y 2018), así que se usó la fuente inglesa como sourceLang. No se encontró apodo en ninguna de las dos fuentes."
+}

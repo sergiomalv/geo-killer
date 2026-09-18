@@ -1,0 +1,12 @@
+{
+  "id": "peter-manuel",
+  "confirmed": 7,
+  "attributed": { "min": 9, "max": 9 },
+  "countries": ["GB"],
+  "activeYears": "1956-1958",
+  "nickname": { "es": null, "en": "the Beast of Birkenshaw" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Peter_Manuel" },
+  "confirmedQuote": "convicted and executed for the murders of seven people",
+  "attributedQuote": "he is strongly suspected of committing at least nine murders",
+  "sourceLang": "en"
+}

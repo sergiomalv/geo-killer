@@ -1,0 +1,9 @@
+{
+  "id": "francisco-de-assis-pereira",
+  "confirmedLine": 1,
+  "attributedLine": null,
+  "countryLines": { "BR": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": null, "en": 1 },
+  "notes": "No hay wiki.es ni fichero .es.txt para esta entrada (wiki.es es null en killers-source.json), por lo que nickname.es es null. La fuente inglesa no usa la palabra 'convicted' ni da una cifra de condena; la cifra de 11 mujeres violadas y asesinadas aparece como el cargo por el que fue arrestado en 1998, y es la única cifra numerica concreta de victimas mortales en el texto. No se encontro ninguna cifra atribuida (confesion/sospecha) superior a 11, por lo que attributed es null. Solo se menciona el ano 1998 para el periodo activo (arresto y contexto de los asesinatos, incl. referencia al Mundial de 1998); no hay otro ano explicito para el inicio de los crimenes."
+}

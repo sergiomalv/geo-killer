@@ -1,0 +1,9 @@
+{
+  "id": "leonard-lake",
+  "confirmedLine": 39,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "en": 1 },
+  "notes": "attributedQuote reemplazada por la de la linea 1, que junta min y max (11 y 25) tras rechazo del validador"
+}

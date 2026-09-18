@@ -1,0 +1,7 @@
+{
+  "id": "richard-speck",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 8: cita literal en L2 de richard-speck.en.txt ('Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.'); la cita contiene 'eight' y la línea dice explícitamente 'Convicted of all eight murders' (condena, no atribución); sección: L2 está antes del primer encabezado del artículo (introducción, sección documental, no ficción); attributed es null y no hay attributedQuote en el candidato, coherente; US respaldado en L1.en ('American mass murderer') y L1.es ('asesino en masa estadounidense'); activeYears '1966' aparece en L1 de ambas fuentes ('July 13–14, 1966' / '14 y 15 de julio de 1966'); apodo en 'The Birdman' respaldado en L1.en y explicado en L92.en ('nickname \"Birdman\"'), no aparece en es.txt (correcto, campo es es null); ES source (L1, L5) coincide en 8 víctimas confirmadas, sin discrepancia entre fuentes; ambas URLs de Wikipedia presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
+}

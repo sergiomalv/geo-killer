@@ -1,0 +1,7 @@
+{
+  "id": "john-christie",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmedQuote 'Asesinó a por lo menos seis mujeres' literal en es.txt L2 (grep -n -F); la cita contiene 'seis' (6); L2 pertenece a la introducción (awk sobre encabezados '^=' no encuentra ninguno antes de L2, luego no hay sección de ficción/aparato); la línea completa (sed -n '2p') afirma en voz propia 'Asesinó a por lo menos seis mujeres... en Londres', sin cobertura de duda ('se sospecha/cree/atribuye'), y L3 confirma que ademas fue detenido y condenado por el asesinato de su esposa; comprobado que en.txt L1 dice 'He murdered at least eight people' (8), por lo que persiste la discrepancia real entre fuentes, pero ahora el candidato trae la cifra MENOR (6) con sourceLang 'es', que es lo que exige la regla; attributed es null y no hay attributedQuote en el JSON, coherente (regla 7 ok); GB respaldado en es.txt L2 ('en Londres') y L1 ('de origen inglés'); no es código histórico (SU/YU/CS) ni inexistente; activeYears 1943 y 1953 ambos en es.txt L6 ('Los crímenes los cometió entre 1943 y 1953'); apodo null en es y en, sin comprobación necesaria; wikipedia.es apunta a es.wikipedia.org/wiki/John_Christie y wikipedia.en a en.wikipedia.org/wiki/John_Christie_(serial_killer), ambas bien formadas y no nulas."
+}

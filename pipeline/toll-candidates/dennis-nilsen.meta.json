@@ -1,0 +1,9 @@
+{
+  "id": "dennis-nilsen",
+  "confirmedLine": 126,
+  "attributedLine": 151,
+  "countryLines": { "GB": 2 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 4, "en": 3 },
+  "notes": "El jurado condenó a Nilsen por seis cargos de asesinato (confirmed=6), coincide en es (linea 2: 'seis de ellos') y en (linea 126). El resumen de la seccion Victims da un rango claro: 'known to have killed twelve... it is suspected that the true number of victims may be fifteen' (linea 151), usado como attributed=12-15. La cifra de 15/16 mencionada en la confesion inicial (linea 48, 88) es la estimacion mas alta pero la propia fuente la matiza como confesion inicial retirada parcialmente (linea 152), por lo que se prefiere el rango 12-15 de la sintesis final."
+}

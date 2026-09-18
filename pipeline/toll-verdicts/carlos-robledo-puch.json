@@ -1,0 +1,7 @@
+{
+  "id": "carlos-robledo-puch",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 11: cita literal en L20 ('Los 11 asesinatos de Robledo Puch (los primeros seis fueron con su cómplice Jorge Ibáñez):'), contiene '11'; L20 en sí no usa la palabra 'condenado', pero no usa ningún término de sospecha/atribución ('se sospecha', 'se cree', 'se atribuye') y la sección == Cronología de sus delitos == narra los hechos como establecidos, corroborado por L1 ('fue condenado a reclusión perpetua por diez homicidios calificados, un homicidio simple' = 10+1 = 11, misma cifra), por lo que no aplica el error de cifra atribuida; sección vigente en L20 es '== Cronología de sus delitos ==', documental (no ficción/aparato); attributed es null y el candidato no trae attributedQuote, coherente (no hay número atribuido en sección documental: la única cifra adicional, 'Mató a 12' en L72, está en '== En la cultura popular ==', sección prohibida); país AR respaldado en L1 ('es un asesino en serie argentino'), no es código histórico ni inexistente; activeYears 1971 (L10, '15 de marzo de 1971') y 1972 (L1 'Cumple prisión efectiva desde 1972' y L31 '3 de febrero de 1972') respaldados; apodo es 'el Ángel Negro' en L1 ('Apodado el Ángel Negro'), coherente con idioma es; apodo en es null, sin fuente en inglés (no existe carlos-robledo-puch.en.txt); wikipedia.es apunta a es.wikipedia.org (dominio correcto), wikipedia.en es null, al menos una URL no nula."
+}

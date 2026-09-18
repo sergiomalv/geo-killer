@@ -1,0 +1,11 @@
+{
+  "id": "alfredo-galan",
+  "confirmed": 6,
+  "attributed": null,
+  "countries": ["ES"],
+  "activeYears": "2003",
+  "nickname": { "es": "el asesino de la baraja", "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Alfredo_Galán", "en": null },
+  "confirmedQuote": "El tribunal lo encontró culpable de seis asesinatos con resultado de muerte",
+  "sourceLang": "es"
+}

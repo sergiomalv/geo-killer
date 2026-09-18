@@ -1,0 +1,12 @@
+{
+  "id": "francisco-garcia-escalero",
+  "confirmed": 11,
+  "attributed": { "min": 14, "max": 14 },
+  "countries": ["ES"],
+  "activeYears": "1987-1994",
+  "nickname": { "es": "el matamendigos", "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Francisco_García_Escalero", "en": null },
+  "confirmedQuote": "la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas",
+  "attributedQuote": "relató a la policía uno por uno, catorce asesinatos",
+  "sourceLang": "es"
+}

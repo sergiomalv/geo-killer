@@ -1,0 +1,7 @@
+{
+  "id": "john-george-haigh",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 6: cita literal en EN L1 'convicted for the murders of six people'; ES L7 confirma 'seis víctimas' declarado culpable, sin discrepancia; sección: L1 es introducción, sin encabezado de ficción; attributed 9: cita literal en EN L1 'he claimed to have killed nine', min=max=9, coherente con confirmed=6, ES L7 confirma 'nueve personas' confesadas; país GB: 'English' en EN L1, código no histórico; activeYears 1944-1949: 1944 en EN L17 (primer asesinato, McSwan, 6 sept 1944) y 1949 en EN L1/L25/L34 (último asesinato Durand-Deacon 18 feb 1949 y ejecución 10 ago 1949); apodo es: 'el «Asesino del baño de ácido»' en ES L1; apodo en: 'the Acid Bath Murderer' en EN L1; wikipedia: ambas URLs presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "gregorio-cardenas",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 4: cita literal en L9 ('...descubiertos los cuerpos de sus 4 víctimas'), la cita trae el número en cifra, la línea afirma como hecho el hallazgo de los 4 cuerpos (corroborado por L24: confesión y hallazgo de 4 cuerpos -Graciela + 3-), sección vigente en L9 es 'Infancia y juventud' (no es de ficción/aparato); attributed=null y no hay attributedQuote en el JSON, coherente; país MX respaldado en L1 ('mexicano', 'Ciudad de México'), no usa códigos históricos ni inexistentes; activeYears '1942' respaldado en L13 y L15; apodo es 'el Estrangulador de Tacuba' respaldado en L1, nickname.en es null y no hay apodo en inglés que comprobar; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null (al menos una URL no nula)."
+}

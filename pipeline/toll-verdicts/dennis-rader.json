@@ -1,0 +1,7 @@
+{
+  "id": "dennis-rader",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 10: cita literal en L1 ('convicto por los asesinatos de diez personas en Wichita'), contiene 'diez'; L1 dice 'convicto por' (condena); sección documental vigente en L1 es la introducción (sin encabezado de ficción); attributed null y sin attributedQuote, consistente con EN L154-159 (solo confesó los diez cargos) y EN L175 ('the ten known murders were believed to be the only cases for which Rader was responsible', tras investigaciones exhaustivas sin más asesinatos confirmados; los casos de Kinney y Garber en L178-179 quedan como sospecha/suspect, no condena); país US respaldado en L1 ('asesino en serie estadounidense' / EN L1 'American serial killer'), sin códigos históricos; activeYears 1974 y 1991 en L1; apodo es 'Asesino BTK' en L2 ('Asesino BTK'); apodo en 'BTK' en L1 ('pseudonym BTK'); URLs es.wikipedia.org y en.wikipedia.org correctas."
+}

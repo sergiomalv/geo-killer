@@ -41,7 +41,7 @@ describe('InfinitePage', () => {
     renderPage()
     expect(await screen.findByTestId('map')).toBeInTheDocument()
     expect(screen.getByText('Racha: 0')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Reto diario' })).toHaveAttribute('href', '#')
+    expect(screen.getByRole('link', { name: 'Diario' })).toHaveAttribute('href', '#')
   })
 
   it('acertar sube la racha y ofrece el siguiente caso', async () => {

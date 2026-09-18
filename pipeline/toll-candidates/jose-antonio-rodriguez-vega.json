@@ -1,0 +1,14 @@
+{
+  "id": "jose-antonio-rodriguez-vega",
+  "confirmed": 16,
+  "attributed": null,
+  "countries": ["ES"],
+  "activeYears": "1987-1988",
+  "nickname": { "es": "el Mataviejas", "en": null },
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/José_Antonio_Rodríguez_Vega",
+    "en": null
+  },
+  "confirmedQuote": "Condenado a un total de 440 años por los 16 asesinatos",
+  "sourceLang": "es"
+}

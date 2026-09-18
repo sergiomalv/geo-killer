@@ -1,0 +1,12 @@
+{
+  "id": "samuel-little",
+  "confirmed": 8,
+  "attributed": { "min": 93, "max": 93 },
+  "countries": ["US"],
+  "activeYears": "1970-2005",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Samuel_Little", "en": "https://en.wikipedia.org/wiki/Samuel_Little" },
+  "confirmedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+  "attributedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+  "sourceLang": "en"
+}

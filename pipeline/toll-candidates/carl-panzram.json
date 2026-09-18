@@ -1,0 +1,12 @@
+{
+  "id": "carl-panzram",
+  "confirmed": 5,
+  "attributed": { "min": 21, "max": 21 },
+  "countries": ["US", "AO"],
+  "activeYears": "1915-1929",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Carl_Panzram", "en": "https://en.wikipedia.org/wiki/Carl_Panzram" },
+  "confirmedQuote": "Panzram confessed to having murdered twenty-one boys and men, only five of which could be corroborated.",
+  "attributedQuote": "Panzram confessed to having murdered twenty-one boys and men, only five of which could be corroborated.",
+  "sourceLang": "en"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "robert-hansen",
+  "confirmed": 4,
+  "attributed": {
+    "min": 21,
+    "max": 37
+  },
+  "countries": [
+    "US"
+  ],
+  "activeYears": "1970-1983",
+  "nickname": {
+    "es": "El panadero carnicero",
+    "en": "the Butcher Baker"
+  },
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Robert_Hansen",
+    "en": "https://en.wikipedia.org/wiki/Robert_Hansen"
+  },
+  "confirmedQuote": "He pleaded guilty to the four homicides police had evidence for (Morrow, Messina, Goulding and Eklutna Annie)",
+  "attributedQuote": "The remains of twelve of a probable twenty-one to thirty-seven victims were exhumed by the police and returned to their families.",
+  "sourceLang": "en"
+}

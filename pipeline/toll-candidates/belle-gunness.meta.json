@@ -1,0 +1,9 @@
+{
+  "id": "belle-gunness",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "en": 1 },
+  "notes": "Gunness fue nunca condenada (murió o desapareció en el incendio de 1908; su suerte queda sin confirmar), por lo que no hay cifra de condena. Se usa como 'confirmed' el conteo de cuerpos hallados en su propiedad citado en la introducción en inglés ('at least fourteen people'), que coincide con los 3 hijos + al menos 11 restos adicionales descritos en la línea 26. El artículo en español da una cifra de cuerpos hallados muy distinta ('cuarenta cadáveres', línea 4) y una atribución aún mayor ('cuarenta y nueve personas', línea 4); siguiendo la regla de quedarse con la cifra menor y por coherencia de idioma entre confirmedQuote y attributedQuote, se usan las cifras del texto en inglés (confirmed=14, attributed=40, sourceLang=en). No se encontró apodo en la fuente en español."
+}

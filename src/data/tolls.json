@@ -1,0 +1,1246 @@
+[
+  {
+    "id": "aileen-wuornos",
+    "confirmed": 6,
+    "attributed": {
+      "min": 7,
+      "max": 7
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1989-1990",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Aileen_Wuornos",
+      "en": "https://en.wikipedia.org/wiki/Aileen_Wuornos"
+    },
+    "confirmedQuote": "In all, Wuornos received six death sentences.",
+    "attributedQuote": "Wuornos shot, killed, and robbed seven of her male clients.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal L39 en 'In all, Wuornos received six death sentences.', línea confirma condena ('pleaded no contest'/'sentenced to death'), sección == Arrest and trial ==; attributed 7: cita literal L1 en 'Wuornos shot, killed, and robbed seven of her male clients.', sección introducción (no ficción); attributed.min 7 >= confirmed 6, min=max=7 no invertido; US respaldado en L1 ('American serial killer') y L24-28 (Florida, condados de EE.UU.); activeYears 1989 y 1990 en L1; apodos es/en ambos null, sin attributedQuote sobrante; wikipedia es apunta a es.wikipedia.org y en a en.wikipedia.org; es.txt L1 y L36 coinciden en 7 atribuidos y 6 confirmados, sin discrepancia entre fuentes"
+    }
+  },
+  {
+    "id": "albert-fish",
+    "confirmed": 3,
+    "attributed": {
+      "min": 9,
+      "max": 9
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1924-1928",
+    "nickname": {
+      "es": "el «Hombre gris»",
+      "en": "the Gray Man"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Albert_Fish",
+      "en": "https://en.wikipedia.org/wiki/Albert_Fish"
+    },
+    "confirmedQuote": "Confesó tres homicidios que la policía fue capaz de confirmar",
+    "attributedQuote": "solo fue sospechoso en 9 casos",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 3: cita L1 ES 'Confesó tres homicidios que la policía fue capaz de confirmar', sin cabecera de sección (intro, documental); attributed 9-9: cita L1 ES 'solo fue sospechoso en 9 casos', misma línea/sección; EN L1 dice 'a suspect in at least ten murders' (10) frente a ES 9, el candidato trae la menor (9), correcto; confirmed coincide en ambos idiomas ('tres'/'at least three'); US respaldado en L1 ES 'estadounidense'; activeYears 1924 y 1928: ES L17/L63 (1924) y L22 (1928), EN L84 'Between 1924 and 1928'; apodo es 'Hombre gris' en L1 ES, apodo en 'Gray Man' en L1 EN, cada uno solo en su idioma; wikipedia es y en con dominios correctos"
+    }
+  },
+  {
+    "id": "alfredo-galan",
+    "confirmed": 6,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "2003",
+    "nickname": {
+      "es": "el asesino de la baraja",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Alfredo_Galán",
+      "en": null
+    },
+    "confirmedQuote": "El tribunal lo encontró culpable de seis asesinatos con resultado de muerte",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en L25 ('El tribunal lo encontró culpable de seis asesinatos con resultado de muerte'), contiene 'seis'; L25 dice condena ('encontró culpable... y lo sentenció a cumplir condena de 142 años'); sección vigente en L25 es 'Juicio y sentencia' (documental); attributed es null y no hay attributedQuote, coherente; país ES respaldado en L1 ('asesino en serie español... en Madrid') y L5/L11 (España); activeYears 2003 respaldado en L1 ('entre enero y marzo del año 2003'); apodo es 'el asesino de la baraja' respaldado en L1, L13 y L20; apodo en es null y no hay fuente en; Wikipedia es apunta a es.wikipedia.org, en es null."
+    }
+  },
+  {
+    "id": "andrei-chikatilo",
+    "confirmed": 52,
+    "attributed": {
+      "min": 56,
+      "max": 56
+    },
+    "countries": [
+      "RU",
+      "UA",
+      "UZ"
+    ],
+    "activeYears": "1978-1990",
+    "nickname": {
+      "es": "el Destripador de Rostov",
+      "en": "the Rostov Ripper"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Andréi_Chikatilo",
+      "en": "https://en.wikipedia.org/wiki/Andrei_Chikatilo"
+    },
+    "confirmedQuote": "Akubzhanov began sentencing by announcing Chikatilo guilty of fifty-two of the fifty-three murders for which he had been tried.",
+    "attributedQuote": "Chikatilo confessed to fifty-six murders; he was tried for fifty-three murders in April 1992.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 52: cita literal en L179 (en), la línea dice 'guilty of fifty-two of the fifty-three murders... sentenced to death for each offence' (condena), sección '=== Closing arguments and conviction ===' (documental); es L3 corrobora sin discrepancia ('Fue condenado y sentenciado por 52 muertes'); attributed 56: cita literal en L2 (en, lead, sin encabezado de ficción), es L3 corrobora ('Confesó un total de 56 asesinatos'); coherencia: 56 >= 52, min=max=56 sin rango invertido; países RU en L3 (Rostov Oblast/Russian SFSR), UA en L111 (asesinato de Ivan Bilovetsky en Zaporizhia), UZ en L84 (viaje de negocios a Tashkent), ninguno es código histórico SU/YU/CS; años 1978 y 1990 en L1; apodo es 'el Destripador de Rostov' en es L2, apodo en 'the Rostov Ripper' en en L1/L3, cada uno nativo en su idioma sin traducción cruzada; wikipedia es y en presentes y con dominio correcto."
+    }
+  },
+  {
+    "id": "arthur-shawcross",
+    "confirmed": 11,
+    "attributed": {
+      "min": 12,
+      "max": 12
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1972-1989",
+    "nickname": {
+      "es": null,
+      "en": "the Genesee River Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Arthur_Shawcross"
+    },
+    "confirmedQuote": "He was convicted of eleven murders, with a twelfth not officially ascribed to him.",
+    "attributedQuote": "He was convicted of eleven murders, with a twelfth not officially ascribed to him.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita literal en L23 ('He was convicted of eleven murders, with a twelfth not officially ascribed to him.'), 'eleven' presente, L23 dice 'convicted of eleven murders'; sección vigente en L23 es '== Second series of murders ==' (documental); attributed 12/12: misma cita L23, 'twelfth' representa el numeral 12 en letra (duodécimo asesinato no adscrito oficialmente), misma sección documental; coherencia: attributed.min(12) >= confirmed(11), min=max=12 no invertido; attributedQuote presente y attributed no nulo, coherente; país US respaldado en L1 ('an American serial killer'), no es código histórico; activeYears 1972 y 1989 en L1 ('between 1972 and 1989'); apodo en 'the Genesee River Killer' en L1, apodo es es null (sin apodo que validar); wikipedia.en apunta a en.wikipedia.org, wikipedia.es es null y hay al menos una URL no nula."
+    }
+  },
+  {
+    "id": "carl-panzram",
+    "confirmed": 5,
+    "attributed": {
+      "min": 21,
+      "max": 21
+    },
+    "countries": [
+      "US",
+      "AO"
+    ],
+    "activeYears": "1915-1929",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Carl_Panzram",
+      "en": "https://en.wikipedia.org/wiki/Carl_Panzram"
+    },
+    "confirmedQuote": "Panzram confessed to having murdered twenty-one boys and men, only five of which could be corroborated.",
+    "attributedQuote": "Panzram confessed to having murdered twenty-one boys and men, only five of which could be corroborated.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "cita confirmada/atribuida idéntica en L1 EN: 'Panzram confessed to having murdered twenty-one boys and men, only five of which could be corroborated.'; confirmed=5 respaldado por 'five... could be corroborated' (confirmación por corroboración), attributed=21 respaldado por 'twenty-one boys and men' (confesión); no se usó la cifra vaga 'more than a hundred' de la misma línea por no ser concreta; L1 no tiene encabezado de sección previo (introducción, sección documental); attributed.min(21) >= confirmed(5), min=max=21 sin inversión; attributedQuote presente y coherente con attributed no nulo; US en L51 ('lured sailors...onto the yacht...murdering them' en Nueva York/Long Island Sound); AO: la evidencia apunta a L58 que solo sitúa a Panzram en Angola sin mencionar asesinato ('landed in Luanda... foreman of an oil rig'), pero el mismo párrafo continúa en L60 con 'he claimed that he raped and killed an Angolan boy', que sí asocia el país a un asesinato — el código del país queda respaldado por el contexto inmediato del párrafo aunque la línea de evidencia (58) no sea la más precisa; ningún código histórico (SU/YU/CS) ni inexistente; activeYears 1915 y 1929 aparecen en L41 ('killed Minto on September 27, 1915') y L83 ('On June 20, 1929, Panzram beat Warnke to death'); apodos es/en ambos null, sin verificación necesaria; URLs es.wikipedia.org y en.wikipedia.org bien formadas; fuente es no aporta cifra numérica concreta de víctimas (L25, L34, L42) por lo que no hay discrepancia con la cifra en inglés."
+    }
+  },
+  {
+    "id": "carlos-robledo-puch",
+    "confirmed": 11,
+    "attributed": null,
+    "countries": [
+      "AR"
+    ],
+    "activeYears": "1971-1972",
+    "nickname": {
+      "es": "el Ángel Negro",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Carlos_Robledo_Puch",
+      "en": null
+    },
+    "confirmedQuote": "Los 11 asesinatos de Robledo Puch",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita literal en L20 ('Los 11 asesinatos de Robledo Puch (los primeros seis fueron con su cómplice Jorge Ibáñez):'), contiene '11'; L20 en sí no usa la palabra 'condenado', pero no usa ningún término de sospecha/atribución ('se sospecha', 'se cree', 'se atribuye') y la sección == Cronología de sus delitos == narra los hechos como establecidos, corroborado por L1 ('fue condenado a reclusión perpetua por diez homicidios calificados, un homicidio simple' = 10+1 = 11, misma cifra), por lo que no aplica el error de cifra atribuida; sección vigente en L20 es '== Cronología de sus delitos ==', documental (no ficción/aparato); attributed es null y el candidato no trae attributedQuote, coherente (no hay número atribuido en sección documental: la única cifra adicional, 'Mató a 12' en L72, está en '== En la cultura popular ==', sección prohibida); país AR respaldado en L1 ('es un asesino en serie argentino'), no es código histórico ni inexistente; activeYears 1971 (L10, '15 de marzo de 1971') y 1972 (L1 'Cumple prisión efectiva desde 1972' y L31 '3 de febrero de 1972') respaldados; apodo es 'el Ángel Negro' en L1 ('Apodado el Ángel Negro'), coherente con idioma es; apodo en es null, sin fuente en inglés (no existe carlos-robledo-puch.en.txt); wikipedia.es apunta a es.wikipedia.org (dominio correcto), wikipedia.en es null, al menos una URL no nula."
+    }
+  },
+  {
+    "id": "cayetano-santos-godino",
+    "confirmed": 4,
+    "attributed": null,
+    "countries": [
+      "AR"
+    ],
+    "activeYears": "1906-1912",
+    "nickname": {
+      "es": "El Petiso Orejudo",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Cayetano_Santos_Godino",
+      "en": null
+    },
+    "confirmedQuote": "fue responsable de la muerte de cuatro niños, siete intentos de homicidio y el incendio de siete edificios.",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 4: cita literal en L1 ('fue responsable de la muerte de cuatro niños...'), contiene 'cuatro'; L1 lo afirma en voz propia de Wikipedia (no 'se sospecha'/'se atribuye'), y L51 corrobora con 'confesó cuatro homicidios'; sin encabezado de sección antes de L1 (introducción, documental); attributed es null y no hay attributedQuote, coherente; país AR respaldado en L1 ('asesino argentino'... 'historia argentina'), no es código histórico; activeYears 1906 en L17 (María Rosa Face) y 1912 en L30-L44 (sección '=== 1912 ===', varios crímenes); apodo es 'El Petiso Orejudo' hallado en L1, y en es null así que no aplica; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+    }
+  },
+  {
+    "id": "daniel-camargo-barbosa",
+    "confirmed": 72,
+    "attributed": {
+      "min": 150,
+      "max": 200
+    },
+    "countries": [
+      "EC"
+    ],
+    "activeYears": "1984-1986",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Daniel_Camargo",
+      "en": null
+    },
+    "confirmedQuote": "Fue condenado por 72 asesinatos",
+    "attributedQuote": "mató a más de 150 mujeres o incluso a más de 200",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 72: cita literal en L14 ('Fue condenado por 72 asesinatos'), la línea dice 'Fue condenado por 72 asesinatos', sección vigente '=== Entrada en el mundo de la delincuencia ===' (no es de ficción/aparato); attributed 150-200: cita literal en L14 ('mató a más de 150 mujeres o incluso a más de 200'), misma línea y sección documental, min 150 >= confirmed 72, min 150 < max 200; EC (Ecuador) respaldado en L14 ('Logró llegar a orillas de Ecuador', 'la población ecuatoriana'), no es código histórico ni inexistente; activeYears 1984 en L14 y 1986 en L15; apodos es/en ambos null, sin discrepancia (la meta señala que 'el monstruo de las mareas' en L34 es solo título bibliográfico, no apodo en el cuerpo, por eso se dejó null); wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null (al menos una URL no nula); solo existe fuente .es.txt, coherente con sourceLang 'es' y wikipedia.en null."
+    }
+  },
+  {
+    "id": "david-berkowitz",
+    "confirmed": 6,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1975-1977",
+    "nickname": {
+      "es": "El hijo de Sam",
+      "en": "the Son of Sam"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/David_Berkowitz",
+      "en": "https://en.wikipedia.org/wiki/David_Berkowitz"
+    },
+    "confirmedQuote": "pleaded guilty to second-degree murder and was sentenced to six concurrent life sentences",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en L2 ('pleaded guilty to second-degree murder and was sentenced to six concurrent life sentences'), menciona 'six'; L2 dice que se declaró culpable (guilty), no solo sospecha; sin encabezado de sección antes de L2 (está en la introducción, documental); attributed null y sin attributedQuote, coherente; país US respaldado en L1 EN ('American serial killer', 'New York City') y sin códigos históricos; activeYears 1975 y 1977 en L1 EN ('between 1975 and 1977'); apodo es 'El hijo de Sam' en L1 ES, apodo en 'the Son of Sam' en L1 EN; wikipedia es y en bien formadas (es.wikipedia.org / en.wikipedia.org)"
+    }
+  },
+  {
+    "id": "dennis-nilsen",
+    "confirmed": 6,
+    "attributed": {
+      "min": 12,
+      "max": 15
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1978-1983",
+    "nickname": {
+      "es": "el Muswell Hill Murderer",
+      "en": "the Muswell Hill Murderer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Dennis_Nilsen",
+      "en": "https://en.wikipedia.org/wiki/Dennis_Nilsen"
+    },
+    "confirmedQuote": "the jury returned with a majority verdict of guilty upon six counts of murder and one of attempted murder",
+    "attributedQuote": "Nilsen is known to have killed twelve young men and boys between 1978 and 1983; it is suspected that the true number of victims may be fifteen.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en L126 ('...guilty upon six counts of murder...'), sección '== Trial and sentence ==', L126 confirma condena; attributed 12-15: cita literal en L151 ('Nilsen is known to have killed twelve... suspected... may be fifteen'), sección '== Victims ==', min(12)>=confirmed(6) y min<=max; GB respaldado en L1 ('Scottish serial killer'), L2 ('North London addresses'), L160 ('tour of the UK'); activeYears 1978 y 1983 en L1; apodo en 'the Muswell Hill Murderer' en L3, apodo es 'el Muswell Hill Murderer' en L4 de dennis-nilsen.es.txt; discrepancia es/en en cifra atribuida (es L2: 'al menos 15 jóvenes' vs en 12-15) pero candidato usa la cifra menor (12), conforme a la regla; wikipedia es y en presentes y con dominio correcto."
+    }
+  },
+  {
+    "id": "dennis-rader",
+    "confirmed": 10,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1974-1991",
+    "nickname": {
+      "es": "Asesino BTK",
+      "en": "BTK"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Dennis_Rader",
+      "en": "https://en.wikipedia.org/wiki/Dennis_Rader"
+    },
+    "confirmedQuote": "convicto por los asesinatos de diez personas en Wichita",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 10: cita literal en L1 ('convicto por los asesinatos de diez personas en Wichita'), contiene 'diez'; L1 dice 'convicto por' (condena); sección documental vigente en L1 es la introducción (sin encabezado de ficción); attributed null y sin attributedQuote, consistente con EN L154-159 (solo confesó los diez cargos) y EN L175 ('the ten known murders were believed to be the only cases for which Rader was responsible', tras investigaciones exhaustivas sin más asesinatos confirmados; los casos de Kinney y Garber en L178-179 quedan como sospecha/suspect, no condena); país US respaldado en L1 ('asesino en serie estadounidense' / EN L1 'American serial killer'), sin códigos históricos; activeYears 1974 y 1991 en L1; apodo es 'Asesino BTK' en L2 ('Asesino BTK'); apodo en 'BTK' en L1 ('pseudonym BTK'); URLs es.wikipedia.org y en.wikipedia.org correctas."
+    }
+  },
+  {
+    "id": "donald-harvey",
+    "confirmed": 37,
+    "attributed": {
+      "min": 50,
+      "max": 50
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1970-1987",
+    "nickname": {
+      "es": "el ángel de la muerte",
+      "en": "the angel of death"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Donald_Harvey",
+      "en": "https://en.wikipedia.org/wiki/Donald_Harvey"
+    },
+    "confirmedQuote": "Ultimately, Harvey pleaded guilty to 37 murders.",
+    "attributedQuote": "he confessed to killing as many as 50 people",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 37: cita literal en L20 ('Ultimately, Harvey pleaded guilty to 37 murders'), la línea dice 'pleaded guilty' (condena), L1 refuerza con 'though he has 37 confirmed victims'; sección vigente en L20 es 'Investigation' (documental); attributed 50-50: cita literal en L20 ('he confessed to killing as many as 50 people'), misma sección documental; coherencia 50>=37 y min=max no invertido; es.txt L1 da rango 'entre 37 y 57 víctimas' (estimación oficial) que no contradice el confirmed=37 (coincide con el suelo) ni menciona 50/70 explícitamente, así que no hay discrepancia de cifra concreta entre fuentes; US respaldado en L1 en ('an American serial killer'); activeYears 1970 y 1987 en L1 en ('His spree took place between 1970 and 1987'); apodo es 'ángel de la muerte' en es L2, apodo en 'angel of death' en en L2, sin cruce entre idiomas; wikipedia es y en ambas apuntan a su dominio correcto."
+    }
+  },
+  {
+    "id": "edmund-kemper",
+    "confirmed": 8,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1964-1973",
+    "nickname": {
+      "es": "El asesino de las colegialas",
+      "en": "the Co-ed Killer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Edmund_Kemper",
+      "en": "https://en.wikipedia.org/wiki/Edmund_Kemper"
+    },
+    "confirmedQuote": "Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 8: cita literal en L2 ('Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.'), contiene 'eight'; L2 dice 'Found sane and guilty at his trial in 1973' (condena, no atribución); sin encabezado de sección antes de L2 (parte de la introducción, no ficción/aparato); ES corrobora con L17 'hallado culpable de ocho cargos por asesinato' (misma cifra, sin discrepancia); attributed=null y no hay attributedQuote, coherente; US respaldado en L1 EN ('is an American serial killer') y L1 ES; sin códigos SU/YU/CS; activeYears 1964 en L20 EN ('On August 27, 1964... Kemper killed his grandmother') y 1973 en L1/L2/L72/L85 EN; apodo es 'El asesino de las colegialas' en L1 ES; apodo en 'the Co-ed Killer' en L1 EN; ambas URL de Wikipedia bien formadas (es.wikipedia.org y en.wikipedia.org)."
+    }
+  },
+  {
+    "id": "francisco-garcia-escalero",
+    "confirmed": 11,
+    "attributed": {
+      "min": 14,
+      "max": 14
+    },
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1987-1994",
+    "nickname": {
+      "es": "el matamendigos",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Francisco_García_Escalero",
+      "en": null
+    },
+    "confirmedQuote": "la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas",
+    "attributedQuote": "relató a la policía uno por uno, catorce asesinatos",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita L1 ('la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas'), sección intro (sin encabezado, antes de '== Biografía =='); attributed 14: cita L21 ('relató a la policía uno por uno, catorce asesinatos'), sección '=== La detención y confesión ==='; coherencia: 14 >= 11, min=max=14 sin rango invertido; ES respaldado en L1 ('asesino en serie español', Madrid); activeYears 1987 en L13 ('En agosto de 1987') y 1994 en L21 ('En abril de 1994'); apodo es 'el matamendigos' en L1, en=null sin fuente en inglesa (consistente); wikipedia es apunta a es.wikipedia.org, en=null."
+    }
+  },
+  {
+    "id": "fritz-haarmann",
+    "confirmed": 24,
+    "attributed": {
+      "min": 50,
+      "max": 70
+    },
+    "countries": [
+      "DE"
+    ],
+    "activeYears": "1918-1924",
+    "nickname": {
+      "es": "el Carnicero de Hannover",
+      "en": "the Butcher of Hanover"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Fritz_Haarmann",
+      "en": "https://en.wikipedia.org/wiki/Fritz_Haarmann"
+    },
+    "confirmedQuote": "Found guilty of twenty-four of the twenty-seven murders for which he was tried, Haarmann was sentenced to death by beheading in December 1924.",
+    "attributedQuote": "later, he would claim the true number of victims he had killed was between fifty and seventy.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 24: cita literal en L2 ('Found guilty of twenty-four of the twenty-seven murders...sentenced to death by beheading'), sin encabezado de sección forzoso (está en la introducción); attributed 50-70: cita literal en L138 ('between fifty and seventy'), bajo encabezado '== Victims =='; coherencia 50>=24 y 50<=70 OK; countries DE respaldado en L1 ('German serial rapist...') y L32/34 ('Germany'), no es SU/YU/CS ni código inexistente; activeYears 1918 y 1924 aparecen en L1 y L42 (nota: el meta.yearsLine=41 apunta al encabezado '== Known and alleged murders ==', no a la línea con los años, pero el dato sí está respaldado en líneas cercanas); apodo es 'el Carnicero de Hannover' en es L3, apodo en 'the Butcher of Hanover' en en L1/L3, sin mezcla entre idiomas; wikipedia es y en ambas presentes y con dominio correcto. Nota adicional: es dice 'se le atribuyen más de 100 víctimas' (L1) frente al rango en inglés 50-70 (L138); el candidato usa la cifra menor (50-70), cumpliendo la regla de discrepancia entre fuentes."
+    }
+  },
+  {
+    "id": "gary-ridgway",
+    "confirmed": 49,
+    "attributed": {
+      "min": 71,
+      "max": 71
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1982-1998",
+    "nickname": {
+      "es": "el asesino de Green River",
+      "en": "the Green River Killer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Gary_Ridgway",
+      "en": "https://en.wikipedia.org/wiki/Gary_Ridgway"
+    },
+    "confirmedQuote": "convicted of murdering forty-nine women between 1982 and 1998",
+    "attributedQuote": "Ridgway confessed to murdering at least 71 victims.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 49: cita literal en L1 ('convicted of murdering forty-nine women between 1982 and 1998'), L1 dice 'convicted of', sección introductoria (sin encabezado); attributed 71: cita literal en L54 ('Ridgway confessed to murdering at least 71 victims.'), sección '== Victims =='; discrepancia ES/EN detectada (ES L1 dice 'ha confesado hasta 79 asesinatos', EN L54 dice 71): el candidato usa sourceLang en con la cifra menor (71), cumple la regla; país US respaldado en L1 ('American serial killer... in the northwestern United States') y L20 (Seattle y Tacoma, Washington); activeYears 1982 y 1998 en L1; apodo es 'el asesino de Green River' en L1 ES ('«El asesino de Green River»'); apodo en 'the Green River Killer' en L1 EN; wikipedia es y en presentes y bien formadas."
+    }
+  },
+  {
+    "id": "gregorio-cardenas",
+    "confirmed": 4,
+    "attributed": null,
+    "countries": [
+      "MX"
+    ],
+    "activeYears": "1942",
+    "nickname": {
+      "es": "el Estrangulador de Tacuba",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Gregorio_Cárdenas",
+      "en": null
+    },
+    "confirmedQuote": "los cuerpos de sus 4 víctimas",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 4: cita literal en L9 ('...descubiertos los cuerpos de sus 4 víctimas'), la cita trae el número en cifra, la línea afirma como hecho el hallazgo de los 4 cuerpos (corroborado por L24: confesión y hallazgo de 4 cuerpos -Graciela + 3-), sección vigente en L9 es 'Infancia y juventud' (no es de ficción/aparato); attributed=null y no hay attributedQuote en el JSON, coherente; país MX respaldado en L1 ('mexicano', 'Ciudad de México'), no usa códigos históricos ni inexistentes; activeYears '1942' respaldado en L13 y L15; apodo es 'el Estrangulador de Tacuba' respaldado en L1, nickname.en es null y no hay apodo en inglés que comprobar; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null (al menos una URL no nula)."
+    }
+  },
+  {
+    "id": "harold-shipman",
+    "confirmed": 15,
+    "attributed": {
+      "min": 250,
+      "max": 250
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1975-1998",
+    "nickname": {
+      "es": null,
+      "en": "Dr. Death"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Harold_Shipman",
+      "en": "https://en.wikipedia.org/wiki/Harold_Shipman"
+    },
+    "confirmedQuote": "Shipman was convicted of murdering 15 patients under his care",
+    "attributedQuote": "with an estimated 250 victims over roughly 30 years",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 15: cita literal en EN L1 ('Shipman was convicted of murdering 15 patients under his care'), misma línea dice 'was convicted of murdering', sección de cabecera/lead (sin encabezado de ficción); attributed 250: cita literal en EN L1 ('with an estimated 250 victims over roughly 30 years'), min=max=250 >= confirmed=15; ES corrobora ambas cifras (L2 'condenado... por los asesinatos de 15 de sus pacientes' y L38 'el número probable de las víctimas de Shipman entre 1971 y 1998 era de 250'), sin discrepancia entre fuentes (las cifras intermedias 218/215/500 no se usan); país GB respaldado en EN L13 (Todmorden, Hyde, Greater Manchester) y L1 ('English doctor'), sin códigos históricos ni inexistentes; activeYears 1975 y 1998 en EN L42 ('between 1975 and 1998'); apodo en 'Dr. Death' en EN L3 ('nicknamed \"Dr. Death\"'), nickname.es correctamente null (en ES solo aparece dentro del título de un enlace externo, L67, no como apodo afirmado); wikipedia.es y wikipedia.en presentes y con dominio correcto."
+    }
+  },
+  {
+    "id": "jeffrey-dahmer",
+    "confirmed": 16,
+    "attributed": {
+      "min": 17,
+      "max": 17
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1978-1991",
+    "nickname": {
+      "es": null,
+      "en": "the Milwaukee Cannibal"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Jeffrey_Dahmer",
+      "en": "https://en.wikipedia.org/wiki/Jeffrey_Dahmer"
+    },
+    "confirmedQuote": "He was convicted of 16 counts of murder",
+    "attributedQuote": "killed and dismembered seventeen men and boys",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 16: cita literal en L3 ('He was convicted of 16 counts of murder (15 in Wisconsin and one in Ohio)'), condena explícita, sección de introducción (sin encabezado de ficción); attributed 17/17: cita literal en L1 ('killed and dismembered seventeen men and boys'), misma sección de introducción; coherencia 17>=16 ok, min=max no hay rango invertido; US respaldado en L1 ('American serial killer'); activeYears 1978 y 1991 respaldados en L1 y L2/L3; apodo en 'the Milwaukee Cannibal' en L1, no aparece en fuente es (nickname.es es null, correcto); ES coincide con EN en confirmed (15 Wisconsin + 1 Ohio = 16) y attributed (diecisiete = 17), sin discrepancia; wikipedia es y en presentes y con dominio correcto"
+    }
+  },
+  {
+    "id": "jerry-brudos",
+    "confirmed": 3,
+    "attributed": {
+      "min": 4,
+      "max": 4
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1968-1969",
+    "nickname": {
+      "es": null,
+      "en": "the Lust Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Jerry_Brudos"
+    },
+    "confirmedQuote": "entered a plea of guilty to three counts of first-degree murder",
+    "attributedQuote": "murder of four young women between 1968 and 1969",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 3: cita literal en L141 ('entered a plea of guilty to three counts of first-degree murder'), sección == Conviction ==, L141 dice declaración de culpabilidad; attributed 4-4: cita literal en L1 ('murder of four young women between 1968 and 1969'), L1 sin encabezado de sección de ficción (introducción); coherencia: attributed.min 4 >= confirmed 3, min=max=4 no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado por 'American' en L1, no es código histórico ni inexistente; activeYears 1968 y 1969 en L1 y L64; apodo en 'Lust Killer' en L1 y L4, apodo es es null (sin comprobación); wikipedia.en apunta a en.wikipedia.org, wikipedia.es null pero hay al menos una URL no nula."
+    }
+  },
+  {
+    "id": "joaquin-ferrandiz",
+    "confirmed": 5,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1995-1998",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Joaquín_Ferrándiz_Ventura",
+      "en": null
+    },
+    "confirmedQuote": "fue declarado culpable de cinco cargos de asesinato",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 5: cita literal en L24 ('fue declarado culpable de cinco cargos de asesinato'), contiene 'cinco' y confirma condena, no sospecha; sección vigente en L24 es 'Juicio y sentencia' (documental); attributed null y sin attributedQuote en el candidato, coherente; ES respaldado en L6 ('provincia española de Valencia'); activeYears 1995 en L16 y 1998 en L18; sin apodos (es/en null); wikipedia.es apunta a es.wikipedia.org, wikipedia.en null (no hay fuente .en.txt), cumple con al menos una URL no nula."
+    }
+  },
+  {
+    "id": "joel-rifkin",
+    "confirmed": 9,
+    "attributed": {
+      "min": 17,
+      "max": 17
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1989-1993",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Joel_Rifkin",
+      "en": "https://en.wikipedia.org/wiki/Joel_Rifkin"
+    },
+    "confirmedQuote": "convicted for killing nine women between 1989 and 1993",
+    "attributedQuote": "In total he confessed to murdering 17 women.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita en L1 'convicted for killing nine women between 1989 and 1993', la línea dice 'sentenced to 203 years in prison after being convicted', sección introductoria (sin encabezado de ficción); attributed 17: cita en L1 'In total he confessed to murdering 17 women.', misma sección; min=max=17 >= confirmed 9, sin rango invertido; attributedQuote presente y attributed no nulo, coherente; país US en L12 (New York City, New Jersey) y en L1 'American serial killer', código de país válido y no histórico; activeYears 1989 y 1993 en L1; apodos es y en ambos null, sin apodoQuote y sin menciones de apodo en ninguna fuente; wikipedia es y en presentes y con dominios correctos; fuente es (L1) corrobora las mismas cifras (nueve confirmadas, 'se estima que asesinó a 17 mujeres'), sin discrepancia entre fuentes."
+    }
+  },
+  {
+    "id": "john-christie",
+    "confirmed": 6,
+    "attributed": null,
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1943-1953",
+    "nickname": null,
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/John_Christie",
+      "en": "https://en.wikipedia.org/wiki/John_Christie_(serial_killer)"
+    },
+    "confirmedQuote": "Asesinó a por lo menos seis mujeres",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmedQuote 'Asesinó a por lo menos seis mujeres' literal en es.txt L2 (grep -n -F); la cita contiene 'seis' (6); L2 pertenece a la introducción (awk sobre encabezados '^=' no encuentra ninguno antes de L2, luego no hay sección de ficción/aparato); la línea completa (sed -n '2p') afirma en voz propia 'Asesinó a por lo menos seis mujeres... en Londres', sin cobertura de duda ('se sospecha/cree/atribuye'), y L3 confirma que ademas fue detenido y condenado por el asesinato de su esposa; comprobado que en.txt L1 dice 'He murdered at least eight people' (8), por lo que persiste la discrepancia real entre fuentes, pero ahora el candidato trae la cifra MENOR (6) con sourceLang 'es', que es lo que exige la regla; attributed es null y no hay attributedQuote en el JSON, coherente (regla 7 ok); GB respaldado en es.txt L2 ('en Londres') y L1 ('de origen inglés'); no es código histórico (SU/YU/CS) ni inexistente; activeYears 1943 y 1953 ambos en es.txt L6 ('Los crímenes los cometió entre 1943 y 1953'); apodo null en es y en, sin comprobación necesaria; wikipedia.es apunta a es.wikipedia.org/wiki/John_Christie y wikipedia.en a en.wikipedia.org/wiki/John_Christie_(serial_killer), ambas bien formadas y no nulas."
+    }
+  },
+  {
+    "id": "john-george-haigh",
+    "confirmed": 6,
+    "attributed": {
+      "min": 9,
+      "max": 9
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1944-1949",
+    "nickname": {
+      "es": "el «Asesino del baño de ácido»",
+      "en": "the Acid Bath Murderer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/John_George_Haigh",
+      "en": "https://en.wikipedia.org/wiki/John_George_Haigh"
+    },
+    "confirmedQuote": "convicted for the murders of six people",
+    "attributedQuote": "he claimed to have killed nine",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en EN L1 'convicted for the murders of six people'; ES L7 confirma 'seis víctimas' declarado culpable, sin discrepancia; sección: L1 es introducción, sin encabezado de ficción; attributed 9: cita literal en EN L1 'he claimed to have killed nine', min=max=9, coherente con confirmed=6, ES L7 confirma 'nueve personas' confesadas; país GB: 'English' en EN L1, código no histórico; activeYears 1944-1949: 1944 en EN L17 (primer asesinato, McSwan, 6 sept 1944) y 1949 en EN L1/L25/L34 (último asesinato Durand-Deacon 18 feb 1949 y ejecución 10 ago 1949); apodo es: 'el «Asesino del baño de ácido»' en ES L1; apodo en: 'the Acid Bath Murderer' en EN L1; wikipedia: ambas URLs presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)"
+    }
+  },
+  {
+    "id": "john-wayne-gacy",
+    "confirmed": 33,
+    "attributed": {
+      "min": 45,
+      "max": 45
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1972-1978",
+    "nickname": {
+      "es": "El payaso asesino",
+      "en": "the Killer Clown"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/John_Wayne_Gacy",
+      "en": "https://en.wikipedia.org/wiki/John_Wayne_Gacy"
+    },
+    "confirmedQuote": "Gacy was found guilty of 33 charges of murder",
+    "attributedQuote": "the total number of murder victims could be as high as 45",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 33: cita literal en L221 (grep -n -F), la línea dice 'Gacy was found guilty of 33 charges of murder' (condena), sección vigente '=== Closing arguments ===' (awk hasta L221), documental; attributed 45: cita literal en L296 (grep -n -F), contiene '45', sección vigente '=== Possible additional victims ===', documental, min=max=45>=confirmed 33 sin rango invertido; US respaldado en L1 en ('American serial killer... 1972 and 1978 in ... Illinois') y es L1 ('estadounidense'); activeYears 1972 y 1978 en L1 en/es; apodo en 'Killer Clown' en L1/L78 en, apodo es 'El Payaso Asesino' en L1/L2 es, sin cruce de idiomas (grep -in en cada fuente contraria sin coincidencia de la frase); es no menciona 45 (grep -n '45' sin resultados), sin discrepancia entre fuentes porque solo en aporta la cifra atribuida; wikipedia es y en con dominios correctos."
+    }
+  },
+  {
+    "id": "jose-antonio-rodriguez-vega",
+    "confirmed": 16,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1987-1988",
+    "nickname": {
+      "es": "el Mataviejas",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/José_Antonio_Rodríguez_Vega",
+      "en": null
+    },
+    "confirmedQuote": "Condenado a un total de 440 años por los 16 asesinatos",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 16: cita literal en L31 ('Condenado a un total de 440 años por los 16 asesinatos'), la línea dice 'Condenado' (condena); sección vigente en L31 es '== Muerte ==' (documental, no ficción); attributed null y no hay attributedQuote, coherente; país ES respaldado en L5 ('España'); activeYears 1987 y 1988 en L1 ('entre agosto de 1987 y abril de 1988'); apodo es 'el Mataviejas' en L1, apodo en null coherente con ausencia de fuente en inglés; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+    }
+  },
+  {
+    "id": "juan-corona",
+    "confirmed": 25,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1971",
+    "nickname": null,
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Juan_Corona_(asesino)",
+      "en": "https://en.wikipedia.org/wiki/Juan_Corona"
+    },
+    "confirmedQuote": "Corona was convicted of 25 counts of first-degree murder in 1973.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 25: cita literal en L2 de juan-corona.en.txt ('Corona was convicted of 25 counts of first-degree murder in 1973'); la línea dice 'was convicted', es condena, no sospecha; sección: sin encabezado (introducción), no es ficción; es.txt L23 también dice 'culpable de veinticinco homicidios' y L16 dice '25 cuerpos', mismo número, sin discrepancia; attributed es null y no hay attributedQuote, coherente; US respaldado en L1 ('California', 'U.S. history'); activeYears '1971' (año único) aparece en L1 ('California, in 1971'); apodo null en ambos idiomas, se omite comprobación; wikipedia es y en presentes y con dominios correctos (es.wikipedia.org / en.wikipedia.org)."
+    }
+  },
+  {
+    "id": "juana-barraza",
+    "confirmed": 16,
+    "attributed": {
+      "min": 40,
+      "max": 40
+    },
+    "countries": [
+      "MX"
+    ],
+    "activeYears": "1997-2006",
+    "nickname": {
+      "es": "la Mataviejitas",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Juana_Barraza_Samperio",
+      "en": null
+    },
+    "confirmedQuote": "esto con los cargos del asesinato de dieciséis mujeres, y doce robos",
+    "attributedQuote": "en el resto de los diez asesinatos (de entre los cuarenta que se le sospechaban)",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 16: cita literal en L26 ('...dieciséis mujeres...'), línea dice 'fue condenada a 759 años de prisión...con los cargos del asesinato'; sección vigente L26 = 'Juicio' (documental); attributed 40: cita literal en L18 ('...de entre los cuarenta que se le sospechaban...'), min=max=40 respaldados; sección vigente L18 = 'Arresto' (documental); coherencia: 40 >= 16, min=max sin inversión; MX respaldada en L1 ('es una asesina en serie mexicana'); activeYears 1997 y 2006 en L10 y L16; apodo es 'la Mataviejitas' en L1; nickname.en y wikipedia.en son null, sin discrepancia; wikipedia.es apunta a es.wikipedia.org"
+    }
+  },
+  {
+    "id": "leonard-lake",
+    "confirmed": 11,
+    "attributed": {
+      "min": 11,
+      "max": 25
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1983-1985",
+    "nickname": {
+      "es": null,
+      "en": "The Sex Slave Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Leonard_Lake"
+    },
+    "confirmedQuote": "burned and crushed human bone fragments from at least 11 bodies",
+    "attributedQuote": "murdered at least eleven and perhaps up to twenty-five victims",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita literal L39 ('...bone fragments from at least 11 bodies'), contiene '11', línea afirma como hecho forense (no atribuido/sospechado) el hallazgo de restos de al menos 11 cuerpos, bajo sección '== Lake's fall and aftermath ==' (documental); attributed 11-25: cita literal L1 ('murdered at least eleven and perhaps up to twenty-five victims'), contiene 'eleven' y 'twenty-five', L1 es texto introductorio (no ficción/aparato); coherencia: min(11)=confirmed(11), min<=max ok; US respaldado en L1 ('American survivalist and serial killer'), no es código histórico; activeYears 1983 y 1985 en L1 ('between 1983 and 1985'); apodo en 'The Sex Slave Killer' en L1 ('also known as The Sex Slave Killer'), es es null sin apodo que comprobar; wikipedia en apunta a en.wikipedia.org, es es null. Nota: Leonard Lake nunca fue condenado (murió antes del juicio, L1 'Lake was never convicted of murder'); quien fue condenado fue su cómplice Charles Ng (L43); la cifra confirmada se basa en evidencia forense (restos óseos hallados), no en condena de Lake, pero la línea no usa lenguaje de sospecha/atribución sino de hecho constatado, por lo que se acepta como confirmación."
+    }
+  },
+  {
+    "id": "luis-garavito",
+    "confirmed": 138,
+    "attributed": {
+      "min": 200,
+      "max": 200
+    },
+    "countries": [
+      "CO",
+      "EC",
+      "VE"
+    ],
+    "activeYears": "1992-1999",
+    "nickname": {
+      "es": "La Bestia",
+      "en": "La Bestia"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Luis_Garavito",
+      "en": "https://en.wikipedia.org/wiki/Luis_Garavito"
+    },
+    "confirmedQuote": "138 tienen fallo condenatorio",
+    "attributedQuote": "la cifra de crímenes sería de 200 personas",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 138: cita literal en es.txt:2 ('138 tienen fallo condenatorio, 32 están en instrucción...'), la línea confirma condena firme, sin encabezado de sección (está en la intro, antes de cualquier ==sección==); en.txt da 193 como 'confirmed to have murdered' (en.txt:1), discrepancia es/en, el candidato usa la cifra menor (138), correcto. attributed 200/200: cita literal en es.txt:2 ('la cifra de crímenes sería de 200 personas'), misma línea sin encabezado de ficción; en.txt da 221 (en.txt:3), discrepancia es/en, el candidato usa la cifra menor (200), correcto; attributed.min(200) >= confirmed(138), no invertido. Países: CO en es.txt:37 ('172 crímenes cometidos contra menores en 11 departamentos de Colombia'); EC en es.txt:4 ('condenado a 22 años de prisión en Ecuador por haber violado y asesinado a dos menores'); VE en es.txt:3 ('admitió haberlo hecho en el exterior, más específicamente en Ecuador y Venezuela'), sin códigos históricos ni inexistentes. Años: 1992 en es.txt:37 ('asesinó al primer niño en Jamundí... en octubre de 1992'), 1999 en es.txt:33/35/36 (captura y confesión); el meta.yearsLine=1 no respalda los años en es.txt (esa línea solo trae 1957/2023 de nacimiento y muerte), apunta en realidad a en.txt:1 ('from 1992 to 1999'): la evidencia del generador está mal referenciada aunque la cifra en sí queda verificada por otras líneas de es.txt. Apodo: 'La Bestia' en es.txt:1 y en en.txt:1, coincide en ambos idiomas. Wikipedia: es y en apuntan a es.wikipedia.org/en.wikipedia.org correctamente."
+    }
+  },
+  {
+    "id": "manuel-delgado-villegas",
+    "confirmed": 7,
+    "attributed": {
+      "min": 48,
+      "max": 48
+    },
+    "countries": [
+      "ES",
+      "IT",
+      "FR"
+    ],
+    "activeYears": "1964-1971",
+    "nickname": {
+      "es": "el Arropiero",
+      "en": "El Arropiero"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Manuel_Delgado_Villegas",
+      "en": null
+    },
+    "confirmedQuote": "Se le consiguieron probar siete",
+    "attributedQuote": "que había matado a 48 personas más",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 7: cita literal en L13 ('Se le consiguieron probar siete'), contiene 'siete'; L13 dice 'se le consiguieron probar' (probado/confirmado), no solo sospecha, coherente con en L33/L38 ('considered the definite perpetrator of seven'); sección vigente en L13 es '== Asesinatos ==' (documental); attributed 48-48: cita literal en L22 ('que había matado a 48 personas más'), contiene '48', sección vigente en L22 también '== Asesinatos =='; coherencia: min(48) >= confirmed(7) y min=max, sin inversión; en.txt corrobora ambas cifras en L1 ('carried out 48 murders ... considered him the definite perpetrator of seven'), sin discrepancia es/en; países ES/IT/FR respaldados en L6 ('viajó por España, Italia y Francia, dejando tras de sí un rastro de cadáveres'), ningún código histórico ni inexistente; activeYears 1964 (L15) y 1971 (L9, L20) respaldados en es; apodo es 'el Arropiero' en L1 es.txt, apodo en 'El Arropiero' en L1 en.txt; wikipedia es apunta a es.wikipedia.org y en es null, al menos una URL presente."
+    }
+  },
+  {
+    "id": "marcelo-costa-de-andrade",
+    "confirmed": 14,
+    "attributed": null,
+    "countries": [
+      "BR"
+    ],
+    "activeYears": "1991",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Marcelo_Costa_de_Andrade"
+    },
+    "confirmedQuote": "murdered 14 boys in the vicinity of Itaboraí",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 14: cita literal en L1 ('murdered 14 boys in the vicinity of Itaboraí'), cita contiene la cifra '14'; L1 afirma el hecho en voz directa de Wikipedia sin cobertura de 'sospecha/cree/atribuye', y el propio artículo lo corrobora aritméticamente (L21: 'thirteen other boys' confesados + Ivan, el crimen por el que fue detenido en L15-17 = 14); L1 está antes de cualquier encabezado de sección (awk no devuelve encabezado), no es sección de ficción; BR respaldado en L1 ('Brazilian serial killer'); activeYears '1991' respaldado en L1, L14, L21 y L24; attributed es null y no hay attributedQuote en el candidato, coherente; apodos es/en ambos null, sin comprobación necesaria; wikipedia.en apunta a en.wikipedia.org y wikipedia.es es null, cumple regla de al menos una URL válida. Nota aparte: L28 indica que Andrade fue declarado inimputable ('declared insane') y no condenado formalmente, pero la cita usada (L1) no está hedged y cumple el criterio textual de la regla 3."
+    }
+  },
+  {
+    "id": "pedro-alonso-lopez",
+    "confirmed": 3,
+    "attributed": {
+      "min": 350,
+      "max": 350
+    },
+    "countries": [
+      "EC",
+      "CO",
+      "PE"
+    ],
+    "activeYears": "1978-1980",
+    "nickname": {
+      "es": "el Monstruo de los Andes",
+      "en": "the Monster of the Andes"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Pedro_Alonso_López",
+      "en": "https://en.wikipedia.org/wiki/Pedro_Alonso_López"
+    },
+    "confirmedQuote": "he was found guilty of three of the murders",
+    "attributedQuote": "the total of 350 confessed murders",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 3: cita literal en L30 ('he was found guilty of three of the murders'), contiene 'three', sección '== Arrest and confession ==' es documental, la línea dice condena explícita ('found guilty'); attributed 350 (min=max): cita literal en L29 ('the total of 350 confessed murders'), contiene '350', misma sección documental; coherencia: 350 >= 3, min=max no hay rango invertido; attributedQuote presente y attributed no nulo, coherente; países: EC en L43 ('within Ecuador'/'Ecuadorian victims'), CO en L19 (El Espinal, condena por Flor Alba Sánchez) y L43 ('in Colombia'), PE en L27 ('many more' in Peru) y L43; ningún código SU/YU/CS ni inexistente; activeYears 1978-1980 respaldados en L1 EN ('from 1978 to 1980'); apodo es 'el Monstruo de los Andes' en L1 ES, apodo en 'the Monster of the Andes' en L1 EN, sin mezcla entre idiomas; wikipedia es y en ambas con dominio correcto; sin discrepancia real es/en (ES L1 dice 'más de 300' confesados y 110 confirmados, compatible con EN L29 '350 confessed' y L30 'three' de condena, ES no da cifra exacta que contradiga)."
+    }
+  },
+  {
+    "id": "pedro-rodrigues-filho",
+    "confirmed": 71,
+    "attributed": {
+      "min": 100,
+      "max": 100
+    },
+    "countries": [
+      "BR"
+    ],
+    "activeYears": "1973",
+    "nickname": {
+      "es": null,
+      "en": "Pedrinho Matador"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Pedro_Rodrigues_Filho"
+    },
+    "confirmedQuote": "was officially sentenced for 71 murders",
+    "attributedQuote": "claimed to have killed over 100 people",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 71: cita literal en L1 ('was officially sentenced for 71 murders'), la línea dice 'officially sentenced' (condena); sección documental: L1 está en el lead, sin encabezado de ficción; attributed 100: cita literal en L1 ('claimed to have killed over 100 people'), misma línea/sección; coherencia: 100 >= 71, min=max=100 no invertido; attributedQuote presente y attributed no nulo, coherente; país BR: L1 'was a Brazilian serial killer'; activeYears '1973' (único año, sin rango): aparece en L22 ('On 24 May 1973... Rodrigues was arrested for the first time'); apodo en 'Pedrinho Matador': aparece en L1 y L11 del texto inglés; no hay apodo es (wiki.es null, consistente); wikipedia: es=null, en=https://en.wikipedia.org/wiki/Pedro_Rodrigues_Filho, dominio correcto y al menos una URL no nula"
+    }
+  },
+  {
+    "id": "peter-kurten",
+    "confirmed": 9,
+    "attributed": null,
+    "countries": [
+      "DE"
+    ],
+    "activeYears": "1913-1929",
+    "nickname": {
+      "es": "El vampiro de Düsseldorf",
+      "en": "The Vampire of Düsseldorf"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Peter_Kürten",
+      "en": "https://en.wikipedia.org/wiki/Peter_Kürten"
+    },
+    "confirmedQuote": "was found guilty of nine counts of murder and seven counts of attempted murder",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita literal en L2 en ('was found guilty of nine counts of murder...'); la cita trae 'nine'; L2 dice 'was found guilty' (condena firme); sección: cabecera de introducción (sin '=', documental, no ficción); ES corrobora en L23 'nueve asesinatos' (misma cifra, sin discrepancia); attributed es null y no hay attributedQuote en el candidato (coherente); DE respaldado en L1 en ('German serial killer') y L1 es ('asesino en serie alemán'); DE no es código histórico ni inexistente; activeYears 1913 en L1/L38 en y 1929 en L1/L50 en ('== 1929 =='); apodo es 'El vampiro de Düsseldorf' en L1 es; apodo en 'The Vampire of Düsseldorf' en L1 en; wikipedia.es apunta a es.wikipedia.org y wikipedia.en a en.wikipedia.org, ambas no nulas."
+    }
+  },
+  {
+    "id": "peter-manuel",
+    "confirmed": 7,
+    "attributed": {
+      "min": 9,
+      "max": 9
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1956-1958",
+    "nickname": {
+      "es": null,
+      "en": "the Beast of Birkenshaw"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Peter_Manuel"
+    },
+    "confirmedQuote": "convicted and executed for the murders of seven people",
+    "attributedQuote": "he is strongly suspected of committing at least nine murders",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 7: cita literal L32 'convicted and executed for the murders of seven people'; línea 32 dice 'convicted and executed', sección == Murders == (documental); attributed 9: cita literal L32 'he is strongly suspected of committing at least nine murders', misma línea y sección; attributed.min 9 >= confirmed 7, min=max=9 no invertido; GB respaldado en L1 ('across Lanarkshire, Scotland' y 'Edmundbyers, England', ambos parte de GB), no es código histórico; activeYears 1956 y 1958 en L1 ('between 1956 and 1958'); apodo en 'the Beast of Birkenshaw' en L1; wikipedia en apunta a en.wikipedia.org, es es null (una URL no nula es suficiente)"
+    }
+  },
+  {
+    "id": "peter-sutcliffe",
+    "confirmed": 13,
+    "attributed": null,
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1975-1980",
+    "nickname": {
+      "es": "El destripador de Yorkshire",
+      "en": "the Yorkshire Ripper"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Peter_Sutcliffe",
+      "en": "https://en.wikipedia.org/wiki/Peter_Sutcliffe"
+    },
+    "confirmedQuote": "convicted of murdering thirteen women and girls",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 13: cita literal en en.txt L1 ('...was convicted of murdering thirteen women and girls...'); la línea dice explícitamente 'was convicted'; sin encabezado de sección antes de L1 (lead, no ficción). ES L2 coincide ('Asesinó a trece mujeres'), sin discrepancia entre fuentes. attributed es null y no hay attributedQuote en el candidato, coherente (sin error). País GB respaldado en en.txt L1 ('an English serial killer' y víctimas en Manchester y West Yorkshire, territorio del Reino Unido); no es código histórico ni inexistente. activeYears 1975 y 1980 respaldados en en.txt L1 ('between 1975 and 1980'). Apodo en ('the Yorkshire Ripper') en en.txt L1 ('Press reports dubbed him the \"Yorkshire Ripper\"'); apodo es ('El destripador de Yorkshire') en es.txt L1 ('lo que le valió el apodo de El destripador de Yorkshire'); comprobado que ninguno aparece en el idioma contrario (sin traducción cruzada). Wikipedia es y en no nulas y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
+    }
+  },
+  {
+    "id": "richard-kuklinski",
+    "confirmed": 4,
+    "attributed": {
+      "min": 100,
+      "max": 200
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1980-1984",
+    "nickname": {
+      "es": "Iceman",
+      "en": "the Iceman"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Richard_Kuklinski",
+      "en": "https://en.wikipedia.org/wiki/Richard_Kuklinski"
+    },
+    "confirmedQuote": "In 1988, he was convicted of four murders and sentenced to life imprisonment.",
+    "attributedQuote": "He claimed to have murdered anywhere from 100 to 200 men, often in gruesome fashion.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmedQuote literal en EN L2 ('In 1988, he was convicted of four murders...'); la cita contiene 'four' y la línea dice 'convicted of four murders' (condena); L2 está antes del primer encabezado (lead, sección documental). attributedQuote literal en EN L3 ('He claimed to have murdered anywhere from 100 to 200 men...'); contiene 100 y 200; L3 también en el lead. Coherencia: attributed.min 100 >= confirmed 4; min 100 <= max 200. Discrepancia ES/EN: ES trae cifras internamente distintas (L1 'condenado por 6 asesinatos', L54 'declarado culpable de cinco asesinatos') y EN L2 da 4; el candidato usa 4, la menor de todas, cumple la regla. Para lo atribuido, ES L1 da 100-200, ES L3 (cuerpo) da 100-250, EN L3 da 100-200; el candidato usa 200 como máximo, que es el valor menor entre las fuentes, cumple la regla. País US: EN L1 dice 'American' y 'New Jersey-based'. Años 1980 y 1984: ambos en EN L1 ('committed between 1980 and 1984'). Apodo es 'Iceman' en ES L1; apodo en 'the Iceman' en EN L1. Wikipedia: es apunta a es.wikipedia.org, en apunta a en.wikipedia.org, ambas coherentes con su idioma."
+    }
+  },
+  {
+    "id": "richard-ramirez",
+    "confirmed": 13,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1984-1985",
+    "nickname": {
+      "es": "El Acosador Nocturno",
+      "en": "the Night Stalker"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Richard_Ramirez",
+      "en": "https://en.wikipedia.org/wiki/Richard_Ramirez"
+    },
+    "confirmedQuote": "Ramirez was convicted of thirteen counts of murder",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 13: cita literal en en.txt L4 ('In 1989, Ramirez was convicted of thirteen counts of murder...'); la línea dice explícitamente 'was convicted'; sin encabezado de sección antes de L4 (lead, no ficción). attributed es null y no hay attributedQuote en el candidato, coherente (sin error). País US respaldado en en.txt L1 ('an American serial killer ... in the state of California'); no hay códigos históricos ni inexistentes. activeYears 1984 y 1985 respaldados en en.txt L1 ('From April 1984 to August 1985'). Apodo en ('the Night Stalker') en en.txt L1; apodo es ('El Acosador Nocturno') en es.txt L1, cada uno respaldado en su propio idioma sin traducción cruzada. Wikipedia es y en no nulas y con dominio correcto (es.wikipedia.org / en.wikipedia.org). Revisión de discrepancia entre fuentes: es.txt L1 afirma 'mató a 14 personas' y en.txt L1 dice 'at least fifteen'; el candidato no usa ninguna de esas dos cifras como confirmed, sino la cifra de condena judicial (13, en.txt L4), que es la menor de las tres cifras en juego, por lo que no viola la regla de quedarse con la cifra menor ante discrepancia."
+    }
+  },
+  {
+    "id": "richard-speck",
+    "confirmed": 8,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1966",
+    "nickname": {
+      "es": null,
+      "en": "The Birdman"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Richard_Speck",
+      "en": "https://en.wikipedia.org/wiki/Richard_Speck"
+    },
+    "confirmedQuote": "Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 8: cita literal en L2 de richard-speck.en.txt ('Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.'); la cita contiene 'eight' y la línea dice explícitamente 'Convicted of all eight murders' (condena, no atribución); sección: L2 está antes del primer encabezado del artículo (introducción, sección documental, no ficción); attributed es null y no hay attributedQuote en el candidato, coherente; US respaldado en L1.en ('American mass murderer') y L1.es ('asesino en masa estadounidense'); activeYears '1966' aparece en L1 de ambas fuentes ('July 13–14, 1966' / '14 y 15 de julio de 1966'); apodo en 'The Birdman' respaldado en L1.en y explicado en L92.en ('nickname \"Birdman\"'), no aparece en es.txt (correcto, campo es es null); ES source (L1, L5) coincide en 8 víctimas confirmadas, sin discrepancia entre fuentes; ambas URLs de Wikipedia presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
+    }
+  },
+  {
+    "id": "robert-hansen",
+    "confirmed": 4,
+    "attributed": {
+      "min": 21,
+      "max": 37
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1970-1983",
+    "nickname": {
+      "es": "El panadero carnicero",
+      "en": "the Butcher Baker"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Robert_Hansen",
+      "en": "https://en.wikipedia.org/wiki/Robert_Hansen"
+    },
+    "confirmedQuote": "He pleaded guilty to the four homicides police had evidence for (Morrow, Messina, Goulding and Eklutna Annie)",
+    "attributedQuote": "The remains of twelve of a probable twenty-one to thirty-seven victims were exhumed by the police and returned to their families.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 4: cita literal en EN L56 ('He pleaded guilty to the four homicides police had evidence for...'), contiene 'four', sección '== Imprisonment and death =='; attributed 21-37: cita literal en EN L57 ('The remains of twelve of a probable twenty-one to thirty-seven victims were exhumed...'), contiene 'twenty-one' y 'thirty-seven', misma sección documental, min(21) >= confirmed(4), min<=max; US respaldado en EN L1 ('an American serial killer'); activeYears 1970 y 1983: EN L1 dice 'between 1971 and 1983' pero ES L1 dice 'Entre los años 1970 y 1983' (discrepancia entre fuentes resuelta tomando la cifra menor, 1970, correcto); apodo es 'El panadero carnicero' en ES L1, apodo en 'the Butcher Baker' en EN L1, sin cruces de idioma; wikipedia es y en presentes y con dominio correcto."
+    }
+  },
+  {
+    "id": "rodney-alcala",
+    "confirmed": 9,
+    "attributed": {
+      "min": 130,
+      "max": 130
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1971-1979",
+    "nickname": {
+      "es": null,
+      "en": "the Dating Game Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Rodney_Alcala"
+    },
+    "confirmedQuote": "While Alcala has been conclusively linked to nine murders",
+    "attributedQuote": "the true number of victims remains unknown and could be as high as 130",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita literal en L1 ('While Alcala has been conclusively linked to nine murders'), la propia línea dice 'conclusively linked' (confirmación, no atribución/sospecha) y detalla condenas ('sentenced to death... for five murders', 'pleaded guilty... for two further murders'); L1 está en el párrafo introductorio, antes del primer encabezado de sección (L6 'Early life'), no en sección de ficción. attributed 130-130: misma L1, cita literal 'the true number of victims remains unknown and could be as high as 130', contiene 130 (min=max), también en la introducción. Coherencia: 130 >= 9, sin rango invertido. attributedQuote presente y attributed no nulo: cuadra. País US: L1 'was an American serial killer'; código válido, no histórico. Años: 1979 aparece en L1 ('committed between 1977 and 1979'); 1971 aparece en L21 ('found raped and murdered... on June 12, 1971', asesinato de Crilley) y L26/L66/L90 -- nota: meta.yearsLine=1 solo respalda 1979 directamente, 1971 está en otra línea (L21), pero ambos años sí aparecen en la fuente, por lo que la comprobación 9 se cumple igualmente. Apodo en 'Dating Game Killer' en L3 ('He is often referred to as the Dating Game Killer'); apodo es es null, sin comprobación necesaria. Wikipedia: es null, en apunta a en.wikipedia.org/wiki/Rodney_Alcala, dominio correcto y al menos una URL no nula."
+    }
+  },
+  {
+    "id": "samuel-little",
+    "confirmed": 8,
+    "attributed": {
+      "min": 93,
+      "max": 93
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1970-2005",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Samuel_Little",
+      "en": "https://en.wikipedia.org/wiki/Samuel_Little"
+    },
+    "confirmedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+    "attributedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmedQuote literal en en.txt L1 ('who was convicted of 8 murders and confessed to committing 93 murders'); la cita trae 8 y 93; L1 dice 'was convicted of 8 murders' (condena); L1 está en el resumen inicial, antes de cualquier encabezado, sección documental; attributedQuote idéntica a confirmedQuote, L1, contiene 93 (min=max), misma sección; coherencia: attributed.min 93 >= confirmed 8, min=max no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado en L1 ('American serial killer'), código válido no histórico; activeYears 1970 y 2005 ambos en L1; apodos es=null y en=null, no se encontró apodo en ninguna fuente (es.txt ni en.txt), consistente con null; wikipedia es y en no nulas, dominios es.wikipedia.org y en.wikipedia.org correctos. Nota adicional: es.txt (L1, L17-L18, L22) solo confirma explícitamente 3 condenas de 2012 y 1 de 2018 (total 4 mencionadas) y no da un total de condenas ni una sección 'Confirmados' con las 8 víctimas nombradas como sí hace en.txt (L36-L48: 'Confirmed', 8 víctimas listadas, 'convicted of only eight murders in total'); no es una discrepancia de cifra explícita entre fuentes (es.txt no afirma un total distinto), sino que es.txt está menos actualizado/detallado que en.txt, por lo que se usó sourceLang en sin conflicto."
+    }
+  },
+  {
+    "id": "ted-bundy",
+    "confirmed": 3,
+    "attributed": {
+      "min": 30,
+      "max": 30
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1974-1978",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Ted_Bundy",
+      "en": "https://en.wikipedia.org/wiki/Ted_Bundy"
+    },
+    "confirmedQuote": "For the Florida homicides, he received three death sentences in two trials",
+    "attributedQuote": "On the evening before his execution, Bundy reviewed his victim tally with Hagmaier on a state-by-state basis for a total of 30 homicides",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 3: cita literal en L3 ('For the Florida homicides, he received three death sentences in two trials'), contiene 'three', y la línea entera dice 'he received three death sentences in two trials and was executed' (lenguaje de condena); L3 no tiene encabezado de sección previo (está en la introducción), no es sección de ficción. attributed 30: cita literal en L165 ('On the evening before his execution, Bundy reviewed his victim tally with Hagmaier on a state-by-state basis for a total of 30 homicides'), contiene '30', sección vigente en L165 es '=== Confirmed ===' (documental, no ficción). Coherencia: attributed.min(30) >= confirmed(3), min=max=30 sin inversión. Contraste ES/EN: la sección 'Confirmadas'/'Confirmed' de ambos idiomas coincide en el desglose por estado (Florida: 3, total 30); la cifra de 36 que aparece en la intro ES ('El FBI comprobó 36 asesinatos') es la misma especulación del FBI mencionada en EN L165 ('FBI agents proposed a total tally of 36'), no una cifra confirmada distinta, así que no hay discrepancia real entre fuentes para confirmed/attributed. País US: L1 'was an American serial killer'; L2 lista Washington, Oregon, Colorado, Utah, Idaho, Florida como estados de sus crímenes. No es código histórico ni inexistente. Años: 1974 y 1978 en L1 ('between 1974 and 1978'). Apodo: nickname es/en son null, sin attributedQuote/nickname que verificar. Wikipedia: es y en presentes, dominios es.wikipedia.org y en.wikipedia.org correctos."
+    }
+  }
+]

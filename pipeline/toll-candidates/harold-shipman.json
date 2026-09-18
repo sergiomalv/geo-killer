@@ -1,0 +1,12 @@
+{
+  "id": "harold-shipman",
+  "confirmed": 15,
+  "attributed": { "min": 250, "max": 250 },
+  "countries": ["GB"],
+  "activeYears": "1975-1998",
+  "nickname": { "es": null, "en": "Dr. Death" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Harold_Shipman", "en": "https://en.wikipedia.org/wiki/Harold_Shipman" },
+  "confirmedQuote": "Shipman was convicted of murdering 15 patients under his care",
+  "attributedQuote": "with an estimated 250 victims over roughly 30 years",
+  "sourceLang": "en"
+}

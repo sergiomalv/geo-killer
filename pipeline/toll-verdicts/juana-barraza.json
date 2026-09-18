@@ -1,0 +1,7 @@
+{
+  "id": "juana-barraza",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 16: cita literal en L26 ('...dieciséis mujeres...'), línea dice 'fue condenada a 759 años de prisión...con los cargos del asesinato'; sección vigente L26 = 'Juicio' (documental); attributed 40: cita literal en L18 ('...de entre los cuarenta que se le sospechaban...'), min=max=40 respaldados; sección vigente L18 = 'Arresto' (documental); coherencia: 40 >= 16, min=max sin inversión; MX respaldada en L1 ('es una asesina en serie mexicana'); activeYears 1997 y 2006 en L10 y L16; apodo es 'la Mataviejitas' en L1; nickname.en y wikipedia.en son null, sin discrepancia; wikipedia.es apunta a es.wikipedia.org"
+}

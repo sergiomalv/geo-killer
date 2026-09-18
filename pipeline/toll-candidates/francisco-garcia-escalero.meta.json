@@ -1,0 +1,9 @@
+{
+  "id": "francisco-garcia-escalero",
+  "confirmedLine": 1,
+  "attributedLine": 21,
+  "countryLines": { "ES": 1 },
+  "yearsLine": 13,
+  "nicknameLines": { "es": 1, "en": null },
+  "notes": "Solo hay fuente en español (wiki.en es null, no se descargó nada). Confirmed = 11 asesinatos declarados probados por la Audiencia Provincial de Madrid en 1996 (aunque fue absuelto por enajenación mental); attributed = 14 asesinatos que confesó uno por uno a la policía tras su detención en 1994. activeYears toma 1987 (primera víctima, agosto de 1987, línea 13) hasta 1994 (detención y confesión, línea 21). Nickname es tomado del primer alias listado en la línea 1 (\"el matamendigos\"); en inglés no hay fuente, así que null."
+}
