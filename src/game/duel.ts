@@ -66,3 +66,13 @@ export function answer(state: DuelState, choice: Choice, counts: Record<string, 
   const streak = state.streak + 1
   return { ...state, status: 'revealed', streak, best: Math.max(state.best, streak), tie }
 }
+
+export function advance(state: DuelState, available: string[], random: () => number): DuelState {
+  if (state.status !== 'revealed') return state
+  const next = pickNextKiller(available, state.seen, random, state.right)
+  return { ...state, left: state.right, right: next.id, seen: next.seen, status: 'playing', tie: false }
+}
+
+export function restart(state: DuelState, available: string[], random: () => number): DuelState {
+  return startDuel(available, random, state.best)
+}

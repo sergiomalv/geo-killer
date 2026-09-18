@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { answer, pickNextKiller, startDuel } from './duel'
+import { advance, answer, pickNextKiller, restart, startDuel } from './duel'
 
 const available = ['a', 'b', 'c']
 const first = () => 0
@@ -104,5 +104,52 @@ describe('answer', () => {
 
   it('lanza un error si falta la cifra de un asesino', () => {
     expect(() => answer(start(), 'higher', { uno: 3 })).toThrow('Sin cifra para "dos"')
+  })
+})
+
+describe('advance', () => {
+  it('pasa la carta derecha a la izquierda y trae una nueva', () => {
+    const revelada = answer(startDuel(ids, first), 'higher', counts)
+    const s = advance(revelada, ids, first)
+    expect(s.left).toBe('dos')
+    expect(s.right).toBe('tres')
+    expect(s.status).toBe('playing')
+    expect(s.tie).toBe(false)
+    expect(s.streak).toBe(1)
+  })
+
+  it('no hace nada si la carta no está revelada', () => {
+    const jugando = startDuel(ids, first)
+    expect(advance(jugando, ids, first)).toBe(jugando)
+    const perdida = answer(jugando, 'lower', counts)
+    expect(advance(perdida, ids, first)).toBe(perdida)
+  })
+
+  it('recicla al agotar la lista sin repetir la carta izquierda', () => {
+    const revelada = {
+      ...startDuel(ids, first),
+      left: 'tres',
+      right: 'cuatro',
+      seen: ids,
+      status: 'revealed' as const,
+      streak: 3,
+      best: 3,
+    }
+    const s = advance(revelada, ids, first)
+    expect(s.left).toBe('cuatro')
+    expect(s.right).not.toBe('cuatro')
+    expect(s.seen).toEqual([s.right])
+    expect(s.streak).toBe(3)
+  })
+})
+
+describe('restart', () => {
+  it('empieza de cero conservando el récord', () => {
+    const perdida = answer({ ...startDuel(ids, first), streak: 4, best: 9 }, 'lower', counts)
+    const s = restart(perdida, ids, first)
+    expect(s.streak).toBe(0)
+    expect(s.best).toBe(9)
+    expect(s.status).toBe('playing')
+    expect(s.seen).toEqual([s.left, s.right])
   })
 })
