@@ -1,0 +1,14 @@
+{
+  "id": "juan-corona",
+  "confirmed": 25,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1971",
+  "nickname": null,
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Juan_Corona_(asesino)",
+    "en": "https://en.wikipedia.org/wiki/Juan_Corona"
+  },
+  "confirmedQuote": "Corona was convicted of 25 counts of first-degree murder in 1973.",
+  "sourceLang": "en"
+}

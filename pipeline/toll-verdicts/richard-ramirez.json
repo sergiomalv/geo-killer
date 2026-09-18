@@ -1,9 +1,7 @@
 {
   "id": "richard-ramirez",
-  "verdict": "rejected",
+  "verdict": "approved",
   "validator": "claude-sonnet-5",
-  "errors": [
-    "discrepancia entre fuentes: es dice 14, en dice 15"
-  ],
-  "notes": "confirmed 13: cita literal en L4 ('In 1989, Ramirez was convicted of thirteen counts of murder...'), la línea dice explícitamente 'was convicted', sin encabezado de sección (lead, no ficción). attributed 15: cita literal en L1 ('Ramirez murdered at least fifteen people during various break-ins.'), lead, no ficción; attributed.min(15) >= confirmed(13), rango no invertido; attributedQuote presente y attributed no nulo, coherente. País US respaldado en en.txt L1 ('an American serial killer'), no hay códigos históricos ni inexistentes. activeYears 1984 y 1985 respaldados en en.txt L1. Apodo en ('the Night Stalker') en en.txt L1/L30; apodo es ('El Acosador Nocturno') en es.txt L1, cada uno en su idioma. Wikipedia es y en no nulas y con dominio correcto. Sin embargo, es.txt L1 afirma como hecho 'que mató a 14 personas ... entre los años 1984 y 1985', una cifra total de víctimas distinta y menor que el 'at least fifteen' usado como attributed en la fuente inglesa (misma franja de fechas 1984-1985); el candidato debía usar la cifra menor (14) y en su lugar usa la mayor (15), lo que viola la regla de discrepancia entre fuentes."
+  "errors": [],
+  "notes": "confirmed 13: cita literal en en.txt L4 ('In 1989, Ramirez was convicted of thirteen counts of murder...'); la línea dice explícitamente 'was convicted'; sin encabezado de sección antes de L4 (lead, no ficción). attributed es null y no hay attributedQuote en el candidato, coherente (sin error). País US respaldado en en.txt L1 ('an American serial killer ... in the state of California'); no hay códigos históricos ni inexistentes. activeYears 1984 y 1985 respaldados en en.txt L1 ('From April 1984 to August 1985'). Apodo en ('the Night Stalker') en en.txt L1; apodo es ('El Acosador Nocturno') en es.txt L1, cada uno respaldado en su propio idioma sin traducción cruzada. Wikipedia es y en no nulas y con dominio correcto (es.wikipedia.org / en.wikipedia.org). Revisión de discrepancia entre fuentes: es.txt L1 afirma 'mató a 14 personas' y en.txt L1 dice 'at least fifteen'; el candidato no usa ninguna de esas dos cifras como confirmed, sino la cifra de condena judicial (13, en.txt L4), que es la menor de las tres cifras en juego, por lo que no viola la regla de quedarse con la cifra menor ante discrepancia."
 }

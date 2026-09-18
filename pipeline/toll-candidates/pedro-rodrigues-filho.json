@@ -1,0 +1,12 @@
+{
+  "id": "pedro-rodrigues-filho",
+  "confirmed": 71,
+  "attributed": { "min": 100, "max": 100 },
+  "countries": ["BR"],
+  "activeYears": "1968-1973",
+  "nickname": { "es": null, "en": "Pedrinho Matador" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Pedro_Rodrigues_Filho" },
+  "confirmedQuote": "was officially sentenced for 71 murders",
+  "attributedQuote": "claimed to have killed over 100 people",
+  "sourceLang": "en"
+}

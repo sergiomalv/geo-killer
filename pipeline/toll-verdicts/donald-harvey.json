@@ -1,0 +1,7 @@
+{
+  "id": "donald-harvey",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 37: cita literal en L20 ('Ultimately, Harvey pleaded guilty to 37 murders'), la línea dice 'pleaded guilty' (condena), L1 refuerza con 'though he has 37 confirmed victims'; sección vigente en L20 es 'Investigation' (documental); attributed 50-50: cita literal en L20 ('he confessed to killing as many as 50 people'), misma sección documental; coherencia 50>=37 y min=max no invertido; es.txt L1 da rango 'entre 37 y 57 víctimas' (estimación oficial) que no contradice el confirmed=37 (coincide con el suelo) ni menciona 50/70 explícitamente, así que no hay discrepancia de cifra concreta entre fuentes; US respaldado en L1 en ('an American serial killer'); activeYears 1970 y 1987 en L1 en ('His spree took place between 1970 and 1987'); apodo es 'ángel de la muerte' en es L2, apodo en 'angel of death' en en L2, sin cruce entre idiomas; wikipedia es y en ambas apuntan a su dominio correcto."
+}

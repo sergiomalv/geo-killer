@@ -1,0 +1,12 @@
+{
+  "id": "jerry-brudos",
+  "confirmed": 3,
+  "attributed": { "min": 4, "max": 4 },
+  "countries": ["US"],
+  "activeYears": "1968-1969",
+  "nickname": { "es": null, "en": "the Lust Killer" },
+  "wikipedia": { "es": null, "en": "https://en.wikipedia.org/wiki/Jerry_Brudos" },
+  "confirmedQuote": "entered a plea of guilty to three counts of first-degree murder",
+  "attributedQuote": "murder of four young women between 1968 and 1969",
+  "sourceLang": "en"
+}

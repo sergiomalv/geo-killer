@@ -1,0 +1,7 @@
+{
+  "id": "albert-fish",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 3: cita L1 ES 'Confesó tres homicidios que la policía fue capaz de confirmar', sin cabecera de sección (intro, documental); attributed 9-9: cita L1 ES 'solo fue sospechoso en 9 casos', misma línea/sección; EN L1 dice 'a suspect in at least ten murders' (10) frente a ES 9, el candidato trae la menor (9), correcto; confirmed coincide en ambos idiomas ('tres'/'at least three'); US respaldado en L1 ES 'estadounidense'; activeYears 1924 y 1928: ES L17/L63 (1924) y L22 (1928), EN L84 'Between 1924 and 1928'; apodo es 'Hombre gris' en L1 ES, apodo en 'Gray Man' en L1 EN, cada uno solo en su idioma; wikipedia es y en con dominios correctos"
+}

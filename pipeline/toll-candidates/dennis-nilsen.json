@@ -1,0 +1,12 @@
+{
+  "id": "dennis-nilsen",
+  "confirmed": 6,
+  "attributed": { "min": 12, "max": 15 },
+  "countries": ["GB"],
+  "activeYears": "1978-1983",
+  "nickname": { "es": "el Muswell Hill Murderer", "en": "the Muswell Hill Murderer" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Dennis_Nilsen", "en": "https://en.wikipedia.org/wiki/Dennis_Nilsen" },
+  "confirmedQuote": "the jury returned with a majority verdict of guilty upon six counts of murder and one of attempted murder",
+  "attributedQuote": "Nilsen is known to have killed twelve young men and boys between 1978 and 1983; it is suspected that the true number of victims may be fifteen.",
+  "sourceLang": "en"
+}
