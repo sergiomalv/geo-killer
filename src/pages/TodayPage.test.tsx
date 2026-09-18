@@ -52,4 +52,22 @@ describe('TodayPage', () => {
     renderPage()
     expect(screen.getByText('01/05/1980')).toBeInTheDocument()
   })
+
+  it('cuatro fallos muestran la derrota y bloquean el buscador', () => {
+    const many = [
+      ...killers,
+      { id: 'k3', name: 'Tercero', aliases: [] },
+      { id: 'k4', name: 'Cuarto', aliases: [] },
+      { id: 'k5', name: 'Quinto', aliases: [] },
+    ]
+    render(<TodayPage day={0} caseData={sampleCase} killers={many} />)
+    const input = screen.getByRole('combobox')
+    for (const name of ['otro', 'tercero', 'cuarto', 'quinto']) {
+      fireEvent.change(input, { target: { value: name } })
+      fireEvent.submit(input.closest('form')!)
+    }
+    expect(screen.getByText('Caso sin resolver')).toBeInTheDocument()
+    expect(screen.getByText('Método uno.')).toBeInTheDocument()
+    expect(input).toBeDisabled()
+  })
 })

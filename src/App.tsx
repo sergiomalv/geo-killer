@@ -9,7 +9,7 @@ import { TodayPage } from './pages/TodayPage'
 const killers = killersSchema.parse(killersJson)
 const schedule = scheduleSchema.parse(scheduleJson)
 
-type Loaded = { kind: 'loading' } | { kind: 'missing' } | { kind: 'ready'; caseData: Case }
+type Loaded = { kind: 'loading' } | { kind: 'missing' } | { kind: 'error' } | { kind: 'ready'; caseData: Case }
 
 export default function App() {
   const day = dayNumber(new Date(), schedule.launchDate)
@@ -25,11 +25,14 @@ export default function App() {
       } else {
         setLoaded({ kind: 'ready', caseData })
       }
+    }).catch(() => {
+      if (!cancelled) setLoaded({ kind: 'error' })
     })
     return () => { cancelled = true }
   }, [day])
 
   if (loaded.kind === 'loading') return <main className="page"><p>Abriendo expediente…</p></main>
   if (loaded.kind === 'missing') return <main className="page"><p>Hoy no hay reto. Vuelve mañana.</p></main>
+  if (loaded.kind === 'error') return <main className="page"><p>No se ha podido cargar el caso. Comprueba la conexión y recarga.</p></main>
   return <TodayPage day={day} caseData={loaded.caseData} killers={killers} />
 }

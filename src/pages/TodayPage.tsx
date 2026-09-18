@@ -23,6 +23,7 @@ export function TodayPage({ day, caseData, killers }: Props) {
   const [state, setState] = useState(() => initialState(day, caseData.id))
   const level = clueLevel(state)
   const finished = state.status !== 'playing'
+  const outcome = state.status === 'playing' ? null : state.status
 
   useEffect(() => {
     saveProgress(day, state)
@@ -43,8 +44,8 @@ export function TodayPage({ day, caseData, killers }: Props) {
         <AttemptsBar guesses={state.guesses} status={state.status} />
         <GuessInput killers={killers} disabled={finished} onGuess={handleGuess} />
       </div>
-      {finished ? (
-        <ResultCard caseData={caseData} status={state.status as 'won' | 'lost'} attempts={state.guesses.length} />
+      {outcome ? (
+        <ResultCard caseData={caseData} status={outcome} attempts={state.guesses.length} />
       ) : null}
       <ClueList murders={caseData.murders} level={level} />
     </main>
