@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema, tollSchema } from './schema'
+import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema, tollSchema, tollsSchema } from './schema'
 import { sampleCase } from '../game/__fixtures__/sample-case'
 
 describe('caseSchema', () => {
@@ -248,5 +248,33 @@ describe('tollSchema', () => {
 
   it('rechaza wikipedia con los dos idiomas a null', () => {
     expect(tollSchema.safeParse({ ...base, wikipedia: { es: null, en: null } }).success).toBe(false)
+  })
+
+  it('rechaza id con mayúsculas o espacios', () => {
+    expect(tollSchema.safeParse({ ...base, id: 'Gary Ridgway' }).success).toBe(false)
+  })
+})
+
+describe('tollsSchema', () => {
+  const gary = {
+    id: 'gary-ridgway',
+    confirmed: 49,
+    attributed: null,
+    countries: ['US'],
+    activeYears: '1982-1998',
+    nickname: null,
+    wikipedia: { es: 'https://es.wikipedia.org/wiki/Gary_Ridgway', en: null },
+    confirmedQuote: 'Ridgway was convicted of 49 murders',
+    sourceLang: 'en',
+    validation: { status: 'approved', validatedAt: '2026-09-18', validator: 'claude-sonnet-5', notes: '' },
+  }
+  const otro = { ...gary, id: 'otro-asesino' }
+
+  it('acepta una lista con ids distintos', () => {
+    expect(tollsSchema.safeParse([gary, otro]).success).toBe(true)
+  })
+
+  it('rechaza ids duplicados', () => {
+    expect(tollsSchema.safeParse([gary, { ...otro, id: gary.id }]).success).toBe(false)
   })
 })

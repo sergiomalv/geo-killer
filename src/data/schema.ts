@@ -79,20 +79,25 @@ export const caseSchema = z.object({
   })
 
 /**
- * Códigos que `Intl.DisplayNames` resuelve a un país actual sin dar error: `SU` devuelve
- * "Rusia" y `YU`/`CS` devuelven "Serbia". Aceptarlos convertiría un dato histórico en un
- * dato falso presentado con confianza, así que se prohíben y se exige el país actual del
- * territorio donde ocurrieron los crímenes.
+ * Códigos que `Intl.DisplayNames` resuelve a un país actual sin dar error, pero que no
+ * deben aceptarse. Entra un código cuyo territorio se repartió entre varios países
+ * actuales, porque `Intl.DisplayNames` lo resuelve a uno solo y arbitrario: `SU` da
+ * "Rusia" ignorando Ucrania, Kazajistán y los demás; `YU`/`CS` dan "Serbia". No entra un
+ * código obsoleto cuyo territorio pasó a ser exactamente un país actual con las mismas
+ * fronteras (`ZR`, Zaire, resuelve a "Congo - Kinshasa", que es el país correcto de ese
+ * territorio, así que no está en la lista). `ZZ` está por otro motivo: es el código CLDR
+ * reservado para "región desconocida", no un país.
+ *
+ * Aceptar cualquiera de estos convertiría un dato histórico en un dato falso presentado
+ * con confianza, así que se prohíben y se exige el país actual del territorio donde
+ * ocurrieron los crímenes.
  */
-export const FORBIDDEN_COUNTRY_CODES = ['SU', 'YU', 'CS']
+export const FORBIDDEN_COUNTRY_CODES = ['SU', 'YU', 'CS', 'ZZ']
 
 function isRealCountryCode(code: string): boolean {
   if (FORBIDDEN_COUNTRY_CODES.includes(code)) return false
   try {
-    // `ZZ` es el código CLDR reservado para "región desconocida": no lanza error ni
-    // devuelve el propio código, así que hay que descartarlo aparte.
-    const name = new Intl.DisplayNames(['en'], { type: 'region' }).of(code)
-    return name !== code && name !== 'Unknown Region'
+    return new Intl.DisplayNames(['en'], { type: 'region', fallback: 'none' }).of(code) !== undefined
   } catch {
     return false
   }
