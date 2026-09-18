@@ -29,9 +29,40 @@ describe('caseSchema', () => {
     expect(caseSchema.safeParse(c).success).toBe(true)
   })
 
-  it('rechaza si no hay ninguna URL de Wikipedia', () => {
+  it('rechaza si no hay ni Wikipedia ni sources', () => {
     const c = { ...sampleCase, wikipedia: { es: null, en: null } }
     expect(caseSchema.safeParse(c).success).toBe(false)
+  })
+
+  it('acepta un caso sin Wikipedia respaldado por sources', () => {
+    const c = { ...sampleCase, wikipedia: { es: null, en: null }, sources: ['https://ejemplo.org/caso'] }
+    expect(caseSchema.safeParse(c).success).toBe(true)
+  })
+
+  it('rechaza una URL mal formada en sources', () => {
+    const c = { ...sampleCase, wikipedia: { es: null, en: null }, sources: ['no es una url'] }
+    expect(caseSchema.safeParse(c).success).toBe(false)
+  })
+
+  it('deja sources vacio cuando no se indica', () => {
+    const result = caseSchema.safeParse(sampleCase)
+    expect(result.success).toBe(true)
+    expect(result.data!.sources).toEqual([])
+  })
+
+  it('deja toll a null cuando no se indica', () => {
+    const result = caseSchema.safeParse(sampleCase)
+    expect(result.success).toBe(true)
+    expect(result.data!.toll).toBeNull()
+  })
+
+  it('acepta un toll entero positivo', () => {
+    expect(caseSchema.safeParse({ ...sampleCase, toll: 100 }).success).toBe(true)
+  })
+
+  it('rechaza un toll de cero o negativo', () => {
+    expect(caseSchema.safeParse({ ...sampleCase, toll: 0 }).success).toBe(false)
+    expect(caseSchema.safeParse({ ...sampleCase, toll: -3 }).success).toBe(false)
   })
 
   it('rechaza id con mayúsculas o espacios', () => {

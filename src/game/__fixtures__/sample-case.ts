@@ -7,6 +7,8 @@ export const sampleCase: Case = {
   country: 'Pruebalandia',
   activeYears: '1980-1983',
   wikipedia: { es: 'https://es.wikipedia.org/wiki/Prueba', en: null },
+  sources: [],
+  toll: null,
   summary: 'Caso ficticio usado solo en tests.',
   murders: [
     {

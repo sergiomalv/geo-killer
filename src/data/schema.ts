@@ -43,13 +43,19 @@ export const caseSchema = z.object({
   aliases: z.array(z.string().min(1)),
   country: z.string().min(1),
   activeYears: z.string().min(1),
-  wikipedia: z
-    .object({ es: z.url().nullable(), en: z.url().nullable() })
-    .refine((w) => w.es !== null || w.en !== null, { message: 'hace falta al menos una URL de Wikipedia' }),
+  wikipedia: z.object({ es: z.url().nullable(), en: z.url().nullable() }),
+  // Casos sin artículo en Wikipedia: las fuentes generales que los respaldan.
+  sources: z.array(z.url()).default([]),
+  // Cifra total de víctimas cuando los asesinatos documentados son solo una muestra.
+  toll: z.number().int().positive().nullable().default(null),
   summary: z.string().min(1),
   murders: z.array(murderSchema).min(3).max(8),
   validation: validationSchema,
 })
+  .refine((c) => c.wikipedia.es !== null || c.wikipedia.en !== null || c.sources.length > 0, {
+    message: 'hace falta al menos una URL de Wikipedia o una fuente en sources',
+    path: ['wikipedia'],
+  })
 
 export const killerEntrySchema = z.object({
   id: z.string().regex(SLUG_PATTERN),
