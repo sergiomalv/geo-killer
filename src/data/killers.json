@@ -302,5 +302,21 @@
     "aliases": [
       "Pedrinho Matador"
     ]
+  },
+  {
+    "id": "javed-iqbal",
+    "name": "Javed Iqbal",
+    "aliases": [
+      "El monstruo de Lahore",
+      "Javed Iqbal Mughal",
+      "Javed Iqbal Umayr"
+    ]
+  },
+  {
+    "id": "amarjeet-sada",
+    "name": "Amarjeet Sada",
+    "aliases": [
+      "Amardeep Sada"
+    ]
   }
 ]

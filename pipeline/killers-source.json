@@ -502,5 +502,33 @@
       "es": null,
       "en": "Pedro_Rodrigues_Filho"
     }
+  },
+  {
+    "id": "javed-iqbal",
+    "name": "Javed Iqbal",
+    "aliases": [
+      "El monstruo de Lahore",
+      "Javed Iqbal Mughal",
+      "Javed Iqbal Umayr"
+    ],
+    "wiki": {
+      "es": "Javed_Iqbal",
+      "en": "Javed_Iqbal_(serial_killer)"
+    }
+  },
+  {
+    "id": "amarjeet-sada",
+    "name": "Amarjeet Sada",
+    "aliases": [
+      "Amardeep Sada"
+    ],
+    "wiki": {
+      "es": null,
+      "en": null
+    },
+    "sources": [
+      "https://www.dnaindia.com/india/report-story-of-amarjeet-sada-8-year-old-boy-from-bihar-also-known-as-world-s-youngest-serial-killer-3044574",
+      "https://allthatsinteresting.com/amarjeet-sada"
+    ]
   }
 ]

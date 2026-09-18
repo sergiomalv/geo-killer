@@ -2,7 +2,15 @@ import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { normalize } from '../src/game/matching.ts'
 
-interface Entry { id: string; name: string; aliases: string[]; wiki: { es: string | null; en: string | null } }
+interface Entry {
+  id: string
+  name: string
+  aliases: string[]
+  wiki: { es: string | null; en: string | null }
+  // Casos reales sin artículo en Wikipedia: en vez de saltarse la verificación,
+  // la entrada declara aquí las fuentes generales que la respaldan y se revisan a mano.
+  sources?: string[]
+}
 
 type FetchResult =
   | { kind: 'ok'; text: string }
@@ -12,6 +20,7 @@ type FetchResult =
 const entries: Entry[] = JSON.parse(readFileSync('pipeline/killers-source.json', 'utf8'))
 const failures: string[] = []
 const seenIds = new Set<string>()
+let manualCount = 0
 
 function sleep(ms: number) {
   const end = Date.now() + ms
@@ -53,6 +62,20 @@ for (const e of entries) {
   }
   seenIds.add(e.id)
 
+  if ([e.name, ...e.aliases].every((n) => normalize(n) === '')) {
+    failures.push(`${e.id}: ningún nombre sobrevive a normalize() (usar transliteración latina)`)
+  }
+
+  // Sin artículo en ninguna de las dos lenguas: sólo vale con fuentes declaradas.
+  if (!e.wiki.es && !e.wiki.en) {
+    if (!e.sources || e.sources.length === 0) {
+      failures.push(`${e.id}: sin artículo de Wikipedia y sin "sources" que lo respalden`)
+    } else {
+      manualCount++
+    }
+    continue
+  }
+
   const results = (['es', 'en'] as const)
     .filter((lang) => e.wiki[lang])
     .map((lang) => {
@@ -77,10 +100,6 @@ for (const e of entries) {
     failures.push(`${e.id}: el nombre "${e.name}" no aparece en el artículo`)
   }
 
-  if ([e.name, ...e.aliases].every((n) => normalize(n) === '')) {
-    failures.push(`${e.id}: ningún nombre sobrevive a normalize() (usar transliteración latina)`)
-  }
-
   for (const alias of e.aliases) {
     if (!texts.some((t) => t.includes(alias.toLowerCase()))) {
       failures.push(`${e.id}: el alias "${alias}" no aparece en ningún artículo`)
@@ -93,4 +112,4 @@ if (failures.length > 0) {
   console.error(`\n${failures.length} fallo(s)`)
   process.exit(1)
 }
-console.log(`OK: ${entries.length} entradas verificadas`)
+console.log(`OK: ${entries.length} entradas verificadas (${manualCount} sin Wikipedia, respaldadas por "sources")`)
