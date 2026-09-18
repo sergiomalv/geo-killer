@@ -1,0 +1,7 @@
+{
+  "id": "leonard-lake",
+  "verdict": "rejected",
+  "validator": "claude-sonnet-5",
+  "errors": ["la cita no respalda el rango atribuido"],
+  "notes": "confirmed 11: cita literal en L39 ('...police unearthed over 40 pounds (18 kg) of burned and crushed human bone fragments from at least 11 bodies.'), contiene '11'; L39 declara como hecho forense establecido (cuerpos hallados por la policía), no como sospecha/creencia, y sección vigente en L39 es '== Lake's fall and aftermath ==', documental; attributed 11-25: attributedQuote 'suggesting that the total number of victims might have been as high as 25' hallada literal en L40, misma sección documental, pero la cita SOLO contiene el máximo (25) y no contiene el mínimo (11/'eleven') como exige la regla 5 -> error 'la cita no respalda el rango atribuido' (la línea 1 del lead sí junta ambas cifras: 'at least eleven and perhaps up to twenty-five victims', pero el candidato no citó esa frase); attributed.min(11) >= confirmed(11) y min<=max, sin inversión de rango; attributedQuote presente y attributed no nulo, coherente; país US respaldado en L1 ('an American survivalist and serial killer'), no es código histórico ni inexistente; activeYears 1983 y 1985 respaldados en L1 ('between 1983 and 1985'); apodo en 'The Sex Slave Killer' respaldado en L1 ('also known as The Sex Slave Killer'); apodo es es null, sin fuente en español (no existe leonard-lake.es.txt); wikipedia.en apunta a en.wikipedia.org (dominio correcto), wikipedia.es es null, al menos una URL no nula."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "marcelo-costa-de-andrade",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 14: cita literal en L1 ('murdered 14 boys in the vicinity of Itaboraí'), cita contiene la cifra '14'; L1 afirma el hecho en voz directa de Wikipedia sin cobertura de 'sospecha/cree/atribuye', y el propio artículo lo corrobora aritméticamente (L21: 'thirteen other boys' confesados + Ivan, el crimen por el que fue detenido en L15-17 = 14); L1 está antes de cualquier encabezado de sección (awk no devuelve encabezado), no es sección de ficción; BR respaldado en L1 ('Brazilian serial killer'); activeYears '1991' respaldado en L1, L14, L21 y L24; attributed es null y no hay attributedQuote en el candidato, coherente; apodos es/en ambos null, sin comprobación necesaria; wikipedia.en apunta a en.wikipedia.org y wikipedia.es es null, cumple regla de al menos una URL válida. Nota aparte: L28 indica que Andrade fue declarado inimputable ('declared insane') y no condenado formalmente, pero la cita usada (L1) no está hedged y cumple el criterio textual de la regla 3."
+}

@@ -277,6 +277,35 @@
     }
   },
   {
+    "id": "dennis-nilsen",
+    "confirmed": 6,
+    "attributed": {
+      "min": 12,
+      "max": 15
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1978-1983",
+    "nickname": {
+      "es": "el Muswell Hill Murderer",
+      "en": "the Muswell Hill Murderer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Dennis_Nilsen",
+      "en": "https://en.wikipedia.org/wiki/Dennis_Nilsen"
+    },
+    "confirmedQuote": "the jury returned with a majority verdict of guilty upon six counts of murder and one of attempted murder",
+    "attributedQuote": "Nilsen is known to have killed twelve young men and boys between 1978 and 1983; it is suspected that the true number of victims may be fifteen.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en L126 ('...guilty upon six counts of murder...'), sección '== Trial and sentence ==', L126 confirma condena; attributed 12-15: cita literal en L151 ('Nilsen is known to have killed twelve... suspected... may be fifteen'), sección '== Victims ==', min(12)>=confirmed(6) y min<=max; GB respaldado en L1 ('Scottish serial killer'), L2 ('North London addresses'), L160 ('tour of the UK'); activeYears 1978 y 1983 en L1; apodo en 'the Muswell Hill Murderer' en L3, apodo es 'el Muswell Hill Murderer' en L4 de dennis-nilsen.es.txt; discrepancia es/en en cifra atribuida (es L2: 'al menos 15 jóvenes' vs en 12-15) pero candidato usa la cifra menor (12), conforme a la regla; wikipedia es y en presentes y con dominio correcto."
+    }
+  },
+  {
     "id": "dennis-rader",
     "confirmed": 10,
     "attributed": null,
@@ -805,6 +834,31 @@
     }
   },
   {
+    "id": "marcelo-costa-de-andrade",
+    "confirmed": 14,
+    "attributed": null,
+    "countries": [
+      "BR"
+    ],
+    "activeYears": "1991",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Marcelo_Costa_de_Andrade"
+    },
+    "confirmedQuote": "murdered 14 boys in the vicinity of Itaboraí",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 14: cita literal en L1 ('murdered 14 boys in the vicinity of Itaboraí'), cita contiene la cifra '14'; L1 afirma el hecho en voz directa de Wikipedia sin cobertura de 'sospecha/cree/atribuye', y el propio artículo lo corrobora aritméticamente (L21: 'thirteen other boys' confesados + Ivan, el crimen por el que fue detenido en L15-17 = 14); L1 está antes de cualquier encabezado de sección (awk no devuelve encabezado), no es sección de ficción; BR respaldado en L1 ('Brazilian serial killer'); activeYears '1991' respaldado en L1, L14, L21 y L24; attributed es null y no hay attributedQuote en el candidato, coherente; apodos es/en ambos null, sin comprobación necesaria; wikipedia.en apunta a en.wikipedia.org y wikipedia.es es null, cumple regla de al menos una URL válida. Nota aparte: L28 indica que Andrade fue declarado inimputable ('declared insane') y no condenado formalmente, pero la cita usada (L1) no está hedged y cumple el criterio textual de la regla 3."
+    }
+  },
+  {
     "id": "pedro-alonso-lopez",
     "confirmed": 3,
     "attributed": {
@@ -912,6 +966,35 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 13: cita literal en en.txt L1 ('...was convicted of murdering thirteen women and girls...'); la línea dice explícitamente 'was convicted'; sin encabezado de sección antes de L1 (lead, no ficción). ES L2 coincide ('Asesinó a trece mujeres'), sin discrepancia entre fuentes. attributed es null y no hay attributedQuote en el candidato, coherente (sin error). País GB respaldado en en.txt L1 ('an English serial killer' y víctimas en Manchester y West Yorkshire, territorio del Reino Unido); no es código histórico ni inexistente. activeYears 1975 y 1980 respaldados en en.txt L1 ('between 1975 and 1980'). Apodo en ('the Yorkshire Ripper') en en.txt L1 ('Press reports dubbed him the \"Yorkshire Ripper\"'); apodo es ('El destripador de Yorkshire') en es.txt L1 ('lo que le valió el apodo de El destripador de Yorkshire'); comprobado que ninguno aparece en el idioma contrario (sin traducción cruzada). Wikipedia es y en no nulas y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
+    }
+  },
+  {
+    "id": "richard-kuklinski",
+    "confirmed": 4,
+    "attributed": {
+      "min": 100,
+      "max": 200
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1980-1984",
+    "nickname": {
+      "es": "Iceman",
+      "en": "the Iceman"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Richard_Kuklinski",
+      "en": "https://en.wikipedia.org/wiki/Richard_Kuklinski"
+    },
+    "confirmedQuote": "In 1988, he was convicted of four murders and sentenced to life imprisonment.",
+    "attributedQuote": "He claimed to have murdered anywhere from 100 to 200 men, often in gruesome fashion.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmedQuote literal en EN L2 ('In 1988, he was convicted of four murders...'); la cita contiene 'four' y la línea dice 'convicted of four murders' (condena); L2 está antes del primer encabezado (lead, sección documental). attributedQuote literal en EN L3 ('He claimed to have murdered anywhere from 100 to 200 men...'); contiene 100 y 200; L3 también en el lead. Coherencia: attributed.min 100 >= confirmed 4; min 100 <= max 200. Discrepancia ES/EN: ES trae cifras internamente distintas (L1 'condenado por 6 asesinatos', L54 'declarado culpable de cinco asesinatos') y EN L2 da 4; el candidato usa 4, la menor de todas, cumple la regla. Para lo atribuido, ES L1 da 100-200, ES L3 (cuerpo) da 100-250, EN L3 da 100-200; el candidato usa 200 como máximo, que es el valor menor entre las fuentes, cumple la regla. País US: EN L1 dice 'American' y 'New Jersey-based'. Años 1980 y 1984: ambos en EN L1 ('committed between 1980 and 1984'). Apodo es 'Iceman' en ES L1; apodo en 'the Iceman' en EN L1. Wikipedia: es apunta a es.wikipedia.org, en apunta a en.wikipedia.org, ambas coherentes con su idioma."
     }
   },
   {

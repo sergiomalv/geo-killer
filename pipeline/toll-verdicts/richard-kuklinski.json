@@ -1,0 +1,7 @@
+{
+  "id": "richard-kuklinski",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmedQuote literal en EN L2 ('In 1988, he was convicted of four murders...'); la cita contiene 'four' y la línea dice 'convicted of four murders' (condena); L2 está antes del primer encabezado (lead, sección documental). attributedQuote literal en EN L3 ('He claimed to have murdered anywhere from 100 to 200 men...'); contiene 100 y 200; L3 también en el lead. Coherencia: attributed.min 100 >= confirmed 4; min 100 <= max 200. Discrepancia ES/EN: ES trae cifras internamente distintas (L1 'condenado por 6 asesinatos', L54 'declarado culpable de cinco asesinatos') y EN L2 da 4; el candidato usa 4, la menor de todas, cumple la regla. Para lo atribuido, ES L1 da 100-200, ES L3 (cuerpo) da 100-250, EN L3 da 100-200; el candidato usa 200 como máximo, que es el valor menor entre las fuentes, cumple la regla. País US: EN L1 dice 'American' y 'New Jersey-based'. Años 1980 y 1984: ambos en EN L1 ('committed between 1980 and 1984'). Apodo es 'Iceman' en ES L1; apodo en 'the Iceman' en EN L1. Wikipedia: es apunta a es.wikipedia.org, en apunta a en.wikipedia.org, ambas coherentes con su idioma."
+}

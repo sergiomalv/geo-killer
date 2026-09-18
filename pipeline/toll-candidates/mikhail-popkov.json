@@ -1,0 +1,12 @@
+{
+  "id": "mikhail-popkov",
+  "confirmed": 87,
+  "attributed": { "min": 90, "max": 90 },
+  "countries": ["RU"],
+  "activeYears": "1992-2011",
+  "nickname": { "es": "El hombre lobo", "en": "the Werewolf" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Mijaíl_Popkov", "en": "https://en.wikipedia.org/wiki/Mikhail_Popkov" },
+  "confirmedQuote": "committed the sexual assault and murder of eighty-seven girls and women",
+  "attributedQuote": "confessed to and is suspected of at least ninety in total",
+  "sourceLang": "en"
+}

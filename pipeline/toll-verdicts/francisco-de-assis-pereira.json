@@ -1,0 +1,9 @@
+{
+  "id": "francisco-de-assis-pereira",
+  "verdict": "rejected",
+  "validator": "claude-sonnet-5",
+  "errors": [
+    "la cifra confirmada es en realidad atribuida"
+  ],
+  "notes": "cita confirmada literal en L1: 'He was arrested in 1998 for the rape and murder of 11 women and for assaulting nine others in a São Paulo park.'; la cita menciona '11' pero L1 solo dice que fue 'arrested... for' (arrestado por el cargo), no que fuera condenado, se declarara culpable ni que la cifra este confirmada; se revisó todo el texto (grep -n -i -E 'convict|guilty|confirm|pled|plead') y no hay ninguna mención de condena, culpabilidad ni confirmación ligada al número de víctimas; L43-44 solo dice 'He was eventually sentenced to a total of 268 years in prison' sin vincular esa condena a una cifra de víctimas; sección vigente en L1 es la introducción (awk no encontró encabezado previo), no es de ficción; attributed es null y no hay attributedQuote, consistente; BR respaldado en L1 ('Brazilian serial killer') y L5/L16 (São Paulo, Rio Grande do Sul); activeYears '1998' respaldado en L1, L16, L40; apodo en 'The Park Maniac' respaldado en L1 ('also known as... \"The Park Maniac\"'); apodo es es null, sin comprobación necesaria; wikipedia en apunta a en.wikipedia.org, es es null (no existe .es.txt); no hay fuente .es.txt para comparar discrepancias entre idiomas."
+}
