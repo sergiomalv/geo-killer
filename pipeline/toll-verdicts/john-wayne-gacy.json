@@ -1,0 +1,7 @@
+{
+  "id": "john-wayne-gacy",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 33: cita literal en L221 (grep -n -F), la línea dice 'Gacy was found guilty of 33 charges of murder' (condena), sección vigente '=== Closing arguments ===' (awk hasta L221), documental; attributed 45: cita literal en L296 (grep -n -F), contiene '45', sección vigente '=== Possible additional victims ===', documental, min=max=45>=confirmed 33 sin rango invertido; US respaldado en L1 en ('American serial killer... 1972 and 1978 in ... Illinois') y es L1 ('estadounidense'); activeYears 1972 y 1978 en L1 en/es; apodo en 'Killer Clown' en L1/L78 en, apodo es 'El Payaso Asesino' en L1/L2 es, sin cruce de idiomas (grep -in en cada fuente contraria sin coincidencia de la frase); es no menciona 45 (grep -n '45' sin resultados), sin discrepancia entre fuentes porque solo en aporta la cifra atribuida; wikipedia es y en con dominios correctos."
+}

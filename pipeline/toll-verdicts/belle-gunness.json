@@ -1,0 +1,7 @@
+{
+  "id": "belle-gunness",
+  "verdict": "rejected",
+  "validator": "claude-sonnet-5",
+  "errors": ["la cifra confirmada es en realidad atribuida"],
+  "notes": "confirmedQuote 'Gunness is thought to have killed at least fourteen people' hallada en L1 (en), contiene 'fourteen'; pero L1 completa dice 'Gunness is thought to have killed at least fourteen people [...] while some sources speculate her involvement in as many as forty murders' — es lenguaje de sospecha/creencia ('is thought to have'), no de condena ni de confirmación; grep -n -i 'convict|confirmed|pleaded guilty|found guilty' solo devuelve L1 (irrelevante, 'unconfirmed' referido a su destino), L5 ('confirmed at the Church of Norway', sin relación) y L34 (Ray Lamphere condenado de incendio, no de los asesinatos) — Gunness nunca fue condenada ni juzgada por los homicidios, por lo que no existe cifra 'confirmada' en el sentido exigido; attributedQuote 'some sources speculate her involvement in as many as forty murders' hallada en L1, contiene 'forty' (min=max=40), sin encabezado de ficción antes de L1; attributed.min(40) >= confirmed(14), sin inversión; attributedQuote presente y attributed no nulo, coherente; países: US respaldado por 'Illinois and Indiana' y 'moved to the United States' en L5; activeYears 1884 (L13) y 1908 (L1, L26, L34) respaldados; apodo en 'Hell's Belle' en L1; apodo es null, sin comprobación; wikipedia es y en presentes y con dominios correctos."
+}

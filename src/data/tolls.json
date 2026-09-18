@@ -1,5 +1,34 @@
 [
   {
+    "id": "aileen-wuornos",
+    "confirmed": 6,
+    "attributed": {
+      "min": 7,
+      "max": 7
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1989-1990",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Aileen_Wuornos",
+      "en": "https://en.wikipedia.org/wiki/Aileen_Wuornos"
+    },
+    "confirmedQuote": "In all, Wuornos received six death sentences.",
+    "attributedQuote": "Wuornos shot, killed, and robbed seven of her male clients.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal L39 en 'In all, Wuornos received six death sentences.', línea confirma condena ('pleaded no contest'/'sentenced to death'), sección == Arrest and trial ==; attributed 7: cita literal L1 en 'Wuornos shot, killed, and robbed seven of her male clients.', sección introducción (no ficción); attributed.min 7 >= confirmed 6, min=max=7 no invertido; US respaldado en L1 ('American serial killer') y L24-28 (Florida, condados de EE.UU.); activeYears 1989 y 1990 en L1; apodos es/en ambos null, sin attributedQuote sobrante; wikipedia es apunta a es.wikipedia.org y en a en.wikipedia.org; es.txt L1 y L36 coinciden en 7 atribuidos y 6 confirmados, sin discrepancia entre fuentes"
+    }
+  },
+  {
     "id": "andrei-chikatilo",
     "confirmed": 52,
     "attributed": {
@@ -53,6 +82,56 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 6: cita literal en L2 ('pleaded guilty to second-degree murder and was sentenced to six concurrent life sentences'), menciona 'six'; L2 dice que se declaró culpable (guilty), no solo sospecha; sin encabezado de sección antes de L2 (está en la introducción, documental); attributed null y sin attributedQuote, coherente; país US respaldado en L1 EN ('American serial killer', 'New York City') y sin códigos históricos; activeYears 1975 y 1977 en L1 EN ('between 1975 and 1977'); apodo es 'El hijo de Sam' en L1 ES, apodo en 'the Son of Sam' en L1 EN; wikipedia es y en bien formadas (es.wikipedia.org / en.wikipedia.org)"
+    }
+  },
+  {
+    "id": "dennis-rader",
+    "confirmed": 10,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1974-1991",
+    "nickname": {
+      "es": "Asesino BTK",
+      "en": "BTK"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Dennis_Rader",
+      "en": "https://en.wikipedia.org/wiki/Dennis_Rader"
+    },
+    "confirmedQuote": "convicto por los asesinatos de diez personas en Wichita",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 10: cita literal en L1 ('convicto por los asesinatos de diez personas en Wichita'), contiene 'diez'; L1 dice 'convicto por' (condena); sección documental vigente en L1 es la introducción (sin encabezado de ficción); attributed null y sin attributedQuote, consistente con EN L154-159 (solo confesó los diez cargos) y EN L175 ('the ten known murders were believed to be the only cases for which Rader was responsible', tras investigaciones exhaustivas sin más asesinatos confirmados; los casos de Kinney y Garber en L178-179 quedan como sospecha/suspect, no condena); país US respaldado en L1 ('asesino en serie estadounidense' / EN L1 'American serial killer'), sin códigos históricos; activeYears 1974 y 1991 en L1; apodo es 'Asesino BTK' en L2 ('Asesino BTK'); apodo en 'BTK' en L1 ('pseudonym BTK'); URLs es.wikipedia.org y en.wikipedia.org correctas."
+    }
+  },
+  {
+    "id": "edmund-kemper",
+    "confirmed": 8,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1964-1973",
+    "nickname": {
+      "es": "El asesino de las colegialas",
+      "en": "the Co-ed Killer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Edmund_Kemper",
+      "en": "https://en.wikipedia.org/wiki/Edmund_Kemper"
+    },
+    "confirmedQuote": "Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 8: cita literal en L2 ('Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.'), contiene 'eight'; L2 dice 'Found sane and guilty at his trial in 1973' (condena, no atribución); sin encabezado de sección antes de L2 (parte de la introducción, no ficción/aparato); ES corrobora con L17 'hallado culpable de ocho cargos por asesinato' (misma cifra, sin discrepancia); attributed=null y no hay attributedQuote, coherente; US respaldado en L1 EN ('is an American serial killer') y L1 ES; sin códigos SU/YU/CS; activeYears 1964 en L20 EN ('On August 27, 1964... Kemper killed his grandmother') y 1973 en L1/L2/L72/L85 EN; apodo es 'El asesino de las colegialas' en L1 ES; apodo en 'the Co-ed Killer' en L1 EN; ambas URL de Wikipedia bien formadas (es.wikipedia.org y en.wikipedia.org)."
     }
   },
   {
@@ -143,6 +222,35 @@
     }
   },
   {
+    "id": "john-wayne-gacy",
+    "confirmed": 33,
+    "attributed": {
+      "min": 45,
+      "max": 45
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1972-1978",
+    "nickname": {
+      "es": "El payaso asesino",
+      "en": "the Killer Clown"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/John_Wayne_Gacy",
+      "en": "https://en.wikipedia.org/wiki/John_Wayne_Gacy"
+    },
+    "confirmedQuote": "Gacy was found guilty of 33 charges of murder",
+    "attributedQuote": "the total number of murder victims could be as high as 45",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 33: cita literal en L221 (grep -n -F), la línea dice 'Gacy was found guilty of 33 charges of murder' (condena), sección vigente '=== Closing arguments ===' (awk hasta L221), documental; attributed 45: cita literal en L296 (grep -n -F), contiene '45', sección vigente '=== Possible additional victims ===', documental, min=max=45>=confirmed 33 sin rango invertido; US respaldado en L1 en ('American serial killer... 1972 and 1978 in ... Illinois') y es L1 ('estadounidense'); activeYears 1972 y 1978 en L1 en/es; apodo en 'Killer Clown' en L1/L78 en, apodo es 'El Payaso Asesino' en L1/L2 es, sin cruce de idiomas (grep -in en cada fuente contraria sin coincidencia de la frase); es no menciona 45 (grep -n '45' sin resultados), sin discrepancia entre fuentes porque solo en aporta la cifra atribuida; wikipedia es y en con dominios correctos."
+    }
+  },
+  {
     "id": "manuel-delgado-villegas",
     "confirmed": 7,
     "attributed": {
@@ -202,6 +310,35 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 3: cita literal en L30 ('he was found guilty of three of the murders'), contiene 'three', sección '== Arrest and confession ==' es documental, la línea dice condena explícita ('found guilty'); attributed 350 (min=max): cita literal en L29 ('the total of 350 confessed murders'), contiene '350', misma sección documental; coherencia: 350 >= 3, min=max no hay rango invertido; attributedQuote presente y attributed no nulo, coherente; países: EC en L43 ('within Ecuador'/'Ecuadorian victims'), CO en L19 (El Espinal, condena por Flor Alba Sánchez) y L43 ('in Colombia'), PE en L27 ('many more' in Peru) y L43; ningún código SU/YU/CS ni inexistente; activeYears 1978-1980 respaldados en L1 EN ('from 1978 to 1980'); apodo es 'el Monstruo de los Andes' en L1 ES, apodo en 'the Monster of the Andes' en L1 EN, sin mezcla entre idiomas; wikipedia es y en ambas con dominio correcto; sin discrepancia real es/en (ES L1 dice 'más de 300' confesados y 110 confirmados, compatible con EN L29 '350 confessed' y L30 'three' de condena, ES no da cifra exacta que contradiga)."
+    }
+  },
+  {
+    "id": "samuel-little",
+    "confirmed": 8,
+    "attributed": {
+      "min": 93,
+      "max": 93
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1970-2005",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Samuel_Little",
+      "en": "https://en.wikipedia.org/wiki/Samuel_Little"
+    },
+    "confirmedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+    "attributedQuote": "who was convicted of 8 murders and confessed to committing 93 murders",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmedQuote literal en en.txt L1 ('who was convicted of 8 murders and confessed to committing 93 murders'); la cita trae 8 y 93; L1 dice 'was convicted of 8 murders' (condena); L1 está en el resumen inicial, antes de cualquier encabezado, sección documental; attributedQuote idéntica a confirmedQuote, L1, contiene 93 (min=max), misma sección; coherencia: attributed.min 93 >= confirmed 8, min=max no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado en L1 ('American serial killer'), código válido no histórico; activeYears 1970 y 2005 ambos en L1; apodos es=null y en=null, no se encontró apodo en ninguna fuente (es.txt ni en.txt), consistente con null; wikipedia es y en no nulas, dominios es.wikipedia.org y en.wikipedia.org correctos. Nota adicional: es.txt (L1, L17-L18, L22) solo confirma explícitamente 3 condenas de 2012 y 1 de 2018 (total 4 mencionadas) y no da un total de condenas ni una sección 'Confirmados' con las 8 víctimas nombradas como sí hace en.txt (L36-L48: 'Confirmed', 8 víctimas listadas, 'convicted of only eight murders in total'); no es una discrepancia de cifra explícita entre fuentes (es.txt no afirma un total distinto), sino que es.txt está menos actualizado/detallado que en.txt, por lo que se usó sourceLang en sin conflicto."
     }
   },
   {

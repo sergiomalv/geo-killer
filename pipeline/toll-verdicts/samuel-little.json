@@ -1,0 +1,7 @@
+{
+  "id": "samuel-little",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmedQuote literal en en.txt L1 ('who was convicted of 8 murders and confessed to committing 93 murders'); la cita trae 8 y 93; L1 dice 'was convicted of 8 murders' (condena); L1 está en el resumen inicial, antes de cualquier encabezado, sección documental; attributedQuote idéntica a confirmedQuote, L1, contiene 93 (min=max), misma sección; coherencia: attributed.min 93 >= confirmed 8, min=max no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado en L1 ('American serial killer'), código válido no histórico; activeYears 1970 y 2005 ambos en L1; apodos es=null y en=null, no se encontró apodo en ninguna fuente (es.txt ni en.txt), consistente con null; wikipedia es y en no nulas, dominios es.wikipedia.org y en.wikipedia.org correctos. Nota adicional: es.txt (L1, L17-L18, L22) solo confirma explícitamente 3 condenas de 2012 y 1 de 2018 (total 4 mencionadas) y no da un total de condenas ni una sección 'Confirmados' con las 8 víctimas nombradas como sí hace en.txt (L36-L48: 'Confirmed', 8 víctimas listadas, 'convicted of only eight murders in total'); no es una discrepancia de cifra explícita entre fuentes (es.txt no afirma un total distinto), sino que es.txt está menos actualizado/detallado que en.txt, por lo que se usó sourceLang en sin conflicto."
+}

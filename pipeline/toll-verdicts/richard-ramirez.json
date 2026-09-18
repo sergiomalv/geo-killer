@@ -1,0 +1,9 @@
+{
+  "id": "richard-ramirez",
+  "verdict": "rejected",
+  "validator": "claude-sonnet-5",
+  "errors": [
+    "discrepancia entre fuentes: es dice 14, en dice 15"
+  ],
+  "notes": "confirmed 13: cita literal en L4 ('In 1989, Ramirez was convicted of thirteen counts of murder...'), la línea dice explícitamente 'was convicted', sin encabezado de sección (lead, no ficción). attributed 15: cita literal en L1 ('Ramirez murdered at least fifteen people during various break-ins.'), lead, no ficción; attributed.min(15) >= confirmed(13), rango no invertido; attributedQuote presente y attributed no nulo, coherente. País US respaldado en en.txt L1 ('an American serial killer'), no hay códigos históricos ni inexistentes. activeYears 1984 y 1985 respaldados en en.txt L1. Apodo en ('the Night Stalker') en en.txt L1/L30; apodo es ('El Acosador Nocturno') en es.txt L1, cada uno en su idioma. Wikipedia es y en no nulas y con dominio correcto. Sin embargo, es.txt L1 afirma como hecho 'que mató a 14 personas ... entre los años 1984 y 1985', una cifra total de víctimas distinta y menor que el 'at least fifteen' usado como attributed en la fuente inglesa (misma franja de fechas 1984-1985); el candidato debía usar la cifra menor (14) y en su lugar usa la mayor (15), lo que viola la regla de discrepancia entre fuentes."
+}

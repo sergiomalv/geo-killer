@@ -1,0 +1,9 @@
+{
+  "id": "richard-ramirez",
+  "confirmedLine": 4,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "El inglés da la condena firme: convicted of thirteen counts of murder (línea 4). El español (línea 20) solo dice 'fue acusado de catorce asesinatos', que es una acusación, no una condena, así que no se usa como confirmed. Attributed usa la cifra del resumen inglés 'murdered at least fifteen people' (línea 1), un límite inferior sin rango superior explícito, por lo que min=max=15. Se descarta la jactancia 'more than 20 people' (línea 52 en) por ser un alarde en prisión sin corroborar, menos fiable que la estimación editorial de la entradilla."
+}

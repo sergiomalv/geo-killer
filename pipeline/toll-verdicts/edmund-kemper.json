@@ -1,0 +1,7 @@
+{
+  "id": "edmund-kemper",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 8: cita literal en L2 ('Capital punishment was suspended in California at the time, and he instead received eight concurrent life sentences.'), contiene 'eight'; L2 dice 'Found sane and guilty at his trial in 1973' (condena, no atribución); sin encabezado de sección antes de L2 (parte de la introducción, no ficción/aparato); ES corrobora con L17 'hallado culpable de ocho cargos por asesinato' (misma cifra, sin discrepancia); attributed=null y no hay attributedQuote, coherente; US respaldado en L1 EN ('is an American serial killer') y L1 ES; sin códigos SU/YU/CS; activeYears 1964 en L20 EN ('On August 27, 1964... Kemper killed his grandmother') y 1973 en L1/L2/L72/L85 EN; apodo es 'El asesino de las colegialas' en L1 ES; apodo en 'the Co-ed Killer' en L1 EN; ambas URL de Wikipedia bien formadas (es.wikipedia.org y en.wikipedia.org)."
+}

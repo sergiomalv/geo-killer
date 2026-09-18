@@ -1,0 +1,7 @@
+{
+  "id": "aileen-wuornos",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 6: cita literal L39 en 'In all, Wuornos received six death sentences.', línea confirma condena ('pleaded no contest'/'sentenced to death'), sección == Arrest and trial ==; attributed 7: cita literal L1 en 'Wuornos shot, killed, and robbed seven of her male clients.', sección introducción (no ficción); attributed.min 7 >= confirmed 6, min=max=7 no invertido; US respaldado en L1 ('American serial killer') y L24-28 (Florida, condados de EE.UU.); activeYears 1989 y 1990 en L1; apodos es/en ambos null, sin attributedQuote sobrante; wikipedia es apunta a es.wikipedia.org y en a en.wikipedia.org; es.txt L1 y L36 coinciden en 7 atribuidos y 6 confirmados, sin discrepancia entre fuentes"
+}
