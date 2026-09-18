@@ -1,0 +1,30 @@
+{
+  "id": "pedro-alonso-lopez",
+  "lang": "en",
+  "country": "Colombia",
+  "summary": "Colombian serial killer who confessed to murdering more than 300 people in Colombia, Ecuador, and Peru between 1978 and 1980. He was sentenced to 16 years in prison in Ecuador in 1981 for three confirmed murders. He disappeared in 1999 after his release on parole.",
+  "aliases": [
+    "Monster of the Andes",
+    "Monster of the Andes"
+  ],
+  "murders": [
+    {
+      "city": "Ambato",
+      "region": null,
+      "country": "Ecuador",
+      "method": "Strangled under a bridge."
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "method": "Strangled."
+    },
+    {
+      "city": "El Espinal",
+      "region": null,
+      "country": "Colombia",
+      "method": "Strangled with bare hands."
+    }
+  ]
+}

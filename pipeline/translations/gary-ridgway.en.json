@@ -1,0 +1,31 @@
+{
+  "id": "gary-ridgway",
+  "lang": "en",
+  "country": "United States",
+  "summary": "Gary Ridgway, known as the Green River Killer, was convicted in 2003 of murdering 49 women in Washington between 1982 and 1998. He strangled his victims, generally prostitutes or vulnerable young women, in his home, truck, or isolated areas, and then disposed of their bodies in forests and areas near South King County.",
+  "aliases": [
+    "The Green River Killer",
+    "Green River Killer",
+    "Green River Strangler"
+  ],
+  "murders": [
+    {
+      "city": "Auburn",
+      "region": "Washington",
+      "country": "United States",
+      "method": "Strangulation."
+    },
+    {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "United States",
+      "method": "Strangulation."
+    },
+    {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "United States",
+      "method": "Strangulation."
+    }
+  ]
+}

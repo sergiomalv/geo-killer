@@ -1,0 +1,26 @@
+{
+  "id": "gary-ridgway",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "caseErrors": [],
+  "fieldVerdicts": [
+    { "path": "country", "ok": true, "errors": [] },
+    { "path": "summary", "ok": true, "errors": [] },
+    { "path": "aliases[0]", "ok": true, "errors": [] },
+    { "path": "aliases[1]", "ok": true, "errors": [] },
+    { "path": "aliases[2]", "ok": true, "errors": [] },
+    { "path": "murders[0].city", "ok": true, "errors": [] },
+    { "path": "murders[0].region", "ok": true, "errors": [] },
+    { "path": "murders[0].country", "ok": true, "errors": [] },
+    { "path": "murders[0].method", "ok": true, "errors": [] },
+    { "path": "murders[1].city", "ok": true, "errors": [] },
+    { "path": "murders[1].region", "ok": true, "errors": [] },
+    { "path": "murders[1].country", "ok": true, "errors": [] },
+    { "path": "murders[1].method", "ok": true, "errors": [] },
+    { "path": "murders[2].city", "ok": true, "errors": [] },
+    { "path": "murders[2].region", "ok": true, "errors": [] },
+    { "path": "murders[2].country", "ok": true, "errors": [] },
+    { "path": "murders[2].method", "ok": true, "errors": [] }
+  ],
+  "notes": "Estructura: id 'gary-ridgway' e lang 'en' correctos; murders longitud 3=3; aliases longitud 3=3; sin campos fuera de los permitidos (sin victim, lat, lng, date, datePrecision, sourceQuote, sourceLang, name, activeYears, wikipedia ni validation en la traducción). Campo a campo contra el original español: country 'Estados Unidos'->'United States' ok. summary: '49 mujeres'->'49 women', 'entre 1982 y 1998'->'between 1982 and 1998', 'Estrangulaba...casa, camión o áreas aisladas'->'strangled...home, truck, or isolated areas', 'bosques y zonas cercanas a South King County'->'forests and areas near South King County', todo presente sin añadidos ni omisiones; 'conocido como «El asesino de Green River»' traducido a 'known as the Green River Killer' (consistente con alias[0]). aliases: 'El asesino de Green River'->'The Green River Killer' (traducción, no nombre propio inglés fijo), 'Green River Killer' y 'Green River Strangler' se mantienen igual (ya son los nombres usados en inglés). murders[0] Auburn/Washington/Estados Unidos-United States/Estrangulamiento-Strangulation ok; murders[1] y murders[2] Seattle/Washington/United States/Strangulation ok, region 'Washington' no es null en ningún caso y se mantiene en ambos idiomas. Contraste con pipeline/sources/gary-ridgway.en.txt via grep -n: L1 confirma 'known as the Green River Killer or the Green River Strangler...convicted of murdering forty-nine women between 1982 and 1998' (coincide con 49/1982-1998); L2 confirma 'strangled his victims' y 'dump their bodies in forested...areas'; L20 confirma 'South King County' y método (home/truck/secluded area); L63 confirma 'Auburn, Washington' y fecha 'December 3, 1982' para Marrero; L43 confirma 'Seattle' y 'September 12, 1983' para Winston; sin contradicciones de cifras, fechas, nombres propios ni topónimos entre la traducción y la fuente inglesa."
+}

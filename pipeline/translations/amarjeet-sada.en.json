@@ -1,0 +1,29 @@
+{
+  "id": "amarjeet-sada",
+  "lang": "en",
+  "country": "India",
+  "summary": "Indian boy from the state of Bihar who between 2006 and 2007, aged seven and eight, killed three babies: a cousin, his own sister and a neighbor six months old. He confessed to all three during interrogation, but due to his age was never tried as an adult: he went through a juvenile center from which he left upon reaching adulthood. The sources refer to him interchangeably as Amarjeet or Amardeep Sada and disagree on the age of the first victim.",
+  "aliases": [
+    "Amardeep Sada"
+  ],
+  "murders": [
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "method": "Strangled."
+    },
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "method": "Strangled."
+    },
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "method": "Beaten with a stone and buried."
+    }
+  ]
+}

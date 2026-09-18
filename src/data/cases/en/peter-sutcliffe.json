@@ -1,0 +1,48 @@
+{
+  "id": "peter-sutcliffe",
+  "lang": "en",
+  "country": "United Kingdom",
+  "summary": "British serial killer who operated in Yorkshire between 1975 and 1980, convicted of thirteen murders. His modus operandi included hammer blows and mutilations with bladed weapons. He was captured in 1981 after being identified by false license plates.",
+  "aliases": [
+    "The Yorkshire Ripper",
+    "Yorkshire Ripper"
+  ],
+  "murders": [
+    {
+      "city": "Leeds",
+      "region": "Chapeltown",
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer."
+    },
+    {
+      "city": "Leeds",
+      "region": null,
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer and stabbed with a screwdriver."
+    },
+    {
+      "city": "Bradford",
+      "region": "Manningham",
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer and stabbed."
+    },
+    {
+      "city": "Leeds",
+      "region": "Chapeltown",
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer and stabbed."
+    },
+    {
+      "city": "Bradford",
+      "region": null,
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer."
+    },
+    {
+      "city": "Bradford",
+      "region": null,
+      "country": "United Kingdom",
+      "method": "Beaten with a hammer and stabbed with a screwdriver."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "amarjeet-sada",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "caseErrors": [],
+  "fieldVerdicts": [
+    { "path": "country", "ok": true, "errors": [] },
+    { "path": "summary", "ok": true, "errors": [] },
+    { "path": "aliases[0]", "ok": true, "errors": [] },
+    { "path": "murders[0].city", "ok": true, "errors": [] },
+    { "path": "murders[0].region", "ok": true, "errors": [] },
+    { "path": "murders[0].country", "ok": true, "errors": [] },
+    { "path": "murders[0].method", "ok": true, "errors": [] },
+    { "path": "murders[1].city", "ok": true, "errors": [] },
+    { "path": "murders[1].region", "ok": true, "errors": [] },
+    { "path": "murders[1].country", "ok": true, "errors": [] },
+    { "path": "murders[1].method", "ok": true, "errors": [] },
+    { "path": "murders[2].city", "ok": true, "errors": [] },
+    { "path": "murders[2].region", "ok": true, "errors": [] },
+    { "path": "murders[2].country", "ok": true, "errors": [] },
+    { "path": "murders[2].method", "ok": true, "errors": [] }
+  ],
+  "notes": "Caso forzado sin Wikipedia en ninguna lengua (wikipedia.es y .en son null en el original) y sin fichero pipeline/sources/amarjeet-sada.en.txt, por lo que solo se contrastó contra el español, tal como indica el estándar de casos forzados. Estructura: id 'amarjeet-sada' y lang 'en' correctos, murders con longitud 3 = 3 del original, aliases con longitud 1 = 1, y solo aparecen los campos permitidos (country, summary, aliases, murders[].{city,region,country,method}); no hay victim ni lat ni date en la traducción. Summary comprobado frase a frase: años 2006-2007, edades siete/ocho, tres bebés (prima, hermana, vecina de seis meses), confesión de los tres, nunca juzgado como adulto por su edad, centro de menores hasta la mayoría de edad, y la doble denominación Amarjeet/Amardeep Sada con discrepancia en la edad de la primera víctima; todo presente sin añadidos ni omisiones. Alias 'Amardeep Sada' copiado literal. Los tres asesinatos comparten city/region/country 'Begusarai'/'Bihar'/'India', idénticos a los tres del original y sin exónimos. Methods: 'Estrangulada.'→'Strangled.' (murders[0] y [1]) y 'Golpeada con una piedra y enterrada.'→'Beaten with a stone and buried.' (murders[2]), sin pérdida ni adición de circunstancias; el cambio de género gramatical español/inglés en 'estrangulada' no añade ni quita ningún hecho."
+}

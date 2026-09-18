@@ -1,0 +1,44 @@
+{
+  "id": "david-berkowitz",
+  "lang": "en",
+  "country": "United States",
+  "summary": "David Berkowitz, known as 'Son of Sam', is an American serial killer who committed five murders between 1976 and 1977 in New York. He was arrested in August 1977, confessed to his crimes and was sentenced to six life sentences.",
+  "aliases": [
+    "Son of Sam",
+    "The .44 Caliber Killer",
+    "Son of Sam",
+    "The .44 Caliber Killer"
+  ],
+  "murders": [
+    {
+      "city": "New York",
+      "region": "The Bronx",
+      "country": "United States",
+      "method": "Shot with .44 caliber revolver."
+    },
+    {
+      "city": "New York",
+      "region": "Queens",
+      "country": "United States",
+      "method": "Shot with .44 caliber revolver."
+    },
+    {
+      "city": "New York",
+      "region": "The Bronx",
+      "country": "United States",
+      "method": "Shot in the head with .44 caliber revolver."
+    },
+    {
+      "city": "New York",
+      "region": "The Bronx",
+      "country": "United States",
+      "method": "Shot in the head with .44 caliber revolver."
+    },
+    {
+      "city": "New York",
+      "region": "Brooklyn",
+      "country": "United States",
+      "method": "Shot in the head with .44 caliber revolver."
+    }
+  ]
+}

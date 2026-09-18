@@ -1,0 +1,25 @@
+{
+  "id": "pedro-alonso-lopez",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "caseErrors": [],
+  "fieldVerdicts": [
+    { "path": "country", "ok": true, "errors": [] },
+    { "path": "summary", "ok": true, "errors": [] },
+    { "path": "aliases[0]", "ok": true, "errors": [] },
+    { "path": "aliases[1]", "ok": true, "errors": [] },
+    { "path": "murders[0].city", "ok": true, "errors": [] },
+    { "path": "murders[0].region", "ok": true, "errors": [] },
+    { "path": "murders[0].country", "ok": true, "errors": [] },
+    { "path": "murders[0].method", "ok": true, "errors": [] },
+    { "path": "murders[1].city", "ok": true, "errors": [] },
+    { "path": "murders[1].region", "ok": true, "errors": [] },
+    { "path": "murders[1].country", "ok": true, "errors": [] },
+    { "path": "murders[1].method", "ok": true, "errors": [] },
+    { "path": "murders[2].city", "ok": true, "errors": [] },
+    { "path": "murders[2].region", "ok": true, "errors": [] },
+    { "path": "murders[2].country", "ok": true, "errors": [] },
+    { "path": "murders[2].method", "ok": true, "errors": [] }
+  ],
+  "notes": "Estructura: id 'pedro-alonso-lopez' y lang 'en' correctos; murders longitud 3=3; aliases longitud 2=2; sin campos ajenos (no victim, no lat, no date, no datePrecision, no sourceQuote, no sourceLang, no name, no activeYears, no wikipedia). Campo a campo contra src/data/cases/pedro-alonso-lopez.json: country 'Colombia'='Colombia'. summary: '300', '1978 y 1980'/'1978 and 1980', '16 años'/'16 years', '1981'='1981', 'tres asesinatos confirmados'/'three confirmed murders', '1999'='1999', 'libertad condicional'/'parole' -- todo presente sin añadidos ni pérdidas. aliases[0] 'Monstruo de los Andes' -> 'Monster of the Andes' correcto; aliases[1] ya en inglés en el original 'Monster of the Andes' -> se mantiene igual (coincide que ambos den el mismo texto en inglés, no es error, es traducción correcta de un original bilingüe). murders[0] Ambato/Ecuador/null y 'Estrangulada bajo un puente.'->'Strangled under a bridge.' fiel. murders[1] El Espinal/Colombia/null y 'Estrangulada.'->'Strangled.' fiel. murders[2] El Espinal/Colombia/null y 'Estrangulada con las manos desnudas.'->'Strangled with bare hands.' fiel. Contraste con pipeline/sources/pedro-alonso-lopez.en.txt via grep -n: L1 confirma 'Monster of the Andes' y 'over 300 people'; L19 confirma 'Ambato', 'El Espinal', 'under a nearby bridge' (murder 0); L27 confirma MO general 'strangling them with his bare hands' (respalda murders[2]); L30 confirma 'found guilty of three of the murders and received a sentence of 16 years'; L1 y L38 confirman desaparición 22 sept 1999; L37 describe la liberación de 1998 como 'released on bail' en la fuente inglesa, pero esto no es una contradicción de nombre propio ni cifra respecto al original español (que ya decía 'libertad condicional' en el caso aprobado), por lo que no afecta el veredicto de la traducción. Sin contradicciones de nombres propios ni cifras en la fuente. Veredicto: approved."
+}

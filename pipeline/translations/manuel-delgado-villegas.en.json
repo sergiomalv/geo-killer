@@ -1,0 +1,45 @@
+{
+  "id": "manuel-delgado-villegas",
+  "lang": "en",
+  "country": "Spain",
+  "summary": "Spanish serial killer known as El Arropiero, who confessed to 48 murders of which seven were proven between 1964 and 1971. He was never tried after being diagnosed with severe mental illness, being admitted to a psychiatric hospital in 1978 until his death in 1998.",
+  "aliases": ["El Arropiero"],
+  "murders": [
+    {
+      "city": "Garraf",
+      "region": null,
+      "country": "Spain",
+      "method": "Hit on the head with a rock while sleeping."
+    },
+    {
+      "city": "Ibiza",
+      "region": null,
+      "country": "Spain",
+      "method": "Suffocated with a pillow."
+    },
+    {
+      "city": "Barcelona",
+      "region": null,
+      "country": "Spain",
+      "method": "Beaten with furniture and strangled."
+    },
+    {
+      "city": "Mataró",
+      "region": null,
+      "country": "Spain",
+      "method": "Hit with a brick, pushed off a bridge and strangled."
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "Spain",
+      "method": "Struck on the head."
+    },
+    {
+      "city": "El Puerto de Santa María",
+      "region": null,
+      "country": "Spain",
+      "method": "Strangled with her own tights."
+    }
+  ]
+}

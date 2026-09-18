@@ -1,0 +1,59 @@
+{
+  "id": "ted-bundy",
+  "lang": "en",
+  "country": "United States",
+  "summary": "American serial killer active between 1974 and 1978 who killed several dozen young women on the Pacific coast and other states. Sentenced to death for his crimes in Florida, he was executed in the electric chair in 1989.",
+  "aliases": [
+    "Theodore Robert Bundy"
+  ],
+  "murders": [
+    {
+      "city": "Seattle",
+      "region": "University District",
+      "country": "United States",
+      "method": "Beaten while asleep and subsequently murdered."
+    },
+    {
+      "city": "Issaquah",
+      "region": null,
+      "country": "United States",
+      "method": "Abducted in broad daylight; subsequently murdered."
+    },
+    {
+      "city": "Issaquah",
+      "region": null,
+      "country": "United States",
+      "method": "Abducted at state park; subsequently murdered."
+    },
+    {
+      "city": "Midvale",
+      "region": null,
+      "country": "United States",
+      "method": "Beaten and strangled."
+    },
+    {
+      "city": "Snowmass Village",
+      "region": null,
+      "country": "United States",
+      "method": "Disappeared in hotel hallway; beaten in the head and cut with a blade."
+    },
+    {
+      "city": "Tallahassee",
+      "region": null,
+      "country": "United States",
+      "method": "Beaten while asleep in sorority house; strangled."
+    },
+    {
+      "city": "Tallahassee",
+      "region": null,
+      "country": "United States",
+      "method": "Beaten while asleep; strangled."
+    },
+    {
+      "city": "Lake City",
+      "region": null,
+      "country": "United States",
+      "method": "Abducted and murdered."
+    }
+  ]
+}

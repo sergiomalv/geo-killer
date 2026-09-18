@@ -1,0 +1,51 @@
+{
+  "id": "jeffrey-dahmer",
+  "lang": "en",
+  "country": "United States",
+  "summary": "American serial killer who committed seventeen murders between 1978 and 1991, primarily in Milwaukee, Wisconsin. He was sentenced to sixteen life sentences. He died in prison in 1994.",
+  "aliases": ["Milwaukee Cannibal"],
+  "murders": [
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "United States",
+      "method": "Beaten to death while intoxicated."
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "United States",
+      "method": "Strangled after being drugged."
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "United States",
+      "method": "Drugged and strangled in the bedroom."
+    },
+    {
+      "city": "West Allis",
+      "region": null,
+      "country": "United States",
+      "method": "Drugged and strangled."
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "United States",
+      "method": "Drugged in drink and strangled."
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "United States",
+      "method": "Killed with a bladed weapon."
+    },
+    {
+      "city": "Milwaukee",
+      "region": null,
+      "country": "United States",
+      "method": "Drugged and strangled with a leather strap."
+    }
+  ]
+}

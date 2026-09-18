@@ -1,0 +1,46 @@
+{
+  "id": "andrei-chikatilo",
+  "lang": "en",
+  "country": "Russia",
+  "summary": "Andrei Chikatilo was a Soviet serial killer and cannibal who committed at least 52 confirmed murders between 1978 and 1990 in the Soviet Union. He was convicted in October 1992 and executed in February 1994.",
+  "aliases": [
+    "the Butcher of Rostov",
+    "the Red Ripper",
+    "the Rostov Ripper",
+    "the Butcher of Rostov",
+    "the Rostov Ripper",
+    "the Red Ripper"
+  ],
+  "murders": [
+    {
+      "city": "Shakhty",
+      "region": null,
+      "country": "Russia",
+      "method": "Stabbed and strangled."
+    },
+    {
+      "city": "Rostov-on-Don",
+      "region": null,
+      "country": "Russia",
+      "method": "Strangled."
+    },
+    {
+      "city": "Novoshakhtinsk",
+      "region": null,
+      "country": "Russia",
+      "method": "Stabbed."
+    },
+    {
+      "city": "Novoshakhtinsk",
+      "region": null,
+      "country": "Russia",
+      "method": "The method is not recorded in the source."
+    },
+    {
+      "city": "Shakhty",
+      "region": null,
+      "country": "Russia",
+      "method": "Murdered."
+    }
+  ]
+}

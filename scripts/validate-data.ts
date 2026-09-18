@@ -87,6 +87,7 @@ if (existsSync(enDir)) {
 if (scheduleResult.success) {
   for (const id of scheduleResult.data.order) {
     if (!caseIds.has(id)) errors.push(`schedule.json: "${id}" no tiene fichero en cases/`)
+    if (!translationIds.has(id)) errors.push(`schedule.json: "${id}" no tiene traducción en cases/en/`)
   }
 }
 
