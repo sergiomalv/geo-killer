@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { createContext, useContext, useMemo } from 'react'
 import es from './es.json'
 import en from './en.json'
 import { isLang, type Lang } from './lang'
@@ -39,33 +39,9 @@ export function detectLang(): Lang {
   return navigator.language?.startsWith('en') ? 'en' : 'es'
 }
 
-const LangContext = createContext<Lang>('es')
-const SetLangContext = createContext<(lang: Lang) => void>(() => {})
-
-interface ProviderProps {
-  children: ReactNode
-  /** Idioma inicial. Solo para tests: en la aplicación lo decide `detectLang`. */
-  initial?: Lang
-}
-
-export function LanguageProvider({ children, initial }: ProviderProps) {
-  const [lang, setLang] = useState<Lang>(() => initial ?? detectLang())
-
-  useEffect(() => {
-    document.documentElement.lang = lang
-    try {
-      localStorage.setItem(LANG_KEY, lang)
-    } catch {
-      /* sin acceso a storage: se juega sin recordar el idioma */
-    }
-  }, [lang])
-
-  return (
-    <LangContext.Provider value={lang}>
-      <SetLangContext.Provider value={setLang}>{children}</SetLangContext.Provider>
-    </LangContext.Provider>
-  )
-}
+/** Contextos compartidos con `LanguageProvider` (definido en `./index`). */
+export const LangContext = createContext<Lang>('es')
+export const SetLangContext = createContext<(lang: Lang) => void>(() => {})
 
 export function useLang(): Lang {
   return useContext(LangContext)
