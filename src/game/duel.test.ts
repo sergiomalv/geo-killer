@@ -29,19 +29,46 @@ describe('pickNextKiller', () => {
     expect(r.seen).toEqual(['a'])
   })
 
-  it('al reciclar no devuelve el asesino excluido', () => {
-    const r = pickNextKiller(available, ['a', 'b', 'c'], first, 'a')
+  it('al reciclar no reparte las cartas de la mesa y las cuenta como vistas', () => {
+    const r = pickNextKiller(available, ['a', 'b', 'c'], first, ['a'])
     expect(r.id).toBe('b')
-    expect(r.seen).toEqual(['b'])
+    expect(r.seen).toEqual(['a', 'b'])
   })
 
   it('lanza un error claro si no hay de dónde elegir', () => {
     expect(() => pickNextKiller([], [], first)).toThrow('No hay asesinos disponibles')
-    expect(() => pickNextKiller(['a'], ['a'], first, 'a')).toThrow('No hay asesinos disponibles')
+    expect(() => pickNextKiller(['a'], ['a'], first, ['a'])).toThrow('No hay asesinos disponibles')
+  })
+
+  it('en un catálogo de dos, alterna la pareja sin repartir el mismo asesino a los dos lados', () => {
+    const dos = ['a', 'b']
+    const s0 = startDuel(dos, first)
+    expect(s0.left).toBe('a')
+    expect(s0.right).toBe('b')
+
+    const contadores = { a: 1, b: 2 }
+    const revelada0 = answer(s0, 'higher', contadores)
+    const s1 = advance(revelada0, dos, first)
+    expect(s1.left).toBe('b')
+    expect(s1.right).toBe('a')
+    expect(s1.left).not.toBe(s1.right)
+
+    const revelada1 = answer(s1, 'lower', contadores)
+    const s2 = advance(revelada1, dos, first)
+    expect(s2.left).toBe('a')
+    expect(s2.right).toBe('b')
+    expect(s2.left).not.toBe(s2.right)
+  })
+
+  it('los ids que ya no están en el catálogo no rompen la elección', () => {
+    // Puede pasar al recuperar una partida de localStorage después de que crezca el catálogo:
+    // `seen` guarda ids que dejaron de existir. Deben ser inocuos, no bloquear la elección.
+    const r = pickNextKiller(['a', 'b'], ['zz', 'yy', 'a'], first)
+    expect(r.id).toBe('b')
   })
 })
 
-const counts = { uno: 3, dos: 10, tres: 10, cuatro: 52 }
+const counts: Record<string, number> = { uno: 3, dos: 10, tres: 10, cuatro: 52 }
 const ids = ['uno', 'dos', 'tres', 'cuatro']
 
 describe('startDuel', () => {
@@ -74,10 +101,10 @@ describe('answer', () => {
     expect(s.tie).toBe(false)
   })
 
-  it('fallar termina la partida sin tocar el récord', () => {
-    const s = answer({ ...start(), best: 5 }, 'lower', counts)
+  it('fallar termina la partida conservando la racha alcanzada y el récord', () => {
+    const s = answer({ ...start(), streak: 4, best: 5 }, 'lower', counts)
     expect(s.status).toBe('lost')
-    expect(s.streak).toBe(0)
+    expect(s.streak).toBe(4)
     expect(s.best).toBe(5)
   })
 
@@ -104,6 +131,16 @@ describe('answer', () => {
 
   it('lanza un error si falta la cifra de un asesino', () => {
     expect(() => answer(start(), 'higher', { uno: 3 })).toThrow('Sin cifra para "dos"')
+  })
+
+  it('el empate no deja tie pegado en la ronda siguiente', () => {
+    const empate = { ...start(), left: 'dos', right: 'tres' }
+    const revelada = answer(empate, 'higher', counts)
+    expect(revelada.tie).toBe(true)
+    const avanzada = advance(revelada, ids, first)
+    expect(avanzada.tie).toBe(false)
+    const siguiente = answer(avanzada, 'higher', counts)
+    expect(siguiente.tie).toBe(false)
   })
 })
 
@@ -138,8 +175,32 @@ describe('advance', () => {
     const s = advance(revelada, ids, first)
     expect(s.left).toBe('cuatro')
     expect(s.right).not.toBe('cuatro')
-    expect(s.seen).toEqual([s.right])
+    expect(s.seen).toContain(s.left)
+    expect(s.seen).toContain(s.right)
     expect(s.streak).toBe(3)
+  })
+
+  it('conserva el récord al encadenar, no solo la racha', () => {
+    const conRecordPrevio = { ...startDuel(ids, first), best: 9 }
+    const revelada = answer(conRecordPrevio, 'higher', counts)
+    expect(revelada.best).toBe(9)
+    const s = advance(revelada, ids, first)
+    expect(s.best).toBe(9)
+    expect(s.streak).toBe(1)
+  })
+
+  it('seen contiene siempre las dos cartas en mesa, en varias rondas seguidas y al menos una vuelta completa', () => {
+    let s = startDuel(ids, first)
+    for (let i = 0; i < 6; i++) {
+      expect(s.seen).toContain(s.left)
+      expect(s.seen).toContain(s.right)
+      const choice = counts[s.right] >= counts[s.left] ? 'higher' : 'lower'
+      const revelada = answer(s, choice, counts)
+      expect(revelada.status).toBe('revealed')
+      s = advance(revelada, ids, first)
+    }
+    expect(s.seen).toContain(s.left)
+    expect(s.seen).toContain(s.right)
   })
 })
 

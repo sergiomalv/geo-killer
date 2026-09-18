@@ -21,6 +21,13 @@ describe('buildIndex', () => {
     expect(index.counts).toEqual({ a: 3, b: 10, c: 10, d: 52 })
   })
 
+  // `duel.ts` confía en que todo id de `ids` tiene cifra en `counts` (lo comprueba `countOf`,
+  // que lanza `Sin cifra para "<id>"` si no). Esa confianza depende de que `ids` y `counts`
+  // salgan siempre de la misma lista, lo que fija esta prueba.
+  it('ids y counts describen el mismo catálogo', () => {
+    expect(Object.keys(index.counts).sort()).toEqual(index.ids)
+  })
+
   // `tollsSchema` ya rechaza ids duplicados en los datos reales (`tolls.json`), pero
   // `buildIndex` es pública y los tests la llaman directamente con fixtures sin pasar por
   // esa validación. Fija aquí la regla "la última gana" para que `ids`, `byId` y `counts`

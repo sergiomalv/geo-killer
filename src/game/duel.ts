@@ -6,21 +6,30 @@ export type DuelStatus = 'playing' | 'revealed' | 'lost'
 
 /**
  * Elige un asesino que no se haya usado en esta partida. Al agotarse la lista, la recicla desde
- * cero, igual que `pickNextCase` en el modo infinito. `exclude` evita que el reciclado devuelva
- * al asesino que ya está en la carta izquierda, que daría un duelo de alguien contra sí mismo.
+ * cero, igual que `pickNextCase` en el modo infinito. `onBoard` son las cartas que siguen en la
+ * mesa: nunca se reparten, porque darían un duelo de alguien contra sí mismo o repetirían la
+ * pareja anterior al revés con las dos cifras ya a la vista; y al reciclar cuentan como vistas
+ * en el ciclo nuevo, para que `seen` nunca deje fuera lo que hay en pantalla.
  * `random` devuelve [0, 1).
  */
 export function pickNextKiller(
   available: string[],
   seen: string[],
   random: () => number,
-  exclude?: string,
+  onBoard: string[] = [],
 ): { id: string; seen: string[] } {
-  let candidates = available.filter((id) => !seen.includes(id) && id !== exclude)
+  let candidates = available.filter((id) => !seen.includes(id) && !onBoard.includes(id))
   let base = seen
   if (candidates.length === 0) {
-    candidates = available.filter((id) => id !== exclude)
-    base = []
+    candidates = available.filter((id) => !onBoard.includes(id))
+    base = onBoard
+  }
+  if (candidates.length === 0 && onBoard.length > 0) {
+    // Catálogo mínimo de dos asesinos: lo único evitable es repartir la carta que se queda en
+    // pantalla, así que la pareja se alterna.
+    const stays = onBoard[onBoard.length - 1]
+    candidates = available.filter((id) => id !== stays)
+    base = [stays]
   }
   if (candidates.length === 0) throw new Error('No hay asesinos disponibles')
   const index = Math.min(candidates.length - 1, Math.floor(random() * candidates.length))
@@ -42,6 +51,9 @@ export interface DuelState {
   tie: boolean
 }
 
+// La invariante "todo id de `seen` (y de la partida en general) tiene cifra en `counts`" la
+// garantiza `buildIndex`: `ids` y `counts` salen de la misma lista, así que nunca deberían
+// desincronizarse salvo que se pase un `counts` recortado a mano (como en los tests de error).
 function countOf(counts: Record<string, number>, id: string): number {
   const n = counts[id]
   if (n === undefined) throw new Error(`Sin cifra para "${id}"`)
@@ -51,7 +63,7 @@ function countOf(counts: Record<string, number>, id: string): number {
 export function startDuel(available: string[], random: () => number, best = 0): DuelState {
   if (available.length < 2) throw new Error('Hacen falta al menos dos asesinos')
   const left = pickNextKiller(available, [], random)
-  const right = pickNextKiller(available, left.seen, random)
+  const right = pickNextKiller(available, left.seen, random, [left.id])
   return { left: left.id, right: right.id, seen: right.seen, streak: 0, best, status: 'playing', tie: false }
 }
 
@@ -69,7 +81,7 @@ export function answer(state: DuelState, choice: Choice, counts: Record<string, 
 
 export function advance(state: DuelState, available: string[], random: () => number): DuelState {
   if (state.status !== 'revealed') return state
-  const next = pickNextKiller(available, state.seen, random, state.right)
+  const next = pickNextKiller(available, state.seen, random, [state.left, state.right])
   return { ...state, left: state.right, right: next.id, seen: next.seen, status: 'playing', tie: false }
 }
 
