@@ -21,7 +21,7 @@ export function GameBoard({ caseData, killers, state, onGuess, afterResult }: Pr
   const outcome = state.status === 'playing' ? null : state.status
   return (
     <>
-      <CaseMap murders={caseData.murders} level={level} />
+      <CaseMap murders={caseData.murders} level={level} toll={caseData.toll} />
       <div className="page-controls">
         <AttemptsBar guesses={state.guesses} status={state.status} />
         <GuessInput killers={killers} disabled={outcome !== null} onGuess={onGuess} />

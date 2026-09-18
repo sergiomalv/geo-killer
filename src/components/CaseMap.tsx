@@ -5,6 +5,7 @@ import type { Murder } from '../data/schema'
 import type { ClueLevel } from '../game/engine'
 import { boundsFor } from './mapBounds'
 import { groupByCoordinates } from './markerGroups'
+import { collapsedLabel, shouldCollapse } from './markerSummary'
 import { formatDate } from './format'
 
 const TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -21,9 +22,11 @@ function FitBounds({ murders }: { murders: Murder[] }) {
 interface Props {
   murders: Murder[]
   level: ClueLevel
+  /** Cifra total de víctimas del caso, si los asesinatos listados son solo una muestra. */
+  toll?: number | null
 }
 
-export function CaseMap({ murders, level }: Props) {
+export function CaseMap({ murders, level, toll = null }: Props) {
   const groups = groupByCoordinates(murders)
   return (
     <MapContainer className="case-map" center={[20, 0]} zoom={2} scrollWheelZoom={true}>
@@ -37,13 +40,19 @@ export function CaseMap({ murders, level }: Props) {
           pathOptions={{ color: '#d9a441', fillColor: '#b3382c', fillOpacity: 0.85, weight: 2 }}
         >
           <Tooltip permanent={true} direction="top" offset={[0, -8]} className="marker-tip">
-            {g.indexes.map((i) => (
-              <div key={i}>
-                <strong>{i + 1}</strong>
-                {level >= 1 ? <span> · {formatDate(murders[i])}</span> : null}
-                {level >= 2 ? <span> · {murders[i].victim}</span> : null}
+            {shouldCollapse(g.indexes.length) ? (
+              <div>
+                <strong>{collapsedLabel(g.indexes.length, toll)}</strong>
               </div>
-            ))}
+            ) : (
+              g.indexes.map((i) => (
+                <div key={i}>
+                  <strong>{i + 1}</strong>
+                  {level >= 1 ? <span> · {formatDate(murders[i])}</span> : null}
+                  {level >= 2 ? <span> · {murders[i].victim}</span> : null}
+                </div>
+              ))
+            )}
           </Tooltip>
         </CircleMarker>
       ))}
