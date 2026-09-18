@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema } from './schema'
+import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema, tollSchema } from './schema'
 import { sampleCase } from '../game/__fixtures__/sample-case'
 
 describe('caseSchema', () => {
@@ -177,5 +177,76 @@ describe('caseTranslationSchema', () => {
 
   it('rechaza un id con mayúsculas', () => {
     expect(caseTranslationSchema.safeParse({ ...traduccion, id: 'Caso Prueba' }).success).toBe(false)
+  })
+})
+
+describe('tollSchema', () => {
+  const base = {
+    id: 'gary-ridgway',
+    confirmed: 49,
+    attributed: { min: 71, max: 71 },
+    countries: ['US'],
+    activeYears: '1982-1998',
+    nickname: { es: 'el asesino de Green River', en: 'the Green River Killer' },
+    wikipedia: { es: 'https://es.wikipedia.org/wiki/Gary_Ridgway', en: null },
+    confirmedQuote: 'Ridgway was convicted of 49 murders',
+    attributedQuote: 'he confessed to 71 killings',
+    sourceLang: 'en',
+    validation: { status: 'approved', validatedAt: '2026-09-18', validator: 'claude-sonnet-5', notes: '' },
+  }
+
+  it('acepta una entrada completa', () => {
+    expect(tollSchema.safeParse(base).success).toBe(true)
+  })
+
+  it('acepta attributed nulo si tampoco hay attributedQuote', () => {
+    const { attributedQuote: _q, ...rest } = base
+    expect(tollSchema.safeParse({ ...rest, attributed: null }).success).toBe(true)
+  })
+
+  it('rechaza attributed nulo con attributedQuote presente', () => {
+    expect(tollSchema.safeParse({ ...base, attributed: null }).success).toBe(false)
+  })
+
+  it('rechaza attributed presente sin attributedQuote', () => {
+    const { attributedQuote: _q, ...rest } = base
+    expect(tollSchema.safeParse(rest).success).toBe(false)
+  })
+
+  it('rechaza un rango atribuido menor que lo confirmado', () => {
+    expect(tollSchema.safeParse({ ...base, attributed: { min: 10, max: 20 } }).success).toBe(false)
+  })
+
+  it('rechaza un rango con min mayor que max', () => {
+    expect(tollSchema.safeParse({ ...base, attributed: { min: 80, max: 71 } }).success).toBe(false)
+  })
+
+  it('rechaza confirmed cero o negativo', () => {
+    expect(tollSchema.safeParse({ ...base, confirmed: 0 }).success).toBe(false)
+  })
+
+  it('rechaza los códigos de países que ya no existen', () => {
+    for (const code of ['SU', 'YU', 'CS']) {
+      expect(tollSchema.safeParse({ ...base, countries: [code] }).success, code).toBe(false)
+    }
+  })
+
+  it('rechaza un código de país inventado', () => {
+    expect(tollSchema.safeParse({ ...base, countries: ['ZZ'] }).success).toBe(false)
+  })
+
+  it('acepta hasta tres países y rechaza cuatro', () => {
+    expect(tollSchema.safeParse({ ...base, countries: ['UA', 'RU', 'UZ'] }).success).toBe(true)
+    expect(tollSchema.safeParse({ ...base, countries: ['UA', 'RU', 'UZ', 'US'] }).success).toBe(false)
+    expect(tollSchema.safeParse({ ...base, countries: [] }).success).toBe(false)
+  })
+
+  it('acepta un apodo solo en un idioma', () => {
+    expect(tollSchema.safeParse({ ...base, nickname: { es: null, en: 'the Ripper' } }).success).toBe(true)
+    expect(tollSchema.safeParse({ ...base, nickname: null }).success).toBe(true)
+  })
+
+  it('rechaza wikipedia con los dos idiomas a null', () => {
+    expect(tollSchema.safeParse({ ...base, wikipedia: { es: null, en: null } }).success).toBe(false)
   })
 })
