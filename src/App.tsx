@@ -34,5 +34,5 @@ export default function App() {
   if (loaded.kind === 'loading') return <main className="page"><p>Abriendo expediente…</p></main>
   if (loaded.kind === 'missing') return <main className="page"><p>Hoy no hay reto. Vuelve mañana.</p></main>
   if (loaded.kind === 'error') return <main className="page"><p>No se ha podido cargar el caso. Comprueba la conexión y recarga.</p></main>
-  return <TodayPage day={day} caseData={loaded.caseData} killers={killers} />
+  return <TodayPage key={day} day={day} caseData={loaded.caseData} killers={killers} />
 }

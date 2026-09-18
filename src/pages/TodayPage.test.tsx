@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { TodayPage } from './TodayPage'
 import { sampleCase } from '../game/__fixtures__/sample-case'
+import type { GameState } from '../game/engine'
 
 vi.mock('../components/CaseMap', () => ({ CaseMap: () => <div data-testid="map" /> }))
 
@@ -69,5 +70,28 @@ describe('TodayPage', () => {
     expect(screen.getByText('Caso sin resolver')).toBeInTheDocument()
     expect(screen.getByText('Método uno.')).toBeInTheDocument()
     expect(input).toBeDisabled()
+  })
+
+  it('cambiar de día reinicia la partida aunque el componente no se desmonte', () => {
+    const killersWithOtroCaso = [
+      ...killers,
+      { id: 'otro-caso', name: 'Otro Caso', aliases: [] },
+    ]
+    const { rerender } = render(
+      <TodayPage day={0} caseData={sampleCase} killers={killersWithOtroCaso} />,
+    )
+    fireEvent.change(screen.getByRole('combobox'), { target: { value: 'otro asesino' } })
+    fireEvent.submit(screen.getByRole('combobox').closest('form')!)
+    expect(document.querySelectorAll('.attempt-miss').length).toBe(1)
+
+    const otroCaso = { ...sampleCase, id: 'otro-caso', name: 'Otro Caso' }
+    rerender(<TodayPage day={1} caseData={otroCaso} killers={killersWithOtroCaso} />)
+
+    expect(document.querySelectorAll('.attempt-miss').length).toBe(0)
+    const raw = localStorage.getItem('geokiller.progress.1')
+    if (raw !== null) {
+      const parsed = JSON.parse(raw) as GameState
+      expect(parsed.guesses).toEqual([])
+    }
   })
 })

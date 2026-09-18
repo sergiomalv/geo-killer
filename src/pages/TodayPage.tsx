@@ -20,17 +20,22 @@ function initialState(day: number, caseId: string): GameState {
 }
 
 export function TodayPage({ day, caseData, killers }: Props) {
-  const [state, setState] = useState(() => initialState(day, caseData.id))
+  const gameKey = `${day}:${caseData.id}`
+  const [game, setGame] = useState(() => ({ key: gameKey, state: initialState(day, caseData.id) }))
+  if (game.key !== gameKey) {
+    setGame({ key: gameKey, state: initialState(day, caseData.id) })
+  }
+  const state = game.state
   const level = clueLevel(state)
   const finished = state.status !== 'playing'
   const outcome = state.status === 'playing' ? null : state.status
 
   useEffect(() => {
-    saveProgress(day, state)
-  }, [day, state])
+    if (game.key === gameKey) saveProgress(day, state)
+  }, [day, state, game.key, gameKey])
 
   function handleGuess(killerId: string) {
-    setState((prev) => submitGuess(prev, killerId))
+    setGame((prev) => ({ ...prev, state: submitGuess(prev.state, killerId) }))
   }
 
   return (
