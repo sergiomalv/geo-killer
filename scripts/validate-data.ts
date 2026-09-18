@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { z } from 'zod'
-import { caseSchema, killersSchema, scheduleSchema } from '../src/data/schema.ts'
+import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema } from '../src/data/schema.ts'
 
 const DATA_DIR = join(process.cwd(), 'src', 'data')
 const errors: string[] = []
@@ -31,6 +31,8 @@ const scheduleResult = scheduleJson === undefined ? { success: false as const } 
 report('schedule.json', scheduleResult)
 
 const caseIds = new Set<string>()
+const caseMurderCounts = new Map<string, number>()
+const caseAliasCounts = new Map<string, number>()
 const casesDir = join(DATA_DIR, 'cases')
 if (!existsSync(casesDir)) {
   errors.push('cases/: directorio no encontrado')
@@ -44,8 +46,40 @@ if (!existsSync(casesDir)) {
     if (!result.success) continue
     const c = result.data
     caseIds.add(c.id)
+    caseMurderCounts.set(c.id, c.murders.length)
+    caseAliasCounts.set(c.id, c.aliases.length)
     if (file !== `${c.id}.json`) errors.push(`${label}: el nombre del fichero no coincide con id "${c.id}"`)
     if (!killerIds.has(c.id)) errors.push(`${label}: id "${c.id}" no está en killers.json`)
+  }
+}
+
+const translationIds = new Set<string>()
+const enDir = join(casesDir, 'en')
+if (existsSync(enDir)) {
+  for (const file of readdirSync(enDir).filter((f) => f.endsWith('.json')).sort()) {
+    const label = `cases/en/${file}`
+    const json = readJson(join(enDir, file), label)
+    if (json === undefined) continue
+    const result = caseTranslationSchema.safeParse(json)
+    report(label, result)
+    if (!result.success) continue
+    const tr = result.data
+    if (file !== `${tr.id}.json`) {
+      errors.push(`${label}: el nombre del fichero no coincide con id "${tr.id}"`)
+    }
+    if (!caseIds.has(tr.id)) {
+      errors.push(`${label}: no existe el caso original src/data/cases/${tr.id}.json`)
+      continue
+    }
+    const murders = caseMurderCounts.get(tr.id)
+    if (murders !== undefined && tr.murders.length !== murders) {
+      errors.push(`${label}: ${tr.murders.length} asesinatos frente a ${murders} del original`)
+    }
+    const aliases = caseAliasCounts.get(tr.id)
+    if (tr.aliases !== undefined && aliases !== undefined && tr.aliases.length !== aliases) {
+      errors.push(`${label}: ${tr.aliases.length} alias frente a ${aliases} del original`)
+    }
+    translationIds.add(tr.id)
   }
 }
 
@@ -60,4 +94,4 @@ if (errors.length > 0) {
   console.error(`\n${errors.length} problema(s) encontrado(s)`)
   process.exit(1)
 }
-console.log(`OK: ${caseIds.size} casos, ${killerIds.size} killers, ${scheduleResult.success ? scheduleResult.data.order.length : 0} días programados`)
+console.log(`OK: ${caseIds.size} casos, ${translationIds.size} traducciones, ${killerIds.size} killers, ${scheduleResult.success ? scheduleResult.data.order.length : 0} días programados`)
