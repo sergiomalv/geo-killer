@@ -1,52 +1,506 @@
 [
-  { "id": "david-berkowitz", "name": "David Berkowitz", "aliases": ["Son of Sam"], "wiki": { "es": "David_Berkowitz", "en": "David_Berkowitz" } },
-  { "id": "ted-bundy", "name": "Ted Bundy", "aliases": [], "wiki": { "es": "Ted_Bundy", "en": "Ted_Bundy" } },
-  { "id": "jeffrey-dahmer", "name": "Jeffrey Dahmer", "aliases": [], "wiki": { "es": "Jeffrey_Dahmer", "en": "Jeffrey_Dahmer" } },
-  { "id": "andrei-chikatilo", "name": "Andréi Chikatilo", "aliases": [], "wiki": { "es": "Andréi_Chikatilo", "en": "Andrei_Chikatilo" } },
-  { "id": "gary-ridgway", "name": "Gary Ridgway", "aliases": ["Green River Killer"], "wiki": { "es": "Gary_Ridgway", "en": "Gary_Ridgway" } },
-  { "id": "manuel-delgado-villegas", "name": "Manuel Delgado Villegas", "aliases": [], "wiki": { "es": "Manuel_Delgado_Villegas", "en": null } },
-  { "id": "pedro-alonso-lopez", "name": "Pedro Alonso López", "aliases": [], "wiki": { "es": "Pedro_Alonso_López", "en": "Pedro_Alonso_López" } },
-  { "id": "harold-shipman", "name": "Harold Shipman", "aliases": [], "wiki": { "es": "Harold_Shipman", "en": "Harold_Shipman" } },
-  { "id": "john-wayne-gacy", "name": "John Wayne Gacy", "aliases": [], "wiki": { "es": "John_Wayne_Gacy", "en": "John_Wayne_Gacy" } },
-  { "id": "dennis-rader", "name": "Dennis Rader", "aliases": [], "wiki": { "es": "Dennis_Rader", "en": "Dennis_Rader" } },
-  { "id": "edmund-kemper", "name": "Edmund Kemper", "aliases": [], "wiki": { "es": "Edmund_Kemper", "en": "Edmund_Kemper" } },
-  { "id": "richard-ramirez", "name": "Richard Ramirez", "aliases": [], "wiki": { "es": "Richard_Ramirez", "en": "Richard_Ramirez" } },
-  { "id": "samuel-little", "name": "Samuel Little", "aliases": [], "wiki": { "es": "Samuel_Little", "en": "Samuel_Little" } },
-  { "id": "aileen-wuornos", "name": "Aileen Wuornos", "aliases": [], "wiki": { "es": "Aileen_Wuornos", "en": "Aileen_Wuornos" } },
-  { "id": "luis-garavito", "name": "Luis Alfredo Garavito", "aliases": ["La Bestia"], "wiki": { "es": "Luis_Garavito", "en": "Luis_Garavito" } },
-  { "id": "belle-gunness", "name": "Belle Gunness", "aliases": [], "wiki": { "es": "Belle_Gunness", "en": "Belle_Gunness" } },
-  { "id": "joel-rifkin", "name": "Joel Rifkin", "aliases": [], "wiki": { "es": "Joel_Rifkin", "en": "Joel_Rifkin" } },
-  { "id": "peter-kurten", "name": "Peter Kürten", "aliases": [], "wiki": { "es": "Peter_Kürten", "en": "Peter_Kürten" } },
-  { "id": "alfredo-galan", "name": "Alfredo Galán", "aliases": ["El Asesino de la Baraja"], "wiki": { "es": "Alfredo_Galán", "en": null } },
-  { "id": "jose-antonio-rodriguez-vega", "name": "José Antonio Rodríguez Vega", "aliases": ["El Mataviejas"], "wiki": { "es": "José_Antonio_Rodríguez_Vega", "en": null } },
-  { "id": "joaquin-ferrandiz", "name": "Joaquín Ferrándiz", "aliases": [], "wiki": { "es": "Joaquín_Ferrándiz_Ventura", "en": null } },
-  { "id": "juana-barraza", "name": "Juana Barraza", "aliases": ["La Mataviejitas"], "wiki": { "es": "Juana_Barraza_Samperio", "en": null } },
-  { "id": "gregorio-cardenas", "name": "Gregorio Cárdenas", "aliases": ["Goyo Cárdenas", "El Estrangulador de Tacuba"], "wiki": { "es": "Gregorio_Cárdenas", "en": null } },
-  { "id": "cayetano-santos-godino", "name": "Cayetano Santos Godino", "aliases": ["El Petiso Orejudo"], "wiki": { "es": "Cayetano_Santos_Godino", "en": null } },
-  { "id": "carlos-robledo-puch", "name": "Carlos Robledo Puch", "aliases": ["El Ángel Negro", "El Ángel de la Muerte"], "wiki": { "es": "Carlos_Robledo_Puch", "en": null } },
-  { "id": "daniel-camargo-barbosa", "name": "Daniel Camargo Barbosa", "aliases": [], "wiki": { "es": "Daniel_Camargo", "en": null } },
-  { "id": "francisco-garcia-escalero", "name": "Francisco García Escalero", "aliases": ["El Matamendigos"], "wiki": { "es": "Francisco_García_Escalero", "en": null } },
-  { "id": "dorangel-vargas", "name": "Dorángel Vargas", "aliases": ["El Comegente"], "wiki": { "es": "Dorángel_Vargas", "en": null } },
-  { "id": "adolfo-constanzo", "name": "Adolfo de Jesús Constanzo", "aliases": ["El Padrino de Matamoros"], "wiki": { "es": "Adolfo_de_Jesús_Constanzo", "en": null } },
-  { "id": "fritz-haarmann", "name": "Fritz Haarmann", "aliases": [], "wiki": { "es": "Fritz_Haarmann", "en": "Fritz_Haarmann" } },
-  { "id": "robert-hansen", "name": "Robert Hansen", "aliases": [], "wiki": { "es": "Robert_Hansen", "en": "Robert_Hansen" } },
-  { "id": "john-george-haigh", "name": "John George Haigh", "aliases": [], "wiki": { "es": "John_George_Haigh", "en": "John_George_Haigh" } },
-  { "id": "john-christie", "name": "John Christie", "aliases": [], "wiki": { "es": "John_Christie", "en": "John_Christie_(serial_killer)" } },
-  { "id": "peter-manuel", "name": "Peter Manuel", "aliases": [], "wiki": { "es": null, "en": "Peter_Manuel" } },
-  { "id": "albert-fish", "name": "Albert Fish", "aliases": [], "wiki": { "es": "Albert_Fish", "en": "Albert_Fish" } },
-  { "id": "carl-panzram", "name": "Carl Panzram", "aliases": [], "wiki": { "es": "Carl_Panzram", "en": "Carl_Panzram" } },
-  { "id": "richard-speck", "name": "Richard Speck", "aliases": [], "wiki": { "es": "Richard_Speck", "en": "Richard_Speck" } },
-  { "id": "peter-sutcliffe", "name": "Peter Sutcliffe", "aliases": [], "wiki": { "es": "Peter_Sutcliffe", "en": "Peter_Sutcliffe" } },
-  { "id": "donald-harvey", "name": "Donald Harvey", "aliases": [], "wiki": { "es": "Donald_Harvey", "en": "Donald_Harvey" } },
-  { "id": "arthur-shawcross", "name": "Arthur Shawcross", "aliases": [], "wiki": { "es": null, "en": "Arthur_Shawcross" } },
-  { "id": "rodney-alcala", "name": "Rodney Alcala", "aliases": [], "wiki": { "es": null, "en": "Rodney_Alcala" } },
-  { "id": "leonard-lake", "name": "Leonard Lake", "aliases": [], "wiki": { "es": null, "en": "Leonard_Lake" } },
-  { "id": "dennis-nilsen", "name": "Dennis Nilsen", "aliases": [], "wiki": { "es": "Dennis_Nilsen", "en": "Dennis_Nilsen" } },
-  { "id": "jerry-brudos", "name": "Jerry Brudos", "aliases": [], "wiki": { "es": null, "en": "Jerry_Brudos" } },
-  { "id": "juan-corona", "name": "Juan Corona", "aliases": [], "wiki": { "es": "Juan_Corona_(asesino)", "en": "Juan_Corona" } },
-  { "id": "richard-kuklinski", "name": "Richard Kuklinski", "aliases": [], "wiki": { "es": "Richard_Kuklinski", "en": "Richard_Kuklinski" } },
-  { "id": "mikhail-popkov", "name": "Mikhail Popkov", "aliases": [], "wiki": { "es": "Mikhail_Popkov", "en": "Mikhail_Popkov" } },
-  { "id": "marcelo-costa-de-andrade", "name": "Marcelo Costa de Andrade", "aliases": [], "wiki": { "es": null, "en": "Marcelo_Costa_de_Andrade" } },
-  { "id": "francisco-de-assis-pereira", "name": "Francisco de Assis Pereira", "aliases": ["O Maníaco do Parque"], "wiki": { "es": null, "en": "Francisco_de_Assis_Pereira" } },
-  { "id": "pedro-rodrigues-filho", "name": "Pedro Rodrigues Filho", "aliases": ["Pedrinho Matador"], "wiki": { "es": null, "en": "Pedro_Rodrigues_Filho" } }
+  {
+    "id": "david-berkowitz",
+    "name": "David Berkowitz",
+    "aliases": [
+      "Son of Sam",
+      "El hijo de Sam",
+      "El asesino del calibre 44",
+      "The .44 Caliber Killer"
+    ],
+    "wiki": {
+      "es": "David_Berkowitz",
+      "en": "David_Berkowitz"
+    }
+  },
+  {
+    "id": "ted-bundy",
+    "name": "Ted Bundy",
+    "aliases": [
+      "Theodore Robert Bundy"
+    ],
+    "wiki": {
+      "es": "Ted_Bundy",
+      "en": "Ted_Bundy"
+    }
+  },
+  {
+    "id": "jeffrey-dahmer",
+    "name": "Jeffrey Dahmer",
+    "aliases": [
+      "Milwaukee Cannibal"
+    ],
+    "wiki": {
+      "es": "Jeffrey_Dahmer",
+      "en": "Jeffrey_Dahmer"
+    }
+  },
+  {
+    "id": "andrei-chikatilo",
+    "name": "Andréi Chikatilo",
+    "aliases": [
+      "el Carnicero de Rostov",
+      "el Destripador Rojo",
+      "el Destripador de Rostov",
+      "the Butcher of Rostov",
+      "the Rostov Ripper",
+      "the Red Ripper"
+    ],
+    "wiki": {
+      "es": "Andréi_Chikatilo",
+      "en": "Andrei_Chikatilo"
+    }
+  },
+  {
+    "id": "gary-ridgway",
+    "name": "Gary Ridgway",
+    "aliases": [
+      "Green River Killer",
+      "El asesino de Green River",
+      "Green River Strangler"
+    ],
+    "wiki": {
+      "es": "Gary_Ridgway",
+      "en": "Gary_Ridgway"
+    }
+  },
+  {
+    "id": "manuel-delgado-villegas",
+    "name": "Manuel Delgado Villegas",
+    "aliases": [
+      "El Arropiero"
+    ],
+    "wiki": {
+      "es": "Manuel_Delgado_Villegas",
+      "en": null
+    }
+  },
+  {
+    "id": "pedro-alonso-lopez",
+    "name": "Pedro Alonso López",
+    "aliases": [
+      "Monstruo de los Andes",
+      "Monster of the Andes"
+    ],
+    "wiki": {
+      "es": "Pedro_Alonso_López",
+      "en": "Pedro_Alonso_López"
+    }
+  },
+  {
+    "id": "harold-shipman",
+    "name": "Harold Shipman",
+    "aliases": [],
+    "wiki": {
+      "es": "Harold_Shipman",
+      "en": "Harold_Shipman"
+    }
+  },
+  {
+    "id": "john-wayne-gacy",
+    "name": "John Wayne Gacy",
+    "aliases": [],
+    "wiki": {
+      "es": "John_Wayne_Gacy",
+      "en": "John_Wayne_Gacy"
+    }
+  },
+  {
+    "id": "dennis-rader",
+    "name": "Dennis Rader",
+    "aliases": [],
+    "wiki": {
+      "es": "Dennis_Rader",
+      "en": "Dennis_Rader"
+    }
+  },
+  {
+    "id": "edmund-kemper",
+    "name": "Edmund Kemper",
+    "aliases": [],
+    "wiki": {
+      "es": "Edmund_Kemper",
+      "en": "Edmund_Kemper"
+    }
+  },
+  {
+    "id": "richard-ramirez",
+    "name": "Richard Ramirez",
+    "aliases": [],
+    "wiki": {
+      "es": "Richard_Ramirez",
+      "en": "Richard_Ramirez"
+    }
+  },
+  {
+    "id": "samuel-little",
+    "name": "Samuel Little",
+    "aliases": [],
+    "wiki": {
+      "es": "Samuel_Little",
+      "en": "Samuel_Little"
+    }
+  },
+  {
+    "id": "aileen-wuornos",
+    "name": "Aileen Wuornos",
+    "aliases": [],
+    "wiki": {
+      "es": "Aileen_Wuornos",
+      "en": "Aileen_Wuornos"
+    }
+  },
+  {
+    "id": "luis-garavito",
+    "name": "Luis Alfredo Garavito",
+    "aliases": [
+      "La Bestia"
+    ],
+    "wiki": {
+      "es": "Luis_Garavito",
+      "en": "Luis_Garavito"
+    }
+  },
+  {
+    "id": "belle-gunness",
+    "name": "Belle Gunness",
+    "aliases": [],
+    "wiki": {
+      "es": "Belle_Gunness",
+      "en": "Belle_Gunness"
+    }
+  },
+  {
+    "id": "joel-rifkin",
+    "name": "Joel Rifkin",
+    "aliases": [],
+    "wiki": {
+      "es": "Joel_Rifkin",
+      "en": "Joel_Rifkin"
+    }
+  },
+  {
+    "id": "peter-kurten",
+    "name": "Peter Kürten",
+    "aliases": [],
+    "wiki": {
+      "es": "Peter_Kürten",
+      "en": "Peter_Kürten"
+    }
+  },
+  {
+    "id": "alfredo-galan",
+    "name": "Alfredo Galán",
+    "aliases": [
+      "El Asesino de la Baraja"
+    ],
+    "wiki": {
+      "es": "Alfredo_Galán",
+      "en": null
+    }
+  },
+  {
+    "id": "jose-antonio-rodriguez-vega",
+    "name": "José Antonio Rodríguez Vega",
+    "aliases": [
+      "El Mataviejas"
+    ],
+    "wiki": {
+      "es": "José_Antonio_Rodríguez_Vega",
+      "en": null
+    }
+  },
+  {
+    "id": "joaquin-ferrandiz",
+    "name": "Joaquín Ferrándiz",
+    "aliases": [],
+    "wiki": {
+      "es": "Joaquín_Ferrándiz_Ventura",
+      "en": null
+    }
+  },
+  {
+    "id": "juana-barraza",
+    "name": "Juana Barraza",
+    "aliases": [
+      "La Mataviejitas"
+    ],
+    "wiki": {
+      "es": "Juana_Barraza_Samperio",
+      "en": null
+    }
+  },
+  {
+    "id": "gregorio-cardenas",
+    "name": "Gregorio Cárdenas",
+    "aliases": [
+      "Goyo Cárdenas",
+      "El Estrangulador de Tacuba"
+    ],
+    "wiki": {
+      "es": "Gregorio_Cárdenas",
+      "en": null
+    }
+  },
+  {
+    "id": "cayetano-santos-godino",
+    "name": "Cayetano Santos Godino",
+    "aliases": [
+      "El Petiso Orejudo"
+    ],
+    "wiki": {
+      "es": "Cayetano_Santos_Godino",
+      "en": null
+    }
+  },
+  {
+    "id": "carlos-robledo-puch",
+    "name": "Carlos Robledo Puch",
+    "aliases": [
+      "El Ángel Negro",
+      "El Ángel de la Muerte"
+    ],
+    "wiki": {
+      "es": "Carlos_Robledo_Puch",
+      "en": null
+    }
+  },
+  {
+    "id": "daniel-camargo-barbosa",
+    "name": "Daniel Camargo Barbosa",
+    "aliases": [],
+    "wiki": {
+      "es": "Daniel_Camargo",
+      "en": null
+    }
+  },
+  {
+    "id": "francisco-garcia-escalero",
+    "name": "Francisco García Escalero",
+    "aliases": [
+      "El Matamendigos"
+    ],
+    "wiki": {
+      "es": "Francisco_García_Escalero",
+      "en": null
+    }
+  },
+  {
+    "id": "dorangel-vargas",
+    "name": "Dorángel Vargas",
+    "aliases": [
+      "El Comegente"
+    ],
+    "wiki": {
+      "es": "Dorángel_Vargas",
+      "en": null
+    }
+  },
+  {
+    "id": "adolfo-constanzo",
+    "name": "Adolfo de Jesús Constanzo",
+    "aliases": [
+      "El Padrino de Matamoros"
+    ],
+    "wiki": {
+      "es": "Adolfo_de_Jesús_Constanzo",
+      "en": null
+    }
+  },
+  {
+    "id": "fritz-haarmann",
+    "name": "Fritz Haarmann",
+    "aliases": [],
+    "wiki": {
+      "es": "Fritz_Haarmann",
+      "en": "Fritz_Haarmann"
+    }
+  },
+  {
+    "id": "robert-hansen",
+    "name": "Robert Hansen",
+    "aliases": [],
+    "wiki": {
+      "es": "Robert_Hansen",
+      "en": "Robert_Hansen"
+    }
+  },
+  {
+    "id": "john-george-haigh",
+    "name": "John George Haigh",
+    "aliases": [],
+    "wiki": {
+      "es": "John_George_Haigh",
+      "en": "John_George_Haigh"
+    }
+  },
+  {
+    "id": "john-christie",
+    "name": "John Christie",
+    "aliases": [],
+    "wiki": {
+      "es": "John_Christie",
+      "en": "John_Christie_(serial_killer)"
+    }
+  },
+  {
+    "id": "peter-manuel",
+    "name": "Peter Manuel",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Peter_Manuel"
+    }
+  },
+  {
+    "id": "albert-fish",
+    "name": "Albert Fish",
+    "aliases": [],
+    "wiki": {
+      "es": "Albert_Fish",
+      "en": "Albert_Fish"
+    }
+  },
+  {
+    "id": "carl-panzram",
+    "name": "Carl Panzram",
+    "aliases": [],
+    "wiki": {
+      "es": "Carl_Panzram",
+      "en": "Carl_Panzram"
+    }
+  },
+  {
+    "id": "richard-speck",
+    "name": "Richard Speck",
+    "aliases": [],
+    "wiki": {
+      "es": "Richard_Speck",
+      "en": "Richard_Speck"
+    }
+  },
+  {
+    "id": "peter-sutcliffe",
+    "name": "Peter Sutcliffe",
+    "aliases": [
+      "El destripador de Yorkshire",
+      "Yorkshire Ripper"
+    ],
+    "wiki": {
+      "es": "Peter_Sutcliffe",
+      "en": "Peter_Sutcliffe"
+    }
+  },
+  {
+    "id": "donald-harvey",
+    "name": "Donald Harvey",
+    "aliases": [],
+    "wiki": {
+      "es": "Donald_Harvey",
+      "en": "Donald_Harvey"
+    }
+  },
+  {
+    "id": "arthur-shawcross",
+    "name": "Arthur Shawcross",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Arthur_Shawcross"
+    }
+  },
+  {
+    "id": "rodney-alcala",
+    "name": "Rodney Alcala",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Rodney_Alcala"
+    }
+  },
+  {
+    "id": "leonard-lake",
+    "name": "Leonard Lake",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Leonard_Lake"
+    }
+  },
+  {
+    "id": "dennis-nilsen",
+    "name": "Dennis Nilsen",
+    "aliases": [],
+    "wiki": {
+      "es": "Dennis_Nilsen",
+      "en": "Dennis_Nilsen"
+    }
+  },
+  {
+    "id": "jerry-brudos",
+    "name": "Jerry Brudos",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Jerry_Brudos"
+    }
+  },
+  {
+    "id": "juan-corona",
+    "name": "Juan Corona",
+    "aliases": [],
+    "wiki": {
+      "es": "Juan_Corona_(asesino)",
+      "en": "Juan_Corona"
+    }
+  },
+  {
+    "id": "richard-kuklinski",
+    "name": "Richard Kuklinski",
+    "aliases": [],
+    "wiki": {
+      "es": "Richard_Kuklinski",
+      "en": "Richard_Kuklinski"
+    }
+  },
+  {
+    "id": "mikhail-popkov",
+    "name": "Mikhail Popkov",
+    "aliases": [],
+    "wiki": {
+      "es": "Mikhail_Popkov",
+      "en": "Mikhail_Popkov"
+    }
+  },
+  {
+    "id": "marcelo-costa-de-andrade",
+    "name": "Marcelo Costa de Andrade",
+    "aliases": [],
+    "wiki": {
+      "es": null,
+      "en": "Marcelo_Costa_de_Andrade"
+    }
+  },
+  {
+    "id": "francisco-de-assis-pereira",
+    "name": "Francisco de Assis Pereira",
+    "aliases": [
+      "O Maníaco do Parque"
+    ],
+    "wiki": {
+      "es": null,
+      "en": "Francisco_de_Assis_Pereira"
+    }
+  },
+  {
+    "id": "pedro-rodrigues-filho",
+    "name": "Pedro Rodrigues Filho",
+    "aliases": [
+      "Pedrinho Matador"
+    ],
+    "wiki": {
+      "es": null,
+      "en": "Pedro_Rodrigues_Filho"
+    }
+  }
 ]

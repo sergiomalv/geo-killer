@@ -3,40 +3,61 @@
     "id": "david-berkowitz",
     "name": "David Berkowitz",
     "aliases": [
-      "Son of Sam"
+      "Son of Sam",
+      "El hijo de Sam",
+      "El asesino del calibre 44",
+      "The .44 Caliber Killer"
     ]
   },
   {
     "id": "ted-bundy",
     "name": "Ted Bundy",
-    "aliases": []
+    "aliases": [
+      "Theodore Robert Bundy"
+    ]
   },
   {
     "id": "jeffrey-dahmer",
     "name": "Jeffrey Dahmer",
-    "aliases": []
+    "aliases": [
+      "Milwaukee Cannibal"
+    ]
   },
   {
     "id": "andrei-chikatilo",
     "name": "Andréi Chikatilo",
-    "aliases": []
+    "aliases": [
+      "el Carnicero de Rostov",
+      "el Destripador Rojo",
+      "el Destripador de Rostov",
+      "the Butcher of Rostov",
+      "the Rostov Ripper",
+      "the Red Ripper"
+    ]
   },
   {
     "id": "gary-ridgway",
     "name": "Gary Ridgway",
     "aliases": [
-      "Green River Killer"
+      "Green River Killer",
+      "El asesino de Green River",
+      "Green River Strangler"
     ]
   },
   {
     "id": "manuel-delgado-villegas",
     "name": "Manuel Delgado Villegas",
-    "aliases": []
+    "aliases": [
+      "El Arropiero"
+    ]
   },
   {
     "id": "pedro-alonso-lopez",
     "name": "Pedro Alonso López",
-    "aliases": []
+    "aliases": [
+      "Monstruo de los Andes",
+      "Monster of the Andes"
+    ]
   },
   {
     "id": "harold-shipman",
@@ -213,7 +234,10 @@
   {
     "id": "peter-sutcliffe",
     "name": "Peter Sutcliffe",
-    "aliases": []
+    "aliases": [
+      "El destripador de Yorkshire",
+      "Yorkshire Ripper"
+    ]
   },
   {
     "id": "donald-harvey",
