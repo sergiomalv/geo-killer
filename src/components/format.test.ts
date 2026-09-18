@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { formatDate } from './format'
+import { formatCountries, formatDate } from './format'
 
 describe('formatDate', () => {
   it('en español el día va primero', () => {
@@ -24,5 +24,24 @@ describe('formatDate', () => {
     expect(formatDate({ date: null, datePrecision: null }, 'es')).toBe('Fecha desconocida')
     expect(formatDate({ date: null, datePrecision: null }, 'en')).not.toBe('Fecha desconocida')
     expect(formatDate({ date: null, datePrecision: null }, 'en')).not.toBe('')
+  })
+})
+
+describe('formatCountries', () => {
+  it('traduce los códigos al idioma activo', () => {
+    expect(formatCountries(['US'], 'es')).toBe('Estados Unidos')
+    expect(formatCountries(['US'], 'en')).toBe('United States')
+  })
+
+  it('une varios países con el separador del juego', () => {
+    expect(formatCountries(['UA', 'RU'], 'es')).toBe('Ucrania · Rusia')
+  })
+
+  it('devuelve el código tal cual si no se puede resolver', () => {
+    expect(formatCountries(['ZZ'], 'es')).toBe('ZZ')
+  })
+
+  it('no traduce los códigos prohibidos, que darían un país que no es', () => {
+    expect(formatCountries(['SU'], 'es')).toBe('SU')
   })
 })
