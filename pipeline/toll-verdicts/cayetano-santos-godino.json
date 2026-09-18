@@ -1,0 +1,7 @@
+{
+  "id": "cayetano-santos-godino",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 4: cita literal en L1 ('fue responsable de la muerte de cuatro niños...'), contiene 'cuatro'; L1 lo afirma en voz propia de Wikipedia (no 'se sospecha'/'se atribuye'), y L51 corrobora con 'confesó cuatro homicidios'; sin encabezado de sección antes de L1 (introducción, documental); attributed es null y no hay attributedQuote, coherente; país AR respaldado en L1 ('asesino argentino'... 'historia argentina'), no es código histórico; activeYears 1906 en L17 (María Rosa Face) y 1912 en L30-L44 (sección '=== 1912 ===', varios crímenes); apodo es 'El Petiso Orejudo' hallado en L1, y en es null así que no aplica; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "francisco-garcia-escalero",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 11: cita L1 ('la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas'), sección intro (sin encabezado, antes de '== Biografía =='); attributed 14: cita L21 ('relató a la policía uno por uno, catorce asesinatos'), sección '=== La detención y confesión ==='; coherencia: 14 >= 11, min=max=14 sin rango invertido; ES respaldado en L1 ('asesino en serie español', Madrid); activeYears 1987 en L13 ('En agosto de 1987') y 1994 en L21 ('En abril de 1994'); apodo es 'el matamendigos' en L1, en=null sin fuente en inglesa (consistente); wikipedia es apunta a es.wikipedia.org, en=null."
+}

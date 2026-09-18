@@ -1,0 +1,9 @@
+{
+  "id": "fritz-haarmann",
+  "confirmedLine": 2,
+  "attributedLine": 138,
+  "countryLines": { "DE": 1 },
+  "yearsLine": 41,
+  "nicknameLines": { "es": 3, "en": 1 },
+  "notes": "Confirmed coincide en ambos idiomas (24 de 27 asesinatos). Para atribuidos, el español da 'se le atribuyen más de 100 víctimas' (línea 1, intro) frente al inglés que da un rango explícito 'between fifty and seventy' (línea 138, también repetido en línea 107 con comillas embebidas que se evitaron por el validador). Se usa el rango inglés (50-70) por ser más específico y menor que la cifra vaga española (>100), siguiendo la regla de quedarse con la cifra menor y citable. sourceLang=en para mantener consistencia entre confirmedQuote y attributedQuote."
+}

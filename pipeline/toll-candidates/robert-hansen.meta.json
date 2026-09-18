@@ -1,0 +1,9 @@
+{
+  "id": "robert-hansen",
+  "confirmedLine": 56,
+  "attributedLine": 57,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=4 corresponde a los homicidios por los que se declaró culpable (Morrow, Messina, Goulding y Eklutna Annie), confirmado también en línea 41 del ES ('Hansen fue sentenciado únicamente por el asesinato de cuatro de ellas'). La cifra de 'al menos diecisiete' (línea 1 EN, línea 1 ES) es la atribución mínima base de la introducción, pero se prefirió el rango más específico de la línea 57 EN ('a probable twenty-one to thirty-seven victims'), que coincide con la sospecha policial de 'at least twenty-one' (línea 30 EN) como suelo. activeYears: EN dice 'between 1971 and 1983' (línea 1) y esto se corrobora con hechos concretos (primer asesinato de Van Zanten en diciembre de 1971, línea 19; confesión de que empezó a matar 'in the early 1970s', línea 56). ES dice 'Entre los años 1970 y 1983' (línea 1) sin evento concreto en 1970 en el resto del texto, por lo que se prefirió 1971 del EN, mejor respaldado por hechos específicos."
+}

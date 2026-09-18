@@ -1,0 +1,4 @@
+{
+  "id": "adolfo-constanzo",
+  "reason": "Solo hay fuente en español (wiki.en es null). El texto describe el culto de Constanzo secuestrando y asesinando personas para sacrificios humanos y confirma un asesinato nombrado (Mark Kilroy), pero no da ninguna cifra numerica de victimas confirmadas ni atribuidas (ni condena, ni confesion, ni estimacion con numero). Constanzo murio antes de ser juzgado (fue baleado por su propio seguidor el 6 de mayo de 1989), por lo que no existe 'confirmed' por condena. Se busco con grep -n -i -E para asesinat|víctimas|cuerpos|cadáveres y con los patrones de condena/confesión/atribución sin encontrar ningún número de víctimas citable."
+}

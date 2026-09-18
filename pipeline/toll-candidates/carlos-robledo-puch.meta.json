@@ -1,0 +1,9 @@
+{
+  "id": "carlos-robledo-puch",
+  "confirmedLine": 20,
+  "attributedLine": 72,
+  "countryLines": { "AR": 1 },
+  "yearsLine": 10,
+  "nicknameLines": { "es": 1 },
+  "notes": "Solo hay fuente en español (wiki.en es null). Confirmed=11 según 'Los 11 asesinatos de Robledo Puch' (línea 20), coherente con línea 1 (diez homicidios calificados + un homicidio simple = 11) y con el listado de 11 víctimas en 'Resumen de las víctimas' (líneas 35-45). Attributed=12 se toma del titular sensacionalista de Crónica citado en línea 72 ('Mató a 12 y por la espalda'), que coincide con la sospecha (no confirmada ni juzgada) de que también mató a su cómplice Jorge Ibáñez en un accidente 'dudoso' (líneas 15 y 46), lo que corroboraría 11+1=12. activeYears 1971 (primer asesinato, línea 10, 15 de marzo de 1971) a 1972 (último asesinato y detención, línea 31, 3-4 de febrero de 1972). País AR por ser argentino y todos los hechos ocurridos en la provincia de Buenos Aires (líneas 1, 10-16, 22-31)."
+}

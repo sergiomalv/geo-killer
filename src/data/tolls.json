@@ -85,6 +85,31 @@
     }
   },
   {
+    "id": "cayetano-santos-godino",
+    "confirmed": 4,
+    "attributed": null,
+    "countries": [
+      "AR"
+    ],
+    "activeYears": "1906-1912",
+    "nickname": {
+      "es": "El Petiso Orejudo",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Cayetano_Santos_Godino",
+      "en": null
+    },
+    "confirmedQuote": "fue responsable de la muerte de cuatro niños, siete intentos de homicidio y el incendio de siete edificios.",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 4: cita literal en L1 ('fue responsable de la muerte de cuatro niños...'), contiene 'cuatro'; L1 lo afirma en voz propia de Wikipedia (no 'se sospecha'/'se atribuye'), y L51 corrobora con 'confesó cuatro homicidios'; sin encabezado de sección antes de L1 (introducción, documental); attributed es null y no hay attributedQuote, coherente; país AR respaldado en L1 ('asesino argentino'... 'historia argentina'), no es código histórico; activeYears 1906 en L17 (María Rosa Face) y 1912 en L30-L44 (sección '=== 1912 ===', varios crímenes); apodo es 'El Petiso Orejudo' hallado en L1, y en es null así que no aplica; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+    }
+  },
+  {
     "id": "david-berkowitz",
     "confirmed": 6,
     "attributed": null,
@@ -160,6 +185,35 @@
     }
   },
   {
+    "id": "francisco-garcia-escalero",
+    "confirmed": 11,
+    "attributed": {
+      "min": 14,
+      "max": 14
+    },
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1987-1994",
+    "nickname": {
+      "es": "el matamendigos",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Francisco_García_Escalero",
+      "en": null
+    },
+    "confirmedQuote": "la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas",
+    "attributedQuote": "relató a la policía uno por uno, catorce asesinatos",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita L1 ('la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas'), sección intro (sin encabezado, antes de '== Biografía =='); attributed 14: cita L21 ('relató a la policía uno por uno, catorce asesinatos'), sección '=== La detención y confesión ==='; coherencia: 14 >= 11, min=max=14 sin rango invertido; ES respaldado en L1 ('asesino en serie español', Madrid); activeYears 1987 en L13 ('En agosto de 1987') y 1994 en L21 ('En abril de 1994'); apodo es 'el matamendigos' en L1, en=null sin fuente en inglesa (consistente); wikipedia es apunta a es.wikipedia.org, en=null."
+    }
+  },
+  {
     "id": "gary-ridgway",
     "confirmed": 49,
     "attributed": {
@@ -186,6 +240,31 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 49: cita literal en L1 ('convicted of murdering forty-nine women between 1982 and 1998'), L1 dice 'convicted of', sección introductoria (sin encabezado); attributed 71: cita literal en L54 ('Ridgway confessed to murdering at least 71 victims.'), sección '== Victims =='; discrepancia ES/EN detectada (ES L1 dice 'ha confesado hasta 79 asesinatos', EN L54 dice 71): el candidato usa sourceLang en con la cifra menor (71), cumple la regla; país US respaldado en L1 ('American serial killer... in the northwestern United States') y L20 (Seattle y Tacoma, Washington); activeYears 1982 y 1998 en L1; apodo es 'el asesino de Green River' en L1 ES ('«El asesino de Green River»'); apodo en 'the Green River Killer' en L1 EN; wikipedia es y en presentes y bien formadas."
+    }
+  },
+  {
+    "id": "gregorio-cardenas",
+    "confirmed": 4,
+    "attributed": null,
+    "countries": [
+      "MX"
+    ],
+    "activeYears": "1942",
+    "nickname": {
+      "es": "el Estrangulador de Tacuba",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Gregorio_Cárdenas",
+      "en": null
+    },
+    "confirmedQuote": "los cuerpos de sus 4 víctimas",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 4: cita literal en L9 ('...descubiertos los cuerpos de sus 4 víctimas'), la cita trae el número en cifra, la línea afirma como hecho el hallazgo de los 4 cuerpos (corroborado por L24: confesión y hallazgo de 4 cuerpos -Graciela + 3-), sección vigente en L9 es 'Infancia y juventud' (no es de ficción/aparato); attributed=null y no hay attributedQuote en el JSON, coherente; país MX respaldado en L1 ('mexicano', 'Ciudad de México'), no usa códigos históricos ni inexistentes; activeYears '1942' respaldado en L13 y L15; apodo es 'el Estrangulador de Tacuba' respaldado en L1, nickname.en es null y no hay apodo en inglés que comprobar; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null (al menos una URL no nula)."
     }
   },
   {
@@ -301,6 +380,35 @@
     }
   },
   {
+    "id": "john-george-haigh",
+    "confirmed": 6,
+    "attributed": {
+      "min": 9,
+      "max": 9
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1944-1949",
+    "nickname": {
+      "es": "el «Asesino del baño de ácido»",
+      "en": "the Acid Bath Murderer"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/John_George_Haigh",
+      "en": "https://en.wikipedia.org/wiki/John_George_Haigh"
+    },
+    "confirmedQuote": "convicted for the murders of six people",
+    "attributedQuote": "he claimed to have killed nine",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en EN L1 'convicted for the murders of six people'; ES L7 confirma 'seis víctimas' declarado culpable, sin discrepancia; sección: L1 es introducción, sin encabezado de ficción; attributed 9: cita literal en EN L1 'he claimed to have killed nine', min=max=9, coherente con confirmed=6, ES L7 confirma 'nueve personas' confesadas; país GB: 'English' en EN L1, código no histórico; activeYears 1944-1949: 1944 en EN L17 (primer asesinato, McSwan, 6 sept 1944) y 1949 en EN L1/L25/L34 (último asesinato Durand-Deacon 18 feb 1949 y ejecución 10 ago 1949); apodo es: 'el «Asesino del baño de ácido»' en ES L1; apodo en: 'the Acid Bath Murderer' en EN L1; wikipedia: ambas URLs presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)"
+    }
+  },
+  {
     "id": "john-wayne-gacy",
     "confirmed": 33,
     "attributed": {
@@ -384,6 +492,37 @@
     }
   },
   {
+    "id": "luis-garavito",
+    "confirmed": 138,
+    "attributed": {
+      "min": 200,
+      "max": 200
+    },
+    "countries": [
+      "CO",
+      "EC",
+      "VE"
+    ],
+    "activeYears": "1992-1999",
+    "nickname": {
+      "es": "La Bestia",
+      "en": "La Bestia"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Luis_Garavito",
+      "en": "https://en.wikipedia.org/wiki/Luis_Garavito"
+    },
+    "confirmedQuote": "138 tienen fallo condenatorio",
+    "attributedQuote": "la cifra de crímenes sería de 200 personas",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 138: cita literal en es.txt:2 ('138 tienen fallo condenatorio, 32 están en instrucción...'), la línea confirma condena firme, sin encabezado de sección (está en la intro, antes de cualquier ==sección==); en.txt da 193 como 'confirmed to have murdered' (en.txt:1), discrepancia es/en, el candidato usa la cifra menor (138), correcto. attributed 200/200: cita literal en es.txt:2 ('la cifra de crímenes sería de 200 personas'), misma línea sin encabezado de ficción; en.txt da 221 (en.txt:3), discrepancia es/en, el candidato usa la cifra menor (200), correcto; attributed.min(200) >= confirmed(138), no invertido. Países: CO en es.txt:37 ('172 crímenes cometidos contra menores en 11 departamentos de Colombia'); EC en es.txt:4 ('condenado a 22 años de prisión en Ecuador por haber violado y asesinado a dos menores'); VE en es.txt:3 ('admitió haberlo hecho en el exterior, más específicamente en Ecuador y Venezuela'), sin códigos históricos ni inexistentes. Años: 1992 en es.txt:37 ('asesinó al primer niño en Jamundí... en octubre de 1992'), 1999 en es.txt:33/35/36 (captura y confesión); el meta.yearsLine=1 no respalda los años en es.txt (esa línea solo trae 1957/2023 de nacimiento y muerte), apunta en realidad a en.txt:1 ('from 1992 to 1999'): la evidencia del generador está mal referenciada aunque la cifra en sí queda verificada por otras líneas de es.txt. Apodo: 'La Bestia' en es.txt:1 y en en.txt:1, coincide en ambos idiomas. Wikipedia: es y en apuntan a es.wikipedia.org/en.wikipedia.org correctamente."
+    }
+  },
+  {
     "id": "manuel-delgado-villegas",
     "confirmed": 7,
     "attributed": {
@@ -443,6 +582,31 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 3: cita literal en L30 ('he was found guilty of three of the murders'), contiene 'three', sección '== Arrest and confession ==' es documental, la línea dice condena explícita ('found guilty'); attributed 350 (min=max): cita literal en L29 ('the total of 350 confessed murders'), contiene '350', misma sección documental; coherencia: 350 >= 3, min=max no hay rango invertido; attributedQuote presente y attributed no nulo, coherente; países: EC en L43 ('within Ecuador'/'Ecuadorian victims'), CO en L19 (El Espinal, condena por Flor Alba Sánchez) y L43 ('in Colombia'), PE en L27 ('many more' in Peru) y L43; ningún código SU/YU/CS ni inexistente; activeYears 1978-1980 respaldados en L1 EN ('from 1978 to 1980'); apodo es 'el Monstruo de los Andes' en L1 ES, apodo en 'the Monster of the Andes' en L1 EN, sin mezcla entre idiomas; wikipedia es y en ambas con dominio correcto; sin discrepancia real es/en (ES L1 dice 'más de 300' confesados y 110 confirmados, compatible con EN L29 '350 confessed' y L30 'three' de condena, ES no da cifra exacta que contradiga)."
+    }
+  },
+  {
+    "id": "peter-kurten",
+    "confirmed": 9,
+    "attributed": null,
+    "countries": [
+      "DE"
+    ],
+    "activeYears": "1913-1929",
+    "nickname": {
+      "es": "El vampiro de Düsseldorf",
+      "en": "The Vampire of Düsseldorf"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Peter_Kürten",
+      "en": "https://en.wikipedia.org/wiki/Peter_Kürten"
+    },
+    "confirmedQuote": "was found guilty of nine counts of murder and seven counts of attempted murder",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita literal en L2 en ('was found guilty of nine counts of murder...'); la cita trae 'nine'; L2 dice 'was found guilty' (condena firme); sección: cabecera de introducción (sin '=', documental, no ficción); ES corrobora en L23 'nueve asesinatos' (misma cifra, sin discrepancia); attributed es null y no hay attributedQuote en el candidato (coherente); DE respaldado en L1 en ('German serial killer') y L1 es ('asesino en serie alemán'); DE no es código histórico ni inexistente; activeYears 1913 en L1/L38 en y 1929 en L1/L50 en ('== 1929 =='); apodo es 'El vampiro de Düsseldorf' en L1 es; apodo en 'The Vampire of Düsseldorf' en L1 en; wikipedia.es apunta a es.wikipedia.org y wikipedia.en a en.wikipedia.org, ambas no nulas."
     }
   },
   {
