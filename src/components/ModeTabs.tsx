@@ -18,7 +18,7 @@ interface Props {
 export function ModeTabs({ active, duelEnabled = true }: Props) {
   const t = useT()
   return (
-    <nav className="mode-tabs" aria-label="Modos de juego">
+    <nav className="mode-tabs" aria-label={t('tabs.label')}>
       {TABS.map(({ mode, hash, key }) => {
         const label = t(key)
         if (mode === active) {
