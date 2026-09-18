@@ -910,35 +910,6 @@
     }
   },
   {
-    "id": "mikhail-popkov",
-    "confirmed": 87,
-    "attributed": {
-      "min": 90,
-      "max": 90
-    },
-    "countries": [
-      "RU"
-    ],
-    "activeYears": "1992-2011",
-    "nickname": {
-      "es": "El hombre lobo",
-      "en": "the Werewolf"
-    },
-    "wikipedia": {
-      "es": "https://es.wikipedia.org/wiki/Mijaíl_Popkov",
-      "en": "https://en.wikipedia.org/wiki/Mikhail_Popkov"
-    },
-    "confirmedQuote": "committed the sexual assault and murder of eighty-seven girls and women",
-    "attributedQuote": "confessed to and is suspected of at least ninety in total",
-    "sourceLang": "en",
-    "validation": {
-      "status": "approved",
-      "validatedAt": "2026-09-18",
-      "validator": "claude-sonnet-5",
-      "notes": "confirmed 87 ('eighty-seven'): cita literal en L1; la línea contrasta 'committed...eighty-seven' (hecho) con 'confessed to and is suspected of at least ninety' (sospecha), lo que confirma 87 y atribuye 90; sección: intro, sin encabezado de ficción/aparato. attributed 90/90 ('ninety'): misma cita L1, mismo contraste, min=max=90, no invertido, 90>=87 coherente. attributedQuote presente y attributed no nulo: cuadra. País RU: 'Russian serial killer' L1, 'Russian Far East' L1, no es SU/YU/CS. activeYears 1992-2011: 'between 1992 and 2011' L1 (en) y también en es.txt L1. Apodo en 'the Werewolf': L1 y L11 en.txt. Apodo es 'El hombre lobo': L1 es.txt ('Es conocido como El hombre lobo'). Wikipedia: es y en no nulos, dominios es.wikipedia.org y en.wikipedia.org correctos (meta indica que el título es real es 'Mijaíl_Popkov', verificado por el generador vía API). Nota: es.txt L1 da un total distinto y sin hedge ('asesinó a 90 mujeres y un hombre' = 91), mayor que el confirmed=87 usado (en, menor), consistente con la regla de preferir la cifra menor entre fuentes discrepantes."
-    }
-  },
-  {
     "id": "pedro-alonso-lopez",
     "confirmed": 3,
     "attributed": {
@@ -1262,14 +1233,14 @@
       "es": "https://es.wikipedia.org/wiki/Ted_Bundy",
       "en": "https://en.wikipedia.org/wiki/Ted_Bundy"
     },
-    "confirmedQuote": "committed further assaults in Florida, including three murders, before being recaptured in 1978",
+    "confirmedQuote": "For the Florida homicides, he received three death sentences in two trials",
     "attributedQuote": "On the evening before his execution, Bundy reviewed his victim tally with Hagmaier on a state-by-state basis for a total of 30 homicides",
     "sourceLang": "en",
     "validation": {
       "status": "approved",
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
-      "notes": "confirmed 3: cita literal en L3 ('committed further assaults in Florida, including three murders, before being recaptured in 1978'), la misma línea dice 'he received three death sentences in two trials' (condena); sección de L3 es la introducción (sin encabezado), no ficción; es.txt corrobora 'en Florida, 3' en L121, sin discrepancia. attributed 30: cita literal en L165 ('...for a total of 30 homicides'), sección '=== Confirmed ==='; es.txt corrobora 'para un total de 30 víctimas' en L114, sin discrepancia; min=max=30 y 30>=3, coherente. País US: 'American serial killer' en L2, código ISO válido, no histórico. activeYears 1974-1978: 'between 1974 and 1978' en L1. Apodos: ambos null, sin attributedQuote sobrante (hay attributed y attributedQuote, coherente). Wikipedia: es apunta a es.wikipedia.org, en apunta a en.wikipedia.org, ambas no nulas."
+      "notes": "confirmed 3: cita literal en L3 ('For the Florida homicides, he received three death sentences in two trials'), contiene 'three', y la línea entera dice 'he received three death sentences in two trials and was executed' (lenguaje de condena); L3 no tiene encabezado de sección previo (está en la introducción), no es sección de ficción. attributed 30: cita literal en L165 ('On the evening before his execution, Bundy reviewed his victim tally with Hagmaier on a state-by-state basis for a total of 30 homicides'), contiene '30', sección vigente en L165 es '=== Confirmed ===' (documental, no ficción). Coherencia: attributed.min(30) >= confirmed(3), min=max=30 sin inversión. Contraste ES/EN: la sección 'Confirmadas'/'Confirmed' de ambos idiomas coincide en el desglose por estado (Florida: 3, total 30); la cifra de 36 que aparece en la intro ES ('El FBI comprobó 36 asesinatos') es la misma especulación del FBI mencionada en EN L165 ('FBI agents proposed a total tally of 36'), no una cifra confirmada distinta, así que no hay discrepancia real entre fuentes para confirmed/attributed. País US: L1 'was an American serial killer'; L2 lista Washington, Oregon, Colorado, Utah, Idaho, Florida como estados de sus crímenes. No es código histórico ni inexistente. Años: 1974 y 1978 en L1 ('between 1974 and 1978'). Apodo: nickname es/en son null, sin attributedQuote/nickname que verificar. Wikipedia: es y en presentes, dominios es.wikipedia.org y en.wikipedia.org correctos."
     }
   }
 ]

@@ -1,0 +1,6 @@
+{
+  "id": "amarjeet-sada",
+  "reason": "Queda fuera del modo por tres motivos que se acumulan, ninguno salvable con un reintento. (1) No tiene articulo de Wikipedia en ningun idioma (Wikidata Q101890770, cero sitelinks), asi que no hay fichero en pipeline/sources/ ni nada que citar; su caso de src/data/cases/ se construyo por el estandar forzado a partir de prensa general y lo declara en validation.notes. (2) Nunca fue condenado: tenia ocho anos y fue enviado a un centro de menores, asi que no existe cifra de condena. (3) Aunque se quisiera forzar la cifra como se forzo el caso, tollSchema exige al menos una URL de Wikipedia no nula y no tiene el campo `sources` que el caso usa para declarar prensa general; una entrada suya no pasaria el esquema tal como esta. Si algun dia se decide meterlo, el cambio no es de contenido sino de esquema: anadir `sources` a tollSchema con la misma regla que caseSchema (al menos una URL de Wikipedia o una fuente en sources) y marcar la entrada como forzada en el propio dato.",
+  "checkedAt": "2026-09-18",
+  "checkedBy": "coordinador (revision manual)"
+}

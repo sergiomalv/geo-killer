@@ -1,0 +1,6 @@
+{
+  "id": "mikhail-popkov",
+  "reason": "Aprobado en la primera pasada con confirmed=87 y retirado tras la revision final de la rama, que senalo que 87 no es ni la cifra de condena ni la menor en juego. La segunda validacion lo rechazo con 'la cifra confirmada es en realidad atribuida': el 87 sale de una frase declarativa del lead (L1), que no dice condena, culpabilidad ni confirmacion. El problema de fondo es que sus condenas estan fragmentadas en cuatro sentencias y ninguna frase da el total: 22 en 2015 y 56 en 2018 (L2), 2 en junio de 2021 y 3 en noviembre de 2023 (L21). Citar solo la primera lo dejaria en 22, muy por debajo de lo que fue condenado, y sumarlas seria la aritmetica que la regla prohibe expresamente (es el mismo escape que colo un 35 inventado en Peter Sutcliffe). La fuente espanola da 91 como hecho, mayor que cualquiera de las anteriores, asi que tampoco sirve. Se queda fuera hasta que el pipeline tenga una regla para condenas fragmentadas: seria el primer caso que la justifica.",
+  "checkedAt": "2026-09-18",
+  "checkedBy": "coordinador (tras revision final de la rama)"
+}

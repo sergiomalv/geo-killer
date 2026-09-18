@@ -2,8 +2,10 @@
   "id": "ted-bundy",
   "confirmedLine": 3,
   "attributedLine": 165,
-  "countryLines": { "US": 2 },
+  "countryLines": {
+    "US": 2
+  },
   "yearsLine": 1,
   "nicknameLines": {},
-  "notes": "confirmed=3 corresponde a las tres condenas a muerte por asesinato en dos juicios en Florida (Bowman, Levy y Leach); la seccion 'Confirmed' del wiki en realidad recoge el propio recuento de Bundy a Hagmaier (30 homicidios), usado aqui como attributed. No se encontro apodo especifico para Bundy en ninguna de las dos fuentes."
+  "notes": "confirmed=3 corresponde a las tres condenas a muerte por asesinato en dos juicios en Florida (Bowman, Levy y Leach); la seccion 'Confirmed' del wiki en realidad recoge el propio recuento de Bundy a Hagmaier (30 homicidios), usado aqui como attributed. No se encontro apodo especifico para Bundy en ninguna de las dos fuentes. | Correccion tras la revision final de la rama: la cita anterior (\"committed further assaults in Florida, including three murders\") acotaba el numero a Florida y no usaba lenguaje de condena; el 3 coincidia por casualidad. Sustituida por la frase de condena de la misma linea 3, \"For the Florida homicides, he received three death sentences in two trials\"."
 }
