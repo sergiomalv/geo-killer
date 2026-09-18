@@ -1,0 +1,23 @@
+{
+  "app.loading": "Abriendo expediente…",
+  "app.noCase": "Hoy no hay reto. Vuelve mañana.",
+  "app.loadError": "No se ha podido cargar el caso. Comprueba la conexión y recarga.",
+  "daily.caseNumber": "Caso #{n}",
+  "daily.infiniteLink": "Modo infinito",
+  "infinite.streak": "Racha: {n}",
+  "infinite.dailyLink": "Reto diario",
+  "infinite.wrapped": "Vuelta completa: los casos se repiten.",
+  "infinite.loadError": "No se ha podido cargar el caso.",
+  "infinite.next": "Siguiente caso",
+  "guess.placeholder": "¿Quién es el asesino?",
+  "attempts.label": "{n} de {max} intentos",
+  "clues.none": "Sin más pistas todavía",
+  "result.won.one": "Caso resuelto en {n} intento",
+  "result.won.other": "Caso resuelto en {n} intentos",
+  "result.lost": "Caso sin resolver",
+  "result.wikipedia": "Leer en Wikipedia",
+  "date.unknown": "Fecha desconocida",
+  "map.murders.one": "{n} asesinato",
+  "map.murders.other": "{n} asesinatos",
+  "lang.toggle": "Cambiar idioma"
+}
