@@ -20,19 +20,27 @@ export function GameBoard({ caseData, killers, state, onGuess, afterResult }: Pr
   const level = clueLevel(state)
   const outcome = state.status === 'playing' ? null : state.status
   return (
-    <>
-      <CaseMap murders={caseData.murders} level={level} toll={caseData.toll} />
-      <div className="page-controls">
-        <AttemptsBar guesses={state.guesses} status={state.status} />
-        <GuessInput killers={killers} disabled={outcome !== null} onGuess={onGuess} />
+    <div className="board">
+      <div className="board-map">
+        <CaseMap murders={caseData.murders} level={level} toll={caseData.toll} />
       </div>
-      {outcome ? (
-        <>
-          <ResultCard caseData={caseData} status={outcome} attempts={state.guesses.length} />
-          {afterResult}
-        </>
-      ) : null}
-      <ClueList murders={caseData.murders} level={level} />
-    </>
+      <div className="board-panel">
+        {/* Los intentos y el buscador quedan fuera de .board-scroll: el desplegable del
+            buscador es absolute y dentro del contenedor con overflow se recortaría. */}
+        <div className="page-controls">
+          <AttemptsBar guesses={state.guesses} status={state.status} />
+          <GuessInput killers={killers} disabled={outcome !== null} onGuess={onGuess} />
+        </div>
+        <div className="board-scroll">
+          {outcome ? (
+            <>
+              <ResultCard caseData={caseData} status={outcome} attempts={state.guesses.length} />
+              {afterResult}
+            </>
+          ) : null}
+          <ClueList murders={caseData.murders} level={level} />
+        </div>
+      </div>
+    </div>
   )
 }
