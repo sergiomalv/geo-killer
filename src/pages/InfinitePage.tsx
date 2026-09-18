@@ -43,6 +43,8 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
   }
 
   function handleNext() {
+    // Desde el estado de error el caso sigue "playing"; se marca como terminado para poder saltarlo.
+    // La racha no cambia: un fallo de carga no es culpa del jugador.
     setState((prev) => nextInfiniteCase({ ...prev, status: prev.status === 'playing' ? 'lost' : prev.status }, availableIds, random))
   }
 
@@ -59,7 +61,7 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
           <a href="#">Reto diario</a>
         </nav>
       </header>
-      {state.wrapped ? <p className="page-notice">Vuelta completa: los casos se repiten.</p> : null}
+      {state.wrapped ? <p className="page-notice" aria-live="polite">Vuelta completa: los casos se repiten.</p> : null}
       {isLoading ? <p>Abriendo expediente…</p> : null}
       {!isLoading && loaded.kind === 'error' ? (
         <>
