@@ -1,0 +1,9 @@
+{
+  "id": "dennis-rader",
+  "confirmedLine": 1,
+  "attributedLine": null,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 2, "en": 1 },
+  "notes": "El sumario ES y EN coinciden en diez asesinatos (declarado culpable, diez cadenas perpetuas, ES líneas 1 y 25; EN líneas 3, 154, 159). El artículo EN (línea 175) indica explícitamente que tras exhaustivas investigaciones no se le atribuyeron más asesinatos que esos diez ('the ten known murders were believed to be the only cases for which Rader was responsible'), y que una acusación anónima de más confesiones fue negada por la fiscalía (línea 154), por lo que no hay cifra atribuida superior a la confirmada; attributed queda en null."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "manuel-delgado-villegas",
+  "confirmedLine": 13,
+  "attributedLine": 22,
+  "countryLines": { "ES": 6, "IT": 6, "FR": 6 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=7 coincide en es (linea 13, 'Se le consiguieron probar siete') y en (linea 38, 'considered the definite perpetrator of seven murders in total'). attributed se toma de la cifra confesada (48), citada en es lineas 13 y 22 y en en linea 1 ('claimed to have carried out 48 murders'); la cifra de 22 asesinatos que la policia considero verosimil (linea 13 es) es intermedia entre lo confesado y lo probado, no se usa como attributed. activeYears tomado de en linea 1 ('active between 1964 and 1971'), consistente con los años de los crimenes listados en es (1964 primer asesinato, 1971 detencion). wiki.en es null segun la entrada de origen aunque exista un fichero en.txt descargado; se respeta el null indicado."
+}

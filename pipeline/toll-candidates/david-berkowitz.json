@@ -1,0 +1,11 @@
+{
+  "id": "david-berkowitz",
+  "confirmed": 6,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1975-1977",
+  "nickname": { "es": "El hijo de Sam", "en": "the Son of Sam" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/David_Berkowitz", "en": "https://en.wikipedia.org/wiki/David_Berkowitz" },
+  "confirmedQuote": "pleaded guilty to second-degree murder and was sentenced to six concurrent life sentences",
+  "sourceLang": "en"
+}

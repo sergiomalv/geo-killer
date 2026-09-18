@@ -1,0 +1,12 @@
+{
+  "id": "aileen-wuornos",
+  "confirmed": 6,
+  "attributed": { "min": 7, "max": 7 },
+  "countries": ["US"],
+  "activeYears": "1989-1990",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Aileen_Wuornos", "en": "https://en.wikipedia.org/wiki/Aileen_Wuornos" },
+  "confirmedQuote": "In all, Wuornos received six death sentences.",
+  "attributedQuote": "Wuornos shot, killed, and robbed seven of her male clients.",
+  "sourceLang": "en"
+}

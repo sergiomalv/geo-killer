@@ -1,0 +1,9 @@
+{
+  "id": "harold-shipman",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "GB": 13 },
+  "yearsLine": 42,
+  "nicknameLines": { "en": 3 },
+  "notes": "Confirmed=15 coincide en EN (línea 1 y 28: 'jury found Shipman guilty of 15 counts of murder') y ES (línea 2 y 24: condenado por 15 asesinatos). Attributed=250 coincide en EN (línea 1 y 43: estimación final de Smith) y ES (línea 38: 'el número probable de las víctimas de Shipman... era de 250'); se descartan otras cifras intermedias mencionadas en el artículo (218/215 del informe de la investigación, 500 como estimación policial provisional en ES línea 3) por no ser la cifra final/atribuida definitiva. activeYears 1975-1998 tomado de EN línea 42 ('between 1975 and 1998') y corroborado por ES línea 37 ('entre 1975 y 1998'). País GB (Inglaterra/Reino Unido): Hyde, Greater Manchester y Todmorden, West Yorkshire (EN línea 13). Apodo 'Dr. Death' solo confirmado en prosa del artículo en inglés (línea 3, 53); en español solo aparece como parte del título de un enlace externo ('Caso abierto, Dr Death: The Shipman Case', línea 67), no como afirmación de que ese es su apodo en español, así que nickname.es queda null."
+}

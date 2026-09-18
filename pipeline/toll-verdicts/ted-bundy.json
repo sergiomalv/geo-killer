@@ -1,0 +1,7 @@
+{
+  "id": "ted-bundy",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 3: cita literal en L3 ('committed further assaults in Florida, including three murders, before being recaptured in 1978'), la misma línea dice 'he received three death sentences in two trials' (condena); sección de L3 es la introducción (sin encabezado), no ficción; es.txt corrobora 'en Florida, 3' en L121, sin discrepancia. attributed 30: cita literal en L165 ('...for a total of 30 homicides'), sección '=== Confirmed ==='; es.txt corrobora 'para un total de 30 víctimas' en L114, sin discrepancia; min=max=30 y 30>=3, coherente. País US: 'American serial killer' en L2, código ISO válido, no histórico. activeYears 1974-1978: 'between 1974 and 1978' en L1. Apodos: ambos null, sin attributedQuote sobrante (hay attributed y attributedQuote, coherente). Wikipedia: es apunta a es.wikipedia.org, en apunta a en.wikipedia.org, ambas no nulas."
+}

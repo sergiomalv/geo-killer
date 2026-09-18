@@ -1,0 +1,12 @@
+{
+  "id": "andrei-chikatilo",
+  "confirmed": 52,
+  "attributed": { "min": 56, "max": 56 },
+  "countries": ["RU", "UA", "UZ"],
+  "activeYears": "1978-1990",
+  "nickname": { "es": "el Destripador de Rostov", "en": "the Rostov Ripper" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Andréi_Chikatilo", "en": "https://en.wikipedia.org/wiki/Andrei_Chikatilo" },
+  "confirmedQuote": "Akubzhanov began sentencing by announcing Chikatilo guilty of fifty-two of the fifty-three murders for which he had been tried.",
+  "attributedQuote": "Chikatilo confessed to fifty-six murders; he was tried for fifty-three murders in April 1992.",
+  "sourceLang": "en"
+}

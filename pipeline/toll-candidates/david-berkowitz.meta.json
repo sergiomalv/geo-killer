@@ -1,0 +1,9 @@
+{
+  "id": "david-berkowitz",
+  "confirmedLine": 2,
+  "attributedLine": null,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "El párrafo introductorio en inglés y el español coinciden en seis asesinatos confirmados (EN: 'killing six people', l.1; ES: 'confesó haber asesinado a seis personas', l.3). Se usa la l.2 (EN) porque cita la condena por seis cadenas perpetuas concurrentes, más ajustada al patrón 'sentenced for'. No se encontró ninguna cifra atribuida mayor a las seis confirmadas: sus confesiones tardías sobre una secta satánica (l.158) reducen -no amplían- su autoría directa a tres víctimas, por lo que attributed queda en null. Los más de 2000 incendios mencionados (l.118) corresponden al alias 'Phantom of the Bronx' y no son asesinatos, así que no cuentan como cifra atribuida."
+}

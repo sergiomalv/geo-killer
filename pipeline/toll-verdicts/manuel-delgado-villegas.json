@@ -1,0 +1,7 @@
+{
+  "id": "manuel-delgado-villegas",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 7: cita literal en L13 ('Se le consiguieron probar siete'), contiene 'siete'; L13 dice 'se le consiguieron probar' (probado/confirmado), no solo sospecha, coherente con en L33/L38 ('considered the definite perpetrator of seven'); sección vigente en L13 es '== Asesinatos ==' (documental); attributed 48-48: cita literal en L22 ('que había matado a 48 personas más'), contiene '48', sección vigente en L22 también '== Asesinatos =='; coherencia: min(48) >= confirmed(7) y min=max, sin inversión; en.txt corrobora ambas cifras en L1 ('carried out 48 murders ... considered him the definite perpetrator of seven'), sin discrepancia es/en; países ES/IT/FR respaldados en L6 ('viajó por España, Italia y Francia, dejando tras de sí un rastro de cadáveres'), ningún código histórico ni inexistente; activeYears 1964 (L15) y 1971 (L9, L20) respaldados en es; apodo es 'el Arropiero' en L1 es.txt, apodo en 'El Arropiero' en L1 en.txt; wikipedia es apunta a es.wikipedia.org y en es null, al menos una URL presente."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "jeffrey-dahmer",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 16: cita literal en L3 ('He was convicted of 16 counts of murder (15 in Wisconsin and one in Ohio)'), condena explícita, sección de introducción (sin encabezado de ficción); attributed 17/17: cita literal en L1 ('killed and dismembered seventeen men and boys'), misma sección de introducción; coherencia 17>=16 ok, min=max no hay rango invertido; US respaldado en L1 ('American serial killer'); activeYears 1978 y 1991 respaldados en L1 y L2/L3; apodo en 'the Milwaukee Cannibal' en L1, no aparece en fuente es (nickname.es es null, correcto); ES coincide con EN en confirmed (15 Wisconsin + 1 Ohio = 16) y attributed (diecisiete = 17), sin discrepancia; wikipedia es y en presentes y con dominio correcto"
+}

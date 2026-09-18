@@ -1,0 +1,9 @@
+{
+  "id": "gary-ridgway",
+  "confirmedLine": 1,
+  "attributedLine": 54,
+  "countryLines": { "US": 20 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "Confirmado (49) coincide en inglés (línea 1: 'convicted of murdering forty-nine women') y en español (línea 1 y 18: 'condenado por asesinar a 49 mujeres' / '49 sentencias'). Para lo atribuido, el inglés da 71 (línea 19, 44 y 54: 'confessed to murdering at least 71 victims'), mientras que el español da 79 ('ha confesado hasta 79 asesinatos', línea 1). Se toma la cifra menor (71) siguiendo la regla de preferir el número más bajo ante discrepancia entre idiomas."
+}

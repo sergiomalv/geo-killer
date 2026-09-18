@@ -1,0 +1,12 @@
+{
+  "id": "ted-bundy",
+  "confirmed": 3,
+  "attributed": { "min": 30, "max": 30 },
+  "countries": ["US"],
+  "activeYears": "1974-1978",
+  "nickname": { "es": null, "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Ted_Bundy", "en": "https://en.wikipedia.org/wiki/Ted_Bundy" },
+  "confirmedQuote": "committed further assaults in Florida, including three murders, before being recaptured in 1978",
+  "attributedQuote": "On the evening before his execution, Bundy reviewed his victim tally with Hagmaier on a state-by-state basis for a total of 30 homicides",
+  "sourceLang": "en"
+}

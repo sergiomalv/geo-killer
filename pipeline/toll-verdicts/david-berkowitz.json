@@ -1,0 +1,7 @@
+{
+  "id": "david-berkowitz",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 6: cita literal en L2 ('pleaded guilty to second-degree murder and was sentenced to six concurrent life sentences'), menciona 'six'; L2 dice que se declaró culpable (guilty), no solo sospecha; sin encabezado de sección antes de L2 (está en la introducción, documental); attributed null y sin attributedQuote, coherente; país US respaldado en L1 EN ('American serial killer', 'New York City') y sin códigos históricos; activeYears 1975 y 1977 en L1 EN ('between 1975 and 1977'); apodo es 'El hijo de Sam' en L1 ES, apodo en 'the Son of Sam' en L1 EN; wikipedia es y en bien formadas (es.wikipedia.org / en.wikipedia.org)"
+}

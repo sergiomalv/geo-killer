@@ -1,0 +1,12 @@
+{
+  "id": "john-wayne-gacy",
+  "confirmed": 33,
+  "attributed": { "min": 45, "max": 45 },
+  "countries": ["US"],
+  "activeYears": "1972-1978",
+  "nickname": { "es": "El payaso asesino", "en": "the Killer Clown" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/John_Wayne_Gacy", "en": "https://en.wikipedia.org/wiki/John_Wayne_Gacy" },
+  "confirmedQuote": "Gacy was found guilty of 33 charges of murder",
+  "attributedQuote": "the total number of murder victims could be as high as 45",
+  "sourceLang": "en"
+}

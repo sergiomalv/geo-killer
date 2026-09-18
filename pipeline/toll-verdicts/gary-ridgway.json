@@ -1,0 +1,7 @@
+{
+  "id": "gary-ridgway",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 49: cita literal en L1 ('convicted of murdering forty-nine women between 1982 and 1998'), L1 dice 'convicted of', sección introductoria (sin encabezado); attributed 71: cita literal en L54 ('Ridgway confessed to murdering at least 71 victims.'), sección '== Victims =='; discrepancia ES/EN detectada (ES L1 dice 'ha confesado hasta 79 asesinatos', EN L54 dice 71): el candidato usa sourceLang en con la cifra menor (71), cumple la regla; país US respaldado en L1 ('American serial killer... in the northwestern United States') y L20 (Seattle y Tacoma, Washington); activeYears 1982 y 1998 en L1; apodo es 'el asesino de Green River' en L1 ES ('«El asesino de Green River»'); apodo en 'the Green River Killer' en L1 EN; wikipedia es y en presentes y bien formadas."
+}

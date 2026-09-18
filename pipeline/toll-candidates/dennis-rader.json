@@ -1,0 +1,11 @@
+{
+  "id": "dennis-rader",
+  "confirmed": 10,
+  "attributed": null,
+  "countries": ["US"],
+  "activeYears": "1974-1991",
+  "nickname": { "es": "Asesino BTK", "en": "BTK" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Dennis_Rader", "en": "https://en.wikipedia.org/wiki/Dennis_Rader" },
+  "confirmedQuote": "convicto por los asesinatos de diez personas en Wichita",
+  "sourceLang": "es"
+}
