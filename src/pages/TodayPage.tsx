@@ -3,6 +3,8 @@ import type { Case, KillerEntry } from '../data/schema'
 import { createGame, submitGuess, type GameState } from '../game/engine'
 import { loadProgress, saveProgress } from '../game/storage'
 import { GameBoard } from '../components/GameBoard'
+import { LanguageToggle } from '../components/LanguageToggle'
+import { useT } from '../i18n'
 
 interface Props {
   day: number
@@ -22,6 +24,7 @@ export function TodayPage({ day, caseData, killers }: Props) {
     setGame({ key: gameKey, state: initialState(day, caseData.id) })
   }
   const state = game.state
+  const t = useT()
 
   useEffect(() => {
     if (game.key === gameKey) saveProgress(day, state)
@@ -36,8 +39,9 @@ export function TodayPage({ day, caseData, killers }: Props) {
       <header className="page-header">
         <h1>Geo Killer</h1>
         <nav className="page-nav">
-          <span className="page-day">Caso #{day + 1}</span>
-          <a href="#infinito">Modo infinito</a>
+          <span className="page-day">{t('daily.caseNumber', { n: day + 1 })}</span>
+          <a href="#infinito">{t('daily.infiniteLink')}</a>
+          <LanguageToggle />
         </nav>
       </header>
       <GameBoard caseData={caseData} killers={killers} state={state} onGuess={handleGuess} />

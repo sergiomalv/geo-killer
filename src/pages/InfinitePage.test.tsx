@@ -1,7 +1,8 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { InfinitePage } from './InfinitePage'
 import { sampleCase } from '../game/__fixtures__/sample-case'
+import { renderWithLang } from '../test/renderWithLang'
 
 vi.mock('../components/CaseMap', () => ({ CaseMap: () => <div data-testid="map" /> }))
 
@@ -24,7 +25,7 @@ const available = ['caso-prueba', 'segundo']
 const firstRandom = () => 0
 
 function renderPage() {
-  return render(<InfinitePage killers={killers} availableIds={available} random={firstRandom} />)
+  return renderWithLang(<InfinitePage killers={killers} availableIds={available} random={firstRandom} />)
 }
 
 async function guess(text: string) {

@@ -4,6 +4,8 @@ import type { Case, KillerEntry } from '../data/schema'
 import { infiniteGuess, nextInfiniteCase, startInfinite, type InfiniteState } from '../game/infinite'
 import { loadInfinite, saveInfinite } from '../game/storage'
 import { GameBoard } from '../components/GameBoard'
+import { LanguageToggle } from '../components/LanguageToggle'
+import { useLang, useT } from '../i18n'
 
 interface Props {
   killers: KillerEntry[]
@@ -22,6 +24,8 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
   const [state, setState] = useState(() => initialState(availableIds, random))
   const [loaded, setLoaded] = useState<Loaded | null>(null)
   const isLoading = loaded === null || loaded.caseId !== state.caseId
+  const lang = useLang()
+  const t = useT()
 
   useEffect(() => {
     saveInfinite(state)
@@ -29,14 +33,14 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
 
   useEffect(() => {
     let cancelled = false
-    loadCase(state.caseId)
+    loadCase(state.caseId, lang)
       .then((caseData) => {
         if (cancelled) return
         setLoaded(caseData ? { caseId: state.caseId, kind: 'ready', caseData } : { caseId: state.caseId, kind: 'error' })
       })
       .catch(() => { if (!cancelled) setLoaded({ caseId: state.caseId, kind: 'error' }) })
     return () => { cancelled = true }
-  }, [state.caseId])
+  }, [state.caseId, lang])
 
   function handleGuess(killerId: string) {
     setState((prev) => infiniteGuess(prev, killerId))
@@ -49,7 +53,7 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
   }
 
   const nextButton = (
-    <button type="button" className="next-case" onClick={handleNext}>Siguiente caso</button>
+    <button type="button" className="next-case" onClick={handleNext}>{t('infinite.next')}</button>
   )
 
   return (
@@ -57,15 +61,16 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
       <header className="page-header">
         <h1>Geo Killer</h1>
         <nav className="page-nav">
-          <span className="page-day">Racha: {state.streak}</span>
-          <a href="#">Reto diario</a>
+          <span className="page-day">{t('infinite.streak', { n: state.streak })}</span>
+          <a href="#">{t('infinite.dailyLink')}</a>
+          <LanguageToggle />
         </nav>
       </header>
-      {state.wrapped ? <p className="page-notice" aria-live="polite">Vuelta completa: los casos se repiten.</p> : null}
-      {isLoading ? <p>Abriendo expediente…</p> : null}
+      {state.wrapped ? <p className="page-notice" aria-live="polite">{t('infinite.wrapped')}</p> : null}
+      {isLoading ? <p>{t('app.loading')}</p> : null}
       {!isLoading && loaded.kind === 'error' ? (
         <>
-          <p>No se ha podido cargar el caso.</p>
+          <p>{t('infinite.loadError')}</p>
           {nextButton}
         </>
       ) : null}

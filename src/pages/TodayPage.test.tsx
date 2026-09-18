@@ -1,8 +1,10 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { TodayPage } from './TodayPage'
 import { sampleCase } from '../game/__fixtures__/sample-case'
 import type { GameState } from '../game/engine'
+import { renderWithLang } from '../test/renderWithLang'
+import { LanguageProvider } from '../i18n'
 
 vi.mock('../components/CaseMap', () => ({ CaseMap: () => <div data-testid="map" /> }))
 
@@ -12,7 +14,7 @@ const killers = [
 ]
 
 function renderPage() {
-  return render(
+  return renderWithLang(
     <TodayPage
       day={0}
       caseData={sampleCase}
@@ -61,7 +63,7 @@ describe('TodayPage', () => {
       { id: 'k4', name: 'Cuarto', aliases: [] },
       { id: 'k5', name: 'Quinto', aliases: [] },
     ]
-    render(<TodayPage day={0} caseData={sampleCase} killers={many} />)
+    renderWithLang(<TodayPage day={0} caseData={sampleCase} killers={many} />)
     const input = screen.getByRole('combobox')
     for (const name of ['otro', 'tercero', 'cuarto', 'quinto']) {
       fireEvent.change(input, { target: { value: name } })
@@ -82,7 +84,7 @@ describe('TodayPage', () => {
       ...killers,
       { id: 'otro-caso', name: 'Otro Caso', aliases: [] },
     ]
-    const { rerender } = render(
+    const { rerender } = renderWithLang(
       <TodayPage day={0} caseData={sampleCase} killers={killersWithOtroCaso} />,
     )
     fireEvent.change(screen.getByRole('combobox'), { target: { value: 'otro asesino' } })
@@ -90,7 +92,11 @@ describe('TodayPage', () => {
     expect(document.querySelectorAll('.attempt-miss').length).toBe(1)
 
     const otroCaso = { ...sampleCase, id: 'otro-caso', name: 'Otro Caso' }
-    rerender(<TodayPage day={1} caseData={otroCaso} killers={killersWithOtroCaso} />)
+    rerender(
+      <LanguageProvider initial="es">
+        <TodayPage day={1} caseData={otroCaso} killers={killersWithOtroCaso} />
+      </LanguageProvider>,
+    )
 
     expect(document.querySelectorAll('.attempt-miss').length).toBe(0)
     const raw = localStorage.getItem('geokiller.progress.1')
@@ -98,5 +104,16 @@ describe('TodayPage', () => {
       const parsed = JSON.parse(raw) as GameState
       expect(parsed.guesses).toEqual([])
     }
+  })
+
+  it('en inglés la cabecera y el resultado están traducidos', () => {
+    renderWithLang(<TodayPage day={0} caseData={sampleCase} killers={killers} />, 'en')
+    expect(screen.queryByText(/Caso #1/)).toBeNull()
+    fireEvent.change(screen.getByRole('combobox'), { target: { value: 'el fantasma' } })
+    fireEvent.submit(screen.getByRole('combobox').closest('form')!)
+    expect(screen.queryByText(/Caso resuelto/)).toBeNull()
+    // getByRole('link') a secas es ambiguo aquí: la cabecera ya trae un enlace
+    // al modo infinito, así que hay dos "link" en pantalla. Se acota al de Wikipedia.
+    expect(screen.getByRole('link', { name: /Wikipedia/i })).toBeInTheDocument()
   })
 })

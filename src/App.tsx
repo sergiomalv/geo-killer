@@ -6,6 +6,7 @@ import { killersSchema, scheduleSchema, type Case } from './data/schema'
 import { caseIdForDay, dayNumber } from './game/schedule'
 import { InfinitePage } from './pages/InfinitePage'
 import { TodayPage } from './pages/TodayPage'
+import { useLang, useT } from './i18n'
 
 const killers = killersSchema.parse(killersJson)
 const schedule = scheduleSchema.parse(scheduleJson)
@@ -30,11 +31,13 @@ function useHashMode(): Mode {
 
 function DailyApp() {
   const day = dayNumber(new Date(), schedule.launchDate)
+  const lang = useLang()
+  const t = useT()
   const [loaded, setLoaded] = useState<Loaded>({ kind: 'loading' })
 
   useEffect(() => {
     let cancelled = false
-    loadCase(caseIdForDay(day, schedule.order)).then((caseData) => {
+    loadCase(caseIdForDay(day, schedule.order), lang).then((caseData) => {
       if (cancelled) return
       if (caseData === null) {
         console.error(`No hay fichero de caso para el día ${day}`)
@@ -46,11 +49,11 @@ function DailyApp() {
       if (!cancelled) setLoaded({ kind: 'error' })
     })
     return () => { cancelled = true }
-  }, [day])
+  }, [day, lang])
 
-  if (loaded.kind === 'loading') return <main className="page"><p>Abriendo expediente…</p></main>
-  if (loaded.kind === 'missing') return <main className="page"><p>Hoy no hay reto. Vuelve mañana.</p></main>
-  if (loaded.kind === 'error') return <main className="page"><p>No se ha podido cargar el caso. Comprueba la conexión y recarga.</p></main>
+  if (loaded.kind === 'loading') return <main className="page"><p>{t('app.loading')}</p></main>
+  if (loaded.kind === 'missing') return <main className="page"><p>{t('app.noCase')}</p></main>
+  if (loaded.kind === 'error') return <main className="page"><p>{t('app.loadError')}</p></main>
   return <TodayPage key={day} day={day} caseData={loaded.caseData} killers={killers} />
 }
 
