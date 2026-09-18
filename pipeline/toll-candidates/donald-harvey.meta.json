@@ -1,0 +1,9 @@
+{
+  "id": "donald-harvey",
+  "confirmedLine": 20,
+  "attributedLine": 20,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 2, "en": 2 },
+  "notes": "El artículo en inglés (línea 1) da 37 víctimas confirmadas y coincide con el suelo de 37 del rango 'entre 37 y 57' del artículo en español (línea 1); se toma 37 como confirmed. Para attributed hay varias cifras en inglés (50 confesadas, 70 estimadas por él mismo a su abogado, 87 reclamadas por él en la intro); se elige la menor, 50 ('he confessed to killing as many as 50 people', línea 20), que también es menor que el máximo de 57 del rango español."
+}

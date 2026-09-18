@@ -1,0 +1,9 @@
+{
+  "id": "carlos-robledo-puch",
+  "verdict": "rejected",
+  "validator": "claude-sonnet-5",
+  "errors": [
+    "cita fuera de sección documental"
+  ],
+  "notes": "confirmed 11: grep -n -F 'Los 11 asesinatos de Robledo Puch' -> L20, cita literal y con cifra '11'; sed -n '20p' encabeza la lista de 'Cronología de sus delitos' presentada como hecho (no atribuida ni sospechada), coherente con L1 'condenado a reclusión perpetua por diez homicidios calificados, un homicidio simple' = 11; awk hasta L20 -> encabezado vigente '== Cronología de sus delitos ==', sección documental OK. attributed 12: grep -n -F 'Chacal: Mató a 12 y por la espalda' -> L72, cita literal y con cifra '12'; pero awk hasta L72 -> encabezado vigente '== En la cultura popular ==', que es sección prohibida (titular sensacionalista del diario Crónica, no un dato judicial ni policial); sed -n '65,75p' confirma que L71-72 están dentro de esa sección, tras el subtítulo. Coherencia 12>=11 y 12<=12 OK, pero la cita atribuida no vale por estar fuera de sección documental. País AR: L1 'asesino en serie argentino' respalda. Años: L10 '15 de marzo de 1971' y L1 'Cumple prisión efectiva desde 1972' respaldan 1971 y 1972. Apodo es 'el Ángel Negro': L1 y L71 lo respaldan; en null, wikipedia.en null, sin discrepancia. Wikipedia: es apunta a es.wikipedia.org, en es null, al menos una no nula OK."
+}

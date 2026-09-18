@@ -110,6 +110,35 @@
     }
   },
   {
+    "id": "daniel-camargo-barbosa",
+    "confirmed": 72,
+    "attributed": {
+      "min": 150,
+      "max": 200
+    },
+    "countries": [
+      "EC"
+    ],
+    "activeYears": "1984-1986",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Daniel_Camargo",
+      "en": null
+    },
+    "confirmedQuote": "Fue condenado por 72 asesinatos",
+    "attributedQuote": "mató a más de 150 mujeres o incluso a más de 200",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 72: cita literal en L14 ('Fue condenado por 72 asesinatos'), la línea dice 'Fue condenado por 72 asesinatos', sección vigente '=== Entrada en el mundo de la delincuencia ===' (no es de ficción/aparato); attributed 150-200: cita literal en L14 ('mató a más de 150 mujeres o incluso a más de 200'), misma línea y sección documental, min 150 >= confirmed 72, min 150 < max 200; EC (Ecuador) respaldado en L14 ('Logró llegar a orillas de Ecuador', 'la población ecuatoriana'), no es código histórico ni inexistente; activeYears 1984 en L14 y 1986 en L15; apodos es/en ambos null, sin discrepancia (la meta señala que 'el monstruo de las mareas' en L34 es solo título bibliográfico, no apodo en el cuerpo, por eso se dejó null); wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null (al menos una URL no nula); solo existe fuente .es.txt, coherente con sourceLang 'es' y wikipedia.en null."
+    }
+  },
+  {
     "id": "david-berkowitz",
     "confirmed": 6,
     "attributed": null,
@@ -211,6 +240,35 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 11: cita L1 ('la Audiencia Provincial de Madrid declaró probados los asesinatos de 11 personas'), sección intro (sin encabezado, antes de '== Biografía =='); attributed 14: cita L21 ('relató a la policía uno por uno, catorce asesinatos'), sección '=== La detención y confesión ==='; coherencia: 14 >= 11, min=max=14 sin rango invertido; ES respaldado en L1 ('asesino en serie español', Madrid); activeYears 1987 en L13 ('En agosto de 1987') y 1994 en L21 ('En abril de 1994'); apodo es 'el matamendigos' en L1, en=null sin fuente en inglesa (consistente); wikipedia es apunta a es.wikipedia.org, en=null."
+    }
+  },
+  {
+    "id": "fritz-haarmann",
+    "confirmed": 24,
+    "attributed": {
+      "min": 50,
+      "max": 70
+    },
+    "countries": [
+      "DE"
+    ],
+    "activeYears": "1918-1924",
+    "nickname": {
+      "es": "el Carnicero de Hannover",
+      "en": "the Butcher of Hanover"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Fritz_Haarmann",
+      "en": "https://en.wikipedia.org/wiki/Fritz_Haarmann"
+    },
+    "confirmedQuote": "Found guilty of twenty-four of the twenty-seven murders for which he was tried, Haarmann was sentenced to death by beheading in December 1924.",
+    "attributedQuote": "later, he would claim the true number of victims he had killed was between fifty and seventy.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 24: cita literal en L2 ('Found guilty of twenty-four of the twenty-seven murders...sentenced to death by beheading'), sin encabezado de sección forzoso (está en la introducción); attributed 50-70: cita literal en L138 ('between fifty and seventy'), bajo encabezado '== Victims =='; coherencia 50>=24 y 50<=70 OK; countries DE respaldado en L1 ('German serial rapist...') y L32/34 ('Germany'), no es SU/YU/CS ni código inexistente; activeYears 1918 y 1924 aparecen en L1 y L42 (nota: el meta.yearsLine=41 apunta al encabezado '== Known and alleged murders ==', no a la línea con los años, pero el dato sí está respaldado en líneas cercanas); apodo es 'el Carnicero de Hannover' en es L3, apodo en 'the Butcher of Hanover' en en L1/L3, sin mezcla entre idiomas; wikipedia es y en ambas presentes y con dominio correcto. Nota adicional: es dice 'se le atribuyen más de 100 víctimas' (L1) frente al rango en inglés 50-70 (L138); el candidato usa la cifra menor (50-70), cumpliendo la regla de discrepancia entre fuentes."
     }
   },
   {
@@ -607,6 +665,60 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 9: cita literal en L2 en ('was found guilty of nine counts of murder...'); la cita trae 'nine'; L2 dice 'was found guilty' (condena firme); sección: cabecera de introducción (sin '=', documental, no ficción); ES corrobora en L23 'nueve asesinatos' (misma cifra, sin discrepancia); attributed es null y no hay attributedQuote en el candidato (coherente); DE respaldado en L1 en ('German serial killer') y L1 es ('asesino en serie alemán'); DE no es código histórico ni inexistente; activeYears 1913 en L1/L38 en y 1929 en L1/L50 en ('== 1929 =='); apodo es 'El vampiro de Düsseldorf' en L1 es; apodo en 'The Vampire of Düsseldorf' en L1 en; wikipedia.es apunta a es.wikipedia.org y wikipedia.en a en.wikipedia.org, ambas no nulas."
+    }
+  },
+  {
+    "id": "peter-manuel",
+    "confirmed": 7,
+    "attributed": {
+      "min": 9,
+      "max": 9
+    },
+    "countries": [
+      "GB"
+    ],
+    "activeYears": "1956-1958",
+    "nickname": {
+      "es": null,
+      "en": "the Beast of Birkenshaw"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Peter_Manuel"
+    },
+    "confirmedQuote": "convicted and executed for the murders of seven people",
+    "attributedQuote": "he is strongly suspected of committing at least nine murders",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 7: cita literal L32 'convicted and executed for the murders of seven people'; línea 32 dice 'convicted and executed', sección == Murders == (documental); attributed 9: cita literal L32 'he is strongly suspected of committing at least nine murders', misma línea y sección; attributed.min 9 >= confirmed 7, min=max=9 no invertido; GB respaldado en L1 ('across Lanarkshire, Scotland' y 'Edmundbyers, England', ambos parte de GB), no es código histórico; activeYears 1956 y 1958 en L1 ('between 1956 and 1958'); apodo en 'the Beast of Birkenshaw' en L1; wikipedia en apunta a en.wikipedia.org, es es null (una URL no nula es suficiente)"
+    }
+  },
+  {
+    "id": "richard-speck",
+    "confirmed": 8,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1966",
+    "nickname": {
+      "es": null,
+      "en": "The Birdman"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Richard_Speck",
+      "en": "https://en.wikipedia.org/wiki/Richard_Speck"
+    },
+    "confirmedQuote": "Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 8: cita literal en L2 de richard-speck.en.txt ('Convicted of all eight murders on April 15, 1967, Speck was sentenced to death.'); la cita contiene 'eight' y la línea dice explícitamente 'Convicted of all eight murders' (condena, no atribución); sección: L2 está antes del primer encabezado del artículo (introducción, sección documental, no ficción); attributed es null y no hay attributedQuote en el candidato, coherente; US respaldado en L1.en ('American mass murderer') y L1.es ('asesino en masa estadounidense'); activeYears '1966' aparece en L1 de ambas fuentes ('July 13–14, 1966' / '14 y 15 de julio de 1966'); apodo en 'The Birdman' respaldado en L1.en y explicado en L92.en ('nickname \"Birdman\"'), no aparece en es.txt (correcto, campo es es null); ES source (L1, L5) coincide en 8 víctimas confirmadas, sin discrepancia entre fuentes; ambas URLs de Wikipedia presentes y con dominio correcto (es.wikipedia.org / en.wikipedia.org)."
     }
   },
   {

@@ -1,0 +1,12 @@
+{
+  "id": "albert-fish",
+  "confirmed": 3,
+  "attributed": { "min": 9, "max": 9 },
+  "countries": ["US"],
+  "activeYears": "1924-1928",
+  "nickname": { "es": "el «Hombre gris»", "en": "the Gray Man" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Albert_Fish", "en": "https://en.wikipedia.org/wiki/Albert_Fish" },
+  "confirmedQuote": "Confesó tres homicidios que la policía fue capaz de confirmar",
+  "attributedQuote": "solo fue sospechoso en 9 casos",
+  "sourceLang": "es"
+}

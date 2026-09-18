@@ -1,0 +1,9 @@
+{
+  "id": "peter-sutcliffe",
+  "confirmedLine": 1,
+  "attributedLine": 145,
+  "countryLines": { "GB": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "confirmed=13 concuerda en ambos idiomas (EN L1 'thirteen women and girls'; ES L2 'trece mujeres'). No se usan las siete tentativas de asesinato (EN L1) como confirmadas: son cargos de intento, no asesinatos. Para attributed se usa la cifra derivada de EN L145: el libro de Clark y Tate (2015) alega 'at least twenty-two more murders than he was convicted of', es decir 13+22=35; se toma como número único (min=max=35) porque la fuente no da un límite superior distinto. Se descarta como fuente de attributed la lista de Hellawell (EN L126, ~60 casos, 22 sin resolver tras descartar 40) porque mezcla asesinatos y tentativas y no atribuye una cifra de asesinatos específica a Sutcliffe."
+}

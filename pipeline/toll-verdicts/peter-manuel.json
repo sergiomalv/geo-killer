@@ -1,0 +1,7 @@
+{
+  "id": "peter-manuel",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 7: cita literal L32 'convicted and executed for the murders of seven people'; línea 32 dice 'convicted and executed', sección == Murders == (documental); attributed 9: cita literal L32 'he is strongly suspected of committing at least nine murders', misma línea y sección; attributed.min 9 >= confirmed 7, min=max=9 no invertido; GB respaldado en L1 ('across Lanarkshire, Scotland' y 'Edmundbyers, England', ambos parte de GB), no es código histórico; activeYears 1956 y 1958 en L1 ('between 1956 and 1958'); apodo en 'the Beast of Birkenshaw' en L1; wikipedia en apunta a en.wikipedia.org, es es null (una URL no nula es suficiente)"
+}

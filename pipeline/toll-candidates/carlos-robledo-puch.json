@@ -1,12 +1,11 @@
 {
   "id": "carlos-robledo-puch",
   "confirmed": 11,
-  "attributed": { "min": 12, "max": 12 },
+  "attributed": null,
   "countries": ["AR"],
   "activeYears": "1971-1972",
   "nickname": { "es": "el Ángel Negro", "en": null },
   "wikipedia": { "es": "https://es.wikipedia.org/wiki/Carlos_Robledo_Puch", "en": null },
   "confirmedQuote": "Los 11 asesinatos de Robledo Puch",
-  "attributedQuote": "Chacal: Mató a 12 y por la espalda",
   "sourceLang": "es"
 }

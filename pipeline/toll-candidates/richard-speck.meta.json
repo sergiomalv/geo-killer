@@ -1,0 +1,9 @@
+{
+  "id": "richard-speck",
+  "confirmedLine": 2,
+  "attributedLine": null,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "es": null, "en": 1 },
+  "notes": "confirmed=8 coincide en ES (line 1: 'responsable de ocho homicidios') y EN (line 2: 'Convicted of all eight murders'). ES line 6 menciona que fue acusado de otros tres asesinatos pero absuelto por falta de pruebas, por lo que no cuenta como attributed (no es confesion/sospecha vigente sino una acusacion desestimada). No se encontro confesion ni estimacion de un numero mayor a 8, por lo que attributed es null. Apodo 'The Birdman' solo aparece en la fuente en ingles (lines 1 y 92); no aparece en la fuente en espanol."
+}

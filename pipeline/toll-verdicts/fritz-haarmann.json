@@ -1,0 +1,7 @@
+{
+  "id": "fritz-haarmann",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 24: cita literal en L2 ('Found guilty of twenty-four of the twenty-seven murders...sentenced to death by beheading'), sin encabezado de sección forzoso (está en la introducción); attributed 50-70: cita literal en L138 ('between fifty and seventy'), bajo encabezado '== Victims =='; coherencia 50>=24 y 50<=70 OK; countries DE respaldado en L1 ('German serial rapist...') y L32/34 ('Germany'), no es SU/YU/CS ni código inexistente; activeYears 1918 y 1924 aparecen en L1 y L42 (nota: el meta.yearsLine=41 apunta al encabezado '== Known and alleged murders ==', no a la línea con los años, pero el dato sí está respaldado en líneas cercanas); apodo es 'el Carnicero de Hannover' en es L3, apodo en 'the Butcher of Hanover' en en L1/L3, sin mezcla entre idiomas; wikipedia es y en ambas presentes y con dominio correcto. Nota adicional: es dice 'se le atribuyen más de 100 víctimas' (L1) frente al rango en inglés 50-70 (L138); el candidato usa la cifra menor (50-70), cumpliendo la regla de discrepancia entre fuentes."
+}
