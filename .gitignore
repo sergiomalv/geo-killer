@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 pipeline/sources/
+
+# Volcados de las pruebas con Playwright
+.playwright-mcp/
