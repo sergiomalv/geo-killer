@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import type { KillerEntry } from '../data/schema'
 import { matchesKiller, searchKillers } from '../game/matching'
+import { useT } from '../i18n'
 
 interface Props {
   killers: KillerEntry[]
@@ -11,6 +12,7 @@ interface Props {
 export function GuessInput({ killers, disabled, onGuess }: Props) {
   const [text, setText] = useState('')
   const suggestions = searchKillers(text, killers)
+  const t = useT()
 
   function choose(id: string) {
     onGuess(id)
@@ -32,7 +34,7 @@ export function GuessInput({ killers, disabled, onGuess }: Props) {
         aria-controls="guess-options"
         aria-autocomplete="list"
         className="guess-input"
-        placeholder="¿Quién es el asesino?"
+        placeholder={t('guess.placeholder')}
         value={text}
         disabled={disabled}
         onChange={(e) => setText(e.target.value)}

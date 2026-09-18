@@ -1,6 +1,7 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import { GuessInput } from './GuessInput'
+import { renderWithLang } from '../test/renderWithLang'
 
 const killers = [
   { id: 'david-berkowitz', name: 'David Berkowitz', aliases: ['El hijo de Sam'] },
@@ -11,7 +12,7 @@ const killers = [
 
 describe('GuessInput', () => {
   it('muestra sugerencias al escribir', () => {
-    render(<GuessInput killers={killers} disabled={false} onGuess={() => {}} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={() => {}} />)
     fireEvent.change(screen.getByRole('combobox'), { target: { value: 'sam' } })
     expect(screen.getByRole('option', { name: /David Berkowitz/ })).toBeInTheDocument()
     expect(screen.queryByRole('option', { name: /Ted Bundy/ })).toBeNull()
@@ -19,7 +20,7 @@ describe('GuessInput', () => {
 
   it('al pulsar una sugerencia envía el id y limpia', () => {
     const onGuess = vi.fn()
-    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
     const input = screen.getByRole('combobox')
     fireEvent.change(input, { target: { value: 'bundy' } })
     fireEvent.click(screen.getByRole('option', { name: /Ted Bundy/ }))
@@ -29,7 +30,7 @@ describe('GuessInput', () => {
 
   it('con Enter envía si el texto coincide exactamente con nombre o alias', () => {
     const onGuess = vi.fn()
-    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
     const input = screen.getByRole('combobox')
     fireEvent.change(input, { target: { value: 'el hijo de sám' } })
     fireEvent.submit(input.closest('form')!)
@@ -38,7 +39,7 @@ describe('GuessInput', () => {
 
   it('con Enter y texto parcial envía la primera sugerencia', () => {
     const onGuess = vi.fn()
-    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
     const input = screen.getByRole('combobox')
     fireEvent.change(input, { target: { value: 'bund' } })
     fireEvent.submit(input.closest('form')!)
@@ -47,7 +48,7 @@ describe('GuessInput', () => {
 
   it('con Enter y sin coincidencias no envía nada', () => {
     const onGuess = vi.fn()
-    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
     const input = screen.getByRole('combobox')
     fireEvent.change(input, { target: { value: 'zzz' } })
     fireEvent.submit(input.closest('form')!)
@@ -56,7 +57,7 @@ describe('GuessInput', () => {
 
   it('con Enter y varias sugerencias no envía nada', () => {
     const onGuess = vi.fn()
-    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
     const input = screen.getByRole('combobox')
     fireEvent.change(input, { target: { value: 'peter' } })
     fireEvent.submit(input.closest('form')!)
@@ -65,7 +66,13 @@ describe('GuessInput', () => {
   })
 
   it('se deshabilita', () => {
-    render(<GuessInput killers={killers} disabled={true} onGuess={() => {}} />)
+    renderWithLang(<GuessInput killers={killers} disabled={true} onGuess={() => {}} />)
     expect(screen.getByRole('combobox')).toBeDisabled()
+  })
+
+  it('en inglés el placeholder está traducido', () => {
+    renderWithLang(<GuessInput killers={killers} disabled={false} onGuess={() => {}} />, 'en')
+    expect(screen.getByRole('combobox')).not.toHaveAttribute('placeholder', '¿Quién es el asesino?')
+    expect(screen.getByRole('combobox').getAttribute('placeholder')).toBeTruthy()
   })
 })
