@@ -772,6 +772,35 @@
     }
   },
   {
+    "id": "leonard-lake",
+    "confirmed": 11,
+    "attributed": {
+      "min": 11,
+      "max": 25
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1983-1985",
+    "nickname": {
+      "es": null,
+      "en": "The Sex Slave Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Leonard_Lake"
+    },
+    "confirmedQuote": "burned and crushed human bone fragments from at least 11 bodies",
+    "attributedQuote": "murdered at least eleven and perhaps up to twenty-five victims",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 11: cita literal L39 ('...bone fragments from at least 11 bodies'), contiene '11', línea afirma como hecho forense (no atribuido/sospechado) el hallazgo de restos de al menos 11 cuerpos, bajo sección '== Lake's fall and aftermath ==' (documental); attributed 11-25: cita literal L1 ('murdered at least eleven and perhaps up to twenty-five victims'), contiene 'eleven' y 'twenty-five', L1 es texto introductorio (no ficción/aparato); coherencia: min(11)=confirmed(11), min<=max ok; US respaldado en L1 ('American survivalist and serial killer'), no es código histórico; activeYears 1983 y 1985 en L1 ('between 1983 and 1985'); apodo en 'The Sex Slave Killer' en L1 ('also known as The Sex Slave Killer'), es es null sin apodo que comprobar; wikipedia en apunta a en.wikipedia.org, es es null. Nota: Leonard Lake nunca fue condenado (murió antes del juicio, L1 'Lake was never convicted of murder'); quien fue condenado fue su cómplice Charles Ng (L43); la cifra confirmada se basa en evidencia forense (restos óseos hallados), no en condena de Lake, pero la línea no usa lenguaje de sospecha/atribución sino de hecho constatado, por lo que se acepta como confirmación."
+    }
+  },
+  {
     "id": "luis-garavito",
     "confirmed": 138,
     "attributed": {
@@ -859,6 +888,35 @@
     }
   },
   {
+    "id": "mikhail-popkov",
+    "confirmed": 87,
+    "attributed": {
+      "min": 90,
+      "max": 90
+    },
+    "countries": [
+      "RU"
+    ],
+    "activeYears": "1992-2011",
+    "nickname": {
+      "es": "El hombre lobo",
+      "en": "the Werewolf"
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Mijaíl_Popkov",
+      "en": "https://en.wikipedia.org/wiki/Mikhail_Popkov"
+    },
+    "confirmedQuote": "committed the sexual assault and murder of eighty-seven girls and women",
+    "attributedQuote": "confessed to and is suspected of at least ninety in total",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 87 ('eighty-seven'): cita literal en L1; la línea contrasta 'committed...eighty-seven' (hecho) con 'confessed to and is suspected of at least ninety' (sospecha), lo que confirma 87 y atribuye 90; sección: intro, sin encabezado de ficción/aparato. attributed 90/90 ('ninety'): misma cita L1, mismo contraste, min=max=90, no invertido, 90>=87 coherente. attributedQuote presente y attributed no nulo: cuadra. País RU: 'Russian serial killer' L1, 'Russian Far East' L1, no es SU/YU/CS. activeYears 1992-2011: 'between 1992 and 2011' L1 (en) y también en es.txt L1. Apodo en 'the Werewolf': L1 y L11 en.txt. Apodo es 'El hombre lobo': L1 es.txt ('Es conocido como El hombre lobo'). Wikipedia: es y en no nulos, dominios es.wikipedia.org y en.wikipedia.org correctos (meta indica que el título es real es 'Mijaíl_Popkov', verificado por el generador vía API). Nota: es.txt L1 da un total distinto y sin hedge ('asesinó a 90 mujeres y un hombre' = 91), mayor que el confirmed=87 usado (en, menor), consistente con la regla de preferir la cifra menor entre fuentes discrepantes."
+    }
+  },
+  {
     "id": "pedro-alonso-lopez",
     "confirmed": 3,
     "attributed": {
@@ -887,6 +945,35 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 3: cita literal en L30 ('he was found guilty of three of the murders'), contiene 'three', sección '== Arrest and confession ==' es documental, la línea dice condena explícita ('found guilty'); attributed 350 (min=max): cita literal en L29 ('the total of 350 confessed murders'), contiene '350', misma sección documental; coherencia: 350 >= 3, min=max no hay rango invertido; attributedQuote presente y attributed no nulo, coherente; países: EC en L43 ('within Ecuador'/'Ecuadorian victims'), CO en L19 (El Espinal, condena por Flor Alba Sánchez) y L43 ('in Colombia'), PE en L27 ('many more' in Peru) y L43; ningún código SU/YU/CS ni inexistente; activeYears 1978-1980 respaldados en L1 EN ('from 1978 to 1980'); apodo es 'el Monstruo de los Andes' en L1 ES, apodo en 'the Monster of the Andes' en L1 EN, sin mezcla entre idiomas; wikipedia es y en ambas con dominio correcto; sin discrepancia real es/en (ES L1 dice 'más de 300' confesados y 110 confirmados, compatible con EN L29 '350 confessed' y L30 'three' de condena, ES no da cifra exacta que contradiga)."
+    }
+  },
+  {
+    "id": "pedro-rodrigues-filho",
+    "confirmed": 71,
+    "attributed": {
+      "min": 100,
+      "max": 100
+    },
+    "countries": [
+      "BR"
+    ],
+    "activeYears": "1973",
+    "nickname": {
+      "es": null,
+      "en": "Pedrinho Matador"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Pedro_Rodrigues_Filho"
+    },
+    "confirmedQuote": "was officially sentenced for 71 murders",
+    "attributedQuote": "claimed to have killed over 100 people",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 71: cita literal en L1 ('was officially sentenced for 71 murders'), la línea dice 'officially sentenced' (condena); sección documental: L1 está en el lead, sin encabezado de ficción; attributed 100: cita literal en L1 ('claimed to have killed over 100 people'), misma línea/sección; coherencia: 100 >= 71, min=max=100 no invertido; attributedQuote presente y attributed no nulo, coherente; país BR: L1 'was a Brazilian serial killer'; activeYears '1973' (único año, sin rango): aparece en L22 ('On 24 May 1973... Rodrigues was arrested for the first time'); apodo en 'Pedrinho Matador': aparece en L1 y L11 del texto inglés; no hay apodo es (wiki.es null, consistente); wikipedia: es=null, en=https://en.wikipedia.org/wiki/Pedro_Rodrigues_Filho, dominio correcto y al menos una URL no nula"
     }
   },
   {
@@ -1074,6 +1161,35 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 4: cita literal en EN L56 ('He pleaded guilty to the four homicides police had evidence for...'), contiene 'four', sección '== Imprisonment and death =='; attributed 21-37: cita literal en EN L57 ('The remains of twelve of a probable twenty-one to thirty-seven victims were exhumed...'), contiene 'twenty-one' y 'thirty-seven', misma sección documental, min(21) >= confirmed(4), min<=max; US respaldado en EN L1 ('an American serial killer'); activeYears 1970 y 1983: EN L1 dice 'between 1971 and 1983' pero ES L1 dice 'Entre los años 1970 y 1983' (discrepancia entre fuentes resuelta tomando la cifra menor, 1970, correcto); apodo es 'El panadero carnicero' en ES L1, apodo en 'the Butcher Baker' en EN L1, sin cruces de idioma; wikipedia es y en presentes y con dominio correcto."
+    }
+  },
+  {
+    "id": "rodney-alcala",
+    "confirmed": 9,
+    "attributed": {
+      "min": 130,
+      "max": 130
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1971-1979",
+    "nickname": {
+      "es": null,
+      "en": "the Dating Game Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Rodney_Alcala"
+    },
+    "confirmedQuote": "While Alcala has been conclusively linked to nine murders",
+    "attributedQuote": "the true number of victims remains unknown and could be as high as 130",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita literal en L1 ('While Alcala has been conclusively linked to nine murders'), la propia línea dice 'conclusively linked' (confirmación, no atribución/sospecha) y detalla condenas ('sentenced to death... for five murders', 'pleaded guilty... for two further murders'); L1 está en el párrafo introductorio, antes del primer encabezado de sección (L6 'Early life'), no en sección de ficción. attributed 130-130: misma L1, cita literal 'the true number of victims remains unknown and could be as high as 130', contiene 130 (min=max), también en la introducción. Coherencia: 130 >= 9, sin rango invertido. attributedQuote presente y attributed no nulo: cuadra. País US: L1 'was an American serial killer'; código válido, no histórico. Años: 1979 aparece en L1 ('committed between 1977 and 1979'); 1971 aparece en L21 ('found raped and murdered... on June 12, 1971', asesinato de Crilley) y L26/L66/L90 -- nota: meta.yearsLine=1 solo respalda 1979 directamente, 1971 está en otra línea (L21), pero ambos años sí aparecen en la fuente, por lo que la comprobación 9 se cumple igualmente. Apodo en 'Dating Game Killer' en L3 ('He is often referred to as the Dating Game Killer'); apodo es es null, sin comprobación necesaria. Wikipedia: es null, en apunta a en.wikipedia.org/wiki/Rodney_Alcala, dominio correcto y al menos una URL no nula."
     }
   },
   {

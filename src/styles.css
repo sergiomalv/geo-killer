@@ -105,6 +105,9 @@ body {
 
 @media (min-width: 700px) {
   .duel-cards { grid-template-columns: 1fr 1fr; }
+  /* Centrados y estrechos: alineados con las columnas parecería que cada botón habla de
+     la carta que tiene encima, y los dos se refieren a la de la derecha. */
+  .duel-buttons { max-width: 480px; margin-inline: auto; width: 100%; }
 }
 
 @media (min-width: 900px) {

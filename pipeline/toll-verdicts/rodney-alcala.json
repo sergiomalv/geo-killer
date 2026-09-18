@@ -1,0 +1,7 @@
+{
+  "id": "rodney-alcala",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 9: cita literal en L1 ('While Alcala has been conclusively linked to nine murders'), la propia línea dice 'conclusively linked' (confirmación, no atribución/sospecha) y detalla condenas ('sentenced to death... for five murders', 'pleaded guilty... for two further murders'); L1 está en el párrafo introductorio, antes del primer encabezado de sección (L6 'Early life'), no en sección de ficción. attributed 130-130: misma L1, cita literal 'the true number of victims remains unknown and could be as high as 130', contiene 130 (min=max), también en la introducción. Coherencia: 130 >= 9, sin rango invertido. attributedQuote presente y attributed no nulo: cuadra. País US: L1 'was an American serial killer'; código válido, no histórico. Años: 1979 aparece en L1 ('committed between 1977 and 1979'); 1971 aparece en L21 ('found raped and murdered... on June 12, 1971', asesinato de Crilley) y L26/L66/L90 -- nota: meta.yearsLine=1 solo respalda 1979 directamente, 1971 está en otra línea (L21), pero ambos años sí aparecen en la fuente, por lo que la comprobación 9 se cumple igualmente. Apodo en 'Dating Game Killer' en L3 ('He is often referred to as the Dating Game Killer'); apodo es es null, sin comprobación necesaria. Wikipedia: es null, en apunta a en.wikipedia.org/wiki/Rodney_Alcala, dominio correcto y al menos una URL no nula."
+}

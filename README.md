@@ -2,6 +2,8 @@
 
 Minijuego diario: adivina al asesino serial a partir de los lugares de sus crímenes. Cada fallo desbloquea una pista más (fechas, víctimas, método). Cuatro intentos.
 
+Además del reto diario hay un **modo infinito** (`#infinito`) y **"Más o menos"** (`#mas-o-menos`), una cadena de duelos a una vida en la que se acierta si un asesino mató más o menos víctimas confirmadas que el anterior. El empate cuenta como acierto. Las cifras viven en `src/data/tolls.json`, se generan con los subagentes `toll-generator` y `toll-validator` y se promueven con `pipeline/promote-tolls.ts`; cada una va respaldada por una cita literal de Wikipedia. Un asesino sin cifra confirmada citable se queda fuera del modo, y `npm run validate:data` avisa de cuáles faltan.
+
 ## Desarrollo
 
 ```bash

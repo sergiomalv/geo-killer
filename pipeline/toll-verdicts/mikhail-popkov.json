@@ -1,0 +1,7 @@
+{
+  "id": "mikhail-popkov",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 87 ('eighty-seven'): cita literal en L1; la línea contrasta 'committed...eighty-seven' (hecho) con 'confessed to and is suspected of at least ninety' (sospecha), lo que confirma 87 y atribuye 90; sección: intro, sin encabezado de ficción/aparato. attributed 90/90 ('ninety'): misma cita L1, mismo contraste, min=max=90, no invertido, 90>=87 coherente. attributedQuote presente y attributed no nulo: cuadra. País RU: 'Russian serial killer' L1, 'Russian Far East' L1, no es SU/YU/CS. activeYears 1992-2011: 'between 1992 and 2011' L1 (en) y también en es.txt L1. Apodo en 'the Werewolf': L1 y L11 en.txt. Apodo es 'El hombre lobo': L1 es.txt ('Es conocido como El hombre lobo'). Wikipedia: es y en no nulos, dominios es.wikipedia.org y en.wikipedia.org correctos (meta indica que el título es real es 'Mijaíl_Popkov', verificado por el generador vía API). Nota: es.txt L1 da un total distinto y sin hedge ('asesinó a 90 mujeres y un hombre' = 91), mayor que el confirmed=87 usado (en, menor), consistente con la regla de preferir la cifra menor entre fuentes discrepantes."
+}
