@@ -1,0 +1,15 @@
+{
+  "id": "javed-iqbal",
+  "verdict": "approved",
+  "validator": "claude-opus-5 (revision manual, estandar forzado)",
+  "caseErrors": [],
+  "murderVerdicts": [
+    { "index": 0, "ok": true, "errors": [] },
+    { "index": 1, "ok": true, "errors": [] },
+    { "index": 2, "ok": true, "errors": [] },
+    { "index": 3, "ok": true, "errors": [] },
+    { "index": 4, "ok": true, "errors": [] },
+    { "index": 5, "ok": true, "errors": [] }
+  ],
+  "notes": "ESTANDAR FORZADO, no es el del resto del catalogo. Wikipedia no nombra ninguna victima individual de este caso: los seis nombres salen de TRT World y Brown History y son desapariciones atribuidas a Iqbal, no asesinatos adjudicados uno a uno; solo se recuperaron dos cuerpos. Verificado contra Wikipedia: condena (en L20, es L18), modus operandi (en L9), ciudad (en L9), cifra de 100 victimas (en L1). Verificado por dos fuentes de prensa independientes: los seis nombres. Coordenadas: geocode.sh 'Lahore, Pakistan' -> 31.5657 74.3142, 0 km, todas las entradas comparten punto porque ninguna fuente situa los asesinatos por barrio. Fechas: 0 a mes por discrepancia de dia entre fuentes (9 vs 20 de julio), 5 a mes (octubre 1999), el resto a anio. Metodo: modus operandi general, ninguna fuente lo da victima a victima. Descartadas Tasleem Hussain/Ullah (apellido discrepante) y Dilawar Hussain (sin corroborar)."
+}

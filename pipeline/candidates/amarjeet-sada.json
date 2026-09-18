@@ -1,0 +1,61 @@
+{
+  "id": "amarjeet-sada",
+  "name": "Amarjeet Sada",
+  "aliases": [
+    "Amardeep Sada"
+  ],
+  "country": "India",
+  "activeYears": "2006-2007",
+  "wikipedia": {
+    "es": null,
+    "en": null
+  },
+  "sources": [
+    "https://www.dnaindia.com/india/report-story-of-amarjeet-sada-8-year-old-boy-from-bihar-also-known-as-world-s-youngest-serial-killer-3044574",
+    "https://allthatsinteresting.com/amarjeet-sada",
+    "https://simplyforensic.com/amardeep-sada-the-youngest-serial-killer-in-the-world/"
+  ],
+  "toll": null,
+  "summary": "Niño indio del estado de Bihar que entre 2006 y 2007, con siete y ocho años, mató a tres bebés: una prima, su propia hermana y una vecina de seis meses. Confesó los tres durante el interrogatorio, pero por su edad nunca fue juzgado como adulto: pasó por un centro de menores del que salió al cumplir la mayoría de edad. Las fuentes lo nombran indistintamente Amarjeet o Amardeep Sada y discrepan en la edad de la primera víctima.",
+  "murders": [
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "lat": 25.5125,
+      "lng": 86.0883,
+      "date": "2006",
+      "datePrecision": "year",
+      "victim": "Prima del asesino",
+      "method": "Estrangulada.",
+      "sourceQuote": "Then, to quiet the girl, Amarjeet strangled her to death.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "lat": 25.5125,
+      "lng": 86.0883,
+      "date": null,
+      "datePrecision": null,
+      "victim": "Hermana del asesino, de ocho meses",
+      "method": "Estrangulada.",
+      "sourceQuote": "the young boy reportedly took his sister out of her crib and strangled her to death",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Begusarai",
+      "region": "Bihar",
+      "country": "India",
+      "lat": 25.5125,
+      "lng": 86.0883,
+      "date": "2007",
+      "datePrecision": "year",
+      "victim": "Khushboo",
+      "method": "Golpeada con una piedra y enterrada.",
+      "sourceQuote": "A woman named Chunchun Devi had left her six-month-old daughter, Khushboo, in a village school to nap while she ran errands nearby",
+      "sourceLang": "en"
+    }
+  ]
+}

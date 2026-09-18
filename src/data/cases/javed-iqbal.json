@@ -1,0 +1,107 @@
+{
+  "id": "javed-iqbal",
+  "name": "Javed Iqbal",
+  "aliases": [
+    "El monstruo de Lahore",
+    "Javed Iqbal Mughal",
+    "Javed Iqbal Umayr"
+  ],
+  "country": "Pakistán",
+  "activeYears": "1999",
+  "wikipedia": {
+    "es": "https://es.wikipedia.org/wiki/Javed_Iqbal",
+    "en": "https://en.wikipedia.org/wiki/Javed_Iqbal_(serial_killer)"
+  },
+  "sources": [
+    "https://www.trtworld.com/magazine/rape-dissolve-in-acid-how-pakistan-s-serial-killer-murdered-100-children-58607",
+    "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case"
+  ],
+  "toll": 100,
+  "summary": "Asesino en serie pakistaní que en diciembre de 1999 confesó por carta la violación y el asesinato de 100 niños y adolescentes de entre 6 y 16 años, en su mayoría fugitivos y huérfanos que vivían en las calles de Lahore. Fue condenado a muerte en marzo de 2000 y apareció muerto en su celda de la cárcel de Kot Lakhpat en octubre de 2001. Solo se recuperaron dos cuerpos: el resto de las víctimas se conocen por las fotografías y las anotaciones que él mismo dejó a la policía.",
+  "murders": [
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999-07",
+      "datePrecision": "month",
+      "victim": "Faisal Razzaq",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "Faisal Razzaq, a 9 year old, left his home to go to a workshop where children his age spent folding cardboard into paper",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999",
+      "datePrecision": "year",
+      "victim": "Shakeel Hassan",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "Shakeel Hassan, 13, went to the school. Returning back was not his fate.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999",
+      "datePrecision": "year",
+      "victim": "Faraz Khan",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "Faraz Khan went to buy groceries from a nearby store. He did not return back either.",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999",
+      "datePrecision": "year",
+      "victim": "Zeeshan Nazir",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "Zeeshan Nazir, 13, Abdul Majeed, 16, Tasleem Hussain, 14, and many other children today have been lost in the teeming streets or sprawling parks of Lahore",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999",
+      "datePrecision": "year",
+      "victim": "Abdul Majeed",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "Abdul Majeed, 16, Tasleem Hussain, 14, and many other children today have been lost in the teeming streets or sprawling parks of Lahore",
+      "sourceLang": "en"
+    },
+    {
+      "city": "Lahore",
+      "region": null,
+      "country": "Pakistán",
+      "lat": 31.5657,
+      "lng": 74.3142,
+      "date": "1999-10",
+      "datePrecision": "month",
+      "victim": "Ejaz Muhammad",
+      "method": "Estrangulado; el cuerpo fue disuelto en ácido.",
+      "sourceQuote": "When Kaka went inside the house of the boss, he was never seen again",
+      "sourceLang": "en"
+    }
+  ],
+  "validation": {
+    "status": "approved",
+    "validatedAt": "2026-09-18",
+    "validator": "claude-opus-5 (revision manual, estandar forzado)",
+    "notes": "ESTANDAR FORZADO, no es el del resto del catalogo. Wikipedia no nombra ninguna victima individual de este caso: los seis nombres salen de TRT World y Brown History y son desapariciones atribuidas a Iqbal, no asesinatos adjudicados uno a uno; solo se recuperaron dos cuerpos. Verificado contra Wikipedia: condena (en L20, es L18), modus operandi (en L9), ciudad (en L9), cifra de 100 victimas (en L1). Verificado por dos fuentes de prensa independientes: los seis nombres. Coordenadas: geocode.sh 'Lahore, Pakistan' -> 31.5657 74.3142, 0 km, todas las entradas comparten punto porque ninguna fuente situa los asesinatos por barrio. Fechas: 0 a mes por discrepancia de dia entre fuentes (9 vs 20 de julio), 5 a mes (octubre 1999), el resto a anio. Metodo: modus operandi general, ninguna fuente lo da victima a victima. Descartadas Tasleem Hussain/Ullah (apellido discrepante) y Dilawar Hussain (sin corroborar)."
+  }
+}

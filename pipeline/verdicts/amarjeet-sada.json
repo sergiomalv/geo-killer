@@ -1,0 +1,12 @@
+{
+  "id": "amarjeet-sada",
+  "verdict": "approved",
+  "validator": "claude-opus-5 (revision manual, estandar forzado)",
+  "caseErrors": [],
+  "murderVerdicts": [
+    { "index": 0, "ok": true, "errors": [] },
+    { "index": 1, "ok": true, "errors": [] },
+    { "index": 2, "ok": true, "errors": [] }
+  ],
+  "notes": "ESTANDAR FORZADO, el mas debil del catalogo. Sin articulo de Wikipedia en ninguna lengua (Wikidata Q101890770, cero sitelinks): todo se apoya en prensa general. Nunca fue condenado, tenia ocho anios y paso por un centro de menores; el cierre del caso es su confesion en el interrogatorio. Las tres entradas comparten punto (Begusarai, capital del distrito) porque ninguna fuente situa los asesinatos por aldea y las fuentes discrepan en su nombre (Mushahar / Musahari). Coordenadas: geocode.sh 'Begusarai, Bihar, India' -> 25.5125 86.0883, 0 km. Fechas: 0 a anio (2006), 1 sin fecha porque ninguna fuente la da, 2 a anio (2007). Victimas: solo Khushboo tiene nombre; las otras dos se designan por su parentesco, tal como hacen las fuentes. Discrepancias abiertas: el nombre del asesino (Amarjeet / Amardeep) y la edad de la primera victima (seis meses, nueve meses o seis anios)."
+}

@@ -1,0 +1,75 @@
+{
+  "id": "javed-iqbal",
+  "standard": "forzado-prensa",
+  "standardNote": "Wikipedia no nombra ninguna víctima individual de este caso: da solo el agregado de 100 niños en Lahore en 1999. Las víctimas nombradas salen de dos reportajes de prensa y son desapariciones atribuidas a Iqbal, no asesinatos adjudicados uno a uno. Solo se recuperaron dos cuerpos. Este caso NO cumple la regla 12 del generador (asesinatos confirmados) y se incluye por decisión explícita del responsable del catálogo.",
+  "caseClosed": { "file": "pipeline/sources/javed-iqbal.en.txt", "line": 20, "quote": "Iqbal was sentenced to death" },
+  "caseClosedEs": { "file": "pipeline/sources/javed-iqbal.es.txt", "line": 18, "quote": "Iqbal fue condenado a muerte" },
+  "methodSource": { "file": "pipeline/sources/javed-iqbal.en.txt", "line": 9, "quote": "He wrote that he had strangled and dismembered the victims" },
+  "citySource": { "file": "pipeline/sources/javed-iqbal.en.txt", "line": 9, "quote": "mostly runaways or orphans living on the streets of Lahore" },
+  "tollSource": { "file": "pipeline/sources/javed-iqbal.en.txt", "line": 1, "quote": "confessed to the sexual abuse and murder of 100 young boys" },
+  "periodSource": {
+    "url": "https://www.trtworld.com/magazine/rape-dissolve-in-acid-how-pakistan-s-serial-killer-murdered-100-children-58607",
+    "quote": "Between July and December 1999"
+  },
+  "geocode": "31.5657 74.3142 Lahore, Punjab, Pakistán (consulta: Lahore, Pakistán)",
+  "murders": [
+    {
+      "index": 0,
+      "victim": "Faisal Razzaq",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "Las dos fuentes discrepan en el día (TRT World: 9 de julio; Brown History: 20 de julio). Se baja la precisión a mes.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    },
+    {
+      "index": 1,
+      "victim": "Shakeel Hassan",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "Solo consta 1999.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    },
+    {
+      "index": 2,
+      "victim": "Faraz Khan",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "Solo consta 1999.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    },
+    {
+      "index": 3,
+      "victim": "Zeeshan Nazir",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "Solo consta 1999.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    },
+    {
+      "index": 4,
+      "victim": "Abdul Majeed",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "Solo consta 1999.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    },
+    {
+      "index": 5,
+      "victim": "Ejaz Muhammad",
+      "corroboration": ["trtworld", "brownhistory"],
+      "quoteUrl": "https://brownhistory.substack.com/p/where-is-my-child-the-notorious-case",
+      "dateNote": "TRT World data la desaparición en octubre de 1999; Brown History da octubre sin año.",
+      "methodNote": "Modus operandi general, no consta el método víctima a víctima."
+    }
+  ],
+  "discarded": [
+    {
+      "victim": "Tasleem Hussain / Tasleem Ullah",
+      "reason": "Las dos fuentes le dan apellidos distintos; no se incluye."
+    },
+    {
+      "victim": "Dilawar Hussain",
+      "reason": "Solo aparece en TRT World, sin corroborar."
+    }
+  ]
+}

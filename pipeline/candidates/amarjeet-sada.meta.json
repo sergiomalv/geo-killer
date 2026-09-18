@@ -1,0 +1,45 @@
+{
+  "id": "amarjeet-sada",
+  "standard": "forzado-prensa",
+  "standardNote": "No existe artículo de Wikipedia en ninguna lengua (Wikidata Q101890770 tiene cero sitelinks). Todo el caso se apoya en prensa general. Ninguna fuente sitúa los asesinatos por aldea ni da fecha exacta de ninguno de los tres; las tres entradas comparten la capital del distrito como punto. Nunca fue condenado: tenía ocho años y pasó por un centro de menores. Este caso NO cumple el estándar del resto del catálogo y se incluye por decisión explícita del responsable.",
+  "caseClosed": {
+    "url": "https://allthatsinteresting.com/amarjeet-sada",
+    "quote": "Amarjeet also reportedly confessed to his previous killings during the interrogation, but due to his age, the police were unsure how to proceed."
+  },
+  "regionSource": {
+    "url": "https://allthatsinteresting.com/amarjeet-sada",
+    "quote": "Born in 1998 in a small village in the Indian state of Bihar, Amarjeet Sada came from a poverty-stricken family."
+  },
+  "citySource": {
+    "url": "https://simplyforensic.com/amardeep-sada-the-youngest-serial-killer-in-the-world/",
+    "quote": "Born into an impoverished laborer couple's family in Begusarai, Bihar",
+    "note": "Begusarai es el distrito. Las fuentes discrepan en el nombre de la aldea (DNA India: Mushahar; All That's Interesting: Musahari), así que se usa la capital del distrito como punto único."
+  },
+  "geocode": "25.5125 86.0883 Begusarai, Bihar, India (consulta: Begusarai, Bihar, India)",
+  "murders": [
+    {
+      "index": 0,
+      "victim": "Prima del asesino",
+      "quoteUrl": "https://allthatsinteresting.com/amarjeet-sada",
+      "dateNote": "Solo consta 2006.",
+      "victimNote": "Sin nombre en ninguna fuente. Las fuentes discrepan en su edad (seis meses, nueve meses o seis años), así que no se recoge.",
+      "methodNote": "Estrangulamiento, en la misma frase de la cita."
+    },
+    {
+      "index": 1,
+      "victim": "Hermana del asesino, de ocho meses",
+      "quoteUrl": "https://allthatsinteresting.com/amarjeet-sada",
+      "dateNote": "Ninguna fuente da año para este asesinato: date y datePrecision van a null.",
+      "victimNote": "Sin nombre en ninguna fuente. Los ocho meses sí son consistentes entre fuentes.",
+      "methodNote": "Estrangulamiento, en la misma frase de la cita."
+    },
+    {
+      "index": 2,
+      "victim": "Khushboo",
+      "quoteUrl": "https://allthatsinteresting.com/amarjeet-sada",
+      "dateNote": "2007, dado por All That's Interesting y DNA India.",
+      "victimNote": "Única víctima con nombre. Hija de Chunchun Devi, seis meses.",
+      "methodNote": "La misma fuente dice, más abajo, que la mató con una piedra y la enterró. No es la frase de la cita."
+    }
+  ]
+}
