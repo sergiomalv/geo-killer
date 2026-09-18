@@ -5,7 +5,7 @@ import type { Murder } from '../data/schema'
 import type { ClueLevel } from '../game/engine'
 import { boundsFor } from './mapBounds'
 import { groupByCoordinates } from './markerGroups'
-import { formatDate } from './ClueList'
+import { formatDate } from './format'
 
 const TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
