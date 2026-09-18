@@ -1,0 +1,23 @@
+{
+  "app.loading": "Opening case file…",
+  "app.noCase": "No case today. Come back tomorrow.",
+  "app.loadError": "Failed to load case. Check connection and refresh.",
+  "daily.caseNumber": "Case #{n}",
+  "daily.infiniteLink": "Infinite mode",
+  "infinite.streak": "Streak: {n}",
+  "infinite.dailyLink": "Daily challenge",
+  "infinite.wrapped": "Full loop: cases repeat.",
+  "infinite.loadError": "Failed to load case.",
+  "infinite.next": "Next case",
+  "guess.placeholder": "Who is the killer?",
+  "attempts.label": "{n} of {max} attempts",
+  "clues.none": "No more clues yet",
+  "result.won.one": "Case solved in {n} try",
+  "result.won.other": "Case solved in {n} tries",
+  "result.lost": "Case unsolved",
+  "result.wikipedia": "Read on Wikipedia",
+  "date.unknown": "Unknown date",
+  "map.murders.one": "{n} murder",
+  "map.murders.other": "{n} murders",
+  "lang.toggle": "Change language"
+}
