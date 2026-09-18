@@ -20,7 +20,7 @@ export function GuessInput({ killers, disabled, onGuess }: Props) {
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     const exact = killers.find((k) => matchesKiller(text, k))
-    const chosen = exact ?? suggestions[0]
+    const chosen = exact ?? (suggestions.length === 1 ? suggestions[0] : undefined)
     if (chosen) choose(chosen.id)
   }
 

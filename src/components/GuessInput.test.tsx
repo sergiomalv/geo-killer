@@ -5,6 +5,8 @@ import { GuessInput } from './GuessInput'
 const killers = [
   { id: 'david-berkowitz', name: 'David Berkowitz', aliases: ['El hijo de Sam'] },
   { id: 'ted-bundy', name: 'Ted Bundy', aliases: [] },
+  { id: 'peter-sutcliffe', name: 'Peter Sutcliffe', aliases: [] },
+  { id: 'peter-kurten', name: 'Peter Kürten', aliases: [] },
 ]
 
 describe('GuessInput', () => {
@@ -50,6 +52,16 @@ describe('GuessInput', () => {
     fireEvent.change(input, { target: { value: 'zzz' } })
     fireEvent.submit(input.closest('form')!)
     expect(onGuess).not.toHaveBeenCalled()
+  })
+
+  it('con Enter y varias sugerencias no envía nada', () => {
+    const onGuess = vi.fn()
+    render(<GuessInput killers={killers} disabled={false} onGuess={onGuess} />)
+    const input = screen.getByRole('combobox')
+    fireEvent.change(input, { target: { value: 'peter' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(onGuess).not.toHaveBeenCalled()
+    expect(screen.getAllByRole('option')).toHaveLength(2)
   })
 
   it('se deshabilita', () => {
