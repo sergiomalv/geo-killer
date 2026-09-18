@@ -29,6 +29,31 @@
     }
   },
   {
+    "id": "alfredo-galan",
+    "confirmed": 6,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "2003",
+    "nickname": {
+      "es": "el asesino de la baraja",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Alfredo_Galán",
+      "en": null
+    },
+    "confirmedQuote": "El tribunal lo encontró culpable de seis asesinatos con resultado de muerte",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 6: cita literal en L25 ('El tribunal lo encontró culpable de seis asesinatos con resultado de muerte'), contiene 'seis'; L25 dice condena ('encontró culpable... y lo sentenció a cumplir condena de 142 años'); sección vigente en L25 es 'Juicio y sentencia' (documental); attributed es null y no hay attributedQuote, coherente; país ES respaldado en L1 ('asesino en serie español... en Madrid') y L5/L11 (España); activeYears 2003 respaldado en L1 ('entre enero y marzo del año 2003'); apodo es 'el asesino de la baraja' respaldado en L1, L13 y L20; apodo en es null y no hay fuente en; Wikipedia es apunta a es.wikipedia.org, en es null."
+    }
+  },
+  {
     "id": "andrei-chikatilo",
     "confirmed": 52,
     "attributed": {
@@ -222,6 +247,60 @@
     }
   },
   {
+    "id": "joaquin-ferrandiz",
+    "confirmed": 5,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1995-1998",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Joaquín_Ferrándiz_Ventura",
+      "en": null
+    },
+    "confirmedQuote": "fue declarado culpable de cinco cargos de asesinato",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 5: cita literal en L24 ('fue declarado culpable de cinco cargos de asesinato'), contiene 'cinco' y confirma condena, no sospecha; sección vigente en L24 es 'Juicio y sentencia' (documental); attributed null y sin attributedQuote en el candidato, coherente; ES respaldado en L6 ('provincia española de Valencia'); activeYears 1995 en L16 y 1998 en L18; sin apodos (es/en null); wikipedia.es apunta a es.wikipedia.org, wikipedia.en null (no hay fuente .en.txt), cumple con al menos una URL no nula."
+    }
+  },
+  {
+    "id": "joel-rifkin",
+    "confirmed": 9,
+    "attributed": {
+      "min": 17,
+      "max": 17
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1989-1993",
+    "nickname": {
+      "es": null,
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Joel_Rifkin",
+      "en": "https://en.wikipedia.org/wiki/Joel_Rifkin"
+    },
+    "confirmedQuote": "convicted for killing nine women between 1989 and 1993",
+    "attributedQuote": "In total he confessed to murdering 17 women.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 9: cita en L1 'convicted for killing nine women between 1989 and 1993', la línea dice 'sentenced to 203 years in prison after being convicted', sección introductoria (sin encabezado de ficción); attributed 17: cita en L1 'In total he confessed to murdering 17 women.', misma sección; min=max=17 >= confirmed 9, sin rango invertido; attributedQuote presente y attributed no nulo, coherente; país US en L12 (New York City, New Jersey) y en L1 'American serial killer', código de país válido y no histórico; activeYears 1989 y 1993 en L1; apodos es y en ambos null, sin apodoQuote y sin menciones de apodo en ninguna fuente; wikipedia es y en presentes y con dominios correctos; fuente es (L1) corrobora las mismas cifras (nueve confirmadas, 'se estima que asesinó a 17 mujeres'), sin discrepancia entre fuentes."
+    }
+  },
+  {
     "id": "john-wayne-gacy",
     "confirmed": 33,
     "attributed": {
@@ -248,6 +327,60 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 33: cita literal en L221 (grep -n -F), la línea dice 'Gacy was found guilty of 33 charges of murder' (condena), sección vigente '=== Closing arguments ===' (awk hasta L221), documental; attributed 45: cita literal en L296 (grep -n -F), contiene '45', sección vigente '=== Possible additional victims ===', documental, min=max=45>=confirmed 33 sin rango invertido; US respaldado en L1 en ('American serial killer... 1972 and 1978 in ... Illinois') y es L1 ('estadounidense'); activeYears 1972 y 1978 en L1 en/es; apodo en 'Killer Clown' en L1/L78 en, apodo es 'El Payaso Asesino' en L1/L2 es, sin cruce de idiomas (grep -in en cada fuente contraria sin coincidencia de la frase); es no menciona 45 (grep -n '45' sin resultados), sin discrepancia entre fuentes porque solo en aporta la cifra atribuida; wikipedia es y en con dominios correctos."
+    }
+  },
+  {
+    "id": "jose-antonio-rodriguez-vega",
+    "confirmed": 16,
+    "attributed": null,
+    "countries": [
+      "ES"
+    ],
+    "activeYears": "1987-1988",
+    "nickname": {
+      "es": "el Mataviejas",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/José_Antonio_Rodríguez_Vega",
+      "en": null
+    },
+    "confirmedQuote": "Condenado a un total de 440 años por los 16 asesinatos",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 16: cita literal en L31 ('Condenado a un total de 440 años por los 16 asesinatos'), la línea dice 'Condenado' (condena); sección vigente en L31 es '== Muerte ==' (documental, no ficción); attributed null y no hay attributedQuote, coherente; país ES respaldado en L5 ('España'); activeYears 1987 y 1988 en L1 ('entre agosto de 1987 y abril de 1988'); apodo es 'el Mataviejas' en L1, apodo en null coherente con ausencia de fuente en inglés; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+    }
+  },
+  {
+    "id": "juana-barraza",
+    "confirmed": 16,
+    "attributed": {
+      "min": 40,
+      "max": 40
+    },
+    "countries": [
+      "MX"
+    ],
+    "activeYears": "1997-2006",
+    "nickname": {
+      "es": "la Mataviejitas",
+      "en": null
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Juana_Barraza_Samperio",
+      "en": null
+    },
+    "confirmedQuote": "esto con los cargos del asesinato de dieciséis mujeres, y doce robos",
+    "attributedQuote": "en el resto de los diez asesinatos (de entre los cuarenta que se le sospechaban)",
+    "sourceLang": "es",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 16: cita literal en L26 ('...dieciséis mujeres...'), línea dice 'fue condenada a 759 años de prisión...con los cargos del asesinato'; sección vigente L26 = 'Juicio' (documental); attributed 40: cita literal en L18 ('...de entre los cuarenta que se le sospechaban...'), min=max=40 respaldados; sección vigente L18 = 'Arresto' (documental); coherencia: 40 >= 16, min=max sin inversión; MX respaldada en L1 ('es una asesina en serie mexicana'); activeYears 1997 y 2006 en L10 y L16; apodo es 'la Mataviejitas' en L1; nickname.en y wikipedia.en son null, sin discrepancia; wikipedia.es apunta a es.wikipedia.org"
     }
   },
   {

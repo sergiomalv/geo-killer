@@ -1,0 +1,11 @@
+{
+  "id": "gregorio-cardenas",
+  "confirmed": 4,
+  "attributed": null,
+  "countries": ["MX"],
+  "activeYears": "1942",
+  "nickname": { "es": "el Estrangulador de Tacuba", "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Gregorio_Cárdenas", "en": null },
+  "confirmedQuote": "los cuerpos de sus 4 víctimas",
+  "sourceLang": "es"
+}

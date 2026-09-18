@@ -1,0 +1,11 @@
+{
+  "id": "peter-kurten",
+  "confirmed": 9,
+  "attributed": null,
+  "countries": ["DE"],
+  "activeYears": "1913-1929",
+  "nickname": { "es": "El vampiro de Düsseldorf", "en": "The Vampire of Düsseldorf" },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Peter_Kürten", "en": "https://en.wikipedia.org/wiki/Peter_Kürten" },
+  "confirmedQuote": "was found guilty of nine counts of murder and seven counts of attempted murder",
+  "sourceLang": "en"
+}

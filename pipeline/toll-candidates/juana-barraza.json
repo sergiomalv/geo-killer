@@ -1,0 +1,12 @@
+{
+  "id": "juana-barraza",
+  "confirmed": 16,
+  "attributed": { "min": 40, "max": 40 },
+  "countries": ["MX"],
+  "activeYears": "1997-2006",
+  "nickname": { "es": "la Mataviejitas", "en": null },
+  "wikipedia": { "es": "https://es.wikipedia.org/wiki/Juana_Barraza_Samperio", "en": null },
+  "confirmedQuote": "esto con los cargos del asesinato de dieciséis mujeres, y doce robos",
+  "attributedQuote": "en el resto de los diez asesinatos (de entre los cuarenta que se le sospechaban)",
+  "sourceLang": "es"
+}

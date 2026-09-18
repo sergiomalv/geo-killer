@@ -1,0 +1,9 @@
+{
+  "id": "peter-kurten",
+  "confirmedLine": 2,
+  "attributedLine": null,
+  "countryLines": { "DE": 1 },
+  "yearsLine": 38,
+  "nicknameLines": { "es": 1, "en": 1 },
+  "notes": "ES e inglés coinciden en nueve asesinatos (condena firme, línea 2 y 113 en inglés; línea 23 en español). El artículo en inglés dice que confesó 68 crímenes incluyendo nueve asesinatos (línea 91), la misma cifra que la condena, así que no hay una cifra atribuida mayor que la confirmada: attributed queda null. Los dos ahogamientos de la infancia (línea 13 en) fueron declarados accidentales por las autoridades, no se cuentan como asesinatos atribuidos. El primer asesinato confirmado (Christine Klein) ocurrió en 1913 (línea 38 en); el último de la serie de 1929 se describe en las líneas 50-69 en."
+}

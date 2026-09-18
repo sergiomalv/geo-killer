@@ -1,0 +1,9 @@
+{
+  "id": "juana-barraza",
+  "confirmedLine": 26,
+  "attributedLine": 18,
+  "countryLines": { "MX": 1 },
+  "yearsLine": 10,
+  "nicknameLines": { "es": 1 },
+  "notes": "El artículo en español da dos cifras de condena distintas para el mismo hecho: la introducción dice 700 años / 17 ancianas, y la sección 'Juicio' dice 759 años / dieciséis mujeres (línea 26). Se toma la menor (16) como confirmed. No hay wiki en inglés (wiki.en=null). La fecha de fin de actividad (2006) se toma de la línea 16, donde se describe la detención al huir de la casa de su 'última víctima'."
+}
