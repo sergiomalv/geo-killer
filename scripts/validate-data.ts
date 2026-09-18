@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { z } from 'zod'
-import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema } from '../src/data/schema.ts'
+import { caseSchema, caseTranslationSchema, killersSchema, scheduleSchema, tollsSchema } from '../src/data/schema.ts'
 
 const DATA_DIR = join(process.cwd(), 'src', 'data')
 const errors: string[] = []
@@ -91,9 +91,24 @@ if (scheduleResult.success) {
   }
 }
 
+const tollsJson = readJson(join(DATA_DIR, 'tolls.json'), 'tolls.json')
+const tollsResult = tollsJson === undefined ? { success: false as const } : tollsSchema.safeParse(tollsJson)
+report('tolls.json', tollsResult)
+const tollIds = new Set(tollsResult.success ? tollsResult.data.map((t) => t.id) : [])
+if (tollsResult.success) {
+  for (const t of tollsResult.data) {
+    if (!killerIds.has(t.id)) errors.push(`tolls.json: id "${t.id}" no está en killers.json`)
+  }
+  // No es un error: el modo "Más o menos" juega con los asesinatos que tengan cifra.
+  const sinCifra = [...killerIds].filter((id) => !tollIds.has(id)).sort()
+  if (sinCifra.length > 0) {
+    console.log(`Aviso: ${sinCifra.length} asesino(s) sin cifra en tolls.json: ${sinCifra.join(', ')}`)
+  }
+}
+
 if (errors.length > 0) {
   console.error(errors.join('\n\n'))
   console.error(`\n${errors.length} problema(s) encontrado(s)`)
   process.exit(1)
 }
-console.log(`OK: ${caseIds.size} casos, ${translationIds.size} traducciones, ${killerIds.size} killers, ${scheduleResult.success ? scheduleResult.data.order.length : 0} días programados`)
+console.log(`OK: ${caseIds.size} casos, ${translationIds.size} traducciones, ${killerIds.size} killers, ${tollIds.size} cifras, ${scheduleResult.success ? scheduleResult.data.order.length : 0} días programados`)
