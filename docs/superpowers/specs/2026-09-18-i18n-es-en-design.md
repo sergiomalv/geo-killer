@@ -82,7 +82,7 @@ siendo puras:
 
 `detectLang()` resuelve en este orden:
 
-1. `localStorage['geo-killer:lang']`, si contiene `es` o `en`.
+1. `localStorage['geokiller.lang']`, si contiene `es` o `en`.
 2. `navigator.language.startsWith('en') ? 'en' : 'es'`.
 3. `es`.
 
