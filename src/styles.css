@@ -28,3 +28,11 @@ body {
 .clue-date { color: var(--accent); }
 .clue-victim { font-weight: bold; }
 .clue-method, .clue-muted { color: var(--muted); }
+
+.guess { position: relative; }
+.guess-input { width: 100%; box-sizing: border-box; padding: 12px; font: inherit; font-size: 1rem; background: var(--panel); color: var(--text); border: 1px solid var(--accent); }
+.guess-input:disabled { opacity: 0.5; }
+.guess-options { position: absolute; left: 0; right: 0; top: 100%; z-index: 1000; margin: 0; padding: 0; list-style: none; background: var(--panel); border: 1px solid var(--line); max-height: 260px; overflow-y: auto; }
+.guess-option { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; cursor: pointer; }
+.guess-option:hover { background: var(--line); }
+.guess-alias { color: var(--muted); font-size: 0.85rem; }
