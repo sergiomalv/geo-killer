@@ -63,6 +63,40 @@ body {
 .board { display: grid; gap: 16px; }
 .board-panel, .board-scroll { display: grid; gap: 16px; align-content: start; }
 
+/* La cabecera lleva tres cosas (título, pestañas, controles): en móvil se envuelven. */
+.page-header { flex-wrap: wrap; gap: 8px 16px; }
+
+.mode-tabs { display: flex; gap: 12px; align-items: baseline; }
+.mode-tab { color: var(--muted); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid transparent; padding-bottom: 2px; }
+.mode-tab:hover { color: var(--text); }
+.mode-tab-active { color: var(--accent); border-bottom-color: var(--accent); }
+.mode-tab-disabled { opacity: 0.4; cursor: not-allowed; }
+
+.duel { display: grid; gap: 16px; align-content: start; }
+.duel-question { margin: 0; color: var(--muted); }
+.duel-cards { display: grid; gap: 12px; }
+.killer-card { background: var(--panel); border: 1px solid var(--line); padding: 16px; display: grid; gap: 4px; align-content: start; }
+.killer-name { margin: 0; font-size: 1.2rem; }
+.killer-nickname { margin: 0; color: var(--accent); font-size: 0.9rem; }
+.killer-meta { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; }
+.killer-count { display: grid; gap: 2px; }
+/* Sobria a propósito: el número es un dato, no una puntuación. Sin animación ni color de premio. */
+.killer-number { font-size: 2.4rem; line-height: 1; font-weight: bold; }
+.killer-confirmed { color: var(--muted); font-size: 0.9rem; }
+.killer-attributed { color: var(--muted); font-size: 0.85rem; }
+.killer-count a { color: var(--accent); font-size: 0.85rem; margin-top: 8px; }
+.killer-hidden { margin: 0; color: var(--muted); font-size: 0.9rem; min-height: 2.4rem; display: flex; align-items: center; }
+
+.duel-buttons { display: flex; gap: 12px; }
+.duel-choice { flex: 1; padding: 16px; font: inherit; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; background: transparent; color: var(--accent); border: 1px solid var(--accent); cursor: pointer; }
+.duel-choice:hover { background: var(--accent); color: #000; }
+.duel-over { display: grid; gap: 12px; justify-items: start; }
+.duel-over-title { margin: 0; font-size: 1.2rem; color: var(--danger); }
+
+@media (min-width: 700px) {
+  .duel-cards { grid-template-columns: 1fr 1fr; }
+}
+
 @media (min-width: 900px) {
   .page { max-width: 1200px; height: 100dvh; box-sizing: border-box; grid-template-rows: auto 1fr; }
   /* min-height: 0 en toda la cadena: sin él un hijo de grid no encoge por debajo de su
