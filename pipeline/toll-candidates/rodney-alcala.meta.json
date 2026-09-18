@@ -1,0 +1,9 @@
+{
+  "id": "rodney-alcala",
+  "confirmedLine": 1,
+  "attributedLine": 1,
+  "countryLines": { "US": 1 },
+  "yearsLine": 1,
+  "nicknameLines": { "en": 3 },
+  "notes": "wiki.es es null, solo hay fuente en inglés. El artículo distingue: condenado por 5 asesinatos en California (línea 1, 'sentenced to death in California for five murders'), se declaró culpable de 2 más en Nueva York (línea 1, 'pleaded guilty ... for two further murders'; Crilley 1971 en línea 21, Hover 1977 en línea 34), y da directamente un total de 'conclusively linked to nine murders' en la línea 1: se usa este 9 como confirmed porque es el número que la fuente da explícitamente como confirmado (incluye las 5 condenas + 2 declaraciones de culpabilidad + 2 casos adicionales enlazados con evidencia concluyente), en vez de sumar cifras de distintas frases sin una cita literal única. Para activeYears se toma 1971 (asesinato de Crilley, línea 21) como inicio en vez de 1977, porque también es uno de los nueve asesinatos confirmados; fin en 1979 (Parenteau/Samsoe, línea 1). attributed usa el único número explícito de estimación máxima ('could be as high as 130', línea 1); no hay número mínimo distinto, así que min=max=130."
+}

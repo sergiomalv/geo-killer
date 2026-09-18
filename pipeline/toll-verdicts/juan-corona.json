@@ -1,0 +1,7 @@
+{
+  "id": "juan-corona",
+  "verdict": "approved",
+  "validator": "claude-sonnet-5",
+  "errors": [],
+  "notes": "confirmed 25: cita literal en L2 de juan-corona.en.txt ('Corona was convicted of 25 counts of first-degree murder in 1973'); la línea dice 'was convicted', es condena, no sospecha; sección: sin encabezado (introducción), no es ficción; es.txt L23 también dice 'culpable de veinticinco homicidios' y L16 dice '25 cuerpos', mismo número, sin discrepancia; attributed es null y no hay attributedQuote, coherente; US respaldado en L1 ('California', 'U.S. history'); activeYears '1971' (año único) aparece en L1 ('California, in 1971'); apodo null en ambos idiomas, se omite comprobación; wikipedia es y en presentes y con dominios correctos (es.wikipedia.org / en.wikipedia.org)."
+}

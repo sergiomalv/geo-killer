@@ -526,6 +526,35 @@
     }
   },
   {
+    "id": "jerry-brudos",
+    "confirmed": 3,
+    "attributed": {
+      "min": 4,
+      "max": 4
+    },
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1968-1969",
+    "nickname": {
+      "es": null,
+      "en": "the Lust Killer"
+    },
+    "wikipedia": {
+      "es": null,
+      "en": "https://en.wikipedia.org/wiki/Jerry_Brudos"
+    },
+    "confirmedQuote": "entered a plea of guilty to three counts of first-degree murder",
+    "attributedQuote": "murder of four young women between 1968 and 1969",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 3: cita literal en L141 ('entered a plea of guilty to three counts of first-degree murder'), sección == Conviction ==, L141 dice declaración de culpabilidad; attributed 4-4: cita literal en L1 ('murder of four young women between 1968 and 1969'), L1 sin encabezado de sección de ficción (introducción); coherencia: attributed.min 4 >= confirmed 3, min=max=4 no invertido; attributedQuote presente y attributed no nulo, cuadra; país US respaldado por 'American' en L1, no es código histórico ni inexistente; activeYears 1968 y 1969 en L1 y L64; apodo en 'Lust Killer' en L1 y L4, apodo es es null (sin comprobación); wikipedia.en apunta a en.wikipedia.org, wikipedia.es null pero hay al menos una URL no nula."
+    }
+  },
+  {
     "id": "joaquin-ferrandiz",
     "confirmed": 5,
     "attributed": null,
@@ -660,6 +689,28 @@
       "validatedAt": "2026-09-18",
       "validator": "claude-sonnet-5",
       "notes": "confirmed 16: cita literal en L31 ('Condenado a un total de 440 años por los 16 asesinatos'), la línea dice 'Condenado' (condena); sección vigente en L31 es '== Muerte ==' (documental, no ficción); attributed null y no hay attributedQuote, coherente; país ES respaldado en L5 ('España'); activeYears 1987 y 1988 en L1 ('entre agosto de 1987 y abril de 1988'); apodo es 'el Mataviejas' en L1, apodo en null coherente con ausencia de fuente en inglés; wikipedia.es apunta a es.wikipedia.org y wikipedia.en es null, cumple regla de al menos una URL válida."
+    }
+  },
+  {
+    "id": "juan-corona",
+    "confirmed": 25,
+    "attributed": null,
+    "countries": [
+      "US"
+    ],
+    "activeYears": "1971",
+    "nickname": null,
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Juan_Corona_(asesino)",
+      "en": "https://en.wikipedia.org/wiki/Juan_Corona"
+    },
+    "confirmedQuote": "Corona was convicted of 25 counts of first-degree murder in 1973.",
+    "sourceLang": "en",
+    "validation": {
+      "status": "approved",
+      "validatedAt": "2026-09-18",
+      "validator": "claude-sonnet-5",
+      "notes": "confirmed 25: cita literal en L2 de juan-corona.en.txt ('Corona was convicted of 25 counts of first-degree murder in 1973'); la línea dice 'was convicted', es condena, no sospecha; sección: sin encabezado (introducción), no es ficción; es.txt L23 también dice 'culpable de veinticinco homicidios' y L16 dice '25 cuerpos', mismo número, sin discrepancia; attributed es null y no hay attributedQuote, coherente; US respaldado en L1 ('California', 'U.S. history'); activeYears '1971' (año único) aparece en L1 ('California, in 1971'); apodo null en ambos idiomas, se omite comprobación; wikipedia es y en presentes y con dominios correctos (es.wikipedia.org / en.wikipedia.org)."
     }
   },
   {
