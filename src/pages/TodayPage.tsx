@@ -41,10 +41,10 @@ export function TodayPage({ day, caseData, killers }: Props) {
       <header className="page-header">
         <h1>Geo Killer</h1>
         <ModeTabs active="daily" duelEnabled={tolls.ids.length >= 2} />
-        <nav className="page-nav">
+        <div className="page-nav">
           <span className="page-day">{t('daily.caseNumber', { n: day + 1 })}</span>
           <LanguageToggle />
-        </nav>
+        </div>
       </header>
       <GameBoard caseData={caseData} killers={killers} state={state} onGuess={handleGuess} />
     </main>

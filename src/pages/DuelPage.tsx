@@ -32,6 +32,9 @@ export function DuelPage({ tolls, killers, random = Math.random }: Props) {
   }, [state])
 
   // Tras un acierto la carta revelada se queda a la vista un momento y luego encadena sola.
+  // Requiere que `random` y `tolls.ids` sean estables entre renders: si `random` fuera una
+  // función nueva en cada render (p. ej. un `() => Math.random()` en línea) este efecto se
+  // reprogramaría en cada pintado y la pausa nunca llegaría a cumplirse.
   useEffect(() => {
     if (state?.status !== 'revealed') return
     const id = setTimeout(() => setState((prev) => (prev ? advance(prev, tolls.ids, random) : prev)), REVEAL_MS)
@@ -43,8 +46,8 @@ export function DuelPage({ tolls, killers, random = Math.random }: Props) {
       <main className="page">
         <header className="page-header">
           <h1>Geo Killer</h1>
-          <ModeTabs active="duel" duelEnabled={false} />
-          <nav className="page-nav"><LanguageToggle /></nav>
+          <ModeTabs active="duel" />
+          <div className="page-nav"><LanguageToggle /></div>
         </header>
         <p className="page-notice">{t('duel.unavailable')}</p>
       </main>
@@ -69,40 +72,68 @@ export function DuelPage({ tolls, killers, random = Math.random }: Props) {
   }
 
   function choose(choice: Choice) {
-    setState((prev) => (prev ? answer(prev, choice, tolls.counts) : prev))
+    setState((prev) => {
+      // `answer` ya es no-op fuera de 'playing'; la guarda queda aquí también para que la
+      // intención (no se puede responder durante la pausa ni tras perder) se lea en la llamada.
+      if (!prev || prev.status !== 'playing') return prev
+      return answer(prev, choice, tolls.counts)
+    })
+  }
+
+  function statusMessage(s: DuelState): string | null {
+    if (s.status === 'lost') return t('duel.lost')
+    if (s.status === 'revealed' && s.tie) return t('duel.tie')
+    return null
   }
 
   const leftName = killers.find((k) => k.id === state.left)?.name ?? state.left
+  const rightName = killers.find((k) => k.id === state.right)?.name ?? state.right
+  const playing = state.status === 'playing'
 
   return (
     <main className="page">
       <header className="page-header">
         <h1>Geo Killer</h1>
         <ModeTabs active="duel" />
-        <nav className="page-nav">
+        <div className="page-nav">
           <span className="page-day">{t('duel.streak', { n: state.streak })}</span>
           <span className="page-day">{t('duel.best', { n: state.best })}</span>
           <LanguageToggle />
-        </nav>
+        </div>
       </header>
       <section className="duel">
-        <p className="duel-question">{t('duel.question', { name: leftName })}</p>
+        <p className="duel-question">{t('duel.question', { left: leftName, right: rightName })}</p>
         <div className="duel-cards">
           {card(state.left, true)}
           {card(state.right, state.status !== 'playing')}
         </div>
-        {state.status === 'playing' ? (
+        {state.status !== 'lost' ? (
           <div className="duel-buttons">
-            <button type="button" className="duel-choice" onClick={() => choose('higher')}>{t('duel.higher')}</button>
-            <button type="button" className="duel-choice" onClick={() => choose('lower')}>{t('duel.lower')}</button>
+            <button
+              type="button"
+              className="duel-choice"
+              aria-disabled={!playing}
+              aria-label={t('duel.higher.a11y', { name: rightName })}
+              onClick={() => choose('higher')}
+            >
+              {t('duel.higher')}
+            </button>
+            <button
+              type="button"
+              className="duel-choice"
+              aria-disabled={!playing}
+              aria-label={t('duel.lower.a11y', { name: rightName })}
+              onClick={() => choose('lower')}
+            >
+              {t('duel.lower')}
+            </button>
           </div>
         ) : null}
-        {state.status === 'revealed' && state.tie ? (
-          <p className="page-notice" aria-live="polite">{t('duel.tie')}</p>
-        ) : null}
+        <p className={`duel-status${state.status === 'lost' ? ' duel-status-lost' : ''}`} aria-live="polite">
+          {statusMessage(state)}
+        </p>
         {state.status === 'lost' ? (
-          <div className="duel-over" aria-live="polite">
-            <p className="duel-over-title">{t('duel.lost')}</p>
+          <div className="duel-over">
             <button
               type="button"
               className="next-case"

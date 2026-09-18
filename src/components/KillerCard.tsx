@@ -32,20 +32,24 @@ export function KillerCard({ name, nickname, countries, activeYears, wikipedia, 
       <h2 className="killer-name">{name}</h2>
       {nickname ? <p className="killer-nickname">{nickname}</p> : null}
       <p className="killer-meta">{formatCountries(countries, lang)} · {activeYears}</p>
-      {revealed ? (
-        <div className="killer-count" aria-live="polite">
-          <strong className="killer-number">{confirmed}</strong>
-          <span className="killer-confirmed">
-            {t(confirmed === 1 ? 'duel.confirmed.one' : 'duel.confirmed.other', { n: confirmed })}
-          </span>
-          {attributedLabel ? <span className="killer-attributed">{attributedLabel}</span> : null}
-          {wikipedia ? (
-            <a href={wikipedia} target="_blank" rel="noreferrer">{t('result.wikipedia')}</a>
-          ) : null}
-        </div>
-      ) : (
-        <p className="killer-hidden">{t('duel.hidden')}</p>
-      )}
+      {/* Contenedor siempre montado: una región `aria-live` solo se anuncia si ya existía
+          en el DOM cuando cambia su contenido, no si se monta ya con la cifra dentro. */}
+      <div className="killer-count" aria-live="polite">
+        {revealed ? (
+          <>
+            <strong className="killer-number">{confirmed}</strong>
+            <span className="killer-confirmed">
+              {t(confirmed === 1 ? 'duel.confirmed.one' : 'duel.confirmed.other', { n: confirmed })}
+            </span>
+            {attributedLabel ? <span className="killer-attributed">{attributedLabel}</span> : null}
+            {wikipedia ? (
+              <a href={wikipedia} target="_blank" rel="noreferrer">{t('result.wikipedia')}</a>
+            ) : null}
+          </>
+        ) : (
+          <p className="killer-hidden">{t('duel.hidden')}</p>
+        )}
+      </div>
     </article>
   )
 }

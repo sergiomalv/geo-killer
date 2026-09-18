@@ -63,10 +63,10 @@ export function InfinitePage({ killers, availableIds, random = Math.random }: Pr
       <header className="page-header">
         <h1>Geo Killer</h1>
         <ModeTabs active="infinite" duelEnabled={tolls.ids.length >= 2} />
-        <nav className="page-nav">
+        <div className="page-nav">
           <span className="page-day">{t('infinite.streak', { n: state.streak })}</span>
           <LanguageToggle />
-        </nav>
+        </div>
       </header>
       {state.wrapped ? <p className="page-notice" aria-live="polite">{t('infinite.wrapped')}</p> : null}
       {isLoading ? <p>{t('app.loading')}</p> : null}

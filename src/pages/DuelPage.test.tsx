@@ -19,8 +19,11 @@ function renderPage() {
   return renderWithLang(<DuelPage tolls={index} killers={killers} random={first} />)
 }
 
-function click(name: string) {
-  fireEvent.click(screen.getByRole('button', { name }))
+// Los botones de elegir llevan `aria-label` (nombran al asesino de la derecha, que cambia
+// cada ronda), así que su texto visible ya no es su nombre accesible: se busca por el texto
+// del botón y se sube al elemento `<button>`.
+function click(text: string) {
+  fireEvent.click(screen.getByText(text).closest('button')!)
 }
 
 /** Deja pasar la pausa en la que la carta revelada se queda a la vista. */
