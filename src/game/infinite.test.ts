@@ -28,6 +28,9 @@ describe('pickNextCase', () => {
     expect(r.played).toEqual(['a'])
     expect(r.wrapped).toBe(true)
   })
+  it('lanza un error claro si no hay casos disponibles', () => {
+    expect(() => pickNextCase([], [], first)).toThrow('No hay casos disponibles')
+  })
 })
 
 describe('startInfinite', () => {

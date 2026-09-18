@@ -17,6 +17,7 @@ export interface Pick {
 
 /** Elige un caso no jugado; si no queda ninguno, reinicia la vuelta. `random` devuelve [0, 1). */
 export function pickNextCase(available: string[], played: string[], random: () => number): Pick {
+  if (available.length === 0) throw new Error('No hay casos disponibles')
   let candidates = available.filter((id) => !played.includes(id))
   let wrapped = false
   let basePlayed = played
